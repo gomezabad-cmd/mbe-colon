@@ -9,8 +9,8 @@ const SLIDE_IMAGES = [
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-2-1.jpg',
   // Bordados personalizados — máquina bordadora industrial (foto real)
   '/bordados-banner.jpg',
-  // Sellos automáticos — sello oficial presionado sobre documento de negocios
-  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=780&fit=crop&q=80',
+  // Sellos automáticos — colección COLOP (foto real)
+  '/sellos-banner.jpg',
 ]
 
 export default function HeroBanner() {
