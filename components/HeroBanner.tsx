@@ -88,17 +88,25 @@ export default function HeroBanner() {
 
       </div>
 
-      {/* Arrows */}
+      {/* Arrows — hidden on mobile, subtle on desktop */}
       <button
         onClick={() => setCurrent(c => (c - 1 + HERO_SLIDES.length) % HERO_SLIDES.length)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all"
+        className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white/60 hover:text-white transition-all"
         aria-label="Anterior"
-      >‹</button>
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
       <button
         onClick={() => setCurrent(c => (c + 1) % HERO_SLIDES.length)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all"
+        className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white/60 hover:text-white transition-all"
         aria-label="Siguiente"
-      >›</button>
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
 
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
