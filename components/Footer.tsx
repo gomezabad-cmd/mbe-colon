@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { CONTACT, SERVICES } from '@/lib/constants'
 
 export default function Footer() {
@@ -7,15 +8,19 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="bg-mbe-red text-white font-black text-sm px-2 py-1 rounded">MBE</div>
-            <div>
-              <div className="font-bold text-sm leading-tight">Mail Boxes Etc.</div>
-              <div className="text-mbe-red text-xs font-semibold leading-tight">Colón</div>
-            </div>
+          {/* Logo oficial MBE */}
+          <div className="mb-4">
+            <Image
+              src="https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png"
+              alt="Mail Boxes Etc. Panamá"
+              width={150}
+              height={52}
+              className="object-contain brightness-0 invert"
+            />
+            <div className="text-mbe-red text-sm font-bold mt-1">Colón</div>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-4">
-            Tu centro de envíos, impresión y logística en Colón. Más de 25 años de confianza con la red MBE.
+            Tu centro de envíos, impresión y logística en Colón. Más de 18 años de confianza con la red MBE.
           </p>
           <div className="flex gap-3">
             <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer"
