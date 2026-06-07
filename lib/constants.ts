@@ -53,6 +53,20 @@ export const SERVICES = [
     description: 'Tu dirección en Miami para recibir compras de USA.',
     href: '/servicios/casillero',
   },
+  {
+    id: 'bordados',
+    icon: '🧵',
+    title: 'Bordados Personalizados',
+    description: 'Uniformes, hoodies, gorras y polos con tu logo bordado.',
+    href: '/servicios/bordados',
+  },
+  {
+    id: 'sellos',
+    icon: '🔖',
+    title: 'Sellos Automáticos',
+    description: 'Sellos automáticos personalizados para empresas y profesionales.',
+    href: '/servicios/sellos',
+  },
 ]
 
 export const WHY_US = [
@@ -109,5 +123,23 @@ export const HERO_SLIDES = [
     cta: { text: 'Solicitar cotización', href: '#contacto' },
     ctaSecondary: { text: 'Ver servicios', href: '/servicios/impresion' },
     bgClass: 'bg-mbe-gray',
+  },
+  {
+    id: 4,
+    eyebrow: 'Bordados personalizados',
+    title: 'Tu logo en uniformes,\nhoodies y gorras.',
+    description: 'Dale identidad a tu equipo con bordados de alta calidad.',
+    cta: { text: 'Ver bordados', href: '/servicios/bordados' },
+    ctaSecondary: { text: 'Contáctanos', href: '#contacto' },
+    bgClass: 'bg-mbe-dark',
+  },
+  {
+    id: 5,
+    eyebrow: 'Sellos automáticos',
+    title: 'Sellos personalizados\npara tu empresa.',
+    description: 'Diseño profesional, entrega rápida. Ideal para empresas y profesionales.',
+    cta: { text: 'Pedir mi sello', href: '/servicios/sellos' },
+    ctaSecondary: { text: 'Ver tipos', href: '/servicios/sellos' },
+    bgClass: 'bg-mbe-blue',
   },
 ]

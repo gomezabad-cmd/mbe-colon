@@ -70,6 +70,44 @@ const SERVICES = [
       </svg>
     ),
   },
+  {
+    id: 'bordados',
+    label: 'Bordados\nPersonalizados',
+    href: '/servicios/bordados',
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-14 h-14">
+        {/* Needle */}
+        <path d="M44 8l4 4-28 28-6 2 2-6L44 8z" />
+        <circle cx="46" cy="10" r="2.5" fill="white" stroke="none" />
+        {/* Thread spool */}
+        <ellipse cx="18" cy="50" rx="8" ry="5" />
+        <rect x="10" y="46" width="16" height="8" rx="3" />
+        <path d="M16 24C20 30 26 36 36 36" strokeDasharray="3 3" />
+      </svg>
+    ),
+  },
+  {
+    id: 'sellos',
+    label: 'Sellos\nAutomáticos',
+    href: '/servicios/sellos',
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-14 h-14">
+        {/* Stamp body */}
+        <rect x="18" y="6" width="28" height="20" rx="3" />
+        {/* Handle */}
+        <rect x="26" y="4" width="12" height="6" rx="2" />
+        {/* Mechanism lines */}
+        <path d="M22 14h20M22 20h20" />
+        {/* Ink pad */}
+        <rect x="12" y="40" width="40" height="8" rx="4" fill="white" fillOpacity="0.2" />
+        {/* Stamped impression */}
+        <rect x="16" y="50" width="32" height="8" rx="2" />
+        <path d="M20 54h10M34 54h6" strokeWidth="2" />
+        {/* Spring lines */}
+        <path d="M28 26v6M36 26v6" />
+      </svg>
+    ),
+  },
 ]
 
 function TiltBox({ service }: { service: typeof SERVICES[number] }) {
