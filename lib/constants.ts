@@ -76,7 +76,7 @@ export const WHY_US = [
   },
   {
     icon: '🏆',
-    title: '25 Años de Experiencia',
+    title: '18+ Años de Experiencia',
     description: 'Red de 34 centros en Panamá. La marca de logística más confiable.',
     color: 'mbe-blue',
   },
