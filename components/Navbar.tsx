@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { CONTACT, SERVICES } from '@/lib/constants'
 
@@ -31,11 +32,15 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="bg-mbe-red text-white font-black text-sm px-2 py-1 rounded">MBE</div>
-          <div>
-            <div className="font-bold text-mbe-dark text-sm leading-tight">Mail Boxes Etc.</div>
-            <div className="text-mbe-red text-xs font-semibold leading-tight">Colón</div>
-          </div>
+          <Image
+            src="https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png"
+            alt="Mail Boxes Etc."
+            width={140}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
+          <span className="text-mbe-red font-black text-sm hidden sm:block">Colón</span>
         </Link>
 
         {/* Desktop links */}
