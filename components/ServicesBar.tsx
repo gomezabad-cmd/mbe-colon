@@ -78,12 +78,9 @@ export default function ServicesBar() {
             <Link
               key={service.id}
               href={service.href}
-              className="group flex flex-col items-center justify-center text-center gap-2 bg-mbe-red rounded-2xl p-4 w-[120px] h-[120px] md:w-[130px] md:h-[130px] hover:bg-red-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+              className="flex flex-col items-center justify-center text-center gap-2 bg-mbe-red rounded-2xl p-4 w-[120px] h-[120px] md:w-[130px] md:h-[130px] hover:bg-red-700 shadow-md hover:shadow-lg transition-[transform,background-color,box-shadow] duration-500 ease-in-out hover:rotate-[360deg]"
             >
-              {/* Icon — full 360° spin on hover */}
-              <div className="transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]">
-                {service.icon}
-              </div>
+              {service.icon}
               <span className="text-white text-[10px] md:text-[11px] font-bold leading-tight whitespace-pre-line">
                 {service.label}
               </span>
