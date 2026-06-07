@@ -1,14 +1,39 @@
+import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
 
 const STORES = [
-  { name: 'Amazon', emoji: '📦' },
-  { name: 'eBay', emoji: '🛒' },
-  { name: 'Shein', emoji: '👗' },
-  { name: 'AliExpress', emoji: '🛍️' },
-  { name: 'IKEA', emoji: '🪑' },
-  { name: 'Fashion Nova', emoji: '👠' },
-  { name: 'Walmart', emoji: '🏪' },
-  { name: 'Target', emoji: '🎯' },
+  {
+    name: 'Amazon',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/amazon-logo-removebg-preview-1-300x90.png',
+  },
+  {
+    name: 'eBay',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/ebay_PNG22-removebg-preview-1-300x300.png',
+  },
+  {
+    name: 'Shein',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/Shein-logo-removebg-preview-3-1.png',
+  },
+  {
+    name: 'AliExpress',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/png-transparent-aliexpress-hd-logo__1_-removebg-preview-300x70.png',
+  },
+  {
+    name: 'IKEA',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/Ikea-logo-removebg-preview-1-300x114.png',
+  },
+  {
+    name: 'Fashion Nova',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/Fashion-Nova-Logo-500x281-removebg-preview-1.png',
+  },
+  {
+    name: 'Etsy',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/Etsy_logo.svg-removebg-preview-3-1.png',
+  },
+  {
+    name: 'H&M',
+    logo: 'https://www.mbe-ca.com/wp-content/uploads/2023/06/h-m-logo-0-1.png',
+  },
 ]
 
 export default function USAShoppingSection() {
@@ -52,10 +77,17 @@ export default function USAShoppingSection() {
               {STORES.map(store => (
                 <div
                   key={store.name}
-                  className="bg-white rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white rounded-lg p-3 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow h-16"
                 >
-                  <div className="text-2xl mb-1">{store.emoji}</div>
-                  <div className="text-xs font-semibold text-mbe-dark leading-tight">{store.name}</div>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={store.logo}
+                      alt={store.name}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 25vw, 12vw"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
