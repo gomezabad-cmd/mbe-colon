@@ -10,6 +10,22 @@ export const metadata: Metadata = {
     description: 'Envíos internacionales, compras USA, impresión y carga marítima en Colón, Panamá.',
     type: 'website',
     locale: 'es_PA',
+    url: 'https://mbe-colon.vercel.app',
+    siteName: 'Mail Boxes Etc. Colón',
+    images: [
+      {
+        url: 'https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mail Boxes Etc. Colón — Envíos, Impresión y Logística en Colón, Panamá',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mail Boxes Etc. Colón — Tu centro de envíos y logística',
+    description: 'Envíos internacionales, compras USA, impresión y carga marítima en Colón, Panamá.',
+    images: ['https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png'],
   },
 }
 
