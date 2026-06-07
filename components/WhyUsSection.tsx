@@ -1,4 +1,12 @@
+import Image from 'next/image'
 import { WHY_US } from '@/lib/constants'
+
+const CARD_IMAGES = [
+  'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80', // mapa/ubicación
+  'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80', // delivery/eficiencia
+  'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80',    // seguridad/logística
+  'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80',    // experiencia/negocio
+]
 
 export default function WhyUsSection() {
   return (
@@ -17,18 +25,28 @@ export default function WhyUsSection() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          {WHY_US.map(item => (
+          {WHY_US.map((item, i) => (
             <div
               key={item.title}
-              className={`rounded-xl p-6 border-l-4 ${
-                item.color === 'mbe-red'
-                  ? 'bg-red-50 border-mbe-red'
-                  : 'bg-blue-50 border-mbe-blue'
-              }`}
+              className="group rounded-xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300 bg-white"
             >
-              <div className="text-3xl mb-3">{item.icon}</div>
-              <h3 className="font-bold text-mbe-dark text-sm mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-xs leading-relaxed">{item.description}</p>
+              {/* Image */}
+              <div className="relative h-40 overflow-hidden">
+                <Image
+                  src={CARD_IMAGES[i]}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+                {/* Color tint overlay */}
+                <div className={`absolute inset-0 opacity-30 ${item.color === 'mbe-red' ? 'bg-mbe-red' : 'bg-mbe-blue'}`} />
+              </div>
+              {/* Text */}
+              <div className={`p-4 border-t-4 ${item.color === 'mbe-red' ? 'border-mbe-red' : 'border-mbe-blue'}`}>
+                <h3 className="font-bold text-mbe-dark text-sm mb-1">{item.title}</h3>
+                <p className="text-gray-600 text-xs leading-relaxed">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
