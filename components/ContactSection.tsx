@@ -1,4 +1,26 @@
+import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
+
+const CONTACT_ITEMS = [
+  {
+    icon: 'https://img.icons8.com/3d-fluency/94/map-pin.png',
+    label: 'Dirección',
+    content: CONTACT.address,
+    href: CONTACT.mapsLink,
+  },
+  {
+    icon: 'https://img.icons8.com/3d-fluency/94/phone.png',
+    label: 'Teléfono',
+    content: CONTACT.phone,
+    href: CONTACT.phoneHref,
+  },
+  {
+    icon: 'https://img.icons8.com/3d-fluency/94/clock.png',
+    label: 'Horario',
+    content: null,
+    href: null,
+  },
+]
 
 export default function ContactSection() {
   return (
@@ -6,7 +28,7 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <div className="text-white text-xs font-bold tracking-widest uppercase mb-3 opacity-80">
-            📍 Encuéntranos
+            Encuéntranos
           </div>
           <h2 className="text-white text-3xl md:text-4xl font-black mb-4">
             Visítanos en Colón
@@ -19,29 +41,37 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact info */}
           <div className="space-y-4">
+
+            {/* Dirección */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <span className="text-2xl">📍</span>
+              <Image src="https://img.icons8.com/3d-fluency/94/map-pin.png" alt="Dirección" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Dirección</div>
-                <div className="text-mbe-gray text-sm mt-0.5">{CONTACT.address}</div>
+                <a href={CONTACT.mapsLink} target="_blank" rel="noopener noreferrer" className="text-mbe-gray text-sm mt-0.5 hover:underline block">{CONTACT.address}</a>
               </div>
             </div>
+
+            {/* Teléfono */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <span className="text-2xl">📞</span>
+              <Image src="https://img.icons8.com/3d-fluency/94/phone.png" alt="Teléfono" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Teléfono</div>
                 <a href={CONTACT.phoneHref} className="text-mbe-blue text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.phone}</a>
               </div>
             </div>
+
+            {/* WhatsApp — logo real */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <span className="text-2xl">💬</span>
+              <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">WhatsApp</div>
                 <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-green-600 text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.whatsapp}</a>
               </div>
             </div>
+
+            {/* Horario */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <span className="text-2xl">🕐</span>
+              <Image src="https://img.icons8.com/3d-fluency/94/clock.png" alt="Horario" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Horario</div>
                 <div className="text-mbe-gray text-sm mt-0.5">
@@ -51,13 +81,15 @@ export default function ContactSection() {
               </div>
             </div>
 
+            {/* WhatsApp CTA */}
             <a
               href={CONTACT.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-green-500 text-white font-black text-center py-4 rounded-xl text-lg hover:bg-green-600 transition-colors"
+              className="flex items-center justify-center gap-3 bg-green-500 text-white font-black text-center py-4 rounded-xl text-lg hover:bg-green-600 transition-colors"
             >
-              💬 Escríbenos por WhatsApp
+              <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={28} height={28} />
+              Escríbenos por WhatsApp
             </a>
           </div>
 

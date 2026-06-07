@@ -54,7 +54,7 @@ export default function WhyUsSection() {
         {/* Stats bar */}
         <div className="bg-mbe-dark rounded-2xl p-8 grid grid-cols-3 gap-6 text-center">
           <div>
-            <div className="text-mbe-red font-black text-4xl mb-1">25+</div>
+            <div className="text-mbe-red font-black text-4xl mb-1">18+</div>
             <div className="text-gray-400 text-sm">Años de experiencia</div>
           </div>
           <div>
