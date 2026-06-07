@@ -21,7 +21,8 @@ export default function HeroBanner() {
   const slide = HERO_SLIDES[current]
 
   return (
-    <section className="relative h-[500px] md:h-[580px] overflow-hidden bg-mbe-dark">
+    {/* aspect-ratio matches native 1600×780 — same as MBE master site */}
+    <section className="relative w-full overflow-hidden bg-mbe-dark" style={{ aspectRatio: '1600/780', maxHeight: '780px' }}>
       {/* Background images — one per slide, cross-fade */}
       {SLIDE_IMAGES.map((src, i) => (
         <div
@@ -32,7 +33,7 @@ export default function HeroBanner() {
             src={src}
             alt={`Banner ${i + 1}`}
             fill
-            className="object-cover object-center"
+            className="object-fill"
             priority={i === 0}
             sizes="100vw"
           />
