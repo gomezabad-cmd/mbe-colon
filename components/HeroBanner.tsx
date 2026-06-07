@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { HERO_SLIDES } from '@/lib/constants'
 
@@ -21,21 +20,22 @@ export default function HeroBanner() {
   const slide = HERO_SLIDES[current]
 
   return (
-    {/* aspect-ratio matches native 1600×780 — same as MBE master site */}
-    <section className="relative w-full overflow-hidden bg-mbe-dark" style={{ aspectRatio: '1600/780', maxHeight: '780px' }}>
-      {/* Background images — one per slide, cross-fade */}
+    <section className="relative w-full overflow-hidden bg-mbe-dark">
+      {/* Aspect-ratio spacer: 780/1600 = 48.75% — images are 1600×780px */}
+      <div style={{ paddingTop: '48.75%' }} />
+
+      {/* Background images — plain <img> so the browser respects object-fit:fill at full res */}
       {SLIDE_IMAGES.map((src, i) => (
         <div
           key={src}
           className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={src}
             alt={`Banner ${i + 1}`}
-            fill
-            className="object-fill"
-            priority={i === 0}
-            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'fill', display: 'block' }}
+            loading={i === 0 ? 'eager' : 'lazy'}
           />
         </div>
       ))}
