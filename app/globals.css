@@ -14,12 +14,12 @@
   box-sizing: border-box;
 }
 
-/* ServicesBar — red box spin on hover */
+/* ServicesBar — 3D tilt on mouse move (matches MBE master site) */
 .service-box {
-  transition: transform 0.55s ease-in-out, background-color 0.3s, box-shadow 0.3s;
-}
-.service-box:hover {
-  transform: rotate(360deg);
+  transition: background-color 0.3s, border 0.3s, border-radius 0.3s,
+              box-shadow 0.3s, transform 0.4s;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 html {
