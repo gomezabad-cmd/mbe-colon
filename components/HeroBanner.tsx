@@ -42,8 +42,8 @@ export default function HeroBanner() {
       {/* Dark overlay so text is readable */}
       <div className="absolute inset-0 bg-black/55" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 h-full flex items-center">
+      {/* Content — must be absolute so it doesn't add height to the section */}
+      <div className="absolute inset-0 z-10 max-w-6xl mx-auto px-4 flex items-center">
         <div className="max-w-xl">
           <div className="text-mbe-red text-xs font-bold tracking-widest uppercase mb-3 opacity-90">
             {slide.eyebrow}
