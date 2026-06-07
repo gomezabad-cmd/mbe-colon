@@ -5,6 +5,7 @@ import UrgencySection from '@/components/UrgencySection'
 import USAShoppingSection from '@/components/USAShoppingSection'
 import PymeSection from '@/components/PymeSection'
 import WhyUsSection from '@/components/WhyUsSection'
+import BlogPreviewSection from '@/components/BlogPreviewSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
@@ -20,6 +21,7 @@ export default function Home() {
         <USAShoppingSection />
         <PymeSection />
         <WhyUsSection />
+        <BlogPreviewSection />
         <ContactSection />
       </main>
       <Footer />
