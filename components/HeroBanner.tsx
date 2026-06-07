@@ -5,7 +5,8 @@ import { HERO_SLIDES } from '@/lib/constants'
 
 const SLIDE_IMAGES = [
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-4-1.jpg',
-  'https://www.mbe-ca.com/wp-content/uploads/2025/10/BANNER-1-1-1.jpg',
+  // Casillero Miami / entregas rápidas — repartidor con paquetes, entrega express
+  'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600&h=780&fit=crop&q=80',
   // Impresión profesional — tarjetas, brochures y banners (foto real)
   '/impresion-banner.jpg',
   // Bordados personalizados — máquina bordadora industrial (foto real)
