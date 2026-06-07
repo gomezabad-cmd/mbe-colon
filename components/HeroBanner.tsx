@@ -71,14 +71,6 @@ export default function HeroBanner() {
           </div>
         </div>
 
-        {/* Carrier badges — right side */}
-        <div className="hidden md:flex flex-col gap-3 ml-auto">
-          {['DHL', 'FedEx', 'UPS', 'COPA'].map(c => (
-            <div key={c} className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 text-white font-black text-sm px-4 py-2 rounded text-center min-w-[80px]">
-              {c}
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Arrows */}
