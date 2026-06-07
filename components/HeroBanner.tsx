@@ -6,7 +6,8 @@ import { HERO_SLIDES } from '@/lib/constants'
 const SLIDE_IMAGES = [
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-4-1.jpg',
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/BANNER-1-1-1.jpg',
-  'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-2-1.jpg',
+  // Impresión profesional — impresora offset / material impreso
+  'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1600&h=780&fit=crop&q=80',
   // Bordados personalizados — máquina bordadora industrial (foto real)
   '/bordados-banner.jpg',
   // Sellos automáticos — colección COLOP (foto real)
