@@ -6,8 +6,8 @@ const CARD_IMAGES = [
   'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80',
   // Eficiencia total — repartidor entregando caja a cliente
   'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
-  // Seguridad garantizada — candado / seguridad sobre caja sellada
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+  // Seguridad garantizada — sello 100% garantizado
+  '/seguridad-garantizada.png',
   // 18+ años de experiencia — equipo profesional de logística
   'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
 ]
@@ -35,16 +35,18 @@ export default function WhyUsSection() {
               className="group rounded-xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300 bg-white"
             >
               {/* Image */}
-              <div className="relative h-40 overflow-hidden">
+              <div className={`relative h-40 overflow-hidden flex items-center justify-center ${i === 2 ? 'bg-gray-900' : ''}`}>
                 <Image
                   src={CARD_IMAGES[i]}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className={`transition-transform duration-500 ${i === 2 ? 'object-contain p-3 group-hover:scale-105' : 'object-cover group-hover:scale-110'}`}
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
-                {/* Color tint overlay */}
-                <div className={`absolute inset-0 opacity-30 ${item.color === 'mbe-red' ? 'bg-mbe-red' : 'bg-mbe-blue'}`} />
+                {/* Color tint overlay — skip for badge image */}
+                {i !== 2 && (
+                  <div className={`absolute inset-0 opacity-30 ${item.color === 'mbe-red' ? 'bg-mbe-red' : 'bg-mbe-blue'}`} />
+                )}
               </div>
               {/* Text */}
               <div className={`p-4 border-t-4 ${item.color === 'mbe-red' ? 'border-mbe-red' : 'border-mbe-blue'}`}>
