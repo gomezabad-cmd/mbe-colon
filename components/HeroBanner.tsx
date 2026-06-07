@@ -7,10 +7,10 @@ const SLIDE_IMAGES = [
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-4-1.jpg',
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/BANNER-1-1-1.jpg',
   'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-2-1.jpg',
-  // Bordados personalizados — equipo con uniformes bordados
+  // Bordados personalizados — taller de bordado / uniformes
   'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=780&fit=crop&q=80',
-  // Sellos automáticos — sello sobre documento oficial
-  'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=1600&h=780&fit=crop&q=80',
+  // Sellos automáticos — sello oficial presionado sobre documento de negocios
+  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=780&fit=crop&q=80',
 ]
 
 export default function HeroBanner() {

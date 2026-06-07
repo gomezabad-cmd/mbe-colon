@@ -91,20 +91,22 @@ const SERVICES = [
     label: 'Sellos\nAutomáticos',
     href: '/servicios/sellos',
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-14 h-14">
-        {/* Stamp body */}
-        <rect x="18" y="6" width="28" height="20" rx="3" />
-        {/* Handle */}
-        <rect x="26" y="4" width="12" height="6" rx="2" />
-        {/* Mechanism lines */}
-        <path d="M22 14h20M22 20h20" />
-        {/* Ink pad */}
-        <rect x="12" y="40" width="40" height="8" rx="4" fill="white" fillOpacity="0.2" />
-        {/* Stamped impression */}
-        <rect x="16" y="50" width="32" height="8" rx="2" />
-        <path d="M20 54h10M34 54h6" strokeWidth="2" />
-        {/* Spring lines */}
-        <path d="M28 26v6M36 26v6" />
+      <svg viewBox="0 0 64 64" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-14 h-14">
+        {/* Top cap (rounded body) */}
+        <rect x="20" y="4" width="24" height="14" rx="5" fill="white" fillOpacity="0.15" stroke="white" strokeWidth="2.5" />
+        {/* Grip ridges on body */}
+        <path d="M24 8h16M24 12h16" strokeWidth="1.5" strokeOpacity="0.7" />
+        {/* Red button on side */}
+        <circle cx="20" cy="11" r="3" fill="white" fillOpacity="0.9" stroke="none" />
+        {/* Spring / mechanism — compressed lines */}
+        <path d="M26 18l-2 3h4l-2 3h4l-2 3" strokeWidth="2" />
+        <path d="M38 18l-2 3h4l-2 3h4l-2 3" strokeWidth="2" />
+        {/* Open base frame (where die sits) */}
+        <rect x="14" y="36" width="36" height="22" rx="2" fill="none" stroke="white" strokeWidth="2.5" />
+        {/* Inner die plate */}
+        <rect x="18" y="40" width="28" height="14" rx="1" fill="white" fillOpacity="0.15" />
+        {/* Text lines on die */}
+        <path d="M22 44h20M22 48h14" strokeWidth="1.5" />
       </svg>
     ),
   },
