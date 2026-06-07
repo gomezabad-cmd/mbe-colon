@@ -20,7 +20,10 @@ export default function HeroBanner() {
   const slide = HERO_SLIDES[current]
 
   return (
-    <section className="relative w-full overflow-hidden bg-mbe-dark">
+    <section
+      className="relative w-full overflow-hidden bg-mbe-dark"
+      style={{ maxHeight: 'calc(100vh - 88px)' }}
+    >
       {/* Aspect-ratio spacer: 780/1600 = 48.75% — images are 1600×780px */}
       <div style={{ paddingTop: '48.75%' }} />
 
