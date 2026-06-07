@@ -8,7 +8,7 @@ export default function UrgencySection() {
           ⚡ Rapidez garantizada
         </div>
         <h2 className="text-white text-4xl md:text-5xl font-black mb-4 leading-tight">
-          Recibe tus compras en<br />
+          Envíos express desde Colón, Panamá en<br />
           <span className="text-yellow-300">24 a 48 horas hábiles</span>
         </h2>
         <p className="text-white text-lg opacity-90 mb-8 max-w-2xl mx-auto">

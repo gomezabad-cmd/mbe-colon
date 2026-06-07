@@ -47,12 +47,12 @@ export default function USAShoppingSection() {
               🇺🇸 Casillero Miami
             </div>
             <h2 className="text-mbe-dark text-3xl md:text-4xl font-black leading-tight mb-4">
-              ¡Compra como si<br />
-              <span className="text-mbe-red">vivieras en USA</span><br />
-              y recíbelo en Colón!
+              Casillero Miami en Colón:<br />
+              <span className="text-mbe-red">compra en USA</span><br />
+              y recíbelo en Panamá.
             </h2>
             <p className="text-mbe-gray text-base mb-6 leading-relaxed">
-              Con tu casillero MBE en Miami, tienes una dirección de envío en Estados Unidos. Compra en cualquier tienda online y nosotros te lo traemos directamente a Colón.
+              Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos. Compra en cualquier tienda online de USA y nosotros gestionamos el traslado directamente a Colón, Panamá — incluyendo trámites de aduana.
             </p>
             <ul className="space-y-2 mb-8 text-sm text-mbe-gray">
               <li className="flex items-center gap-2">✅ Dirección en Miami incluida</li>

@@ -1,13 +1,16 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
-export const metadata = { title: 'Envíos Internacionales | MBE Colón', description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.' }
+export const metadata = {
+  title: 'Envíos Internacionales con DHL, FedEx y UPS | MBE Colón, Panamá',
+  description: 'Envía paquetes a todo el mundo desde Colón, Panamá con DHL, FedEx y UPS. Tracking en tiempo real, embalaje profesional y gestión aduanera incluidos. Plaza Millenium F007.',
+}
 
 export default function EnviosPage() {
   return (
     <ServicePageTemplate
       icon="✈️"
       title="Envíos Internacionales"
-      description="Enviamos tus paquetes a cualquier parte del mundo con los mejores operadores logísticos: DHL, FedEx y UPS."
+      description="Enviamos tus paquetes a cualquier parte del mundo desde Colón, Panamá con DHL, FedEx y UPS. Cotización inmediata, embalaje profesional y seguimiento en tiempo real para empresas y personas en la provincia de Colón."
       benefits={[
         'Cobertura mundial con DHL, FedEx y UPS',
         'Seguimiento en tiempo real de tu paquete',

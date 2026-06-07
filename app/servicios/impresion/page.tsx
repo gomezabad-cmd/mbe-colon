@@ -1,6 +1,9 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
-export const metadata = { title: 'Impresión Profesional | MBE Colón', description: 'Impresión profesional de tarjetas, brochures, banners y más en Colón.' }
+export const metadata = {
+  title: 'Impresión Profesional de Tarjetas, Brochures y Banners | MBE Colón, Panamá',
+  description: 'Impresión profesional en Colón, Panamá: tarjetas de presentación, brochures, banners, folletos y papelería corporativa. Entrega rápida y diseño gráfico disponible. MBE Colón.',
+}
 
 export default function ImpresionPage() {
   return (

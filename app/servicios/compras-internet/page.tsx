@@ -1,13 +1,16 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
-export const metadata = { title: 'Compras por Internet | MBE Colón', description: 'Casillero Miami para compras en tiendas de USA. Recibe en Colón.' }
+export const metadata = {
+  title: 'Compras por Internet desde USA | Casillero Miami — MBE Colón, Panamá',
+  description: 'Compra en Amazon, eBay, Shein y cualquier tienda de USA con tu casillero Miami MBE. Recibe tus pedidos en Colón, Panamá sin complicaciones. Registro gratuito.',
+}
 
 export default function ComprasPage() {
   return (
     <ServicePageTemplate
       icon="🛒"
       title="Compras por Internet"
-      description="Tu casillero en Miami para comprar en Amazon, eBay, Shein y cualquier tienda de USA y recibir en Colón."
+      description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con tramitación de aduana incluida."
       benefits={[
         'Dirección de envío en Miami incluida',
         'Consolidación de múltiples paquetes',

@@ -21,10 +21,10 @@ export default function WhyUsSection() {
             🏆 Nuestras Ventajas
           </div>
           <h2 className="text-mbe-dark text-3xl md:text-4xl font-black leading-tight mb-4">
-            ¿Por qué elegir <span className="text-mbe-red">MBE Colón?</span>
+            ¿Por qué elegir <span className="text-mbe-red">MBE Colón</span> en Panamá?
           </h2>
           <p className="text-gray-600 text-base max-w-2xl mx-auto">
-            Somos parte de la red internacional Mail Boxes Etc., con más de 25 años de experiencia en logística y servicios de envío.
+            Somos parte de la red internacional Mail Boxes Etc., con más de 18 años de experiencia en envíos, logística y servicios de paquetería en Colón y Panamá.
           </p>
         </div>
 

@@ -3,11 +3,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Mail Boxes Etc. Colón | Envíos, Impresión y Casillero en Colón, Panamá',
-  description: 'Centro MBE en Colón, Panamá. Envíos internacionales con DHL, FedEx y UPS. Compras desde USA, carga marítima, impresión profesional y casillero Miami. Plaza Millenium F007.',
-  keywords: 'MBE Colón, Mail Boxes Etc Colón, envíos Colón Panamá, casillero Miami Colón, impresión Colón, carga marítima Panamá',
+  description: 'Centro MBE en Colón, Panamá. Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión profesional, bordados y sellos. Plaza Millenium F007.',
+  keywords: 'MBE Colón, Mail Boxes Etc Colón, envíos Colón Panamá, envíos internacionales Panamá, casillero Miami Panamá, casillero Miami Colón, carga marítima Panamá, impresión Colón Panamá, bordados uniformes Panamá, sellos automáticos Panamá, compras internet Colón, DHL Colón Panamá, FedEx Panamá, UPS Panamá, paquetería Colón, logística provincia de Colón, Zona Libre Colón logística',
   openGraph: {
-    title: 'Mail Boxes Etc. Colón — Tu centro de envíos y logística',
-    description: 'Envíos internacionales, compras USA, impresión y carga marítima en Colón, Panamá.',
+    title: 'Mail Boxes Etc. Colón — Envíos, Casillero Miami e Impresión en Colón, Panamá',
+    description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos personalizados en Colón, Panamá. Plaza Millenium F007.',
     type: 'website',
     locale: 'es_PA',
     url: 'https://mbe-colon.vercel.app',
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
         url: 'https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png',
         width: 1200,
         height: 630,
-        alt: 'Mail Boxes Etc. Colón — Envíos, Impresión y Logística en Colón, Panamá',
+        alt: 'Mail Boxes Etc. Colón — Envíos Internacionales, Casillero Miami e Impresión en Colón, Panamá',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mail Boxes Etc. Colón — Tu centro de envíos y logística',
-    description: 'Envíos internacionales, compras USA, impresión y carga marítima en Colón, Panamá.',
+    title: 'Mail Boxes Etc. Colón — Envíos, Casillero Miami e Impresión en Colón, Panamá',
+    description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos en Colón, Panamá.',
     images: ['https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png'],
   },
 }
@@ -40,16 +40,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Mail Boxes Etc. Colón",
+              "description": "Centro de envíos internacionales, casillero Miami, carga marítima, impresión profesional, bordados personalizados y sellos automáticos en Colón, Panamá.",
+              "image": "https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Plaza Millenium Local F007",
                 "addressLocality": "Colón",
+                "addressRegion": "Colón",
                 "addressCountry": "PA"
               },
+              "hasMap": "https://maps.google.com/?q=Plaza+Millenium+Colon+Panama",
               "telephone": "+507-474-5548",
               "email": "mbecolon@gmail.com",
               "openingHours": ["Mo-Fr 08:00-17:00", "Sa 09:00-13:00"],
-              "url": "https://mbe-colon.vercel.app"
+              "priceRange": "$$",
+              "url": "https://mbe-colon.vercel.app",
+              "sameAs": [
+                "https://www.mbe-ca.com"
+              ]
             })
           }}
         />

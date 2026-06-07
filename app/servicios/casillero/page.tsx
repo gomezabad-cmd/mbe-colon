@@ -1,13 +1,16 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
-export const metadata = { title: 'Casillero Miami | MBE Colón', description: 'Casillero postal en Miami para recibir paquetes de USA en Colón, Panamá.' }
+export const metadata = {
+  title: 'Casillero Miami Gratis para Recibir Paquetes de USA | MBE Colón, Panamá',
+  description: 'Activa tu casillero Miami MBE gratis y recibe paquetes de cualquier tienda de USA directamente en Colón, Panamá. Sin cuota mensual, tramitación aduanera y notificaciones por WhatsApp.',
+}
 
 export default function CasilleroPage() {
   return (
     <ServicePageTemplate
       icon="📬"
       title="Casillero Miami"
-      description="Tu dirección personal en Miami para recibir paquetes de cualquier tienda de EE.UU. sin complicaciones."
+      description="Activa gratis tu casillero Miami MBE Colón y obtén tu dirección personal en Estados Unidos. Recibe paquetes de Amazon, eBay, Shein y cualquier tienda de USA directamente en Colón, Panamá. Sin cuota mensual, con tramitación de aduana y notificación por WhatsApp incluidos."
       benefits={[
         'Dirección en Miami 100% funcional',
         'Sin cuota mensual de activación',

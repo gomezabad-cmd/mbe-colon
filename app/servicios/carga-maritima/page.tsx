@@ -1,13 +1,16 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
-export const metadata = { title: 'Carga Marítima | MBE Colón', description: 'Carga marítima y consolidación de contenedores desde Colón, Panamá.' }
+export const metadata = {
+  title: 'Carga Marítima Miami–Panamá y China–Panamá | MBE Colón',
+  description: 'Servicio de carga marítima y consolidación de contenedores en Panamá. Rutas Miami–Colón y China–Panamá. Tarifas por volumen, gestión documental y seguro de carga. MBE Colón.',
+}
 
 export default function CargaPage() {
   return (
     <ServicePageTemplate
       icon="🚢"
       title="Carga Marítima"
-      description="Soluciones de carga marítima y consolidación para enviar grandes volúmenes a precios competitivos."
+      description="Servicio especializado de carga marítima para empresas en Colón y Panamá. Rutas principales Miami–Panamá y China–Panamá con contenedores completos y consolidados, gestión documental completa y tarifas preferenciales por volumen."
       benefits={[
         'Contenedores completos y consolidados',
         'Rutas principales desde y hacia Panamá',

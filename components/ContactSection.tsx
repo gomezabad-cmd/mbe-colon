@@ -31,10 +31,10 @@ export default function ContactSection() {
             Encuéntranos
           </div>
           <h2 className="text-white text-3xl md:text-4xl font-black mb-4">
-            Visítanos en Colón
+            Visita MBE Colón en Plaza Millenium
           </h2>
           <p className="text-blue-100 text-base max-w-xl mx-auto">
-            Estamos en el corazón comercial de Colón, listos para atenderte.
+            Mail Boxes Etc. Colón — Local F007, Plaza Millenium, Colón, Panamá. Atención personalizada para envíos, casillero, impresión y más.
           </p>
         </div>
 

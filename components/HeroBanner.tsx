@@ -40,7 +40,13 @@ export default function HeroBanner() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={src}
-            alt={`Banner ${i + 1}`}
+            alt={[
+              'Envíos internacionales con DHL, FedEx y UPS en Colón, Panamá — Mail Boxes Etc.',
+              'Casillero Miami en Colón, Panamá — recibe compras de Amazon y tiendas de USA',
+              'Impresión profesional de tarjetas y banners en Colón, Panamá — MBE Colón',
+              'Bordados personalizados en uniformes y hoodies para empresas en Panamá — MBE Colón',
+              'Sellos automáticos personalizados para empresas en Colón, Panamá — MBE Colón',
+            ][i] ?? `MBE Colón — servicio ${i + 1}`}
             style={{ width: '100%', height: '100%', objectFit: 'fill', display: 'block' }}
             loading={i === 0 ? 'eager' : 'lazy'}
           />

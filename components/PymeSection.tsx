@@ -72,10 +72,10 @@ export default function PymeSection() {
             🏢 Servicios Empresariales
           </div>
           <h2 className="text-white text-3xl md:text-4xl font-black leading-tight mb-4">
-            ¡Lleva tu PYME a <span className="text-mbe-red">otro nivel!</span>
+            Soluciones logísticas para <span className="text-mbe-red">empresas en Colón</span>
           </h2>
           <p className="text-gray-400 text-base max-w-2xl mx-auto">
-            Soluciones logísticas profesionales para empresas en Colón. Optimiza costos de envío y mejora la satisfacción de tus clientes.
+            Servicios logísticos profesionales para PYMEs y empresas en Colón y la provincia de Colón, Panamá. Optimiza tus costos de envío internacional, carga marítima e importación con un equipo dedicado.
           </p>
         </div>
 
