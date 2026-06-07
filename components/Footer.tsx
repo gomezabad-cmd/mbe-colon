@@ -15,7 +15,7 @@ export default function Footer() {
               alt="Mail Boxes Etc. Panamá"
               width={150}
               height={52}
-              className="object-contain brightness-0 invert"
+              className="object-contain"
             />
             <div className="text-mbe-red text-sm font-bold mt-1">Colón</div>
           </div>

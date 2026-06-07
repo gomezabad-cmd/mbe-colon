@@ -6,8 +6,8 @@ const CARD_IMAGES = [
   'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80',
   // Eficiencia total — repartidor entregando caja a cliente
   'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
-  // Seguridad garantizada — embalando caja con cinta adhesiva
-  'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80',
+  // Seguridad garantizada — candado / seguridad sobre caja sellada
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
   // 18+ años de experiencia — equipo profesional de logística
   'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
 ]
