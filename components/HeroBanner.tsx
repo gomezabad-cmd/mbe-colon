@@ -1,7 +1,14 @@
 'use client'
 
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { HERO_SLIDES } from '@/lib/constants'
+
+const SLIDE_IMAGES = [
+  'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-4-1.jpg',
+  'https://www.mbe-ca.com/wp-content/uploads/2025/10/BANNER-1-1-1.jpg',
+  'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-2-1.jpg',
+]
 
 export default function HeroBanner() {
   const [current, setCurrent] = useState(0)
@@ -15,15 +22,24 @@ export default function HeroBanner() {
 
   return (
     <section className="relative h-[500px] md:h-[580px] overflow-hidden bg-mbe-dark">
-      {/* Background gradient layers per slide */}
-      <div className="absolute inset-0 transition-all duration-700">
-        {current === 0 && <div className="absolute inset-0 bg-gradient-to-br from-mbe-dark via-gray-800 to-mbe-red opacity-90" />}
-        {current === 1 && <div className="absolute inset-0 bg-gradient-to-br from-mbe-red via-red-800 to-mbe-dark opacity-90" />}
-        {current === 2 && <div className="absolute inset-0 bg-gradient-to-br from-mbe-gray via-gray-600 to-mbe-dark opacity-90" />}
-        {/* Decorative circles */}
-        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white opacity-5" />
-        <div className="absolute -bottom-10 -left-10 w-60 h-60 rounded-full bg-white opacity-5" />
-      </div>
+      {/* Background images — one per slide, cross-fade */}
+      {SLIDE_IMAGES.map((src, i) => (
+        <div
+          key={src}
+          className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <Image
+            src={src}
+            alt={`Banner ${i + 1}`}
+            fill
+            className="object-cover object-center"
+            priority={i === 0}
+            sizes="100vw"
+          />
+        </div>
+      ))}
+      {/* Dark overlay so text is readable */}
+      <div className="absolute inset-0 bg-black/55" />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 h-full flex items-center">
