@@ -1,0 +1,113 @@
+export const CONTACT = {
+  name: 'Mail Boxes Etc. Colón',
+  shortName: 'MBE Colón',
+  address: 'Plaza Millenium Local F007, Colón, Panamá',
+  phone: '474-5548',
+  phoneHref: 'tel:+5074745548',
+  whatsapp: '6949-5100',
+  whatsappHref: 'https://wa.me/50769495100',
+  email: 'mbecolon@gmail.com',
+  emailHref: 'mailto:mbecolon@gmail.com',
+  hours: {
+    weekdays: 'Lunes a Viernes: 8:00 AM – 5:00 PM',
+    saturday: 'Sábado: 9:00 AM – 1:00 PM',
+    sunday: 'Domingo: Cerrado',
+  },
+  mapsEmbed: 'https://maps.google.com/maps?q=Plaza+Millenium+Colon+Panama&output=embed',
+  mapsLink: 'https://maps.google.com/?q=Plaza+Millenium+Colon+Panama',
+}
+
+export const SERVICES = [
+  {
+    id: 'envios-internacionales',
+    icon: '✈️',
+    title: 'Envíos Internacionales',
+    description: 'Enviamos tus paquetes a todo el mundo con DHL, FedEx y UPS.',
+    href: '/servicios/envios-internacionales',
+  },
+  {
+    id: 'compras-internet',
+    icon: '🛒',
+    title: 'Compras por Internet',
+    description: 'Compra en Amazon, eBay, Shein y recíbelo aquí en Colón.',
+    href: '/servicios/compras-internet',
+  },
+  {
+    id: 'carga-maritima',
+    icon: '🚢',
+    title: 'Carga Marítima',
+    description: 'Carga marítima Miami–Panamá y China–Panamá al mejor precio.',
+    href: '/servicios/carga-maritima',
+  },
+  {
+    id: 'impresion',
+    icon: '🖨️',
+    title: 'Impresión Profesional',
+    description: 'Tarjetas, brochures, banners, fotocopias y más.',
+    href: '/servicios/impresion',
+  },
+  {
+    id: 'casillero',
+    icon: '📬',
+    title: 'Casillero Miami',
+    description: 'Tu dirección en Miami para recibir compras de USA.',
+    href: '/servicios/casillero',
+  },
+]
+
+export const WHY_US = [
+  {
+    icon: '📍',
+    title: 'Ubicación Estratégica',
+    description: 'En el corazón de Colón, Plaza Millenium — fácil acceso para toda la provincia.',
+    color: 'mbe-red',
+  },
+  {
+    icon: '⚡',
+    title: 'Eficiencia Total',
+    description: 'Trabajamos con DHL, FedEx y UPS para garantizar entregas puntuales.',
+    color: 'mbe-blue',
+  },
+  {
+    icon: '🔒',
+    title: 'Seguridad Garantizada',
+    description: 'Embalaje profesional y seguro incluido en todos tus envíos.',
+    color: 'mbe-red',
+  },
+  {
+    icon: '🏆',
+    title: '25 Años de Experiencia',
+    description: 'Red de 34 centros en Panamá. La marca de logística más confiable.',
+    color: 'mbe-blue',
+  },
+]
+
+export const HERO_SLIDES = [
+  {
+    id: 1,
+    eyebrow: 'Envíos a todo el mundo',
+    title: 'Tu paquete llega\nseguro y a tiempo.',
+    description: 'Con DHL, FedEx y UPS. Tracking incluido.',
+    cta: { text: 'Ver tarifas', href: '/servicios/envios-internacionales' },
+    ctaSecondary: { text: 'Contáctanos', href: '#contacto' },
+    bgClass: 'bg-mbe-dark',
+  },
+  {
+    id: 2,
+    eyebrow: 'Compra en USA desde Colón',
+    title: '¡Recibe tus compras\nen 24-48 horas!',
+    description: 'Amazon, eBay, Shein y más — directo a tu puerta.',
+    cta: { text: 'Abre tu casillero gratis', href: '/servicios/casillero' },
+    ctaSecondary: { text: 'Cómo funciona', href: '/servicios/compras-internet' },
+    bgClass: 'bg-mbe-red',
+  },
+  {
+    id: 3,
+    eyebrow: 'Impresión profesional',
+    title: 'Tarjetas, brochures\ny banners de calidad.',
+    description: 'Resultados profesionales para tu negocio.',
+    cta: { text: 'Solicitar cotización', href: '#contacto' },
+    ctaSecondary: { text: 'Ver servicios', href: '/servicios/impresion' },
+    bgClass: 'bg-mbe-gray',
+  },
+]
