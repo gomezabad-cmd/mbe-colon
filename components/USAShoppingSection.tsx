@@ -56,7 +56,7 @@ export default function USAShoppingSection() {
             </p>
             <ul className="space-y-2 mb-8 text-sm text-mbe-gray">
               <li className="flex items-center gap-2">✅ Dirección en Miami incluida</li>
-              <li className="flex items-center gap-2">✅ Consolidación de paquetes</li>
+              <li className="flex items-center gap-2">✅ Trazabilidad en tiempo real</li>
               <li className="flex items-center gap-2">✅ Tramitación de aduana</li>
               <li className="flex items-center gap-2">✅ Notificación por WhatsApp cuando llega</li>
             </ul>
