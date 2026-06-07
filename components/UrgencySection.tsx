@@ -8,11 +8,11 @@ export default function UrgencySection() {
           ⚡ Rapidez garantizada
         </div>
         <h2 className="text-white text-4xl md:text-5xl font-black mb-4 leading-tight">
-          Envíos express desde Colón, Panamá en<br />
-          <span className="text-yellow-300">24 a 48 horas hábiles</span>
+          Enviamos a cualquier parte del mundo<br />
+          <span className="text-yellow-300">rápido y seguro</span>
         </h2>
         <p className="text-white text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-          Trabajamos con los principales operadores logísticos del mundo para garantizarte los mejores tiempos de entrega en Colón y Panamá.
+          Trabajamos con los principales operadores logísticos del mundo para garantizarte los mejores tiempos de entrega.
         </p>
 
         {/* Carrier badges */}
