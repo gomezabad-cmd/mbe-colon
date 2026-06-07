@@ -56,6 +56,50 @@ export default function Footer() {
               <span className="mt-0.5">📍</span>
               <span>{CONTACT.address}</span>
             </li>
+            {/* Redes sociales */}
+            <li className="flex items-center gap-3 pt-1">
+              <a
+                href="https://www.instagram.com/mbecolon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram MBE Colón"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                {/* Instagram logo oficial */}
+                <svg viewBox="0 0 48 48" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="30%" cy="107%" r="150%">
+                      <stop offset="0%" stopColor="#fdf497"/>
+                      <stop offset="5%" stopColor="#fdf497"/>
+                      <stop offset="45%" stopColor="#fd5949"/>
+                      <stop offset="60%" stopColor="#d6249f"/>
+                      <stop offset="90%" stopColor="#285AEB"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="48" height="48" rx="12" fill="url(#ig-grad)"/>
+                  <circle cx="24" cy="24" r="9" fill="none" stroke="white" strokeWidth="3"/>
+                  <circle cx="34.5" cy="13.5" r="2.2" fill="white"/>
+                  <rect x="6" y="6" width="36" height="36" rx="10" fill="none" stroke="white" strokeWidth="2.5"/>
+                </svg>
+                <span className="text-gray-400 text-xs hover:text-white transition-colors">@mbecolon</span>
+              </a>
+              <a
+                href="https://www.tiktok.com/@mbecolon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok MBE Colón"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                {/* TikTok logo oficial */}
+                <svg viewBox="0 0 48 48" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="#010101"/>
+                  <path d="M34 16.5a8.3 8.3 0 0 1-5-1.7v11.5a8.5 8.5 0 1 1-8.5-8.5h.9v4.1h-.9a4.4 4.4 0 1 0 4.4 4.4V10h4a8.3 8.3 0 0 0 5.1 6.1v.4z" fill="white"/>
+                  <path d="M36 14.8a8.3 8.3 0 0 1-5-1.7v.1a8.3 8.3 0 0 0 5 1.6z" fill="#69C9D0"/>
+                  <path d="M34 16.5a8.3 8.3 0 0 0 2-.3v-.1a8.3 8.3 0 0 1-2 .4z" fill="#EE1D52"/>
+                </svg>
+                <span className="text-gray-400 text-xs hover:text-white transition-colors">@mbecolon</span>
+              </a>
+            </li>
             <li>
               <a href={CONTACT.phoneHref} className="flex items-center gap-2 hover:text-white transition-colors">
                 <span>📞</span> {CONTACT.phone}
