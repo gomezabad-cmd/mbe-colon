@@ -61,7 +61,7 @@ export default function PymeSection() {
   const href = `${CONTACT.whatsappHref}&text=${msg}`
 
   return (
-    <section id="nosotros" className="bg-mbe-dark py-20 px-4 overflow-hidden relative">
+    <section className="bg-mbe-dark py-20 px-4 overflow-hidden relative">
       {/* Decorative background glow */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-mbe-red opacity-10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-mbe-blue opacity-10 rounded-full blur-3xl pointer-events-none" />
