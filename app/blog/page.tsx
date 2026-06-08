@@ -1,107 +1,107 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
-import { getPosts, formatDate, stripHtml, featuredImage } from '@/lib/wordpress'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog | Mail Boxes Etc. Colón — Consejos de Envíos, Logística y Más',
-  description: 'Artículos, consejos y novedades sobre envíos internacionales, casillero Miami, impresión y logística para empresas en Colón, Panamá.',
+  title: 'Blog | MBE Colón — Consejos de Envíos, Casillero y Logística',
+  description: 'Artículos, consejos y guías sobre envíos internacionales, casillero Miami, aduana y logística para empresas en Colón, Panamá.',
   openGraph: {
     title: 'Blog MBE Colón — Consejos de Envíos y Logística en Colón, Panamá',
-    description: 'Artículos sobre envíos, casillero Miami, impresión de planos, sellos y carnets PVC para empresas en Colón.',
+    description: 'Artículos sobre envíos, casillero Miami, trámites de aduana y más para empresas en Colón.',
     url: 'https://mbe-colon.vercel.app/blog',
   },
 }
 
-export default async function BlogPage() {
-  const posts = await getPosts(12)
+const POSTS = [
+  {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-red',
+    titulo: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',
+    desc: 'Aprende las mejores técnicas de embalaje para proteger tus envíos con DHL, FedEx y UPS desde Colón, Panamá.',
+    href: '/blog/como-empacar-paquetes',
+    emoji: '📦',
+  },
+  {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-blue',
+    titulo: 'Guía completa para comprar en Amazon y recibir en Colón',
+    desc: 'Paso a paso: cómo usar tu casillero Miami MBE para traer tus compras de USA sin complicaciones.',
+    href: '/blog/guia-compras-amazon-colon',
+    emoji: '🛍️',
+  },
+  {
+    categoria: 'Aduana',
+    badge: 'bg-mbe-red',
+    titulo: 'Todo lo que debes saber sobre los trámites de aduana en Panamá',
+    desc: 'Documentos necesarios, aranceles y tips para importar sin retrasos ni sorpresas en aduana.',
+    href: '/blog/tramites-aduana-panama',
+    emoji: '🛃',
+  },
+]
 
+export default function BlogPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-[88px]">
-        {/* Hero */}
-        <section className="bg-mbe-dark py-16 px-4 text-center">
-          <p className="text-mbe-red font-bold text-sm uppercase tracking-widest mb-3">Blog MBE Colón</p>
-          <h1 className="text-white text-4xl md:text-5xl font-black mb-4">
-            Consejos de Envíos,<br />Logística e Impresión
-          </h1>
-          <p className="text-gray-300 text-lg max-w-xl mx-auto">
-            Recursos útiles para emprendedores y empresas de la provincia de Colón, Panamá.
-          </p>
-        </section>
+    <main className="pt-[88px]">
 
-        {/* Posts grid */}
-        <section className="bg-mbe-light py-16 px-4">
-          <div className="max-w-6xl mx-auto">
-            {posts.length === 0 ? (
-              <div className="text-center py-20">
-                <p className="text-mbe-gray text-lg">Próximamente publicaremos artículos aquí.</p>
-                <Link href="/" className="mt-6 inline-block text-mbe-red font-bold hover:underline">← Volver al inicio</Link>
-              </div>
-            ) : (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {posts.map(post => {
-                  const img = featuredImage(post)
-                  const excerpt = stripHtml(post.excerpt.rendered).slice(0, 140) + '…'
-                  return (
-                    <Link
-                      key={post.id}
-                      href={`/blog/${post.slug}`}
-                      className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group"
-                    >
-                      {img ? (
-                        <div className="relative h-44 w-full overflow-hidden">
-                          <Image
-                            src={img}
-                            alt={post.title.rendered}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                      ) : (
-                        <div className="h-44 bg-mbe-red flex items-center justify-center">
-                          <span className="text-5xl">📦</span>
-                        </div>
-                      )}
-                      <div className="p-5">
-                        <p className="text-xs text-mbe-blue font-semibold mb-2">{formatDate(post.date)}</p>
-                        <h2
-                          className="font-black text-mbe-dark text-lg leading-snug mb-3 group-hover:text-mbe-red transition-colors"
-                          dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                        />
-                        <p className="text-mbe-gray text-sm leading-relaxed">{excerpt}</p>
-                        <span className="mt-4 inline-block text-mbe-red text-sm font-bold">
-                          Leer más →
-                        </span>
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            )}
+      {/* Hero */}
+      <section className="bg-mbe-dark py-16 px-4 text-center">
+        <p className="text-mbe-red font-bold text-sm uppercase tracking-widest mb-3">📰 Noticias y Consejos</p>
+        <h1 className="text-white text-4xl md:text-5xl font-black mb-4">
+          MBE <span className="text-mbe-red">Informa</span>
+        </h1>
+        <p className="text-gray-300 text-lg max-w-xl mx-auto">
+          Tips de envíos, guías de compras internacionales y todo lo que necesitas saber para importar mejor desde Colón.
+        </p>
+      </section>
+
+      {/* Grid de artículos */}
+      <section className="bg-mbe-light py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {POSTS.map(post => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group"
+              >
+                {/* Imagen placeholder con emoji */}
+                <div className={`h-44 ${post.badge} flex items-center justify-center`}>
+                  <span className="text-6xl">{post.emoji}</span>
+                </div>
+
+                <div className="p-6 flex flex-col flex-1">
+                  <span className={`text-xs font-bold text-white ${post.badge} px-3 py-1 rounded-full self-start mb-3`}>
+                    {post.categoria}
+                  </span>
+                  <h2 className="text-mbe-dark font-bold text-base leading-snug mb-3 flex-1 group-hover:text-mbe-red transition-colors">
+                    {post.titulo}
+                  </h2>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                    {post.desc}
+                  </p>
+                  <span className="text-mbe-red text-sm font-bold">
+                    Leer más →
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <section className="bg-mbe-red py-14 px-4 text-center">
-          <h2 className="text-white text-2xl font-black mb-3">¿Tienes alguna pregunta?</h2>
-          <p className="text-white opacity-90 mb-6">Estamos en Los Cuatro Altos, Colón. Escríbenos y te respondemos en minutos.</p>
-          <a
-            href="https://wa.me/50769495100"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-mbe-red font-black px-8 py-4 rounded-lg hover:bg-yellow-50 transition-colors"
-          >
-            💬 Escribir al WhatsApp
-          </a>
-        </section>
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
+      {/* CTA */}
+      <section className="bg-mbe-red py-14 px-4 text-center">
+        <h2 className="text-white text-2xl font-black mb-3">¿Tienes alguna pregunta?</h2>
+        <p className="text-white opacity-90 mb-6">Estamos en Plaza Millenium F007, Colón. Escríbenos y te respondemos en minutos.</p>
+        <a
+          href="https://wa.me/50769495100"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-mbe-red font-black px-8 py-4 rounded-lg hover:bg-yellow-50 transition-colors"
+        >
+          💬 Escribir al WhatsApp
+        </a>
+      </section>
+
+    </main>
   )
 }
