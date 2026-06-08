@@ -69,7 +69,7 @@ export default function BlogPost2() {
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">Paso 4 — Paga el flete y recibe en Colón</h2>
         <p>
-          Aprobado el flete, coordinamos el transporte del paquete a nuestra oficina en Plaza Millenium. El proceso toma entre 5 y 10 días hábiles desde que el paquete llega a Miami.
+          Aprobado el flete, coordinamos el transporte del paquete a nuestra oficina en Plaza Millenium. El proceso toma entre <strong className="text-mbe-dark">24 y 48 horas</strong> desde que el paquete llega a Miami.
         </p>
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">¿Qué está incluido?</h2>
