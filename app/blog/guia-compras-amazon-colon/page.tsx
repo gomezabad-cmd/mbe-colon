@@ -48,9 +48,9 @@ export default function BlogPost2() {
         </p>
         <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm text-mbe-dark">
           Tu Nombre<br />
-          [Tu código MBE]<br />
-          8300 NW 53rd St, Suite 100<br />
-          Doral, FL 33166, USA
+          2250 NW 114th Ave Unit 1P Suite [Tu # de casillero]<br />
+          Miami, FL 33172, USA<br />
+          Tel: (786) 272-7070
         </div>
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">Paso 2 — Compra en tus tiendas favoritas</h2>
