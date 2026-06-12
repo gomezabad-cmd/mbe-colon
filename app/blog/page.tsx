@@ -18,7 +18,8 @@ const POSTS = [
     titulo: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',
     desc: 'Aprende las mejores técnicas de embalaje para proteger tus envíos con DHL, FedEx y UPS desde Colón, Panamá.',
     href: '/blog/como-empacar-paquetes',
-    emoji: '📦',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cajas de paquetes listos para envío internacional',
   },
   {
     categoria: 'Casillero',
@@ -26,7 +27,8 @@ const POSTS = [
     titulo: 'Guía completa para comprar en Amazon y recibir en Colón',
     desc: 'Paso a paso: cómo usar tu casillero Miami MBE para traer tus compras de USA sin complicaciones.',
     href: '/blog/guia-compras-amazon-colon',
-    emoji: '🛍️',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
   },
   {
     categoria: 'Aduana',
@@ -34,7 +36,8 @@ const POSTS = [
     titulo: 'Todo lo que debes saber sobre los trámites de aduana en Panamá',
     desc: 'Documentos necesarios, aranceles y tips para importar sin retrasos ni sorpresas en aduana.',
     href: '/blog/tramites-aduana-panama',
-    emoji: '🛃',
+    img: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Contenedores de carga en aduana de Panamá',
   },
 ]
 
@@ -63,15 +66,19 @@ export default function BlogPage() {
                 href={post.href}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group"
               >
-                {/* Imagen placeholder con emoji */}
-                <div className={`h-44 ${post.badge} flex items-center justify-center`}>
-                  <span className="text-6xl">{post.emoji}</span>
+                {/* Imagen */}
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={post.img}
+                    alt={post.imgAlt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className={`absolute top-3 left-3 text-xs font-bold text-white ${post.badge} px-3 py-1 rounded-full`}>
+                    {post.categoria}
+                  </span>
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
-                  <span className={`text-xs font-bold text-white ${post.badge} px-3 py-1 rounded-full self-start mb-3`}>
-                    {post.categoria}
-                  </span>
                   <h2 className="text-mbe-dark font-bold text-base leading-snug mb-3 flex-1 group-hover:text-mbe-red transition-colors">
                     {post.titulo}
                   </h2>
