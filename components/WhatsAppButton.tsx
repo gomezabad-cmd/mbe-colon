@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       href={CONTACT.whatsappHref}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 md:hidden bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-colors"
+      className="fixed bottom-20 right-4 z-50 md:hidden bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-colors"
       aria-label="Contactar por WhatsApp"
     >
       <svg viewBox="0 0 24 24" className="w-8 h-8 fill-current">
