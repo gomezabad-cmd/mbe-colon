@@ -24,6 +24,7 @@ export default function ImpresionPage() {
         { number: 2, title: 'Revisamos y cotizamos', description: 'Verificamos el archivo, te enviamos prueba de impresión y confirmamos precio final.' },
         { number: 3, title: 'Retira tu pedido', description: 'Recoge tu material impreso en nuestra oficina o coordina entrega a domicilio.' },
       ]}
+      href="/servicios/impresion"
     />
   )
 }

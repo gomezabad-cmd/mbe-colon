@@ -13,14 +13,69 @@ interface ServicePageProps {
   description: string
   benefits: string[]
   steps: Step[]
+  href: string
 }
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps }: ServicePageProps) {
+const BASE_URL = 'https://mbe-colon.vercel.app'
+
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href }: ServicePageProps) {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Servicios', item: `${BASE_URL}/servicios` },
+      { '@type': 'ListItem', position: 3, name: title, item: `${BASE_URL}${href}` },
+    ],
+  }
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: title,
+    description,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Mail Boxes Etc. Colón',
+      url: BASE_URL,
+      telephone: '+507-474-5548',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Plaza Millenium Local F007',
+        addressLocality: 'Colón',
+        addressRegion: 'Colón',
+        addressCountry: 'PA',
+      },
+    },
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'Colón, Panamá',
+    },
+    url: `${BASE_URL}${href}`,
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       {/* Hero */}
       <section className="bg-mbe-dark py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Breadcrumb visual */}
+          <nav className="text-sm text-gray-400 mb-6 flex items-center justify-center gap-2">
+            <Link href="/" className="hover:text-white transition-colors">Inicio</Link>
+            <span>›</span>
+            <Link href="/servicios" className="hover:text-white transition-colors">Servicios</Link>
+            <span>›</span>
+            <span className="text-gray-300">{title}</span>
+          </nav>
           <div className="text-5xl mb-4">{icon}</div>
           <h1 className="text-white text-4xl md:text-5xl font-black mb-4">{title}</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">{description}</p>
@@ -81,7 +136,7 @@ export default function ServicePageTemplate({ icon, title, description, benefits
           >
             💬 WhatsApp
           </a>
-          <Link href="/#contacto" className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-mbe-red transition-colors">
+          <Link href="/contacto" className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-mbe-red transition-colors">
             Ver contacto
           </Link>
         </div>

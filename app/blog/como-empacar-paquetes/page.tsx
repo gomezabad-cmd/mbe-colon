@@ -6,9 +6,37 @@ export const metadata = {
   description: 'Aprende las mejores técnicas de embalaje para proteger tus envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.',
 }
 
+const BASE_URL = 'https://mbe-colon.vercel.app'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',
+  description: 'Aprende las mejores técnicas de embalaje para proteger tus envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.',
+  datePublished: '2025-01-15',
+  dateModified: '2026-06-12',
+  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
+  url: `${BASE_URL}/blog/como-empacar-paquetes`,
+  image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: '¿Cómo empacar tu paquete?', item: `${BASE_URL}/blog/como-empacar-paquetes` },
+  ],
+}
+
 export default function BlogPost1() {
   return (
-    <article className="max-w-3xl mx-auto px-4 py-14">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <article className="max-w-3xl mx-auto px-4 py-14">
 
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
@@ -107,5 +135,6 @@ export default function BlogPost1() {
         <Link href="/" className="text-mbe-red text-sm font-bold hover:underline">← Volver al inicio</Link>
       </div>
     </article>
+    </>
   )
 }

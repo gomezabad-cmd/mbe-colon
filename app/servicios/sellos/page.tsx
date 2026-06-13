@@ -37,6 +37,7 @@ export default function SelloPage() {
           description: 'Producimos tu sello en 24–48 horas. Retíralo en nuestra oficina o coordina entrega a domicilio en Colón.',
         },
       ]}
+      href="/servicios/sellos"
     />
   )
 }

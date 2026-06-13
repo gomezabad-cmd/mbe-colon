@@ -24,6 +24,7 @@ export default function CargaPage() {
         { number: 2, title: 'Coordinamos el envío', description: 'Gestionamos recogida, embalaje, documentos de exportación y reserva de espacio.' },
         { number: 3, title: 'Entrega en destino', description: 'Coordinamos la entrega hasta el destino final con seguimiento completo.' },
       ]}
+      href="/servicios/carga-maritima"
     />
   )
 }

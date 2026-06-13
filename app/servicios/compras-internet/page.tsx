@@ -24,6 +24,7 @@ export default function ComprasPage() {
         { number: 2, title: 'Compra en USA', description: 'Usa tu dirección Miami en cualquier tienda online. Tu compra llega a nuestro almacén.' },
         { number: 3, title: 'Recibe en Colón', description: 'Te notificamos y gestionamos la entrega en nuestra oficina de Plaza Millenium.' },
       ]}
+      href="/servicios/compras-internet"
     />
   )
 }

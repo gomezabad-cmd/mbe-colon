@@ -37,6 +37,7 @@ export default function BordadosPage() {
           description: 'Una vez aprobado, iniciamos la producción. Retira tu pedido en nuestra oficina o coordinamos entrega a domicilio.',
         },
       ]}
+      href="/servicios/bordados"
     />
   )
 }

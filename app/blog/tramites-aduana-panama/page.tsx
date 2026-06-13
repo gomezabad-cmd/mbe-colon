@@ -6,9 +6,37 @@ export const metadata = {
   description: 'Guía completa sobre documentos, aranceles y tips para importar en Panamá sin retrasos. MBE Colón te ayuda con todos los trámites aduaneros en Colón.',
 }
 
+const BASE_URL = 'https://mbe-colon.vercel.app'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Todo lo que debes saber sobre trámites de aduana en Panamá',
+  description: 'Guía completa sobre documentos, aranceles y tips para importar en Panamá sin retrasos. MBE Colón te ayuda con todos los trámites aduaneros en Colón.',
+  datePublished: '2025-03-05',
+  dateModified: '2026-06-12',
+  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
+  url: `${BASE_URL}/blog/tramites-aduana-panama`,
+  image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: 'Trámites de Aduana en Panamá', item: `${BASE_URL}/blog/tramites-aduana-panama` },
+  ],
+}
+
 export default function BlogPost3() {
   return (
-    <article className="max-w-3xl mx-auto px-4 py-14">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <article className="max-w-3xl mx-auto px-4 py-14">
 
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
@@ -125,5 +153,6 @@ export default function BlogPost3() {
         <Link href="/" className="text-mbe-red text-sm font-bold hover:underline">← Volver al inicio</Link>
       </div>
     </article>
+    </>
   )
 }

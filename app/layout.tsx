@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
   // ✅ 157 chars — within ~160-char limit, keeps address
   description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
-  keywords: 'MBE Colón, Mail Boxes Etc Colón, envíos Colón Panamá, envíos internacionales Panamá, casillero Miami Panamá, casillero Miami Colón, carga marítima Panamá, impresión Colón Panamá, bordados uniformes Panamá, sellos automáticos Panamá, compras internet Colón, DHL Colón Panamá, FedEx Panamá, UPS Panamá, paquetería Colón, logística provincia de Colón, Zona Libre Colón logística',
   openGraph: {
     title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
     description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos en Colón, Panamá. Plaza Millenium F007.',

@@ -24,6 +24,7 @@ export default function EnviosPage() {
         { number: 2, title: 'Cotizamos al instante', description: 'Te damos el precio final con todas las opciones de carrier y tiempo de entrega.' },
         { number: 3, title: 'Lo enviamos', description: 'Preparamos el envío y te damos el número de rastreo para seguirlo en tiempo real.' },
       ]}
+      href="/servicios/envios-internacionales"
     />
   )
 }

@@ -24,6 +24,7 @@ export default function CasilleroPage() {
         { number: 2, title: 'Usa tu dirección Miami', description: 'Recibe tu dirección personal y úsala en todas tus compras online en USA.' },
         { number: 3, title: 'Retira en Colón', description: 'Cuando tu paquete llega, te avisamos por WhatsApp para que vengas a retirarlo.' },
       ]}
+      href="/servicios/casillero"
     />
   )
 }
