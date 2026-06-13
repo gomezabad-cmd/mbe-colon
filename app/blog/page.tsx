@@ -13,6 +13,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    badge: 'bg-mbe-blue',
+    titulo: '¿Dónde bordar uniformes con tu logo en Colón, Panamá? Guía para empresas',
+    desc: 'Bordados personalizados en uniformes, hoodies y gorras para empresas en Colón. Desde 1 unidad, alta durabilidad garantizada.',
+    href: '/blog/bordados-personalizados-uniformes-colon',
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Bordados personalizados en uniformes para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     badge: 'bg-mbe-red',
     titulo: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',

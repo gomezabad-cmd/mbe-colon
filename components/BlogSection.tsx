@@ -2,6 +2,15 @@ import Link from 'next/link'
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    titulo: '¿Dónde bordar uniformes con tu logo en Colón, Panamá? Guía para empresas',
+    desc: 'Bordados personalizados en uniformes, hoodies y gorras para empresas en Colón. Desde 1 unidad.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/bordados-personalizados-uniformes-colon',
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Bordados personalizados en uniformes para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     titulo: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',
     desc: 'Aprende las mejores técnicas de embalaje para proteger tus envíos con DHL, FedEx y UPS.',
@@ -18,15 +27,6 @@ const POSTS = [
     href: '/blog/guia-compras-amazon-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
-  },
-  {
-    categoria: 'Aduana',
-    titulo: 'Todo lo que debes saber sobre los trámites de aduana en Panamá',
-    desc: 'Documentos necesarios, aranceles y tips para importar sin retrasos ni sorpresas en aduana.',
-    badge: 'bg-mbe-red',
-    href: '/blog/tramites-aduana-panama',
-    img: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Contenedores de carga en aduana de Panamá',
   },
 ]
 
