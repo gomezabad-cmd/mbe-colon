@@ -99,8 +99,8 @@ export const WHY_US = [
 export const HERO_SLIDES = [
   {
     id: 1,
-    eyebrow: 'Envíos internacionales desde Colón, Panamá',
-    title: 'Tu paquete llega\nseguro y a tiempo.',
+    eyebrow: '📦 Mail Boxes Etc. — Plaza Millenium, Colón, Panamá',
+    title: 'Envíos internacionales\ndesde Colón, Panamá.',
     description: 'Enviamos con DHL, FedEx y UPS desde Colón, Panamá. Tracking en tiempo real incluido.',
     cta: { text: 'Ver tarifas', href: '/servicios/envios-internacionales' },
     ctaSecondary: { text: 'Contáctanos', href: '#contacto' },
