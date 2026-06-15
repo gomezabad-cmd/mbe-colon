@@ -13,6 +13,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    badge: 'bg-mbe-red',
+    titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
+    desc: 'Sellos automáticos para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48h. Plaza Millenium F007.',
+    href: '/blog/sellos-automaticos-personalizados-colon',
+    img: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sellos automáticos personalizados para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     badge: 'bg-mbe-blue',
     titulo: '¿Dónde bordar uniformes con tu logo en Colón, Panamá? Guía para empresas',

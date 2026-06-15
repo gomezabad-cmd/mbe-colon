@@ -2,6 +2,15 @@ import Link from 'next/link'
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
+    desc: 'Sellos automáticos para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48h.',
+    badge: 'bg-mbe-red',
+    href: '/blog/sellos-automaticos-personalizados-colon',
+    img: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sellos automáticos personalizados para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     titulo: '¿Dónde bordar uniformes con tu logo en Colón, Panamá? Guía para empresas',
     desc: 'Bordados personalizados en uniformes, hoodies y gorras para empresas en Colón. Desde 1 unidad.',
@@ -18,15 +27,6 @@ const POSTS = [
     href: '/blog/como-empacar-paquetes',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes listos para envío internacional',
-  },
-  {
-    categoria: 'Casillero',
-    titulo: 'Guía completa para comprar en Amazon y recibir en Colón',
-    desc: 'Paso a paso: cómo usar tu casillero Miami MBE para traer tus compras de USA sin complicaciones.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/guia-compras-amazon-colon',
-    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
   },
 ]
 
