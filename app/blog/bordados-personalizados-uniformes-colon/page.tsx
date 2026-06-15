@@ -17,7 +17,7 @@ const articleSchema = {
   author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/bordados-personalizados-uniformes-colon`,
-  image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop',
+  image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80',
 }
 
 const breadcrumbSchema = {

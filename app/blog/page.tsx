@@ -18,8 +18,8 @@ const POSTS = [
     titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
     desc: 'Sellos automáticos para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48h. Plaza Millenium F007.',
     href: '/blog/sellos-automaticos-personalizados-colon',
-    img: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Sellos automáticos personalizados para empresas en Colón, Panamá',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sello automático personalizado con tinta para empresas en Colón, Panamá',
   },
   {
     categoria: 'Bordados',
@@ -27,8 +27,8 @@ const POSTS = [
     titulo: '¿Dónde bordar uniformes con tu logo en Colón, Panamá? Guía para empresas',
     desc: 'Bordados personalizados en uniformes, hoodies y gorras para empresas en Colón. Desde 1 unidad, alta durabilidad garantizada.',
     href: '/blog/bordados-personalizados-uniformes-colon',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Bordados personalizados en uniformes para empresas en Colón, Panamá',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Bordados personalizados en uniformes y gorras para empresas en Colón, Panamá',
   },
   {
     categoria: 'Envíos',

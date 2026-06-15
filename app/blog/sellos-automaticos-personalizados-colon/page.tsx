@@ -17,7 +17,7 @@ const articleSchema = {
   author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/sellos-automaticos-personalizados-colon`,
-  image: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=1200&h=630&fit=crop&q=80',
+  image: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=1200&h=630&fit=crop&q=80',
 }
 
 const breadcrumbSchema = {
