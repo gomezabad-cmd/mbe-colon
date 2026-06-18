@@ -51,6 +51,7 @@ export default function HeroBanner() {
             ][i] ?? `MBE Colón — servicio ${i + 1}`}
             style={{ width: '100%', height: '100%', objectFit: 'fill', display: 'block' }}
             loading={i === 0 ? 'eager' : 'lazy'}
+            fetchPriority={i === 0 ? 'high' : 'low'}
           />
         </div>
       ))}
