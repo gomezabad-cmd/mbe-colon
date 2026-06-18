@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'XJTYF-UNxocXnpVZHsyYYIziS9t6M88FE9EfBdD_gB4',
+  },
   // ✅ 56 chars — within Google's ~60-char limit
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
   // ✅ 157 chars — within ~160-char limit, keeps address
