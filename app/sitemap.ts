@@ -29,6 +29,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/blog/sellos-automaticos-personalizados-colon`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog/bordados-personalizados-uniformes-colon`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/blog/como-empacar-paquetes`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
