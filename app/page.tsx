@@ -5,6 +5,7 @@ import UrgencySection from '@/components/UrgencySection'
 import USAShoppingSection from '@/components/USAShoppingSection'
 import PymeSection from '@/components/PymeSection'
 import WhyUsSection from '@/components/WhyUsSection'
+import ReviewsSection from '@/components/ReviewsSection'
 import NosotrosSection from '@/components/NosotrosSection'
 import BlogSection from '@/components/BlogSection'
 import ContactSection from '@/components/ContactSection'
@@ -22,6 +23,7 @@ export default function Home() {
         <USAShoppingSection />
         <PymeSection />
         <WhyUsSection />
+        <ReviewsSection />
         <NosotrosSection />
         <BlogSection />
         <ContactSection />
