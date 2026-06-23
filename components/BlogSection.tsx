@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    titulo: 'Impresión profesional en Colón: planos arquitectónicos, brochures y banners para tu empresa',
+    desc: 'Imprimimos planos en gran formato, brochures corporativos y banners para empresas en Colón, Panamá.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/impresion-planos-brochures-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión profesional de planos y brochures para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
     desc: 'Sellos automáticos para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/bordados-personalizados-uniformes-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Bordados personalizados en uniformes y gorras para empresas en Colón, Panamá',
-  },
-  {
-    categoria: 'Envíos',
-    titulo: '¿Cómo empacar correctamente tu paquete para envíos internacionales?',
-    desc: 'Aprende las mejores técnicas de embalaje para proteger tus envíos con DHL, FedEx y UPS.',
-    badge: 'bg-mbe-red',
-    href: '/blog/como-empacar-paquetes',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Cajas de paquetes listos para envío internacional',
   },
 ]
 

@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    badge: 'bg-mbe-blue',
+    titulo: 'Impresión profesional en Colón: planos arquitectónicos, brochures y banners para tu empresa',
+    desc: 'Imprimimos planos en gran formato, brochures corporativos y banners para empresas en Colón, Panamá. Calidad profesional y entrega rápida.',
+    href: '/blog/impresion-planos-brochures-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión profesional de planos y brochures para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     badge: 'bg-mbe-red',
     titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
