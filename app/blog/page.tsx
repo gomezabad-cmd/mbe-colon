@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    badge: 'bg-mbe-red',
+    titulo: 'Logística en Colón para PYMEs y operadores de la Zona Libre: todo en un solo lugar',
+    desc: 'Servicios de logística para empresas en Colón, Panamá. Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h a la Zona Libre de Colón.',
+    href: '/blog/logistica-pymes-zona-libre-colon',
+    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Almacén logístico para empresas y PYMEs en Colón, Panamá',
+  },
+  {
     categoria: 'Impresión',
     badge: 'bg-mbe-blue',
     titulo: 'Impresión profesional en Colón: planos arquitectónicos, brochures y banners para tu empresa',
