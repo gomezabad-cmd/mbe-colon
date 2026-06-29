@@ -7,9 +7,8 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 export const metadata: Metadata = {
   verification: {
     google: 'XJTYF-UNxocXnpVZHsyYYIziS9t6M88FE9EfBdD_gB4',
+    other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
   },
-  // Meta domain verification — agregar código desde Events Manager → Configuración → Verificar dominio
-  // other: { 'facebook-domain-verification': 'TU_CODIGO_AQUI' },
   // ✅ 56 chars — within Google's ~60-char limit
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
   // ✅ 157 chars — within ~160-char limit, keeps address
