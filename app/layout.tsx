@@ -8,10 +8,8 @@ export const metadata: Metadata = {
   verification: {
     google: 'XJTYF-UNxocXnpVZHsyYYIziS9t6M88FE9EfBdD_gB4',
   },
-  // Meta domain verification — reemplazar con el código de Events Manager → Configuración → Verificar dominio
-  other: {
-    'facebook-domain-verification': 'REEMPLAZA_CON_TU_CODIGO_VERIFICACION',
-  },
+  // Meta domain verification — agregar código desde Events Manager → Configuración → Verificar dominio
+  // other: { 'facebook-domain-verification': 'TU_CODIGO_AQUI' },
   // ✅ 56 chars — within Google's ~60-char limit
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
   // ✅ 157 chars — within ~160-char limit, keeps address
