@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos en Colón, Panamá. Plaza Millenium F007.',
     type: 'website',
     locale: 'es_PA',
-    url: 'https://mbe-colon.vercel.app',
+    url: 'https://mbecolon.com',
     siteName: 'Mail Boxes Etc. Colón',
     images: [
       {
         // ✅ Self-hosted — no dependency on mbe-ca.com
-        url: 'https://mbe-colon.vercel.app/og-image.png',
+        url: 'https://mbecolon.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Mail Boxes Etc. Colón — Envíos, Casillero Miami e Impresión en Colón, Panamá',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
     description: 'Envíos con DHL, FedEx y UPS. Casillero Miami, impresión, bordados y sellos en Colón, Panamá.',
     site: '@mbecolon',
-    images: ['https://mbe-colon.vercel.app/og-image.png'],
+    images: ['https://mbecolon.com/og-image.png'],
   },
 }
 
@@ -44,11 +44,11 @@ const schemaGraph = {
   '@graph': [
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://mbe-colon.vercel.app/#localbusiness',
+      '@id': 'https://mbecolon.com/#localbusiness',
       name: 'Mail Boxes Etc. Colón',
       description: 'Centro de envíos internacionales, casillero Miami, carga marítima, impresión profesional, bordados personalizados y sellos automáticos en Colón, Panamá.',
-      image: 'https://mbe-colon.vercel.app/og-image.png',
-      url: 'https://mbe-colon.vercel.app',
+      image: 'https://mbecolon.com/og-image.png',
+      url: 'https://mbecolon.com',
       telephone: '+507-474-5548',
       email: 'mbecolon@gmail.com',
       address: {
@@ -65,12 +65,12 @@ const schemaGraph = {
     },
     {
       '@type': 'Organization',
-      '@id': 'https://mbe-colon.vercel.app/#organization',
+      '@id': 'https://mbecolon.com/#organization',
       name: 'Mail Boxes Etc. Colón',
-      url: 'https://mbe-colon.vercel.app',
+      url: 'https://mbecolon.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://mbe-colon.vercel.app/og-image.png',
+        url: 'https://mbecolon.com/og-image.png',
       },
       contactPoint: {
         '@type': 'ContactPoint',
@@ -81,15 +81,15 @@ const schemaGraph = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://mbe-colon.vercel.app/#website',
-      url: 'https://mbe-colon.vercel.app',
+      '@id': 'https://mbecolon.com/#website',
+      url: 'https://mbecolon.com',
       name: 'Mail Boxes Etc. Colón',
-      publisher: { '@id': 'https://mbe-colon.vercel.app/#organization' },
+      publisher: { '@id': 'https://mbecolon.com/#organization' },
       potentialAction: {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://mbe-colon.vercel.app/blog?q={search_term_string}',
+          urlTemplate: 'https://mbecolon.com/blog?q={search_term_string}',
         },
         'query-input': 'required name=search_term_string',
       },

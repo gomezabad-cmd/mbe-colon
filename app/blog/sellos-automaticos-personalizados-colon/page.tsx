@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Fabrica tu sello automático personalizado en Colón, Panamá. Sellos para abogados, médicos y empresas con entrega en 24-48h. Modelos Trodat y Colop. Plaza Millenium F007.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Servicios de logística en Colón para PYMEs y operadores de la Zona Libre. Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h a Colón.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

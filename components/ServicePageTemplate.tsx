@@ -16,7 +16,7 @@ interface ServicePageProps {
   href: string
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 export default function ServicePageTemplate({ icon, title, description, benefits, steps, href }: ServicePageProps) {
   const breadcrumbSchema = {

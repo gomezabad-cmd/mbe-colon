@@ -5,7 +5,7 @@ export const metadata = {
   description: '¿Buscas impresión de planos arquitectónicos, brochures o banners en Colón? En MBE Colón, Plaza Millenium F007, imprimimos con calidad profesional y entrega rápida.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

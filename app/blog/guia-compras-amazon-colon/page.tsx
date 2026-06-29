@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Paso a paso: cómo usar tu casillero Miami MBE para comprar en Amazon, eBay y Shein y recibir en Colón, Panamá sin complicaciones.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

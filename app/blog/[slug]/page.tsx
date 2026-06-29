@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {}
   return {
     title: `${post.title.rendered} | Blog MBE Colón`,
-    openGraph: { title: post.title.rendered, url: `https://mbe-colon.vercel.app/blog/${slug}` },
+    openGraph: { title: post.title.rendered, url: `https://mbecolon.com/blog/${slug}` },
   }
 }
 

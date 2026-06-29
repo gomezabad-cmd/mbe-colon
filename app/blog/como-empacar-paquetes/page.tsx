@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Aprende las mejores técnicas de embalaje para proteger tus envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

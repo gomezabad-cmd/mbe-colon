@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blog MBE Colón — Consejos de Envíos y Logística en Colón, Panamá',
     description: 'Artículos sobre envíos, casillero Miami, trámites de aduana y más para empresas en Colón.',
-    url: 'https://mbe-colon.vercel.app/blog',
+    url: 'https://mbecolon.com/blog',
   },
 }
 

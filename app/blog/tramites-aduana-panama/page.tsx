@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Guía completa sobre documentos, aranceles y tips para importar en Panamá sin retrasos. MBE Colón te ayuda con todos los trámites aduaneros en Colón.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

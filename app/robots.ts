@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mbe-colon.vercel.app/sitemap.xml',
+    sitemap: 'https://mbecolon.com/sitemap.xml',
   }
 }

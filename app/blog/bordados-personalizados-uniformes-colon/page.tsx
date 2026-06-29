@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Servicio de bordados personalizados en Colón, Panamá. Uniformes, hoodies, gorras y polos con tu logo bordado para empresas y equipos. Plaza Millenium F007.',
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',
