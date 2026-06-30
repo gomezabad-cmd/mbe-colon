@@ -6,7 +6,7 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 
 export const metadata: Metadata = {
   verification: {
-    google: 'XJTYF-UNxocXnpVZHsyYYIziS9t6M88FE9EfBdD_gB4',
+    google: 'U78gqD99Re9-TqbAf378UvKVhPLuGKyIfNvsA9urxgM',
     other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
   },
   // ✅ 56 chars — within Google's ~60-char limit
