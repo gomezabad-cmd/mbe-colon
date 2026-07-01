@@ -38,6 +38,7 @@ export default function SelloPage() {
         },
       ]}
       href="/servicios/sellos"
+      serviceType="Rubber Stamp Manufacturing"
     />
   )
 }

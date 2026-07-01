@@ -105,6 +105,14 @@ export default function BlogBordados() {
 
         </div>
 
+        <div className="bg-red-50 border-l-4 border-mbe-red p-6 mt-8 rounded-r-lg">
+          <p className="text-mbe-dark font-medium m-0">
+            ¿Necesitas bordar uniformes u otras prendas?{' '}
+            <Link href="/servicios/bordados" className="text-mbe-red font-bold hover:underline">
+              Conoce más sobre nuestro servicio de bordados personalizados en Colón
+            </Link>
+          </p>
+        </div>
         <div className="mt-12 bg-mbe-dark rounded-2xl p-8 text-center">
           <h3 className="text-white font-black text-xl mb-2">¿Listo para bordar tu logo en Colón?</h3>
           <p className="text-gray-400 text-sm mb-6">Visítanos en Plaza Millenium F007, Colón — o escríbenos ahora y cotizamos sin compromiso.</p>

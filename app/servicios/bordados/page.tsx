@@ -38,6 +38,7 @@ export default function BordadosPage() {
         },
       ]}
       href="/servicios/bordados"
+      serviceType="Embroidery Service"
     />
   )
 }

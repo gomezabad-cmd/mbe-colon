@@ -106,6 +106,14 @@ export default function BlogSellos() {
 
         </div>
 
+        <div className="bg-red-50 border-l-4 border-mbe-red p-6 mt-8 rounded-r-lg">
+          <p className="text-mbe-dark font-medium m-0">
+            ¿Necesitas un sello urgente para tu empresa?{' '}
+            <Link href="/servicios/sellos" className="text-mbe-red font-bold hover:underline">
+              Cotiza tus sellos automáticos personalizados aquí
+            </Link>
+          </p>
+        </div>
         <div className="mt-12 bg-mbe-dark rounded-2xl p-8 text-center">
           <h3 className="text-white font-black text-xl mb-2">¿Listo para pedir tu sello en Colón?</h3>
           <p className="text-gray-400 text-sm mb-6">Visítanos en Plaza Millenium F007, Colón — o escríbenos y cotizamos en minutos.</p>

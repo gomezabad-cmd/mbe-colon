@@ -14,11 +14,12 @@ interface ServicePageProps {
   benefits: string[]
   steps: Step[]
   href: string
+  serviceType?: string
 }
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps, href }: ServicePageProps) {
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType }: ServicePageProps) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -32,6 +33,7 @@ export default function ServicePageTemplate({ icon, title, description, benefits
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    serviceType: serviceType || title,
     name: title,
     description,
     provider: {
