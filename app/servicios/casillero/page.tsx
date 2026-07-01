@@ -2,7 +2,10 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 
 export const metadata = {
   title: 'Casillero Miami Gratis para Recibir Paquetes de USA | MBE Colón, Panamá',
-  description: 'Activa tu casillero Miami MBE gratis y recibe paquetes de cualquier tienda de USA directamente en Colón, Panamá. Sin cuota mensual, con soporte logístico y notificaciones por WhatsApp.',
+  description: 'Activa tu casillero Miami gratis. Recibe paquetes de Amazon, eBay y Shein directamente en Colón, Panamá. Sin cuota mensual ni comisión. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/servicios/casillero',
+  },
 }
 
 export default function CasilleroPage() {

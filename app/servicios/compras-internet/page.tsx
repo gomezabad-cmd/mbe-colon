@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 
 export const metadata = {
   title: 'Compras por Internet desde USA | Casillero Miami — MBE Colón, Panamá',
-  description: 'Compra en Amazon, eBay, Shein y cualquier tienda de USA con tu casillero Miami MBE. Recibe tus pedidos en Colón, Panamá sin complicaciones. Registro gratuito.',
+  description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
 }
 
 export default function ComprasPage() {

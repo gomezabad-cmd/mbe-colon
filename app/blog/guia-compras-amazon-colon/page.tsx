@@ -3,7 +3,10 @@ import { CONTACT } from '@/lib/constants'
 
 export const metadata = {
   title: 'Guía completa para comprar en Amazon y recibir en Colón | MBE Colón',
-  description: 'Paso a paso: cómo usar tu casillero Miami MBE para comprar en Amazon, eBay y Shein y recibir en Colón, Panamá sin complicaciones.',
+  description: 'Guía completa para comprar en Amazon y recibir en Colón con casillero Miami. Paso a paso, sin complicaciones. Todo lo que necesitas saber. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/guia-compras-amazon-colon',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

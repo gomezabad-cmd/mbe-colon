@@ -2,7 +2,10 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 
 export const metadata = {
   title: 'Envíos Internacionales con DHL, FedEx y UPS | MBE Colón, Panamá',
-  description: 'Envía paquetes a todo el mundo desde Colón, Panamá con DHL, FedEx y UPS. Tracking en tiempo real, embalaje profesional y gestión aduanera incluidos. Plaza Millenium F007.',
+  description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá. Rastreo en tiempo real, cotizaciones al instante y entrega en 24-48 horas. Plaza Millenium.',
+  alternates: {
+    canonical: 'https://mbecolon.com/servicios/envios-internacionales',
+  },
 }
 
 export default function EnviosPage() {

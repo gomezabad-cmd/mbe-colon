@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Sellos Automáticos Personalizados para Empresas en Colón, Panamá | MBE Colón',
-  description: 'Fabrica tu sello automático personalizado en Colón, Panamá. Sellos para abogados, médicos y empresas con entrega en 24-48h. Modelos Trodat y Colop. Plaza Millenium F007.',
+  description: '¿Dónde hacer sellos automáticos en Colón, Panamá? Sellos para abogados, médicos y empresas. Modelos Trodat y Colop, entrega en 24-48 horas. MBE.',
 }
 
 const BASE_URL = 'https://mbecolon.com'

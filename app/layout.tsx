@@ -9,9 +9,11 @@ export const metadata: Metadata = {
     google: 'U78gqD99Re9-TqbAf378UvKVhPLuGKyIfNvsA9urxgM',
     other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
   },
-  // ✅ 56 chars — within Google's ~60-char limit
+  metadataBase: new URL('https://mbecolon.com'),
+  alternates: {
+    canonical: 'https://mbecolon.com',
+  },
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
-  // ✅ 157 chars — within ~160-char limit, keeps address
   description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
   openGraph: {
     title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
@@ -22,11 +24,11 @@ export const metadata: Metadata = {
     siteName: 'Mail Boxes Etc. Colón',
     images: [
       {
-        // ✅ Self-hosted — no dependency on mbe-ca.com
         url: 'https://mbecolon.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Mail Boxes Etc. Colón — Envíos, Casillero Miami e Impresión en Colón, Panamá',
+        type: 'image/png',
       },
     ],
   },
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
     title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
     description: 'Envíos con DHL, FedEx y UPS. Casillero Miami, impresión, bordados y sellos en Colón, Panamá.',
     site: '@mbecolon',
+    creator: '@mbecolon',
     images: ['https://mbecolon.com/og-image.png'],
   },
 }

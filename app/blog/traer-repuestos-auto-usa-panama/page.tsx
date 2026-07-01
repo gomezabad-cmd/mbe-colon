@@ -3,7 +3,7 @@ import { CONTACT } from '@/lib/constants'
 
 export const metadata = {
   title: 'Cómo traer repuestos de auto desde USA a Panamá | MBE Colón',
-  description: 'Guía paso a paso para comprar piezas de carro en USA (Amazon, RockAuto, eBay) y recibirlas rápido y seguro en Colón, Panamá.',
+  description: 'Cómo traer repuestos de auto desde USA a Panamá. Guía paso a paso para comprar piezas de carro en USA y recibirlas seguro en Colón. MBE Colón.',
   openGraph: {
     title: 'Cómo traer repuestos de auto desde USA a Panamá | MBE Colón',
     description: 'Guía paso a paso para comprar piezas de carro en USA y recibirlas rápido y seguro en Colón, Panamá.',

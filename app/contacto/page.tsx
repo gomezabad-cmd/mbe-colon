@@ -5,7 +5,10 @@ import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Contacto | MBE Colón — Plaza Millenium F007, Colón, Panamá',
-  description: 'Contáctanos en Mail Boxes Etc. Colón. Estamos en Plaza Millenium Local F007, Colón, Panamá. Tel: 474-5548. WhatsApp: 6949-5100. Lunes a viernes 8am–5pm.',
+  description: 'Contacto MBE Colón: Plaza Millenium Local F007, Colón, Panamá. Tel: 474-5548. WhatsApp: 6949-5100. Atención: lunes–viernes 8am–5pm, sábado 9am–1pm.',
+  alternates: {
+    canonical: 'https://mbecolon.com/contacto',
+  },
 }
 
 export default function ContactoPage() {

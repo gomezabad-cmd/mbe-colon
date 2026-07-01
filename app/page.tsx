@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import HeroBanner from '@/components/HeroBanner'
 import ServicesBar from '@/components/ServicesBar'
@@ -11,6 +12,10 @@ import BlogSection from '@/components/BlogSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+
+export const metadata: Metadata = {
+  description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
+}
 
 export default function Home() {
   return (

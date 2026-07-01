@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 
 export const metadata = {
   title: 'Bordados Personalizados en Uniformes y Hoodies para Empresas | MBE Colón, Panamá',
-  description: 'Bordados personalizados en uniformes, hoodies, gorras y polos para empresas en Colón y Panamá. Digitalización de logo incluida, pedidos desde una unidad, alta durabilidad garantizada.',
+  description: 'Bordados personalizados para uniformes, hoodies, gorras y más. Bordamos desde 1 unidad con alta durabilidad. Empresas y equipos en Colón, Panamá. MBE.',
 }
 
 export default function BordadosPage() {

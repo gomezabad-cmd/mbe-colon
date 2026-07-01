@@ -4,7 +4,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog | MBE Colón — Consejos de Envíos, Casillero y Logística',
-  description: 'Artículos, consejos y guías sobre envíos internacionales, casillero Miami y logística para empresas en Colón, Panamá.',
+  description: 'Blog MBE Colón: guías de envíos internacionales, casillero Miami, logística para PYMEs y consejos de compras online. Artículos útiles y actualizados.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog',
+  },
   openGraph: {
     title: 'Blog MBE Colón — Consejos de Envíos y Logística en Colón, Panamá',
     description: 'Artículos sobre envíos, casillero Miami y logística para empresas en Colón.',

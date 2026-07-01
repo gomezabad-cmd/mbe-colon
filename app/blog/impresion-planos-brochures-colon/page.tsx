@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Impresión de planos, brochures y banners en Colón, Panamá | MBE Colón',
-  description: '¿Buscas impresión de planos arquitectónicos, brochures o banners en Colón? En MBE Colón, Plaza Millenium F007, imprimimos con calidad profesional y entrega rápida.',
+  description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners para empresas. Calidad garantizada y entrega rápida. MBE Colón.',
 }
 
 const BASE_URL = 'https://mbecolon.com'

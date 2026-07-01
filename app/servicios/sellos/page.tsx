@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 
 export const metadata = {
   title: 'Sellos Automáticos Personalizados para Empresas y Profesionales | MBE Colón, Panamá',
-  description: 'Sellos automáticos personalizados en Colón, Panamá para abogados, médicos, contadores y empresas. Modelos Trodat y Colop. Entrega en 24-48 horas. Texto, logo y fecha a todo color.',
+  description: 'Sellos automáticos personalizados para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48 horas. Plaza Millenium F007.',
 }
 
 export default function SelloPage() {
