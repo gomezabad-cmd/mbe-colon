@@ -62,7 +62,7 @@ export const STATIC_REVIEWS: PlaceReviews = {
     {
       relativePublishTimeDescription: 'hace 2 semanas',
       rating: 5,
-      text: { text: 'Usé el casillero Miami por primera vez y fue muy fácil. Mis compras de Amazon llegaron rápido y sin complicaciones. El trámite de aduana lo manejan ellos. Volveré a usar el servicio.', languageCode: 'es' },
+      text: { text: 'Usé el casillero Miami por primera vez y fue muy fácil. Mis compras de Amazon llegaron rápido y sin complicaciones. El paquete llegó perfecto. Volveré a usar el servicio.', languageCode: 'es' },
       authorAttribution: { displayName: 'Carlos Rodríguez', uri: '', photoUri: '' },
       publishTime: '',
     },

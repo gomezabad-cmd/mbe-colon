@@ -4,10 +4,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog | MBE Colón — Consejos de Envíos, Casillero y Logística',
-  description: 'Artículos, consejos y guías sobre envíos internacionales, casillero Miami, aduana y logística para empresas en Colón, Panamá.',
+  description: 'Artículos, consejos y guías sobre envíos internacionales, casillero Miami y logística para empresas en Colón, Panamá.',
   openGraph: {
     title: 'Blog MBE Colón — Consejos de Envíos y Logística en Colón, Panamá',
-    description: 'Artículos sobre envíos, casillero Miami, trámites de aduana y más para empresas en Colón.',
+    description: 'Artículos sobre envíos, casillero Miami y logística para empresas en Colón.',
     url: 'https://mbecolon.com/blog',
   },
 }
@@ -67,15 +67,7 @@ const POSTS = [
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
   },
-  {
-    categoria: 'Aduana',
-    badge: 'bg-mbe-red',
-    titulo: 'Todo lo que debes saber sobre los trámites de aduana en Panamá',
-    desc: 'Documentos necesarios, aranceles y tips para importar sin retrasos ni sorpresas en aduana.',
-    href: '/blog/tramites-aduana-panama',
-    img: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Contenedores de carga en aduana de Panamá',
-  },
+
 ]
 
 export default function BlogPage() {

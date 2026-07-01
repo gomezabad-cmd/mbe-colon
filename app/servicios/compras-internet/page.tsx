@@ -10,11 +10,11 @@ export default function ComprasPage() {
     <ServicePageTemplate
       icon="🛒"
       title="Compras por Internet"
-      description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con tramitación de aduana incluida."
+      description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con entrega garantizada y segura."
       benefits={[
         'Dirección de envío en Miami incluida',
         'Consolidación de múltiples paquetes',
-        'Tramitación de aduana incluida',
+        'Entregas rápidas y seguras',
         'Notificación por WhatsApp al llegar',
         'Sin cuota mensual de membresía',
         'Tarifas de flete competitivas',

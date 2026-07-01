@@ -52,12 +52,12 @@ export default function USAShoppingSection() {
               con entrega directa en Panamá.
             </h2>
             <p className="text-mbe-gray text-base mb-6 leading-relaxed">
-              Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos. Compra en cualquier tienda online de USA y nosotros gestionamos el traslado directamente a Colón, Panamá — incluyendo trámites de aduana.
+              Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos. Compra en cualquier tienda online de USA y nosotros gestionamos el traslado directamente a Colón, Panamá de forma rápida y segura.
             </p>
             <ul className="space-y-2 mb-8 text-sm text-mbe-gray">
               <li className="flex items-center gap-2">✅ Dirección en Miami incluida</li>
               <li className="flex items-center gap-2">✅ Trazabilidad en tiempo real</li>
-              <li className="flex items-center gap-2">✅ Tramitación de aduana</li>
+              <li className="flex items-center gap-2">✅ Entregas rápidas y seguras</li>
               <li className="flex items-center gap-2">✅ Notificación por WhatsApp cuando llega</li>
             </ul>
             <a
@@ -92,7 +92,7 @@ export default function USAShoppingSection() {
               ))}
             </div>
             <div className="mt-6 bg-white rounded-lg p-4 border-l-4 border-mbe-blue text-sm text-mbe-gray">
-              <strong className="text-mbe-dark">💡 Tip de aduana:</strong> Te ayudamos con toda la documentación para importar tus compras sin complicaciones.
+              <strong className="text-mbe-dark">💡 Tip de ahorro:</strong> Consolida tus paquetes con nosotros para ahorrar en el flete internacional.
             </div>
           </div>
         </div>

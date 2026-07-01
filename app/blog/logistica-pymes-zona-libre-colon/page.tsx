@@ -72,7 +72,7 @@ export default function BlogPost() {
             <li><strong>Envíos express 24-48h</strong> — de Miami a Colón, Panamá, con tracking en tiempo real</li>
             <li><strong>Couriers certificados</strong> — DHL, FedEx y UPS según urgencia, peso y destino</li>
             <li><strong>Embalaje industrial profesional</strong> — para textiles, maquinaria, electrónica y repuestos</li>
-            <li><strong>Asesoría en importación</strong> — te orientamos sobre documentación y costos de aduana en Panamá</li>
+            <li><strong>Asesoría logística</strong> — te orientamos sobre documentación para envíos a Panamá</li>
           </ul>
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Carga marítima Miami-Panamá para empresas: logística en Colón sin complicaciones</h2>
@@ -82,7 +82,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            La <strong>importación en Colón</strong> puede ser compleja, pero con un socio experimentado al lado, los tiempos de tránsito se reducen y los errores en aduana también. Nuestro equipo conoce la realidad de la Zona Libre y trabaja contigo para que cada embarque llegue limpio y a tiempo.
+            La <strong>importación en Colón</strong> puede ser compleja, pero con un socio experimentado al lado, los tiempos de tránsito se reducen y los procesos se optimizan. Nuestro equipo conoce la realidad de la Zona Libre y trabaja contigo para que cada embarque llegue a tiempo.
           </p>
 
           <p>

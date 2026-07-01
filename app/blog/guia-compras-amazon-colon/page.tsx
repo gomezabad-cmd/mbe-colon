@@ -104,7 +104,7 @@ export default function BlogPost2() {
         <ul className="list-disc list-inside space-y-2 text-gray-600">
           <li>Dirección en Miami sin costo mensual</li>
           <li>Trazabilidad en tiempo real</li>
-          <li>Tramitación de aduana en Panamá</li>
+          <li>Recepción rápida y segura en Panamá</li>
           <li>Notificaciones por WhatsApp</li>
           <li>Asesoría en restricciones de importación</li>
         </ul>
