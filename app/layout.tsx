@@ -144,7 +144,6 @@ const faqSchema = {
         text: 'Sí. Bordamos uniformes, hoodies, gorras, polos y más con el logo de tu empresa. Trabajamos para PYMEs, equipos y particulares en toda la provincia de Colón y Panamá.',
       },
     },
-    },
   ],
 }
 
