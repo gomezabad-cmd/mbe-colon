@@ -7,6 +7,11 @@ interface Step {
   description: string
 }
 
+interface FAQ {
+  question: string
+  answer: string
+}
+
 interface ServicePageProps {
   icon: string
   title: string
@@ -15,11 +20,13 @@ interface ServicePageProps {
   steps: Step[]
   href: string
   serviceType?: string
+  faqs?: FAQ[]
+  fullDescription?: string
 }
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType }: ServicePageProps) {
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription }: ServicePageProps) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -56,6 +63,19 @@ export default function ServicePageTemplate({ icon, title, description, benefits
     url: `${BASE_URL}${href}`,
   }
 
+  const faqSchema = faqs ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null
+
   return (
     <>
       <script
@@ -66,6 +86,12 @@ export default function ServicePageTemplate({ icon, title, description, benefits
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Hero */}
       <section className="bg-mbe-dark py-20 px-4">
@@ -124,6 +150,37 @@ export default function ServicePageTemplate({ icon, title, description, benefits
           </div>
         </div>
       </section>
+
+      {/* Full Description (if provided) */}
+      {fullDescription && (
+        <section className="bg-white py-16 px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
+            <div className="text-mbe-dark leading-relaxed whitespace-pre-wrap">
+              {fullDescription}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQs */}
+      {faqs && faqs.length > 0 && (
+        <section className="bg-mbe-light py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-mbe-dark text-2xl font-black mb-8 text-center">Preguntas Frecuentes</h2>
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <details key={idx} className="bg-white rounded-lg p-6 shadow-sm group">
+                  <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                    {faq.question}
+                    <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                  </summary>
+                  <p className="text-mbe-gray mt-4 leading-relaxed">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="bg-mbe-red py-16 px-4 text-center">
