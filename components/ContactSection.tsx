@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
+import { trackLead } from '@/lib/pixel'
 
 const CONTACT_ITEMS = [
   {
@@ -65,7 +68,7 @@ export default function ContactSection() {
               <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">WhatsApp</div>
-                <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-green-600 text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.whatsapp}</a>
+                <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackLead('whatsapp_contact_section')} className="text-green-600 text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.whatsapp}</a>
               </div>
             </div>
 
@@ -86,6 +89,7 @@ export default function ContactSection() {
               href={CONTACT.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLead('whatsapp_cta_contact_section')}
               className="flex items-center justify-center gap-3 bg-green-500 text-white font-black text-center py-4 rounded-xl text-lg hover:bg-green-600 transition-colors"
             >
               <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={28} height={28} />

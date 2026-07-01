@@ -1,4 +1,7 @@
+'use client'
+
 import { CONTACT } from '@/lib/constants'
+import { trackLead } from '@/lib/pixel'
 
 export default function UrgencySection() {
   return (
@@ -31,6 +34,7 @@ export default function UrgencySection() {
           href={CONTACT.whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackLead('whatsapp_urgency_section')}
           className="inline-block bg-white text-mbe-red font-black text-lg px-8 py-4 rounded-lg hover:bg-yellow-50 transition-colors shadow-lg"
         >
           💬 Cotizar por WhatsApp →

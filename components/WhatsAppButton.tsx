@@ -1,4 +1,7 @@
+'use client'
+
 import { CONTACT } from '@/lib/constants'
+import { trackLead } from '@/lib/pixel'
 
 export default function WhatsAppButton() {
   return (
@@ -6,6 +9,7 @@ export default function WhatsAppButton() {
       href={CONTACT.whatsappHref}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackLead('whatsapp_button_floating')}
       className="fixed bottom-20 right-4 z-50 md:hidden bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-colors"
       aria-label="Contactar por WhatsApp"
     >

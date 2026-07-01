@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { CONTACT, SERVICES } from '@/lib/constants'
+import { trackLead } from '@/lib/pixel'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -65,6 +66,7 @@ export default function Navbar() {
             href={CONTACT.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead('whatsapp_navbar_desktop')}
             className="bg-mbe-red text-white text-sm font-bold px-4 py-2 rounded hover:opacity-90 transition-opacity"
           >
             Cotizar ahora →
@@ -97,7 +99,7 @@ export default function Navbar() {
           <Link href="/blog" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Blog</Link>
           <Link href="/#nosotros" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Nosotros</Link>
           <Link href="/#contacto" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Contacto</Link>
-          <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="block bg-mbe-red text-white text-sm font-bold px-4 py-3 rounded text-center">
+          <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackLead('whatsapp_navbar_mobile')} className="block bg-mbe-red text-white text-sm font-bold px-4 py-3 rounded text-center">
             💬 Cotizar por WhatsApp
           </a>
         </div>

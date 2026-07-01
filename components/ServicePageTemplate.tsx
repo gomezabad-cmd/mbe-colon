@@ -1,5 +1,9 @@
+'use client'
+
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { CONTACT } from '@/lib/constants'
+import { trackLead, trackViewContent } from '@/lib/pixel'
 
 interface Step {
   number: number
@@ -27,6 +31,10 @@ interface ServicePageProps {
 const BASE_URL = 'https://mbecolon.com'
 
 export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription }: ServicePageProps) {
+  useEffect(() => {
+    trackViewContent(title, serviceType || 'Servicio')
+  }, [title, serviceType])
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -111,6 +119,7 @@ export default function ServicePageTemplate({ icon, title, description, benefits
             href={CONTACT.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead(`whatsapp_service_${serviceType || title}`)}
             className="inline-block bg-mbe-red text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
           >
             💬 Cotizar ahora →
