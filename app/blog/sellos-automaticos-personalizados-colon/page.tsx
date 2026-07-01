@@ -108,7 +108,7 @@ export default function BlogSellos() {
 
         <div className="bg-red-50 border-l-4 border-mbe-red p-6 mt-8 rounded-r-lg">
           <p className="text-mbe-dark font-medium m-0">
-            ¿Necesitas un sello urgente para tu empresa?{' '}
+            ¿Necesitas sellos para toda tu empresa o sucursales? Ofrecemos <strong>precios especiales para pedidos corporativos</strong>.{' '}
             <Link href="/servicios/sellos" className="text-mbe-red font-bold hover:underline">
               Cotiza tus sellos automáticos personalizados aquí
             </Link>

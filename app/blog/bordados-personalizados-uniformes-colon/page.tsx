@@ -107,7 +107,7 @@ export default function BlogBordados() {
 
         <div className="bg-red-50 border-l-4 border-mbe-red p-6 mt-8 rounded-r-lg">
           <p className="text-mbe-dark font-medium m-0">
-            ¿Necesitas bordar uniformes u otras prendas?{' '}
+            ¿Necesitas bordar uniformes para todo tu equipo? Pregunta por nuestros <strong>precios especiales por volumen</strong>.{' '}
             <Link href="/servicios/bordados" className="text-mbe-red font-bold hover:underline">
               Conoce más sobre nuestro servicio de bordados personalizados en Colón
             </Link>
