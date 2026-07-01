@@ -67,7 +67,15 @@ const POSTS = [
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
   },
-
+  {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-red',
+    titulo: 'Cómo traer repuestos de auto desde USA a Panamá',
+    desc: 'Guía paso a paso para comprar piezas de carro en USA y recibirlas rápido y seguro en Colón, Panamá.',
+    href: '/blog/traer-repuestos-auto-usa-panama',
+    img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Mecánico instalando repuestos de auto importados desde USA a Panamá',
+  },
 ]
 
 export default function BlogPage() {

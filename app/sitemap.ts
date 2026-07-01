@@ -52,7 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-
+    {
+      url: `${BASE_URL}/blog/traer-repuestos-auto-usa-panama`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: `${BASE_URL}/servicios/compras-internet`,
       lastModified: new Date(),
