@@ -141,7 +141,27 @@ const faqSchema = {
         text: 'Sí. Bordamos uniformes, hoodies, gorras, polos y más con el logo de tu empresa. Trabajamos para PYMEs, equipos y particulares en toda la provincia de Colón y Panamá.',
       },
     },
+    },
   ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Inicio',
+      item: 'https://mbecolon.com'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Servicios',
+      item: 'https://mbecolon.com/#servicios'
+    }
+  ]
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -155,6 +175,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       <body>

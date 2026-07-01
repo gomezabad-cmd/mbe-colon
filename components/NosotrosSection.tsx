@@ -32,7 +32,7 @@ export default function NosotrosSection() {
 
           <div className="bg-mbe-light rounded-2xl p-6 border-t-4 border-mbe-blue">
             <div className="text-3xl mb-4">📍</div>
-            <h3 className="text-mbe-dark font-black text-lg mb-2">En el corazón de Colón</h3>
+            <h3 className="text-mbe-dark font-black text-lg mb-2">En Plaza Millenium, Colón</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Ubicados en Plaza Millenium local F007, Colón. Somos parte de la comunidad y
               entendemos las necesidades logísticas de la región.

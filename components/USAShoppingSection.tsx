@@ -48,8 +48,8 @@ export default function USAShoppingSection() {
             </div>
             <h2 className="text-mbe-dark text-3xl md:text-4xl font-black leading-tight mb-4">
               Casillero Miami en Colón:<br />
-              <span className="text-mbe-red">compra en USA</span><br />
-              y recíbelo en Panamá.
+              <span className="text-mbe-red">compras por Internet en USA</span><br />
+              con entrega directa en Panamá.
             </h2>
             <p className="text-mbe-gray text-base mb-6 leading-relaxed">
               Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos. Compra en cualquier tienda online de USA y nosotros gestionamos el traslado directamente a Colón, Panamá — incluyendo trámites de aduana.
@@ -82,7 +82,7 @@ export default function USAShoppingSection() {
                   <div className="relative w-full h-full">
                     <Image
                       src={store.logo}
-                      alt={store.name}
+                      alt={`Compra en ${store.name} desde Panamá con Casillero MBE Colón`}
                       fill
                       className="object-contain"
                       sizes="(max-width: 768px) 25vw, 12vw"
