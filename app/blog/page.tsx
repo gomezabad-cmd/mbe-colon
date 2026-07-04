@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-blue',
+    titulo: 'Envíos internacionales desde Colón: ¿DHL, FedEx o UPS? Guía para elegir tu courier',
+    desc: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá según destino, peso y presupuesto.',
+    href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     badge: 'bg-mbe-red',
     titulo: 'Logística en Colón para PYMEs y operadores de la Zona Libre: todo en un solo lugar',

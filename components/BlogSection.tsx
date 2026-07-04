@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    titulo: 'Envíos internacionales desde Colón: ¿DHL, FedEx o UPS? Guía para elegir tu courier',
+    desc: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá según destino, peso y presupuesto.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     titulo: 'Logística en Colón para PYMEs y operadores de la Zona Libre: todo en un solo lugar',
     desc: 'Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h. Tu aliado logístico en Colón, Panamá.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/impresion-planos-brochures-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión profesional de planos y brochures para empresas en Colón, Panamá',
-  },
-  {
-    categoria: 'Sellos',
-    titulo: '¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?',
-    desc: 'Sellos automáticos para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48h.',
-    badge: 'bg-mbe-red',
-    href: '/blog/sellos-automaticos-personalizados-colon',
-    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Sello automático personalizado con tinta para empresas en Colón, Panamá',
   },
 ]
 
