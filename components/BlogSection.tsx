@@ -3,10 +3,19 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    titulo: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
+    desc: 'Bordados de calidad en Colón: gorras y polos con logo para empresas y PYMEs, desde 1 unidad. Plaza Millenium F007.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/bordados-gorras-polos-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     titulo: 'Envíos internacionales desde Colón: ¿DHL, FedEx o UPS? Guía para elegir tu courier',
     desc: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá según destino, peso y presupuesto.',
-    badge: 'bg-mbe-blue',
+    badge: 'bg-mbe-red',
     href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
@@ -15,19 +24,10 @@ const POSTS = [
     categoria: 'Logística',
     titulo: 'Logística en Colón para PYMEs y operadores de la Zona Libre: todo en un solo lugar',
     desc: 'Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h. Tu aliado logístico en Colón, Panamá.',
-    badge: 'bg-mbe-red',
+    badge: 'bg-mbe-blue',
     href: '/blog/logistica-pymes-zona-libre-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Almacén logístico para empresas y PYMEs en Colón, Panamá',
-  },
-  {
-    categoria: 'Impresión',
-    titulo: 'Impresión profesional en Colón: planos arquitectónicos, brochures y banners para tu empresa',
-    desc: 'Imprimimos planos en gran formato, brochures corporativos y banners para empresas en Colón, Panamá.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/impresion-planos-brochures-colon',
-    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Impresión profesional de planos y brochures para empresas en Colón, Panamá',
   },
 ]
 

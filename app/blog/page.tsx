@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    badge: 'bg-mbe-blue',
+    titulo: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
+    desc: 'Bordados de calidad en Colón: gorras y polos con logo para empresas y PYMEs, desde 1 unidad. Plaza Millenium F007.',
+    href: '/blog/bordados-gorras-polos-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     badge: 'bg-mbe-blue',
     titulo: 'Envíos internacionales desde Colón: ¿DHL, FedEx o UPS? Guía para elegir tu courier',
