@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    titulo: 'Carnets PVC personalizados para empresas en Colón, Panamá',
+    desc: 'Carnets de identificación con logo, foto y código de barras para empresas en Colón. Diseño a color, entrega en 24-48h.',
+    badge: 'bg-mbe-red',
+    href: '/blog/carnets-pvc-personalizados-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Carnets PVC personalizados para identificación de empleados en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     titulo: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
     desc: 'Bordados de calidad en Colón: gorras y polos con logo para empresas y PYMEs, desde 1 unidad. Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
-  },
-  {
-    categoria: 'Logística',
-    titulo: 'Logística en Colón para PYMEs y operadores de la Zona Libre: todo en un solo lugar',
-    desc: 'Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h. Tu aliado logístico en Colón, Panamá.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/logistica-pymes-zona-libre-colon',
-    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Almacén logístico para empresas y PYMEs en Colón, Panamá',
   },
 ]
 

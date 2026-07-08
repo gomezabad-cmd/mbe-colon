@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    badge: 'bg-mbe-red',
+    titulo: 'Carnets PVC personalizados para empresas en Colón, Panamá',
+    desc: 'Carnets de identificación con logo, foto y código de barras para empresas en Colón. Diseño a color, entrega en 24-48h. Plaza Millenium F007.',
+    href: '/blog/carnets-pvc-personalizados-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Carnets PVC personalizados para identificación de empleados en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     badge: 'bg-mbe-blue',
     titulo: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
