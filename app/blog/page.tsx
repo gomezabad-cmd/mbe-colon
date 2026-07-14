@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    badge: 'bg-mbe-red',
+    titulo: 'Carga marítima Miami-Panamá para empresas en Colón',
+    desc: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística para PYMEs y la Zona Libre de Colón.',
+    href: '/blog/carga-maritima-miami-panama-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Almacén de carga marítima Miami-Panamá para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     badge: 'bg-mbe-red',
     titulo: 'Carnets PVC personalizados para empresas en Colón, Panamá',

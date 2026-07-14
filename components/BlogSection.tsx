@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    titulo: 'Carga marítima Miami-Panamá para empresas en Colón',
+    desc: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística para PYMEs y la Zona Libre de Colón.',
+    badge: 'bg-mbe-red',
+    href: '/blog/carga-maritima-miami-panama-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Almacén de carga marítima Miami-Panamá para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     titulo: 'Carnets PVC personalizados para empresas en Colón, Panamá',
     desc: 'Carnets de identificación con logo, foto y código de barras para empresas en Colón. Diseño a color, entrega en 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/bordados-gorras-polos-empresas-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
-  },
-  {
-    categoria: 'Envíos',
-    titulo: 'Envíos internacionales desde Colón: ¿DHL, FedEx o UPS? Guía para elegir tu courier',
-    desc: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá según destino, peso y presupuesto.',
-    badge: 'bg-mbe-red',
-    href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
   },
 ]
 
