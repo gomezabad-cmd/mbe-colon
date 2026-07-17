@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    badge: 'bg-mbe-blue',
+    titulo: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
+    desc: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Entrega en 24-48h en Plaza Millenium F007.',
+    href: '/blog/impresion-tarjetas-embalaje-profesional-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     badge: 'bg-mbe-red',
     titulo: 'Carga marítima Miami-Panamá para empresas en Colón',

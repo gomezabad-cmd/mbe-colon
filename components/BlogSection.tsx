@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    titulo: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
+    desc: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Entrega en 24-48h en Plaza Millenium F007.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/impresion-tarjetas-embalaje-profesional-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     titulo: 'Carga marítima Miami-Panamá para empresas en Colón',
     desc: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística para PYMEs y la Zona Libre de Colón.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/carnets-pvc-personalizados-empresas-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Carnets PVC personalizados para identificación de empleados en Colón, Panamá',
-  },
-  {
-    categoria: 'Bordados',
-    titulo: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
-    desc: 'Bordados de calidad en Colón: gorras y polos con logo para empresas y PYMEs, desde 1 unidad. Plaza Millenium F007.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/bordados-gorras-polos-empresas-colon',
-    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
   },
 ]
 
