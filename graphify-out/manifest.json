@@ -1,0 +1,447 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1780947940.2702239,
+    "ast_hash": "8d8ed94725ef382bff192033de0910b8",
+    "semantic_hash": "8d8ed94725ef382bff192033de0910b8"
+  },
+  "app/blog/[slug]/page.tsx": {
+    "mtime": 1784314284.191599,
+    "ast_hash": "2d08b0fefdeeb889aa251e5c935673c3",
+    "semantic_hash": "2d08b0fefdeeb889aa251e5c935673c3"
+  },
+  "app/blog/bordados-gorras-polos-empresas-colon/page.tsx": {
+    "mtime": 1784314156.39255,
+    "ast_hash": "437efeeee0da2cf1df099d38817a291e",
+    "semantic_hash": "437efeeee0da2cf1df099d38817a291e"
+  },
+  "app/blog/bordados-personalizados-uniformes-colon/page.tsx": {
+    "mtime": 1784314169.2385285,
+    "ast_hash": "7555b9f9795d56690b3a7708d40d646f",
+    "semantic_hash": "7555b9f9795d56690b3a7708d40d646f"
+  },
+  "app/blog/carga-maritima-miami-panama-empresas-colon/page.tsx": {
+    "mtime": 1784314180.8476276,
+    "ast_hash": "7aa4a2d4a18a5796e13d1440f914d6df",
+    "semantic_hash": "7aa4a2d4a18a5796e13d1440f914d6df"
+  },
+  "app/blog/carnets-pvc-personalizados-empresas-colon/page.tsx": {
+    "mtime": 1784314191.7586327,
+    "ast_hash": "0e2a7c3fb67d50b1fcb3c6800beeecca",
+    "semantic_hash": "0e2a7c3fb67d50b1fcb3c6800beeecca"
+  },
+  "app/blog/como-empacar-paquetes/page.tsx": {
+    "mtime": 1784314202.6558268,
+    "ast_hash": "4d5d0850646889a00022b57f6467800f",
+    "semantic_hash": "4d5d0850646889a00022b57f6467800f"
+  },
+  "app/blog/envios-internacionales-dhl-fedex-ups-colon/page.tsx": {
+    "mtime": 1784314213.0419445,
+    "ast_hash": "3bc9122f65367c96ba23d05b1c67c8fc",
+    "semantic_hash": "3bc9122f65367c96ba23d05b1c67c8fc"
+  },
+  "app/blog/guia-compras-amazon-colon/page.tsx": {
+    "mtime": 1782873161.3653371,
+    "ast_hash": "31aed7ce7f16921dc745a5ac74fc5f14",
+    "semantic_hash": "31aed7ce7f16921dc745a5ac74fc5f14"
+  },
+  "app/blog/impresion-planos-brochures-colon/page.tsx": {
+    "mtime": 1784314222.442595,
+    "ast_hash": "bcae53f70e38b8aaca397504a8f6632d",
+    "semantic_hash": "bcae53f70e38b8aaca397504a8f6632d"
+  },
+  "app/blog/impresion-tarjetas-embalaje-profesional-colon/page.tsx": {
+    "mtime": 1784314232.5181043,
+    "ast_hash": "7461b9c8947268f12bb6c046c98ae68f",
+    "semantic_hash": "7461b9c8947268f12bb6c046c98ae68f"
+  },
+  "app/blog/layout.tsx": {
+    "mtime": 1780948382.861787,
+    "ast_hash": "429db04fb02454e90b5f6352bb94463f",
+    "semantic_hash": "429db04fb02454e90b5f6352bb94463f"
+  },
+  "app/blog/logistica-pymes-zona-libre-colon/page.tsx": {
+    "mtime": 1782873166.091614,
+    "ast_hash": "46a1b48ba9dc9c9c833a1f069903dd3a",
+    "semantic_hash": "46a1b48ba9dc9c9c833a1f069903dd3a"
+  },
+  "app/blog/page.tsx": {
+    "mtime": 1784311227.354088,
+    "ast_hash": "bc910ad25217e3759c00c2b64f90b2e6",
+    "semantic_hash": "bc910ad25217e3759c00c2b64f90b2e6"
+  },
+  "app/blog/sellos-automaticos-personalizados-colon/page.tsx": {
+    "mtime": 1784314245.620583,
+    "ast_hash": "d88a59217b09da20f0c8690ba0d1ed12",
+    "semantic_hash": "d88a59217b09da20f0c8690ba0d1ed12"
+  },
+  "app/blog/traer-repuestos-auto-usa-panama/page.tsx": {
+    "mtime": 1784314255.951756,
+    "ast_hash": "89fdd5ea6d958e6d7ce6582c23fde906",
+    "semantic_hash": "89fdd5ea6d958e6d7ce6582c23fde906"
+  },
+  "app/contacto/page.tsx": {
+    "mtime": 1784029219.7937367,
+    "ast_hash": "5334f19326ebb83921d4a71ba921eed3",
+    "semantic_hash": "5334f19326ebb83921d4a71ba921eed3"
+  },
+  "app/layout.tsx": {
+    "mtime": 1782874124.1755242,
+    "ast_hash": "2d0d32daa75d7075a4d494a1f71c7875",
+    "semantic_hash": "2d0d32daa75d7075a4d494a1f71c7875"
+  },
+  "app/page.tsx": {
+    "mtime": 1782872726.372941,
+    "ast_hash": "31547ae6bd881d49804f65e6ac0cb9f2",
+    "semantic_hash": "31547ae6bd881d49804f65e6ac0cb9f2"
+  },
+  "app/robots.ts": {
+    "mtime": 1782771488.2411103,
+    "ast_hash": "14df8227f7dbc4adf7b7cca1bf3041f4",
+    "semantic_hash": "14df8227f7dbc4adf7b7cca1bf3041f4"
+  },
+  "app/servicios/bordados/page.tsx": {
+    "mtime": 1784314044.9661272,
+    "ast_hash": "5fcb8e920643bd0547e9b167e59e0a92",
+    "semantic_hash": "5fcb8e920643bd0547e9b167e59e0a92"
+  },
+  "app/servicios/carga-maritima/page.tsx": {
+    "mtime": 1784314069.0932705,
+    "ast_hash": "f5fb3ecf2b83305479094248649064f5",
+    "semantic_hash": "f5fb3ecf2b83305479094248649064f5"
+  },
+  "app/servicios/casillero/page.tsx": {
+    "mtime": 1782873507.736698,
+    "ast_hash": "772c765e68eca318c8fdf54aad4f1c67",
+    "semantic_hash": "772c765e68eca318c8fdf54aad4f1c67"
+  },
+  "app/servicios/compras-internet/page.tsx": {
+    "mtime": 1784314093.8996272,
+    "ast_hash": "55979febfef25bfb9b3f64ab8ffd4f3d",
+    "semantic_hash": "55979febfef25bfb9b3f64ab8ffd4f3d"
+  },
+  "app/servicios/envios-internacionales/page.tsx": {
+    "mtime": 1782873544.225681,
+    "ast_hash": "908ad955669ca799cd2fead9fa910f8f",
+    "semantic_hash": "908ad955669ca799cd2fead9fa910f8f"
+  },
+  "app/servicios/impresion/page.tsx": {
+    "mtime": 1784314118.7966197,
+    "ast_hash": "4c6c7ba39c1c395df4c57102f1c6b7c8",
+    "semantic_hash": "4c6c7ba39c1c395df4c57102f1c6b7c8"
+  },
+  "app/servicios/layout.tsx": {
+    "mtime": 1780795788.457495,
+    "ast_hash": "13ef38fa9bc9290b9e4a591d5915d742",
+    "semantic_hash": "13ef38fa9bc9290b9e4a591d5915d742"
+  },
+  "app/servicios/page.tsx": {
+    "mtime": 1784314131.1063695,
+    "ast_hash": "5f1018eddf67a09e3d7c8acc3995a94a",
+    "semantic_hash": "5f1018eddf67a09e3d7c8acc3995a94a"
+  },
+  "app/servicios/sellos/page.tsx": {
+    "mtime": 1784314019.3861127,
+    "ast_hash": "d8dbdc08412412d300ba60f36a5b33ac",
+    "semantic_hash": "d8dbdc08412412d300ba60f36a5b33ac"
+  },
+  "app/sitemap.ts": {
+    "mtime": 1784314369.0242496,
+    "ast_hash": "e86e284dbd1f8efa5e8e26a32d176825",
+    "semantic_hash": "e86e284dbd1f8efa5e8e26a32d176825"
+  },
+  "components/BlogPreviewSection.tsx": {
+    "mtime": 1783646443.052819,
+    "ast_hash": "ee2426bb027bd7ea7f840d8515ccae8d",
+    "semantic_hash": "ee2426bb027bd7ea7f840d8515ccae8d"
+  },
+  "components/BlogSection.tsx": {
+    "mtime": 1784311250.501988,
+    "ast_hash": "e0db7a97addbdd58a4e998f7cf932cd7",
+    "semantic_hash": "e0db7a97addbdd58a4e998f7cf932cd7"
+  },
+  "components/ContactSection.tsx": {
+    "mtime": 1783646476.2552338,
+    "ast_hash": "f71c92356ba3e286fb443e1f7241c774",
+    "semantic_hash": "f71c92356ba3e286fb443e1f7241c774"
+  },
+  "components/Footer.tsx": {
+    "mtime": 1783646071.7605598,
+    "ast_hash": "ce07de56909b4db8bbd9f0e7e6017158",
+    "semantic_hash": "ce07de56909b4db8bbd9f0e7e6017158"
+  },
+  "components/HeroBanner.tsx": {
+    "mtime": 1783995511.695546,
+    "ast_hash": "878b6ed066ef099d1ef3046fa92437e7",
+    "semantic_hash": "878b6ed066ef099d1ef3046fa92437e7"
+  },
+  "components/Navbar.tsx": {
+    "mtime": 1783646070.863332,
+    "ast_hash": "a203955cfa809b6f8d23db463d436fe4",
+    "semantic_hash": "a203955cfa809b6f8d23db463d436fe4"
+  },
+  "components/NosotrosSection.tsx": {
+    "mtime": 1782870080.04112,
+    "ast_hash": "19774b4e079ad0ec9c16588ddb62cd90",
+    "semantic_hash": "19774b4e079ad0ec9c16588ddb62cd90"
+  },
+  "components/PymeSection.tsx": {
+    "mtime": 1782870516.6745968,
+    "ast_hash": "c774e6c9a418325292f79e71907c29a2",
+    "semantic_hash": "c774e6c9a418325292f79e71907c29a2"
+  },
+  "components/ReviewsSection.tsx": {
+    "mtime": 1781895619.6455905,
+    "ast_hash": "a449695876f311934799f81bc45ab1b5",
+    "semantic_hash": "a449695876f311934799f81bc45ab1b5"
+  },
+  "components/ServicePageTemplate.tsx": {
+    "mtime": 1782875535.2832484,
+    "ast_hash": "5881e3688be252dfa9d070fa4e896b8e",
+    "semantic_hash": "5881e3688be252dfa9d070fa4e896b8e"
+  },
+  "components/ServicesBar.tsx": {
+    "mtime": 1781223101.612194,
+    "ast_hash": "8e0d309035fd3975df298d000ddb2cd0",
+    "semantic_hash": "8e0d309035fd3975df298d000ddb2cd0"
+  },
+  "components/USAShoppingSection.tsx": {
+    "mtime": 1783646075.869469,
+    "ast_hash": "bd6c40d9c6d195d55ae68daafbdc99d1",
+    "semantic_hash": "bd6c40d9c6d195d55ae68daafbdc99d1"
+  },
+  "components/UrgencySection.tsx": {
+    "mtime": 1782875612.1305254,
+    "ast_hash": "9ba6bb5c94bd07163d9ec8f84f36c32a",
+    "semantic_hash": "9ba6bb5c94bd07163d9ec8f84f36c32a"
+  },
+  "components/WhatsAppButton.tsx": {
+    "mtime": 1782875403.1582966,
+    "ast_hash": "1183bad3e499998974e5e88f3660391f",
+    "semantic_hash": "1183bad3e499998974e5e88f3660391f"
+  },
+  "components/WhyUsSection.tsx": {
+    "mtime": 1783646077.5725052,
+    "ast_hash": "9078768d7a4bb8ad28f0846fb270bb58",
+    "semantic_hash": "9078768d7a4bb8ad28f0846fb270bb58"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1780792948.4428053,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "lib/constants.ts": {
+    "mtime": 1784029414.3558211,
+    "ast_hash": "0c279eb420df0335501b481d96236952",
+    "semantic_hash": "0c279eb420df0335501b481d96236952"
+  },
+  "lib/google-reviews.ts": {
+    "mtime": 1782870648.8299954,
+    "ast_hash": "4a2ea276c897b9163d89ae8190ff6a87",
+    "semantic_hash": "4a2ea276c897b9163d89ae8190ff6a87"
+  },
+  "lib/pixel.ts": {
+    "mtime": 1782875387.5104487,
+    "ast_hash": "d5520d53c8dd797b609d913b31cc7653",
+    "semantic_hash": "d5520d53c8dd797b609d913b31cc7653"
+  },
+  "lib/sanitize.ts": {
+    "mtime": 1783646529.378893,
+    "ast_hash": "235e0daedc1ab3d3e3f4cbf121f88ce8",
+    "semantic_hash": "235e0daedc1ab3d3e3f4cbf121f88ce8"
+  },
+  "lib/wordpress.ts": {
+    "mtime": 1780947940.2883537,
+    "ast_hash": "2d4ed857f5534b2e810cc5a002676f0c",
+    "semantic_hash": "2d4ed857f5534b2e810cc5a002676f0c"
+  },
+  "next.config.ts": {
+    "mtime": 1784029652.2449315,
+    "ast_hash": "392b9d0e823f9f93699306269e0e242d",
+    "semantic_hash": "392b9d0e823f9f93699306269e0e242d"
+  },
+  "package.json": {
+    "mtime": 1780792950.997133,
+    "ast_hash": "696785b900f85f569d8f420b315df986",
+    "semantic_hash": "696785b900f85f569d8f420b315df986"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1780792948.7107587,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1780793409.0596883,
+    "ast_hash": "7cdc73b4cc5a78c8b0a721c6c243c209",
+    "semantic_hash": "7cdc73b4cc5a78c8b0a721c6c243c209"
+  },
+  "tsconfig.json": {
+    "mtime": 1780792950.993143,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "AGENTS.md": {
+    "mtime": 1780793319.0526843,
+    "ast_hash": "9e09241799026ac05be315a2f0b50055",
+    "semantic_hash": "9e09241799026ac05be315a2f0b50055"
+  },
+  "CLAUDE.md": {
+    "mtime": 1780793319.0551655,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "README.md": {
+    "mtime": 1780792948.2431285,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "public/llms.txt": {
+    "mtime": 1782781370.5479572,
+    "ast_hash": "78ad30ab70179364e0564534a1f24737",
+    "semantic_hash": "78ad30ab70179364e0564534a1f24737"
+  },
+  "public/blog-logo-grid.jpg": {
+    "mtime": 1780947679.2869222,
+    "ast_hash": "616e3f2ad9e7ac21863499e45ff9dc35",
+    "semantic_hash": "616e3f2ad9e7ac21863499e45ff9dc35"
+  },
+  "public/bordados-banner.jpg": {
+    "mtime": 1780845304.4086797,
+    "ast_hash": "04072da931d1635f1488de0407ab5dc8",
+    "semantic_hash": "04072da931d1635f1488de0407ab5dc8"
+  },
+  "public/file.svg": {
+    "mtime": 1780792948.7764165,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "public/globe.svg": {
+    "mtime": 1780792948.8996987,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "public/images/hero-banner.jpg": {
+    "mtime": 1783646053.6521516,
+    "ast_hash": "a93b76536796c59c8cb3717c5534f51b",
+    "semantic_hash": "a93b76536796c59c8cb3717c5534f51b"
+  },
+  "public/images/hero-delivery.jpg": {
+    "mtime": 1783646060.8887954,
+    "ast_hash": "15172020415a64667483f82a87c0734c",
+    "semantic_hash": "15172020415a64667483f82a87c0734c"
+  },
+  "public/images/icons/clock.png": {
+    "mtime": 1783646379.741965,
+    "ast_hash": "65a4671fb4962f6a66fe06184dfef2b1",
+    "semantic_hash": "65a4671fb4962f6a66fe06184dfef2b1"
+  },
+  "public/images/icons/map-pin.png": {
+    "mtime": 1783646378.5680728,
+    "ast_hash": "100ac8f7d0d9290622f3ac7905fb8927",
+    "semantic_hash": "100ac8f7d0d9290622f3ac7905fb8927"
+  },
+  "public/images/icons/phone.png": {
+    "mtime": 1783646379.1083884,
+    "ast_hash": "682cb170c82c6b49d18c9f6794d0c639",
+    "semantic_hash": "682cb170c82c6b49d18c9f6794d0c639"
+  },
+  "public/images/icons/whatsapp.png": {
+    "mtime": 1783646380.3982754,
+    "ast_hash": "2c186cc0c57f59a93681e611c686813d",
+    "semantic_hash": "2c186cc0c57f59a93681e611c686813d"
+  },
+  "public/images/mbe-panama-logo.png": {
+    "mtime": 1783646049.6926205,
+    "ast_hash": "62b90dd55f39001a0d0b903343a220e3",
+    "semantic_hash": "62b90dd55f39001a0d0b903343a220e3"
+  },
+  "public/images/stores/aliexpress.png": {
+    "mtime": 1783646052.816684,
+    "ast_hash": "72f9e540abfc77254c528c506bd7cd20",
+    "semantic_hash": "72f9e540abfc77254c528c506bd7cd20"
+  },
+  "public/images/stores/amazon.png": {
+    "mtime": 1783646050.957336,
+    "ast_hash": "26097c20b0b5066c6c3e58694b0f373e",
+    "semantic_hash": "26097c20b0b5066c6c3e58694b0f373e"
+  },
+  "public/images/stores/ebay.png": {
+    "mtime": 1783646051.6203084,
+    "ast_hash": "0f5449b36582f3b4a6fc0a0334d883c3",
+    "semantic_hash": "0f5449b36582f3b4a6fc0a0334d883c3"
+  },
+  "public/images/stores/etsy.png": {
+    "mtime": 1783646054.832424,
+    "ast_hash": "308648be056b3b2378e7cf72dc3ae3db",
+    "semantic_hash": "308648be056b3b2378e7cf72dc3ae3db"
+  },
+  "public/images/stores/fashion-nova.png": {
+    "mtime": 1783646053.9871886,
+    "ast_hash": "0db8ced48b7da685140f39a56df13137",
+    "semantic_hash": "0db8ced48b7da685140f39a56df13137"
+  },
+  "public/images/stores/hm.png": {
+    "mtime": 1783646055.0659478,
+    "ast_hash": "03ee8341a7b09ea44143dbe439fdef1b",
+    "semantic_hash": "03ee8341a7b09ea44143dbe439fdef1b"
+  },
+  "public/images/stores/ikea.png": {
+    "mtime": 1783646053.4692218,
+    "ast_hash": "023bda3a8812e58bb782e8aad547a0d9",
+    "semantic_hash": "023bda3a8812e58bb782e8aad547a0d9"
+  },
+  "public/images/stores/shein.png": {
+    "mtime": 1783646052.1782987,
+    "ast_hash": "c4fccf00b56b006e356c1974bb37821e",
+    "semantic_hash": "c4fccf00b56b006e356c1974bb37821e"
+  },
+  "public/images/why-us/eficiencia.jpg": {
+    "mtime": 1783646062.2799003,
+    "ast_hash": "57e70a5553c6f5f4b6ae53f0055bacd8",
+    "semantic_hash": "57e70a5553c6f5f4b6ae53f0055bacd8"
+  },
+  "public/images/why-us/experiencia.jpg": {
+    "mtime": 1783646062.7989738,
+    "ast_hash": "4273fc7f816e0dd92a9cda522c90b7a4",
+    "semantic_hash": "4273fc7f816e0dd92a9cda522c90b7a4"
+  },
+  "public/images/why-us/ubicacion.jpg": {
+    "mtime": 1783646060.9837692,
+    "ast_hash": "b5108ad663ec8df30f9536ba2b710335",
+    "semantic_hash": "b5108ad663ec8df30f9536ba2b710335"
+  },
+  "public/impresion-banner.jpg": {
+    "mtime": 1780848983.9624155,
+    "ast_hash": "f6e5f30a7cee1cfba75deef0d2cf8f8e",
+    "semantic_hash": "f6e5f30a7cee1cfba75deef0d2cf8f8e"
+  },
+  "public/next.svg": {
+    "mtime": 1780792949.0147872,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "public/og-image.png": {
+    "mtime": 1781310502.8975904,
+    "ast_hash": "62b90dd55f39001a0d0b903343a220e3",
+    "semantic_hash": "62b90dd55f39001a0d0b903343a220e3"
+  },
+  "public/seguridad-garantizada.png": {
+    "mtime": 1780846348.5538478,
+    "ast_hash": "2bc40c42d76b5337ad31fc17cb951d49",
+    "semantic_hash": "2bc40c42d76b5337ad31fc17cb951d49"
+  },
+  "public/sellos-banner.jpg": {
+    "mtime": 1780845640.6743429,
+    "ast_hash": "b60cca4a81c013ffc82ae282ab39fbd4",
+    "semantic_hash": "b60cca4a81c013ffc82ae282ab39fbd4"
+  },
+  "public/vercel.svg": {
+    "mtime": 1780792949.1241822,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "public/window.svg": {
+    "mtime": 1780792949.2304902,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

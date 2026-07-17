@@ -1,0 +1,1 @@
+{"nodes": [{"id": "claude_md_file", "type": "convention", "label": "CLAUDE.md (referencia a AGENTS.md)", "description": "Archivo de instrucciones para Claude Code que simplemente referencia/importa el contenido de AGENTS.md mediante la sintaxis @AGENTS.md.", "source_file": "CLAUDE.md", "confidence": "EXTRACTED"}], "edges": [], "hyperedges": []}
