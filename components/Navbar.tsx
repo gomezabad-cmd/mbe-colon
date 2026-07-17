@@ -34,7 +34,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png"
+            src="/images/mbe-panama-logo.png"
             alt="Mail Boxes Etc."
             width={140}
             height={48}

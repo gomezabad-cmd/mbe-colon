@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón | MBE Colón',
   description: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/impresion-tarjetas-embalaje-profesional-colon',
+  },
 }
 
 const BASE_URL = 'https://mbe-colon.vercel.app'

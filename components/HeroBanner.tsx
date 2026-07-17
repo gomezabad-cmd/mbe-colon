@@ -4,9 +4,8 @@ import { useState, useEffect } from 'react'
 import { HERO_SLIDES } from '@/lib/constants'
 
 const SLIDE_IMAGES = [
-  'https://www.mbe-ca.com/wp-content/uploads/2025/10/banner-4-1.jpg',
-  // Entregas rápidas 24-48h — cajas de paquetería en bodega/logística profesional
-  'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&h=780&fit=crop&q=80',
+  '/images/hero-banner.jpg',
+  '/images/hero-delivery.jpg',
   // Impresión profesional — tarjetas, brochures y banners (foto real)
   '/impresion-banner.jpg',
   // Bordados personalizados — máquina bordadora industrial (foto real)
@@ -28,12 +27,15 @@ export default function HeroBanner() {
   return (
     <section
       className="relative w-full overflow-hidden bg-mbe-dark"
-      style={{ maxHeight: 'calc(100vh - 88px)' }}
+      style={{
+        minHeight: 'clamp(560px, 60vw, calc(100vh - 88px))',
+        maxHeight: 'calc(100vh - 88px)',
+      }}
     >
-      {/* Aspect-ratio spacer: 780/1600 = 48.75% — images are 1600×780px */}
-      <div style={{ paddingTop: '48.75%' }} />
+      {/* Aspect-ratio spacer — only on md+ where the image ratio drives height */}
+      <div className="hidden md:block" style={{ paddingTop: '48.75%' }} />
 
-      {/* Background images — plain <img> so the browser respects object-fit:fill at full res */}
+      {/* Background images */}
       {SLIDE_IMAGES.map((src, i) => (
         <div
           key={src}
@@ -49,7 +51,7 @@ export default function HeroBanner() {
               'Bordados personalizados en uniformes y hoodies para empresas en Panamá — MBE Colón',
               'Sellos automáticos personalizados para empresas en Colón, Panamá — MBE Colón',
             ][i] ?? `MBE Colón — servicio ${i + 1}`}
-            style={{ width: '100%', height: '100%', objectFit: 'fill', display: 'block' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
             loading={i === 0 ? 'eager' : 'lazy'}
             fetchPriority={i === 0 ? 'high' : 'low'}
           />
@@ -58,8 +60,8 @@ export default function HeroBanner() {
       {/* Dark overlay so text is readable */}
       <div className="absolute inset-0 bg-black/55" />
 
-      {/* Content — must be absolute so it doesn't add height to the section */}
-      <div className="absolute inset-0 z-10 max-w-6xl mx-auto px-4 flex items-center">
+      {/* Content */}
+      <div className="absolute inset-0 z-10 max-w-6xl mx-auto px-4 flex items-start pt-10 pb-20 md:items-center md:pt-0 md:pb-0">
         <div className="max-w-xl">
           <div className="text-mbe-red text-xs font-bold tracking-widest uppercase mb-3 opacity-90">
             {slide.eyebrow}

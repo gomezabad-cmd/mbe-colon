@@ -4,6 +4,9 @@ import { CONTACT } from '@/lib/constants'
 export const metadata = {
   title: '¿Cómo empacar correctamente tu paquete para envíos internacionales? | MBE Colón',
   description: 'Cómo empacar correctamente tu paquete para envíos internacionales. Técnicas profesionales para proteger tus envíos con DHL, FedEx y UPS. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/como-empacar-paquetes',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

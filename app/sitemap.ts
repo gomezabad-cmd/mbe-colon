@@ -1,116 +1,63 @@
 import type { MetadataRoute } from 'next'
+import fs from 'fs'
+import path from 'path'
+import { getPosts } from '@/lib/wordpress'
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: BASE_URL,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${BASE_URL}/servicios`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/contacto`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/blog/sellos-automaticos-personalizados-colon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/bordados-personalizados-uniformes-colon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/como-empacar-paquetes`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/guia-compras-amazon-colon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/traer-repuestos-auto-usa-panama`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/logistica-pymes-zona-libre-colon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/impresion-planos-brochures-colon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/servicios/compras-internet`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/carga-maritima`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/envios-internacionales`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/impresion`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/casillero`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/bordados`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/servicios/sellos`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+const SERVICE_SLUGS = [
+  'compras-internet',
+  'carga-maritima',
+  'envios-internacionales',
+  'impresion',
+  'casillero',
+  'bordados',
+  'sellos',
+]
+
+function getBlogSlugs(): string[] {
+  const blogDir = path.join(process.cwd(), 'app', 'blog')
+  return fs
+    .readdirSync(blogDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name !== '[slug]')
+    .map((entry) => entry.name)
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const now = new Date()
+
+  const staticRoutes: MetadataRoute.Sitemap = [
+    { url: BASE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
+    { url: `${BASE_URL}/servicios`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/contacto`, lastModified: now, changeFrequency: 'yearly', priority: 0.8 },
+    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
   ]
+
+  const localBlogSlugs = new Set(getBlogSlugs())
+
+  const localBlogRoutes: MetadataRoute.Sitemap = [...localBlogSlugs].map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }))
+
+  const wpPosts = await getPosts(50)
+  const wpBlogRoutes: MetadataRoute.Sitemap = wpPosts
+    .filter((post) => !localBlogSlugs.has(post.slug))
+    .map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    }))
+
+  const serviceRoutes: MetadataRoute.Sitemap = SERVICE_SLUGS.map((slug) => ({
+    url: `${BASE_URL}/servicios/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  return [...staticRoutes, ...localBlogRoutes, ...wpBlogRoutes, ...serviceRoutes]
 }

@@ -115,7 +115,7 @@ export default function ContactoPage() {
             {/* Mapa */}
             <div className="rounded-2xl overflow-hidden shadow-md h-[420px]">
               <iframe
-                src="https://maps.google.com/maps?q=Plaza+Millenium+Colon+Panama&output=embed"
+                src={CONTACT.mapsEmbed}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -3,6 +3,9 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 export const metadata = {
   title: 'Impresión Profesional de Tarjetas, Brochures y Banners | MBE Colón, Panamá',
   description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners en gran formato. Calidad garantizada y entrega rápida. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/servicios/impresion',
+  },
 }
 
 export default function ImpresionPage() {

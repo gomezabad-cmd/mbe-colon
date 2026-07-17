@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Carga Marítima Miami-Panamá para Empresas en Colón | MBE Colón',
   description: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística confiable para PYMEs y la Zona Libre de Colón. Cotiza en Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/carga-maritima-miami-panama-empresas-colon',
+  },
 }
 
 const BASE_URL = 'https://mbe-colon.vercel.app'

@@ -2,14 +2,10 @@ import Image from 'next/image'
 import { WHY_US } from '@/lib/constants'
 
 const CARD_IMAGES = [
-  // Ubicación estratégica — zona comercial / ciudad con edificios
-  'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80',
-  // Eficiencia total — repartidor entregando caja a cliente
-  'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
-  // Seguridad garantizada — sello 100% garantizado
+  '/images/why-us/ubicacion.jpg',
+  '/images/why-us/eficiencia.jpg',
   '/seguridad-garantizada.png',
-  // 18+ años de experiencia — equipo profesional de logística
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+  '/images/why-us/experiencia.jpg',
 ]
 
 export default function WhyUsSection() {

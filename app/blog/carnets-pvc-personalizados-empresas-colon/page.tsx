@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Carnets PVC personalizados para empresas en Colón, Panamá | MBE Colón',
   description: 'Carnets PVC personalizados para empresas en Colón, Panamá. Identificación de empleados, código de barras y diseño a color. Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/carnets-pvc-personalizados-empresas-colon',
+  },
 }
 
 const BASE_URL = 'https://mbe-colon.vercel.app'

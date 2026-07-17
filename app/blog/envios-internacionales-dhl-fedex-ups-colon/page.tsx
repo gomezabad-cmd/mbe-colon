@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Envíos Internacionales desde Colón: ¿DHL, FedEx o UPS? | MBE Colón',
   description: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá. Descubre cuál courier conviene según tu paquete, destino y presupuesto.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/envios-internacionales-dhl-fedex-ups-colon',
+  },
 }
 
 const BASE_URL = 'https://mbe-colon.vercel.app'

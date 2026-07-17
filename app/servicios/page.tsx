@@ -6,6 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Servicios | MBE Colón — Envíos, Casillero, Impresión y más en Colón, Panamá',
   description: 'Servicios de logística en Colón: envíos internacionales DHL FedEx UPS, casillero Miami, carga marítima, impresión y bordados personalizados. Plaza Millenium.',
+  alternates: {
+    canonical: 'https://mbecolon.com/servicios',
+  },
 }
 
 const SERVICES = [

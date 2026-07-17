@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Impresión de planos, brochures y banners en Colón, Panamá | MBE Colón',
   description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners para empresas. Calidad garantizada y entrega rápida. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/impresion-planos-brochures-colon',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

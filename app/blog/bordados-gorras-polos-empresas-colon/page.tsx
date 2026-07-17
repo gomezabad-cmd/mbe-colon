@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Gorras y Polos Bordados con Logo para Empresas en Colón, Panamá | MBE Colón',
   description: '¿Buscas bordados en Colón para tu empresa? Gorras y polos bordados con logo, alta calidad y entrega rápida en Plaza Millenium F007, Panamá.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/bordados-gorras-polos-empresas-colon',
+  },
 }
 
 const BASE_URL = 'https://mbe-colon.vercel.app'

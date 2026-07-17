@@ -3,6 +3,9 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 export const metadata = {
   title: 'Carga Marítima Miami–Panamá y China–Panamá | MBE Colón',
   description: 'Carga marítima Miami-Colón. Envío de contenedores y consolidados desde Miami a la Zona Libre de Colón. Servicios logísticos completos para empresas. MBE.',
+  alternates: {
+    canonical: 'https://mbecolon.com/servicios/carga-maritima',
+  },
 }
 
 export default function CargaPage() {

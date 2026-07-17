@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Bordados Personalizados en Uniformes y Gorras para Empresas | MBE Colón, Panamá',
   description: 'Bordados personalizados para uniformes, hoodies y gorras en Colón. Diseños únicos, desde 1 unidad, alta calidad y durabilidad garantizada. MBE Colón.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/bordados-personalizados-uniformes-colon',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

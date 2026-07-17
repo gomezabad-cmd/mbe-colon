@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import { getPostBySlug, getPosts, formatDate, featuredImage } from '@/lib/wordpress'
+import { sanitizeHtml } from '@/lib/sanitize'
 import type { Metadata } from 'next'
 
 type Props = { params: Promise<{ slug: string }> }
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {}
   return {
     title: `${post.title.rendered} | Blog MBE Colón`,
+    alternates: { canonical: `https://mbecolon.com/blog/${slug}` },
     openGraph: { title: post.title.rendered, url: `https://mbecolon.com/blog/${slug}` },
   }
 }
@@ -44,7 +46,7 @@ export default async function BlogPostPage({ params }: Props) {
             <p className="text-mbe-red text-sm font-bold mb-3">{formatDate(post.date)}</p>
             <h1
               className="text-white text-3xl md:text-4xl font-black leading-tight"
-              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+              dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.title.rendered) }}
             />
           </div>
         </section>
@@ -65,7 +67,7 @@ export default async function BlogPostPage({ params }: Props) {
               prose-strong:text-mbe-dark
               prose-a:text-mbe-red prose-a:no-underline hover:prose-a:underline
               prose-ul:text-mbe-gray prose-li:marker:text-mbe-red"
-            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content.rendered) }}
           />
 
           {/* CTA inline */}
