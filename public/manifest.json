@@ -1,0 +1,13 @@
+{
+  "name": "Mail Boxes Etc. Colón",
+  "short_name": "MBE Colón",
+  "description": "Envíos, casillero Miami e impresión en Colón, Panamá.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#BE1E2D",
+  "icons": [
+    { "src": "/images/mbe-panama-logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/mbe-panama-logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
