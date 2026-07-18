@@ -22,10 +22,10 @@ export async function POST(request: NextRequest) {
     token,
     notification: {
       title: '📦 Estás cerca de MBE Colón',
-      body: 'Visítanos en Plaza Millenium Local F007 — envíos, casillero Miami e impresión.',
+      body: 'Visítanos en Plaza Millenium Local F007 — escríbenos por WhatsApp y te atendemos al instante.',
     },
     webpush: {
-      fcmOptions: { link: 'https://mbecolon.com' },
+      fcmOptions: { link: 'https://wa.me/50769495100?text=Hola!%20Vi%20la%20notificaci%C3%B3n%20de%20MBE%20Col%C3%B3n%2C%20estoy%20cerca%20del%20local.' },
     },
   })
 
