@@ -157,7 +157,7 @@ export default function ServicesBar() {
   return (
     <section className="bg-white py-8 px-4 shadow-sm">
       <div className="max-w-5xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-5 justify-items-center">
           {SERVICES.map(service => (
             <TiltBox key={service.id} service={service} />
           ))}

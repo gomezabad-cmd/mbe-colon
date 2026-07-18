@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getPosts, formatDate, stripHtml, featuredImage } from '@/lib/wordpress'
+import { sanitizeHtml } from '@/lib/sanitize'
 
 export default async function BlogPreviewSection() {
   const posts = await getPosts(3)
@@ -44,7 +45,7 @@ export default async function BlogPreviewSection() {
                   <p className="text-xs text-mbe-blue font-semibold mb-2">{formatDate(post.date)}</p>
                   <h3
                     className="font-bold text-mbe-dark text-sm leading-snug mb-2 group-hover:text-mbe-red transition-colors"
-                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.title.rendered) }}
                   />
                   <p className="text-mbe-gray text-xs leading-relaxed">{excerpt}</p>
                 </div>

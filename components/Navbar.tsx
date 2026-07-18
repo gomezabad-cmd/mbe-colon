@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { CONTACT, SERVICES } from '@/lib/constants'
+import { trackLead } from '@/lib/pixel'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,7 +34,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png"
+            src="/images/mbe-panama-logo.png"
             alt="Mail Boxes Etc."
             width={140}
             height={48}
@@ -59,12 +60,13 @@ export default function Navbar() {
             </div>
           </div>
           <Link href="/blog" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Blog</Link>
-          <Link href="#nosotros" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Nosotros</Link>
-          <Link href="#contacto" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Contacto</Link>
+          <Link href="/#nosotros" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Nosotros</Link>
+          <Link href="/#contacto" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Contacto</Link>
           <a
             href={CONTACT.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead('whatsapp_navbar_desktop')}
             className="bg-mbe-red text-white text-sm font-bold px-4 py-2 rounded hover:opacity-90 transition-opacity"
           >
             Cotizar ahora →
@@ -95,9 +97,9 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/blog" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Blog</Link>
-          <Link href="#nosotros" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Nosotros</Link>
-          <Link href="#contacto" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Contacto</Link>
-          <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="block bg-mbe-red text-white text-sm font-bold px-4 py-3 rounded text-center">
+          <Link href="/#nosotros" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Nosotros</Link>
+          <Link href="/#contacto" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Contacto</Link>
+          <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackLead('whatsapp_navbar_mobile')} className="block bg-mbe-red text-white text-sm font-bold px-4 py-3 rounded text-center">
             💬 Cotizar por WhatsApp
           </a>
         </div>

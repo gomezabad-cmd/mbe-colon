@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo oficial MBE */}
           <div className="mb-4">
             <Image
-              src="https://www.mbe-ca.com/wp-content/uploads/2023/07/mbe-panama-logo.png"
+              src="/images/mbe-panama-logo.png"
               alt="Mail Boxes Etc. Panamá"
               width={150}
               height={52}

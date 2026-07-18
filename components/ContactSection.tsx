@@ -1,26 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
-
-const CONTACT_ITEMS = [
-  {
-    icon: 'https://img.icons8.com/3d-fluency/94/map-pin.png',
-    label: 'Dirección',
-    content: CONTACT.address,
-    href: CONTACT.mapsLink,
-  },
-  {
-    icon: 'https://img.icons8.com/3d-fluency/94/phone.png',
-    label: 'Teléfono',
-    content: CONTACT.phone,
-    href: CONTACT.phoneHref,
-  },
-  {
-    icon: 'https://img.icons8.com/3d-fluency/94/clock.png',
-    label: 'Horario',
-    content: null,
-    href: null,
-  },
-]
+import { trackLead } from '@/lib/pixel'
 
 export default function ContactSection() {
   return (
@@ -44,7 +26,7 @@ export default function ContactSection() {
 
             {/* Dirección */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <Image src="https://img.icons8.com/3d-fluency/94/map-pin.png" alt="Dirección" width={40} height={40} className="shrink-0" />
+              <Image src="/images/icons/map-pin.png" alt="Dirección" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Dirección</div>
                 <a href={CONTACT.mapsLink} target="_blank" rel="noopener noreferrer" className="text-mbe-gray text-sm mt-0.5 hover:underline block">{CONTACT.address}</a>
@@ -53,7 +35,7 @@ export default function ContactSection() {
 
             {/* Teléfono */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <Image src="https://img.icons8.com/3d-fluency/94/phone.png" alt="Teléfono" width={40} height={40} className="shrink-0" />
+              <Image src="/images/icons/phone.png" alt="Teléfono" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Teléfono</div>
                 <a href={CONTACT.phoneHref} className="text-mbe-blue text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.phone}</a>
@@ -62,16 +44,16 @@ export default function ContactSection() {
 
             {/* WhatsApp — logo real */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={40} height={40} className="shrink-0" />
+              <Image src="/images/icons/whatsapp.png" alt="WhatsApp" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">WhatsApp</div>
-                <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-green-600 text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.whatsapp}</a>
+                <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackLead('whatsapp_contact_section')} className="text-green-600 text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.whatsapp}</a>
               </div>
             </div>
 
             {/* Horario */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
-              <Image src="https://img.icons8.com/3d-fluency/94/clock.png" alt="Horario" width={40} height={40} className="shrink-0" />
+              <Image src="/images/icons/clock.png" alt="Horario" width={40} height={40} className="shrink-0" />
               <div>
                 <div className="font-bold text-mbe-dark text-sm">Horario</div>
                 <div className="text-mbe-gray text-sm mt-0.5">
@@ -86,9 +68,10 @@ export default function ContactSection() {
               href={CONTACT.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLead('whatsapp_cta_contact_section')}
               className="flex items-center justify-center gap-3 bg-green-500 text-white font-black text-center py-4 rounded-xl text-lg hover:bg-green-600 transition-colors"
             >
-              <Image src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" width={28} height={28} />
+              <Image src="/images/icons/whatsapp.png" alt="WhatsApp" width={28} height={28} />
               Escríbenos por WhatsApp
             </a>
           </div>

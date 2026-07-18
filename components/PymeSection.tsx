@@ -61,7 +61,7 @@ export default function PymeSection() {
   const href = `${CONTACT.whatsappHref}&text=${msg}`
 
   return (
-    <section id="nosotros" className="bg-mbe-dark py-20 px-4 overflow-hidden relative">
+    <section className="bg-mbe-dark py-20 px-4 overflow-hidden relative">
       {/* Decorative background glow */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-mbe-red opacity-10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-mbe-blue opacity-10 rounded-full blur-3xl pointer-events-none" />
@@ -72,7 +72,7 @@ export default function PymeSection() {
             🏢 Servicios Empresariales
           </div>
           <h2 className="text-white text-3xl md:text-4xl font-black leading-tight mb-4">
-            Soluciones logísticas para <span className="text-mbe-red">empresas en Colón</span>
+            Servicios logísticos y envíos para <span className="text-mbe-red">empresas y PYMES en Colón</span>
           </h2>
           <p className="text-gray-400 text-base max-w-2xl mx-auto">
             Servicios logísticos profesionales para PYMEs y empresas en Colón y la provincia de Colón, Panamá. Optimiza tus costos de envío internacional, carga marítima e importación con un equipo dedicado.
@@ -115,7 +115,7 @@ export default function PymeSection() {
           {[
             { value: '30%', label: 'Ahorro promedio en logística' },
             { value: '24h', label: 'Tiempo de respuesta' },
-            { value: '100%', label: 'Tramitación aduanera incluida' },
+            { value: '100%', label: 'Soporte logístico garantizado' },
           ].map(s => (
             <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl py-4 px-2">
               <div className="text-mbe-red font-black text-2xl md:text-3xl">{s.value}</div>
