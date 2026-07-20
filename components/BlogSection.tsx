@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    titulo: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami',
+    desc: 'Recibe tus paquetes de Shein y eBay en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin costo de inscripción.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/casillero-miami-shein-ebay-colon',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
+  },
+  {
     categoria: 'Impresión',
     titulo: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
     desc: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Entrega en 24-48h en Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/carga-maritima-miami-panama-empresas-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Almacén de carga marítima Miami-Panamá para empresas en Colón, Panamá',
-  },
-  {
-    categoria: 'Sellos',
-    titulo: 'Carnets PVC personalizados para empresas en Colón, Panamá',
-    desc: 'Carnets de identificación con logo, foto y código de barras para empresas en Colón. Diseño a color, entrega en 24-48h.',
-    badge: 'bg-mbe-red',
-    href: '/blog/carnets-pvc-personalizados-empresas-colon',
-    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Carnets PVC personalizados para identificación de empleados en Colón, Panamá',
   },
 ]
 

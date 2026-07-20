@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-blue',
+    titulo: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami',
+    desc: 'Recibe tus paquetes de Shein y eBay en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin costo de inscripción.',
+    href: '/blog/casillero-miami-shein-ebay-colon',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
+  },
+  {
     categoria: 'Impresión',
     badge: 'bg-mbe-blue',
     titulo: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
