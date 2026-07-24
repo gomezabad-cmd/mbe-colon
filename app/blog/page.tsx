@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-red',
+    titulo: '¿Cuánto cuesta enviar un paquete internacional desde Colón, Panamá?',
+    desc: 'Guía de precios para tus envíos internacionales Colón: qué determina el costo y cómo comparar DHL, FedEx y UPS.',
+    href: '/blog/costo-envios-internacionales-desde-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cajas de paquetes listas para envío internacional desde Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     badge: 'bg-mbe-blue',
     titulo: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami',

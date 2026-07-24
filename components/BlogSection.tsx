@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    titulo: '¿Cuánto cuesta enviar un paquete internacional desde Colón, Panamá?',
+    desc: 'Guía de precios para tus envíos internacionales Colón: qué determina el costo y cómo comparar DHL, FedEx y UPS.',
+    badge: 'bg-mbe-red',
+    href: '/blog/costo-envios-internacionales-desde-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cajas de paquetes listas para envío internacional desde Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     titulo: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami',
     desc: 'Recibe tus paquetes de Shein y eBay en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin costo de inscripción.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/impresion-tarjetas-embalaje-profesional-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá',
-  },
-  {
-    categoria: 'Logística',
-    titulo: 'Carga marítima Miami-Panamá para empresas en Colón',
-    desc: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística para PYMEs y la Zona Libre de Colón.',
-    badge: 'bg-mbe-red',
-    href: '/blog/carga-maritima-miami-panama-empresas-colon',
-    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Almacén de carga marítima Miami-Panamá para empresas en Colón, Panamá',
   },
 ]
 
