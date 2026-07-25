@@ -21,13 +21,13 @@ const POSTS = [
     imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
   },
   {
-    categoria: 'Impresión',
-    titulo: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
-    desc: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Entrega en 24-48h en Plaza Millenium F007.',
+    categoria: 'Bordados',
+    titulo: 'Hoodies bordados con logo para empresas en Colón, Panamá',
+    desc: 'Bordados personalizados para empresas en Colón Panamá: hoodies con logo de alta calidad, entrega rápida en Plaza Millenium F007.',
     badge: 'bg-mbe-blue',
-    href: '/blog/impresion-tarjetas-embalaje-profesional-colon',
-    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá',
+    href: '/blog/hoodies-bordados-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Hoodie bordado con logo de empresa en Colón, Panamá',
   },
 ]
 

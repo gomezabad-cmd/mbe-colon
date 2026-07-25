@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    badge: 'bg-mbe-blue',
+    titulo: 'Hoodies bordados con logo para empresas en Colón, Panamá',
+    desc: 'Bordados personalizados para empresas en Colón Panamá: hoodies con logo de alta calidad, entrega rápida en Plaza Millenium F007.',
+    href: '/blog/hoodies-bordados-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Hoodie bordado con logo de empresa en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     badge: 'bg-mbe-red',
     titulo: '¿Cuánto cuesta enviar un paquete internacional desde Colón, Panamá?',
