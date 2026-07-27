@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    titulo: 'Kit de identidad corporativa para nuevas empresas en Colón, Panamá',
+    desc: 'Sellos automáticos, carnets PVC y papelería membretada para tu nueva empresa en Colón. Todo en un solo lugar, Plaza Millenium F007.',
+    badge: 'bg-mbe-red',
+    href: '/blog/kit-identidad-corporativa-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sello automático y carnet corporativo para nueva empresa en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     titulo: '¿Cuánto cuesta enviar un paquete internacional desde Colón, Panamá?',
     desc: 'Guía de precios para tus envíos internacionales Colón: qué determina el costo y cómo comparar DHL, FedEx y UPS.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/casillero-miami-shein-ebay-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
-  },
-  {
-    categoria: 'Bordados',
-    titulo: 'Hoodies bordados con logo para empresas en Colón, Panamá',
-    desc: 'Bordados personalizados para empresas en Colón Panamá: hoodies con logo de alta calidad, entrega rápida en Plaza Millenium F007.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/hoodies-bordados-empresas-colon',
-    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Hoodie bordado con logo de empresa en Colón, Panamá',
   },
 ]
 

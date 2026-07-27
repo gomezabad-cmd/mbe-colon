@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    badge: 'bg-mbe-red',
+    titulo: 'Kit de identidad corporativa para nuevas empresas en Colón, Panamá',
+    desc: 'Sellos automáticos, carnets PVC y papelería membretada para tu nueva empresa en Colón. Todo en un solo lugar, Plaza Millenium F007.',
+    href: '/blog/kit-identidad-corporativa-empresas-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sello automático y carnet corporativo para nueva empresa en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     badge: 'bg-mbe-blue',
     titulo: 'Hoodies bordados con logo para empresas en Colón, Panamá',
