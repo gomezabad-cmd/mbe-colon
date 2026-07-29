@@ -38,6 +38,9 @@ deploy.log
 # vercel
 .vercel
 
+# local tooling state
+.impeccable/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
