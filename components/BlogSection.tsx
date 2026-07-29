@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    titulo: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación',
+    desc: 'Cómo la consolidación de carga reduce costos de importación para PYMEs en la Zona Libre de Colón, Panamá.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/consolidacion-carga-pymes-colon',
+    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Consolidación de carga marítima para PYMEs en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     titulo: 'Kit de identidad corporativa para nuevas empresas en Colón, Panamá',
     desc: 'Sellos automáticos, carnets PVC y papelería membretada para tu nueva empresa en Colón. Todo en un solo lugar, Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/costo-envios-internacionales-desde-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes listas para envío internacional desde Colón, Panamá',
-  },
-  {
-    categoria: 'Casillero',
-    titulo: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami',
-    desc: 'Recibe tus paquetes de Shein y eBay en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin costo de inscripción.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/casillero-miami-shein-ebay-colon',
-    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
   },
 ]
 

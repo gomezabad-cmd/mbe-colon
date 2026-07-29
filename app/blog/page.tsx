@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    badge: 'bg-mbe-blue',
+    titulo: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación',
+    desc: 'Cómo la consolidación de carga reduce costos de importación para PYMEs en la Zona Libre de Colón, Panamá.',
+    href: '/blog/consolidacion-carga-pymes-colon',
+    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Consolidación de carga marítima para PYMEs en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     badge: 'bg-mbe-red',
     titulo: 'Kit de identidad corporativa para nuevas empresas en Colón, Panamá',
