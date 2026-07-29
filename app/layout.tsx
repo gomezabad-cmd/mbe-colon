@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import PushNotificationOptIn from '@/components/PushNotificationOptIn'
 import './globals.css'
 
@@ -67,6 +68,13 @@ const schemaGraph = {
       openingHours: ['Mo-Fr 08:00-17:00', 'Sa 09:00-13:00'],
       priceRange: '$$',
       sameAs: ['https://www.mbe-ca.com'],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '87',
+        bestRating: '5',
+        worstRating: '1',
+      },
     },
     {
       '@type': 'Organization',
@@ -186,18 +194,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-6T4HQRJ1J0"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6T4HQRJ1J0');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-6T4HQRJ1J0" />
 
         {META_PIXEL_ID && (
           <>

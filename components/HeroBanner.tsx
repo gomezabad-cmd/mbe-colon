@@ -1,17 +1,23 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { HERO_SLIDES } from '@/lib/constants'
 
 const SLIDE_IMAGES = [
   '/images/hero-banner.jpg',
   '/images/hero-delivery.jpg',
-  // Impresión profesional — tarjetas, brochures y banners (foto real)
-  '/impresion-banner.jpg',
-  // Bordados personalizados — máquina bordadora industrial (foto real)
-  '/bordados-banner.jpg',
-  // Sellos automáticos — colección COLOP (foto real)
-  '/sellos-banner.jpg',
+  '/images/impresion-banner.jpg',
+  '/images/bordados-banner.jpg',
+  '/images/sellos-banner.jpg',
+]
+
+const SLIDE_ALTS = [
+  'Envíos internacionales con DHL, FedEx y UPS en Colón, Panamá — Mail Boxes Etc.',
+  'Casillero Miami en Colón, Panamá — recibe compras de Amazon y tiendas de USA',
+  'Impresión profesional de tarjetas y banners en Colón, Panamá — MBE Colón',
+  'Bordados personalizados en uniformes y hoodies para empresas en Panamá — MBE Colón',
+  'Sellos automáticos personalizados para empresas en Colón, Panamá — MBE Colón',
 ]
 
 export default function HeroBanner() {
@@ -41,17 +47,13 @@ export default function HeroBanner() {
           key={src}
           className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={src}
-            alt={[
-              'Envíos internacionales con DHL, FedEx y UPS en Colón, Panamá — Mail Boxes Etc.',
-              'Casillero Miami en Colón, Panamá — recibe compras de Amazon y tiendas de USA',
-              'Impresión profesional de tarjetas y banners en Colón, Panamá — MBE Colón',
-              'Bordados personalizados en uniformes y hoodies para empresas en Panamá — MBE Colón',
-              'Sellos automáticos personalizados para empresas en Colón, Panamá — MBE Colón',
-            ][i] ?? `MBE Colón — servicio ${i + 1}`}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+            alt={SLIDE_ALTS[i] ?? `MBE Colón — servicio ${i + 1}`}
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
+            className="object-cover object-center"
+            priority={i === 0}
             loading={i === 0 ? 'eager' : 'lazy'}
             fetchPriority={i === 0 ? 'high' : 'low'}
           />
