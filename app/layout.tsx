@@ -227,6 +227,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {children}
         <PushNotificationOptIn />
+        <Script
+          src="https://forja-starter-261c87.carlosgomezabadpty.workers.dev/widget.js"
+          strategy="afterInteractive"
+          data-color="#be1e2d"
+          data-saludo="¡Hola! ¿En qué te puedo ayudar? Cotiza envíos, casillero Miami y más."
+        />
       </body>
     </html>
   )
