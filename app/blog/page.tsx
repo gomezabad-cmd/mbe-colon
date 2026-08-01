@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    badge: 'bg-mbe-blue',
+    titulo: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
+    desc: 'Impresión de banners publicitarios en Colón Panamá: vinil, pendones roll-up y afiches. Entrega en 24-48h en Plaza Millenium F007.',
+    href: '/blog/impresion-banners-afiches-publicitarios-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     badge: 'bg-mbe-blue',
     titulo: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación',

@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    titulo: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
+    desc: 'Impresión de banners publicitarios en Colón Panamá: vinil, pendones roll-up y afiches. Entrega en 24-48h en Plaza Millenium F007.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/impresion-banners-afiches-publicitarios-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     titulo: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación',
     desc: 'Cómo la consolidación de carga reduce costos de importación para PYMEs en la Zona Libre de Colón, Panamá.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/kit-identidad-corporativa-empresas-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Sello automático y carnet corporativo para nueva empresa en Colón, Panamá',
-  },
-  {
-    categoria: 'Envíos',
-    titulo: '¿Cuánto cuesta enviar un paquete internacional desde Colón, Panamá?',
-    desc: 'Guía de precios para tus envíos internacionales Colón: qué determina el costo y cómo comparar DHL, FedEx y UPS.',
-    badge: 'bg-mbe-red',
-    href: '/blog/costo-envios-internacionales-desde-colon',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Cajas de paquetes listas para envío internacional desde Colón, Panamá',
   },
 ]
 
