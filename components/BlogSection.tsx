@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    titulo: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón',
+    desc: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/casillero-miami-electronicos-gadgets-colon',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Compra de laptops y gadgets electrónicos con casillero Miami MBE Colón, Panamá',
+  },
+  {
     categoria: 'Impresión',
     titulo: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
     desc: 'Impresión de banners publicitarios en Colón Panamá: vinil, pendones roll-up y afiches. Entrega en 24-48h en Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/consolidacion-carga-pymes-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Consolidación de carga marítima para PYMEs en Colón, Panamá',
-  },
-  {
-    categoria: 'Sellos',
-    titulo: 'Kit de identidad corporativa para nuevas empresas en Colón, Panamá',
-    desc: 'Sellos automáticos, carnets PVC y papelería membretada para tu nueva empresa en Colón. Todo en un solo lugar, Plaza Millenium F007.',
-    badge: 'bg-mbe-red',
-    href: '/blog/kit-identidad-corporativa-empresas-colon',
-    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Sello automático y carnet corporativo para nueva empresa en Colón, Panamá',
   },
 ]
 

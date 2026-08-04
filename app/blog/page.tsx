@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-blue',
+    titulo: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón',
+    desc: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h.',
+    href: '/blog/casillero-miami-electronicos-gadgets-colon',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Compra de laptops y gadgets electrónicos con casillero Miami MBE Colón, Panamá',
+  },
+  {
     categoria: 'Impresión',
     badge: 'bg-mbe-blue',
     titulo: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
