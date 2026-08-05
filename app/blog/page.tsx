@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-blue',
+    titulo: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',
+    desc: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
+    href: '/blog/seguro-envios-internacionales-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     badge: 'bg-mbe-blue',
     titulo: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón',

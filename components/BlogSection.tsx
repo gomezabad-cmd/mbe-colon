@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    titulo: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',
+    desc: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/seguro-envios-internacionales-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     titulo: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón',
     desc: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/impresion-banners-afiches-publicitarios-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
-  },
-  {
-    categoria: 'Logística',
-    titulo: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación',
-    desc: 'Cómo la consolidación de carga reduce costos de importación para PYMEs en la Zona Libre de Colón, Panamá.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/consolidacion-carga-pymes-colon',
-    img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Consolidación de carga marítima para PYMEs en Colón, Panamá',
   },
 ]
 
