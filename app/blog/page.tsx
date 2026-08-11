@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    badge: 'bg-mbe-blue',
+    titulo: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá',
+    desc: 'Bordamos delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. Entrega rápida en Plaza Millenium F007.',
+    href: '/blog/bordados-delantales-restaurantes-hoteles-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Delantal bordado con logo para restaurante en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     badge: 'bg-mbe-blue',
     titulo: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',

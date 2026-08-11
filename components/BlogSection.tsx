@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    titulo: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá',
+    desc: 'Bordamos delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. Entrega rápida en Plaza Millenium F007.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/bordados-delantales-restaurantes-hoteles-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Delantal bordado con logo para restaurante en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     titulo: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',
     desc: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/casillero-miami-electronicos-gadgets-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compra de laptops y gadgets electrónicos con casillero Miami MBE Colón, Panamá',
-  },
-  {
-    categoria: 'Impresión',
-    titulo: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
-    desc: 'Impresión de banners publicitarios en Colón Panamá: vinil, pendones roll-up y afiches. Entrega en 24-48h en Plaza Millenium F007.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/impresion-banners-afiches-publicitarios-colon',
-    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
   },
 ]
 
