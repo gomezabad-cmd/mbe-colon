@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { submitUrls, BASE_URL } from '@/lib/indexnow'
 
 // Secret header to protect the endpoint from public abuse
-const INDEXNOW_SECRET = process.env.INDEXNOW_SECRET ?? ''
+const INDEXNOW_SECRET = (process.env.INDEXNOW_SECRET ?? '').trim()
 
 export async function POST(request: NextRequest) {
   if (INDEXNOW_SECRET) {

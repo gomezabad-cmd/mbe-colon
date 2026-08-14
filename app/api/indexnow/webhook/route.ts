@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { submitUrls, buildBlogUrl, buildServiceUrl, BASE_URL } from '@/lib/indexnow'
 
 // Set this secret in WordPress: Settings → Permalinks or a custom plugin option
-const WP_WEBHOOK_SECRET = process.env.WP_WEBHOOK_SECRET ?? ''
+const WP_WEBHOOK_SECRET = (process.env.WP_WEBHOOK_SECRET ?? '').trim()
 
 type WPWebhookPayload = {
   secret?: string
