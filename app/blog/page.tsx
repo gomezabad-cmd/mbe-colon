@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    badge: 'bg-mbe-red',
+    titulo: 'Sellos para notarías y bufetes de abogados en Colón, Panamá',
+    desc: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h.',
+    href: '/blog/sellos-notarias-bufetes-abogados-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sello automático para notaría y bufete de abogados en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     badge: 'bg-mbe-blue',
     titulo: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá',

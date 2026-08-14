@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Sellos',
+    titulo: 'Sellos para notarías y bufetes de abogados en Colón, Panamá',
+    desc: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h.',
+    badge: 'bg-mbe-red',
+    href: '/blog/sellos-notarias-bufetes-abogados-colon',
+    img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Sello automático para notaría y bufete de abogados en Colón, Panamá',
+  },
+  {
     categoria: 'Bordados',
     titulo: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá',
     desc: 'Bordamos delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. Entrega rápida en Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/seguro-envios-internacionales-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
-  },
-  {
-    categoria: 'Casillero',
-    titulo: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón',
-    desc: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/casillero-miami-electronicos-gadgets-colon',
-    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Compra de laptops y gadgets electrónicos con casillero Miami MBE Colón, Panamá',
   },
 ]
 
