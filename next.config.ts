@@ -24,6 +24,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'www.mbecolon.com',
+          },
+        ],
+        destination: 'https://mbecolon.com',
+        statusCode: 301,
+      },
+      {
         source: '/:path*',
         has: [
           {
