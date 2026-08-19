@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/blog/tramites-aduana-panama',
+        destination: '/servicios/casillero',
+        statusCode: 301,
+      },
+      {
         source: '/',
         has: [
           {
