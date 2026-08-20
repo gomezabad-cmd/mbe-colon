@@ -17,6 +17,15 @@ export const metadata: Metadata = {
     description:
       'Precios de referencia de casillero Miami, envíos aéreos y marítimos, sellos, bordados e impresión en Colón, Panamá. Cotización exacta por WhatsApp.',
     url: 'https://mbecolon.com/tarifas',
+    images: [
+      {
+        url: 'https://mbecolon.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tarifas de casillero Miami y envíos desde Colón, Panamá — MBE Colón',
+        type: 'image/png',
+      },
+    ],
   },
 }
 

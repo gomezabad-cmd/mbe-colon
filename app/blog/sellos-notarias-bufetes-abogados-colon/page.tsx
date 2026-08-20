@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Sellos para Notarías y Bufetes de Abogados en Colón, Panamá | MBE Colón',
   description: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h. Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/sellos-notarias-bufetes-abogados-colon',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

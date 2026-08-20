@@ -22,7 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title.rendered} | Blog MBE Colón`,
     alternates: { canonical: `https://mbecolon.com/blog/${slug}` },
-    openGraph: { title: post.title.rendered, url: `https://mbecolon.com/blog/${slug}` },
+    openGraph: {
+      title: post.title.rendered,
+      url: `https://mbecolon.com/blog/${slug}`,
+      images: ['https://mbecolon.com/og-image.png'],
+    },
   }
 }
 

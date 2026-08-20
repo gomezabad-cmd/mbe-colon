@@ -3,6 +3,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Kit de Identidad Corporativa para Nuevas Empresas en Colón, Panamá | MBE Colón',
   description: 'Kit de identidad corporativa en Colón, Panamá: sellos automáticos, carnets PVC y papelería membretada para tu nueva empresa. Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/kit-identidad-corporativa-empresas-colon',
+  },
 }
 
 const BASE_URL = 'https://mbecolon.com'

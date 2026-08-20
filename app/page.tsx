@@ -15,6 +15,9 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
   description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com',
+  },
 }
 
 export default function Home() {

@@ -1,8 +1,8 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 
 export const metadata = {
-  title: 'ImpresiÃ³n de Tarjetas de PresentaciÃ³n y Embalaje Profesional en ColÃ³n | MBE ColÃ³n',
-  description: 'ImpresiÃ³n de tarjetas de presentaciÃ³n y embalaje profesional para empresas en ColÃ³n, PanamÃ¡. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
+  title: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón | MBE Colón',
+  description: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/impresion-tarjetas-embalaje-profesional-colon',
   },
@@ -13,12 +13,12 @@ const BASE_URL = 'https://mbecolon.com'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Tarjetas de presentaciÃ³n y embalaje profesional para tu empresa en ColÃ³n, PanamÃ¡',
-  description: 'ImpresiÃ³n de tarjetas de presentaciÃ³n y embalaje profesional para empresas en ColÃ³n, PanamÃ¡. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
+  headline: 'Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá',
+  description: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
   datePublished: '2026-07-17',
   dateModified: '2026-07-17',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. ColÃ³n' },
-  publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. ColÃ³n', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/impresion-tarjetas-embalaje-profesional-colon`,
   image: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80',
 }
@@ -42,79 +42,79 @@ export default function BlogPost() {
 
         <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
           <Link href="/" className="hover:text-mbe-red transition-colors">Inicio</Link>
-          <span>â€º</span>
+          <span>›</span>
           <Link href="/blog" className="hover:text-mbe-red transition-colors">Blog</Link>
-          <span>â€º</span>
+          <span>›</span>
           <span className="text-mbe-dark font-medium">Tarjetas y embalaje</span>
         </nav>
 
-        <span className="bg-mbe-red text-white text-xs font-bold px-3 py-1 rounded-full">ImpresiÃ³n</span>
+        <span className="bg-mbe-red text-white text-xs font-bold px-3 py-1 rounded-full">Impresión</span>
 
         <h1 className="text-mbe-dark text-3xl md:text-4xl font-black leading-tight mt-4 mb-6">
-          Tarjetas de presentaciÃ³n y embalaje profesional para tu empresa en ColÃ³n, PanamÃ¡
+          Tarjetas de presentación y embalaje profesional para tu empresa en Colón, Panamá
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE ColÃ³n</strong> Â· DÃ³nde imprimir tarjetas de presentaciÃ³n en ColÃ³n, PanamÃ¡ y embalar tus envÃ­os como un profesional
+          Por <strong className="text-mbe-dark">MBE Colón</strong> · Dónde imprimir tarjetas de presentación en Colón, Panamá y embalar tus envíos como un profesional
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 
           <p>
-            Una buena primera impresiÃ³n empieza con una tarjeta bien hecha. Si buscas <strong>impresiÃ³n ColÃ³n</strong> de
-            calidad para tu negocio, en MBE ColÃ³n producimos tarjetas de presentaciÃ³n con acabados profesionales,
-            ademÃ¡s de servicio de embalaje para que tus envÃ­os lleguen intactos a cualquier destino desde PanamÃ¡.
+            Una buena primera impresión empieza con una tarjeta bien hecha. Si buscas <strong>impresión Colón</strong> de
+            calidad para tu negocio, en MBE Colón producimos tarjetas de presentación con acabados profesionales,
+            además de servicio de embalaje para que tus envíos lleguen intactos a cualquier destino desde Panamá.
           </p>
 
-          <h2 className="text-mbe-dark text-xl font-black mt-8">DÃ³nde imprimir tarjetas de presentaciÃ³n en ColÃ³n, PanamÃ¡</h2>
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Dónde imprimir tarjetas de presentación en Colón, Panamá</h2>
           <p>
-            Muchos emprendedores y PYMEs de ColÃ³n buscan un lugar confiable para imprimir su imagen corporativa sin
-            depender de la capital. En Plaza Millenium F007 ofrecemos impresiÃ³n de <strong>tarjetas de presentaciÃ³n PanamÃ¡</strong> con
+            Muchos emprendedores y PYMEs de Colón buscan un lugar confiable para imprimir su imagen corporativa sin
+            depender de la capital. En Plaza Millenium F007 ofrecemos impresión de <strong>tarjetas de presentación Panamá</strong> con
             papel de alta calidad, acabados mate, brillante o con laminado, y entrega en 24 a 48 horas.
           </p>
 
           <ul className="list-disc list-inside space-y-2 pl-2">
-            <li><strong>DiseÃ±o incluido</strong> â€” si no tienes tu tarjeta lista, te ayudamos a crearla desde cero</li>
-            <li><strong>MÃºltiples acabados</strong> â€” mate, brillante, texturizado o con relieve</li>
-            <li><strong>Entrega rÃ¡pida</strong> â€” pedidos listos en 24-48h en ColÃ³n, PanamÃ¡</li>
+            <li><strong>Diseño incluido</strong> — si no tienes tu tarjeta lista, te ayudamos a crearla desde cero</li>
+            <li><strong>Múltiples acabados</strong> — mate, brillante, texturizado o con relieve</li>
+            <li><strong>Entrega rápida</strong> — pedidos listos en 24-48h en Colón, Panamá</li>
           </ul>
 
-          <h2 className="text-mbe-dark text-xl font-black mt-8">Servicio de embalaje profesional para envÃ­os en ColÃ³n</h2>
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Servicio de embalaje profesional para envíos en Colón</h2>
           <p>
-            AdemÃ¡s de impresiÃ³n, contamos con <strong>embalaje profesional ColÃ³n</strong> para proteger tus paquetes antes de
-            enviarlos por DHL, FedEx o UPS. Usamos cajas reforzadas, plÃ¡stico burbuja y esquineros de cartÃ³n segÃºn
-            el tipo de producto, ya sea documentos, electrÃ³nicos o artÃ­culos frÃ¡giles.
+            Además de impresión, contamos con <strong>embalaje profesional Colón</strong> para proteger tus paquetes antes de
+            enviarlos por DHL, FedEx o UPS. Usamos cajas reforzadas, plástico burbuja y esquineros de cartón según
+            el tipo de producto, ya sea documentos, electrónicos o artículos frágiles.
           </p>
           <p>
-            Este servicio es ideal para empresas de la Zona Libre de ColÃ³n que necesitan enviar muestras o productos
-            terminados a clientes en PanamÃ¡ o en el exterior, garantizando que lleguen en perfecto estado.
+            Este servicio es ideal para empresas de la Zona Libre de Colón que necesitan enviar muestras o productos
+            terminados a clientes en Panamá o en el exterior, garantizando que lleguen en perfecto estado.
           </p>
 
           <div className="bg-mbe-light rounded-2xl p-6 mt-8 border-l-4 border-mbe-red">
-            <p className="font-bold text-mbe-dark mb-2">ðŸ’¡ Tip para tu empresa</p>
+            <p className="font-bold text-mbe-dark mb-2">💡 Tip para tu empresa</p>
             <p className="text-gray-600 text-sm">
-              Combina tus tarjetas de presentaciÃ³n con brochures o banners en un solo pedido y ahorra tiempo.
-              VisÃ­tanos en Plaza Millenium F007, ColÃ³n, o pide una cotizaciÃ³n por WhatsApp antes de pasar por tu material.
+              Combina tus tarjetas de presentación con brochures o banners en un solo pedido y ahorra tiempo.
+              Visítanos en Plaza Millenium F007, Colón, o pide una cotización por WhatsApp antes de pasar por tu material.
             </p>
           </div>
 
         </div>
 
         <div className="mt-12 bg-mbe-dark rounded-2xl p-8 text-center">
-          <h3 className="text-white font-black text-xl mb-2">Â¿Necesitas imprimir o embalar algo esta semana?</h3>
-          <p className="text-gray-400 text-sm mb-6">VisÃ­tanos en Plaza Millenium F007, ColÃ³n â€” o escrÃ­benos ahora.</p>
+          <h3 className="text-white font-black text-xl mb-2">¿Necesitas imprimir o embalar algo esta semana?</h3>
+          <p className="text-gray-400 text-sm mb-6">Visítanos en Plaza Millenium F007, Colón — o escríbenos ahora.</p>
           <a
             href="https://wa.me/50769495100"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-mbe-red text-white font-bold px-6 py-3 rounded hover:opacity-90 transition-opacity"
           >
-            ðŸ’¬ Escribir al WhatsApp â†’
+            💬 Escribir al WhatsApp →
           </a>
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">â† Volver al blog</Link>
+          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

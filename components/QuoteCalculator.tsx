@@ -106,7 +106,8 @@ export default function QuoteCalculator({
     }
   }
 
-  const whatsappUrl = `https://wa.me/${CONTACT.whatsapp.replace(/\D/g, '')}?text=${buildWhatsAppMessage()}`
+  const whatsappNumber = CONTACT.whatsappHref.replace('https://wa.me/', '').split('?')[0]
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${buildWhatsAppMessage()}`
 
   return (
     <section className="bg-mbe-light py-16 px-4">

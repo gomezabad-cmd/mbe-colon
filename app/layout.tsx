@@ -12,18 +12,13 @@ export const metadata: Metadata = {
     other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
   },
   metadataBase: new URL('https://mbecolon.com'),
-  alternates: {
-    canonical: 'https://mbecolon.com',
-  },
   manifest: '/manifest.json',
   title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
   description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
   openGraph: {
-    title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
     description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos en Colón, Panamá. Plaza Millenium F007.',
     type: 'website',
     locale: 'es_PA',
-    url: 'https://mbecolon.com',
     siteName: 'Mail Boxes Etc. Colón',
     images: [
       {
@@ -98,8 +93,8 @@ const schemaGraph = {
       ],
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '87',
+        ratingValue: '4.7',
+        reviewCount: '83',
         bestRating: '5',
         worstRating: '1',
       },
@@ -147,72 +142,6 @@ const schemaGraph = {
   ],
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Cómo puedo enviar un paquete desde Colón, Panamá?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Visítanos en Plaza Millenium Local F007, Colón. Llevamos tu paquete, cotizamos al instante con DHL, FedEx o UPS, y te damos un número de rastreo para seguirlo en tiempo real.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Qué es el casillero Miami de MBE Colón?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Es una dirección en Miami, Florida que te asignamos gratis para que puedas comprar en Amazon, eBay, Shein y otras tiendas de USA. Nosotros recibimos tus paquetes y los enviamos a Colón en 24-48 horas.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuál es el horario de atención de MBE Colón?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Atendemos de lunes a viernes de 8:00 AM a 5:00 PM y sábados de 9:00 AM a 1:00 PM. Los domingos estamos cerrados. También puedes contactarnos por WhatsApp al 6949-5100.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Dónde están ubicados en Colón?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Estamos en Plaza Millenium Local F007, Colón, Panamá. Es fácil de encontrar en el centro comercial más importante de la provincia de Colón.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Hacen bordados personalizados en Colón?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sí. Bordamos uniformes, hoodies, gorras, polos y más con el logo de tu empresa. Trabajamos para PYMEs, equipos y particulares en toda la provincia de Colón y Panamá.',
-      },
-    },
-  ],
-}
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Inicio',
-      item: 'https://mbecolon.com'
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Servicios',
-      item: 'https://mbecolon.com/#servicios'
-    }
-  ]
-}
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
@@ -220,14 +149,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       <body>
