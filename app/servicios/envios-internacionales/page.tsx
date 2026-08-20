@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Envíos Internacionales con DHL, FedEx y UPS | MBE Colón, Panamá',
+  title: 'Envíos Internacionales DHL, FedEx y UPS | MBE Colón',
   description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá. Rastreo en tiempo real, cotizaciones al instante y entrega en 24-48 horas. Plaza Millenium.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/envios-internacionales',
@@ -13,7 +13,7 @@ export default function EnviosPage() {
   return (
     <ServicePageTemplate
       icon="✈️"
-      title="Envíos Internacionales"
+      title="Envíos Internacionales desde Colón, Panamá"
       description="Enviamos tus paquetes a cualquier parte del mundo desde Colón, Panamá con DHL, FedEx y UPS. Cotización inmediata, embalaje profesional y seguimiento en tiempo real para empresas y personas en la provincia de Colón."
       benefits={[
         'Cobertura mundial con DHL, FedEx y UPS',
@@ -55,6 +55,11 @@ export default function EnviosPage() {
         },
       ]}
       href="/servicios/envios-internacionales"
+      relatedLinks={[
+        { label: 'Ver tarifas de envíos', href: '/tarifas' },
+        { label: 'Seguro para envíos internacionales', href: '/blog/seguro-envios-internacionales-colon' },
+        { label: 'Consolidar carga para tu pyme', href: '/blog/consolidacion-carga-pymes-colon' },
+      ]}
     >
       <QuoteCalculator
         variant="general"

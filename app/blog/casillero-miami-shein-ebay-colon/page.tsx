@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Guía para comprar en Shein y eBay y recibir tus paquetes en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin complicaciones.',
   datePublished: '2026-07-20',
   dateModified: '2026-07-20',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/casillero-miami-shein-ebay-colon`,
   image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Compras USA Panamá sin complicaciones
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Compras USA Panamá sin complicaciones
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

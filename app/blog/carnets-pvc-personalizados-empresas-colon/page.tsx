@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Carnets PVC personalizados para empresas en Colón, Panamá. Identificación de empleados, código de barras y diseño a color. Plaza Millenium F007.',
   datePublished: '2026-07-08',
   dateModified: '2026-07-08',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/carnets-pvc-personalizados-empresas-colon`,
   image: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Identificación profesional para tu equipo de trabajo
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Identificación profesional para tu equipo de trabajo
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

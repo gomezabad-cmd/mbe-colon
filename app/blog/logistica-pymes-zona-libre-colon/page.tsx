@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Servicios de logística en Colón para PYMEs y operadores de la Zona Libre. Carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h a Colón.',
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/logistica-pymes-zona-libre-colon`,
   image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Soluciones de logística Colón para importar desde Miami con DHL, FedEx y UPS
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Soluciones de logística Colón para importar desde Miami con DHL, FedEx y UPS
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

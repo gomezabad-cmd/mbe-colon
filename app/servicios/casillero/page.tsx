@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Casillero Miami Gratis para Recibir Paquetes de USA | MBE Colón, Panamá',
+  title: 'Casillero Miami Gratis en Colón, Panamá | MBE Colón',
   description: 'Activa tu casillero Miami gratis. Recibe paquetes de Amazon, eBay y Shein directamente en Colón, Panamá. Sin cuota mensual ni comisión. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/casillero',
@@ -13,7 +13,7 @@ export default function CasilleroPage() {
   return (
     <ServicePageTemplate
       icon="📬"
-      title="Casillero Miami"
+      title="Casillero Miami gratis en Colón, Panamá"
       description="Activa gratis tu casillero Miami MBE Colón y obtén tu dirección personal en Estados Unidos. Recibe paquetes de Amazon, eBay, Shein y cualquier tienda de USA directamente en Colón, Panamá. Sin cuota mensual, con soporte logístico y notificación por WhatsApp incluidos."
       benefits={[
         'Dirección en Miami 100% funcional',
@@ -59,6 +59,11 @@ export default function CasilleroPage() {
         },
       ]}
       href="/servicios/casillero"
+      relatedLinks={[
+        { label: 'Ver tarifas de casillero y envíos', href: '/tarifas' },
+        { label: 'Comprar por internet desde Colón', href: '/blog/como-comprar-por-internet-desde-colon-panama' },
+        { label: 'Comprar en Shein y eBay', href: '/blog/casillero-miami-shein-ebay-colon' },
+      ]}
     >
       <QuoteCalculator
         variant="casillero"

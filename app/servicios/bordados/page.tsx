@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Bordados Personalizados en Uniformes y Hoodies para Empresas | MBE Colón, Panamá',
+  title: 'Bordados Personalizados para Empresas en Colón | MBE Colón',
   description: 'Bordados personalizados para uniformes, hoodies, gorras y más. Bordamos desde 1 unidad con alta durabilidad. Empresas y equipos en Colón, Panamá. MBE.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/bordados',
@@ -36,7 +36,7 @@ export default function BordadosPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <ServicePageTemplate
       icon="🧵"
-      title="Bordados Personalizados"
+      title="Bordados Personalizados en Colón, Panamá"
       description="Servicio de bordados personalizados en Colón, Panamá para uniformes empresariales, hoodies, gorras, polos y cualquier prenda textil. Ideal para empresas, equipos deportivos y eventos corporativos en la provincia de Colón. Digitalización de logotipo incluida y alta durabilidad garantizada."
       benefits={[
         'Uniformes empresariales con logo bordado',
@@ -95,6 +95,11 @@ export default function BordadosPage() {
         },
       ]}
       href="/servicios/bordados"
+      relatedLinks={[
+        { label: 'Ver tarifas de bordados', href: '/tarifas' },
+        { label: 'Hoodies bordados para empresas', href: '/blog/hoodies-bordados-empresas-colon' },
+        { label: 'Bordados para restaurantes y hoteles', href: '/blog/bordados-delantales-restaurantes-hoteles-colon' },
+      ]}
       serviceType="Embroidery Service"
     >
       <QuoteCalculator

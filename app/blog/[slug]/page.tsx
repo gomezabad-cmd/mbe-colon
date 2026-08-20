@@ -40,6 +40,28 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title.rendered,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
+              '@type': 'Person',
+              name: 'Equipo de Logística de MBE Colón',
+              jobTitle: 'Servicio de logística y envíos',
+              worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+            },
+            publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: 'https://mbecolon.com' },
+            url: `https://mbecolon.com/blog/${slug}`,
+            image: img || 'https://mbecolon.com/og-image.png',
+            mainEntityOfPage: `https://mbecolon.com/blog/${slug}`,
+          }),
+        }}
+      />
       <main className="pt-[88px]">
         {/* Hero */}
         <section className="bg-mbe-dark py-14 px-4">
@@ -48,6 +70,9 @@ export default async function BlogPostPage({ params }: Props) {
               ← Blog
             </Link>
             <p className="text-mbe-red text-sm font-bold mb-3">{formatDate(post.date)}</p>
+            <p className="text-gray-400 text-sm mb-3">
+              Por <strong className="text-white">Equipo de Logística de MBE Colón</strong>
+            </p>
             <h1
               className="text-white text-3xl md:text-4xl font-black leading-tight"
               dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.title.rendered) }}

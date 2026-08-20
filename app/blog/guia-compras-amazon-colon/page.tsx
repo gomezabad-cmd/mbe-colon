@@ -18,7 +18,12 @@ const articleSchema = {
   description: 'Paso a paso: cómo usar tu casillero Miami MBE para comprar en Amazon, eBay y Shein y recibir en Colón, Panamá sin complicaciones.',
   datePublished: '2025-02-10',
   dateModified: '2026-06-12',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/guia-compras-amazon-colon`,
   image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop',
@@ -59,7 +64,7 @@ export default function BlogPost2() {
       </h1>
 
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-        Por <strong className="text-mbe-dark">MBE Colón</strong> · Guía de casillero Miami
+        Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía de casillero Miami
       </p>
 
       <div className="space-y-6 text-mbe-gray leading-relaxed">

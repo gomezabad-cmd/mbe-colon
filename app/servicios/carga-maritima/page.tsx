@@ -12,7 +12,7 @@ export default function CargaPage() {
   return (
     <ServicePageTemplate
       icon="🚢"
-      title="Carga Marítima"
+      title="Carga Marítima Miami–Panamá desde Colón"
       description="Servicio especializado de carga marítima para empresas en Colón y Panamá. Rutas principales Miami–Panamá y China–Panamá con contenedores completos y consolidados, gestión documental completa y tarifas preferenciales por volumen."
       benefits={[
         'Contenedores completos y consolidados',
@@ -54,6 +54,16 @@ export default function CargaPage() {
         },
       ]}
       href="/servicios/carga-maritima"
+      fullDescription={
+        'Tu puerta de entrada para importar desde Miami y Asia.\n\n' +
+        'El servicio de carga marítima de MBE Colón está pensado para empresas de la Zona Libre de Colón, PYMEs y comerciantes que mueven volúmenes que no son rentables por vía aérea. Trabajamos con contenedores completos (FCL) y cargas consolidadas (LCL): en la opción consolidada compartes espacio con otras cargas y solo pagas por el espacio que ocupas, ideal para crecer sin invertir en un contenedor entero.\n\n' +
+        'Nuestras rutas principales son Miami-Colón (la más solicitada), China-Panamá y Ecuador-Panamá. El tiempo promedio de tránsito es de 5 a 10 días hábiles desde la carga en Miami hasta la entrega en Colón. Incluimos la gestión completa: recogida en origen, embalaje, documentos de exportación, reserva de espacio, desaduanización y entrega hasta tu bodega o punto de venta.\n\n' +
+        'Para cotizar solo necesitas el tipo de mercancía, el peso aproximado y las dimensiones o volumen. Con esos datos te preparamos una cotización personalizada con tarifas preferenciales por volumen y la opción de seguro de carga (1-2% del valor). Escríbenos por WhatsApp y coordinamos tu próxima importación.'
+      }
+      relatedLinks={[
+        { label: 'Ver tarifas de carga y envíos', href: '/tarifas' },
+        { label: 'Consolidar carga para tu pyme', href: '/blog/consolidacion-carga-pymes-colon' },
+      ]}
     />
   )
 }

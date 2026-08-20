@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Compras por Internet desde USA | Casillero Miami — MBE Colón, Panamá',
+  title: 'Compras por Internet desde USA | Casillero Miami MBE Colón',
   description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/compras-internet',
@@ -13,7 +13,7 @@ export default function ComprasPage() {
   return (
     <ServicePageTemplate
       icon="🛒"
-      title="Compras por Internet"
+      title="Compras por Internet desde USA a Colón"
       description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con entrega garantizada y segura."
       benefits={[
         'Dirección de envío en Miami incluida',
@@ -55,6 +55,11 @@ export default function ComprasPage() {
         },
       ]}
       href="/servicios/compras-internet"
+      relatedLinks={[
+        { label: 'Ver tarifas de casillero', href: '/tarifas' },
+        { label: 'Guía para comprar por internet', href: '/blog/como-comprar-por-internet-desde-colon-panama' },
+        { label: 'Comprar en Shein y eBay', href: '/blog/casillero-miami-shein-ebay-colon' },
+      ]}
     >
       <QuoteCalculator
         variant="casillero"

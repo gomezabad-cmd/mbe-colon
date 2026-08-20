@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Servicio de bordados personalizados en Colón, Panamá. Uniformes, hoodies, gorras y polos con tu logo bordado para empresas y equipos. Plaza Millenium F007.',
   datePublished: '2026-06-13',
   dateModified: '2026-06-13',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/bordados-personalizados-uniformes-colon`,
   image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogBordados() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Tu guía para uniformes bordados profesionales en la provincia de Colón
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Tu guía para uniformes bordados profesionales en la provincia de Colón
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

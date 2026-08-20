@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
   datePublished: '2026-07-17',
   dateModified: '2026-07-17',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/impresion-tarjetas-embalaje-profesional-colon`,
   image: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Dónde imprimir tarjetas de presentación en Colón, Panamá y embalar tus envíos como un profesional
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Dónde imprimir tarjetas de presentación en Colón, Panamá y embalar tus envíos como un profesional
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

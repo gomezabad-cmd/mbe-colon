@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
   datePublished: '2026-08-05',
   dateModified: '2026-08-05',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/seguro-envios-internacionales-colon`,
   image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Cómo asegurar tu paquete internacional y evitar pérdidas en tu courier
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Cómo asegurar tu paquete internacional y evitar pérdidas en tu courier
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

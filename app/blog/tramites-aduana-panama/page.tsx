@@ -18,7 +18,12 @@ const articleSchema = {
   description: 'Guía de trámites de aduana en Panamá para clientes de casillero y courier: documentos, proceso ante la ANA, aranceles e ITBMS y errores comunes.',
   datePublished: '2025-03-05',
   dateModified: '2026-08-19',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/tramites-aduana-panama`,
   image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop',
@@ -59,7 +64,7 @@ export default function BlogPost() {
       </h1>
 
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-        Por <strong className="text-mbe-dark">MBE Colón</strong> · Guía para clientes de casillero y courier
+        Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía para clientes de casillero y courier
       </p>
 
       <div className="space-y-6 text-mbe-gray leading-relaxed">

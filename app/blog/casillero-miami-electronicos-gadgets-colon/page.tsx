@@ -17,7 +17,12 @@ const articleSchema = {
   description: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h. Ahorra en tecnología.',
   datePublished: '2026-08-03',
   dateModified: '2026-08-03',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/casillero-miami-electronicos-gadgets-colon`,
   image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80',
@@ -55,7 +60,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Laptops, celulares y tecnología a precio de USA, sin salir de Panamá
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Laptops, celulares y tecnología a precio de USA, sin salir de Panamá
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

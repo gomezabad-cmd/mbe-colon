@@ -6,9 +6,9 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tarifas de Casillero Miami y Envíos desde Colón | MBE Colón, Panamá',
+  title: 'Tarifas de Casillero Miami y Envíos desde Colón | MBE Colón',
   description:
-    'Tarifas de casillero Miami y envíos desde Colón, Panamá: aéreo desde $3.00/lb, marítimo desde $3.00/ft³. Sellos desde $8.00, bordados desde $3.75. Cotiza por WhatsApp.',
+    'Tarifas de casillero Miami y envíos desde Colón: aéreo desde $3.00/lb, marítimo desde $3.00/ft³, sellos desde $8.00, bordados desde $3.75. Cotiza por WhatsApp.',
   alternates: {
     canonical: 'https://mbecolon.com/tarifas',
   },
@@ -111,6 +111,22 @@ export default function TarifasPage() {
           </div>
         </section>
 
+        {/* Cómo se calcula */}
+        <section className="bg-white py-14 px-4">
+          <div className="max-w-4xl mx-auto space-y-5 text-mbe-gray leading-relaxed">
+            <h2 className="text-mbe-dark text-2xl md:text-3xl font-black text-center mb-6">¿Cómo funcionan nuestras tarifas?</h2>
+            <p>
+              En MBE Colón la tarifa del <strong className="text-mbe-dark">casillero Miami</strong> se calcula según el peso real (aéreo) o el volumen en pies cúbicos (marítimo). El trámite aduanero está incluido en el flete: tú solo pagas el envío, sin comisiones ocultas ni cargos por activación. Abrir tu <Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">casillero</Link> es 100% gratis y no tiene cuota mensual.
+            </p>
+            <p>
+              Para <strong className="text-mbe-dark">envíos internacionales</strong> con DHL, FedEx y UPS la tarifa es a medida, según peso, dimensiones y destino. Te entregamos la cotización final en minutos por WhatsApp y la confirmas antes de que enviemos. En <strong className="text-mbe-dark">sellos, bordados e impresión</strong> los precios varían según modelo, cantidad y diseño; por eso publicamos un precio de referencia y confirmamos el total exacto según tu pedido.
+            </p>
+            <p>
+              Si mueves volúmenes altos, pregunta por <strong className="text-mbe-dark">tarifas preferenciales para empresas</strong> y comercios de la Zona Libre de Colón. Todas nuestras tarifas incluyen asesoría personalizada: te explicamos el costo antes de comprometerte con cualquier trámite.
+            </p>
+          </div>
+        </section>
+
         {/* Tabla de tarifas */}
         <section className="bg-mbe-light py-16 px-4">
           <div className="max-w-4xl mx-auto">
@@ -203,6 +219,53 @@ export default function TarifasPage() {
               <h3 className="font-bold text-mbe-dark mb-2">Trámites aduanales incluidos</h3>
               <p className="text-mbe-gray text-sm">Nos encargamos de la documentación para que no tengas complicaciones.</p>
             </div>
+          </div>
+        </section>
+
+        {/* Preguntas frecuentes sobre tarifas */}
+        <section className="bg-mbe-light py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-mbe-dark text-2xl md:text-3xl font-black mb-8 text-center">Preguntas frecuentes sobre tarifas</h2>
+            <div className="space-y-4">
+              <details className="bg-white rounded-lg p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                  ¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?
+                  <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-mbe-gray mt-4 leading-relaxed">Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo desde $3.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.</p>
+              </details>
+              <details className="bg-white rounded-lg p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                  ¿El casillero Miami tiene cuota mensual?
+                  <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-mbe-gray mt-4 leading-relaxed">No. Abrir tu casillero Miami en MBE Colón es completamente gratis, sin cuota mensual ni comisión de activación. Solo pagas por el flete cuando traes tus paquetes a Colón.</p>
+              </details>
+              <details className="bg-white rounded-lg p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                  ¿Cuánto cuesta un sello automático en Colón?
+                  <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-mbe-gray mt-4 leading-relaxed">Los sellos de goma cuestan desde $8.00 y los sellos automáticos Trodat o Colop desde $15.00, según tamaño y diseño. Incluyen tinta y entrega en 24-48 horas hábiles.</p>
+              </details>
+              <details className="bg-white rounded-lg p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                  ¿Cuánto cuesta bordar un logo en una prenda?
+                  <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-mbe-gray mt-4 leading-relaxed">El bordado de un polo con logo comienza desde $3.75 por pieza según cantidad y complejidad del diseño. La digitalización del logotipo está incluida.</p>
+              </details>
+              <details className="bg-white rounded-lg p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
+                  ¿Cuánto tarda un envío aéreo de Miami a Colón?
+                  <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-mbe-gray mt-4 leading-relaxed">El envío aéreo express tarda entre 24 y 72 horas, y el estándar de 3 a 7 días hábiles desde que el paquete llega a nuestra bodega en Miami. El marítimo tarda de 7 a 15 días hábiles.</p>
+              </details>
+            </div>
+            <p className="text-sm text-gray-500 mt-8 text-center">
+              ¿Compras online y quieres saber qué impuestos pagar? Lee <Link href="/blog/cuanto-se-paga-impuesto-comprar-internet-panama" className="text-mbe-red font-semibold hover:underline">cuánto se paga de impuesto al comprar por internet en Panamá</Link> o consulta la <Link href="/blog/como-comprar-por-internet-desde-colon-panama" className="text-mbe-red font-semibold hover:underline">guía completa para comprar desde Colón</Link>.
+            </p>
           </div>
         </section>
 

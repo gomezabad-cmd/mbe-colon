@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Servicios | MBE Colón — Envíos, Casillero, Impresión y más en Colón, Panamá',
+  title: 'Servicios de Envíos y Logística en Colón | MBE Colón',
   description: 'Servicios de logística en Colón: envíos internacionales DHL FedEx UPS, casillero Miami, carga marítima, impresión y bordados personalizados. Plaza Millenium.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios',
@@ -75,7 +75,7 @@ export default function ServiciosPage() {
             🗂️ Lo que ofrecemos
           </p>
           <h1 className="text-white text-4xl md:text-5xl font-black mb-4">
-            Nuestros <span className="text-mbe-red">Servicios</span>
+            Servicios de envíos y logística <span className="text-mbe-red">en Colón</span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Todo lo que necesitas para enviar, importar y hacer crecer tu negocio desde Colón, Panamá — en un solo lugar.
@@ -107,6 +107,28 @@ export default function ServiciosPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Guía para elegir */}
+        <section className="bg-white py-16 px-4">
+          <div className="max-w-4xl mx-auto space-y-6 text-mbe-gray leading-relaxed">
+            <h2 className="text-mbe-dark text-2xl md:text-3xl font-black text-center mb-8">¿Qué servicio necesitas en Colón?</h2>
+            <p>
+              <strong className="text-mbe-dark">¿Quieres recibir compras de tiendas de USA?</strong> Abre tu <Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">casillero Miami gratis</Link>. Recibes una dirección personal en Miami, compras en Amazon, Shein, eBay o cualquier tienda online, y llevamos tus paquetes hasta Colón con notificación por WhatsApp en cada paso. Si compras en varias tiendas, consolidamos todo en un solo envío para ahorrar flete.
+            </p>
+            <p>
+              <strong className="text-mbe-dark">¿Necesitas enviar un paquete o documento al extranjero?</strong> Somos agente autorizado de <Link href="/servicios/envios-internacionales" className="text-mbe-red font-semibold hover:underline">DHL, FedEx y UPS</Link>. Cotizamos al instante, gestionamos la documentación aduanera e incluimos seguro básico en todos los envíos, con tracking en tiempo real para ti y para el destinatario.
+            </p>
+            <p>
+              <strong className="text-mbe-dark">¿Mueves volúmenes grandes o mercancía comercial?</strong> La <Link href="/servicios/carga-maritima" className="text-mbe-red font-semibold hover:underline">carga marítima</Link> cubre contenedores completos y consolidados en las rutas Miami–Panamá y China–Panamá, con tarifas preferenciales por volumen y entrega hasta tu bodega en Colón.
+            </p>
+            <p>
+              <strong className="text-mbe-dark">¿Necesitas imprimir, bordar o sellos?</strong> Tenemos <Link href="/servicios/impresion" className="text-mbe-red font-semibold hover:underline">impresión profesional</Link> (tarjetas, brochures, banners y planos), <Link href="/servicios/bordados" className="text-mbe-red font-semibold hover:underline">bordados personalizados</Link> para uniformes y equipos, y <Link href="/servicios/sellos" className="text-mbe-red font-semibold hover:underline">sellos automáticos</Link> Trodat y Colop listos en 24-48 horas.
+            </p>
+            <p>
+              ¿Dudas con los precios? Consulta nuestra página de <Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">tarifas de referencia</Link> — aéreo desde $3.00/lb, marítimo desde $3.00/ft³, sellos desde $8.00 y bordados desde $3.75 — o lee la <Link href="/blog/como-comprar-por-internet-desde-colon-panama" className="text-mbe-red font-semibold hover:underline">guía para comprar por internet desde Colón</Link>.
+            </p>
           </div>
         </section>
 

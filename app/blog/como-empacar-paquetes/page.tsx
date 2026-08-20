@@ -18,7 +18,12 @@ const articleSchema = {
   description: 'Aprende las mejores técnicas de embalaje para proteger tus envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.',
   datePublished: '2025-01-15',
   dateModified: '2026-06-12',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/como-empacar-paquetes`,
   image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop',
@@ -59,7 +64,7 @@ export default function BlogPost1() {
       </h1>
 
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-        Por <strong className="text-mbe-dark">MBE Colón</strong> · Consejos de embalaje profesional
+        Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Consejos de embalaje profesional
       </p>
 
       {/* Contenido */}

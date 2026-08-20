@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { CONTACT } from '@/lib/constants'
@@ -126,6 +127,27 @@ export default function ContactoPage() {
               />
             </div>
 
+          </div>
+        </section>
+
+        {/* Cómo llegar / qué necesitas */}
+        <section className="bg-white py-16 px-4">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            <div className="bg-mbe-light rounded-2xl p-6">
+              <div className="text-4xl mb-3">📍</div>
+              <h2 className="font-bold text-mbe-dark mb-2">Cómo llegar</h2>
+              <p className="text-mbe-gray text-sm">Estamos en la Plaza Millenium, Local F007, en el corazón de Colón, a pocos minutos de la Zona Libre y de los muelles de cruceros. Hay estacionamiento y acceso para personas con movilidad reducida. Si vienes en bus o taxi, la entrada principal de la plaza queda frente a la avenida principal de Colón.</p>
+            </div>
+            <div className="bg-mbe-light rounded-2xl p-6">
+              <div className="text-4xl mb-3">📄</div>
+              <h2 className="font-bold text-mbe-dark mb-2">Qué necesitas traer</h2>
+              <p className="text-mbe-gray text-sm">Para abrir tu casillero: tu cédula o pasaporte. Para un envío: el paquete cerrado y la dirección completa del destinatario. Para impresión, bordados o sellos: tu archivo en PDF, AI o imagen y, si tienes, tu logo en digital. Si no tienes el archivo, nuestro equipo de diseño lo crea contigo.</p>
+            </div>
+            <div className="bg-mbe-light rounded-2xl p-6">
+              <div className="text-4xl mb-3">🤝</div>
+              <h2 className="font-bold text-mbe-dark mb-2">Somos tu aliado en Colón</h2>
+              <p className="text-mbe-gray text-sm">Somos la franquicia Mail Boxes Etc. en Colón con más de 18 años de operación. Por eso respondemos rápido: si escribes por WhatsApp en horario de atención, un asesor te contesta en minutos con una cotización real y sin compromiso. Conoce todos nuestros <Link href="/servicios" className="text-mbe-red font-semibold hover:underline">servicios</Link> o consulta nuestras <Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">tarifas de referencia</Link>.</p>
+            </div>
           </div>
         </section>
 

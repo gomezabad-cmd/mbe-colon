@@ -6,9 +6,9 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Cómo comprar por internet desde Colón, Panamá en 2026 | Guía completa',
+  title: 'Comprar por Internet desde Colón en 2026 | Guía MBE Colón',
   description:
-    'Guía paso a paso para comprar por internet en Panamá: casillero Miami gratis, cómo comprar en Amazon, Shein y eBay, tarifas aéreas y marítimas desde Colón. Todo en MBE Colón.',
+    'Guía paso a paso para comprar por internet desde Panamá: casillero Miami gratis, compras en Amazon, Shein y eBay, tarifas aéreas y marítimas desde Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/como-comprar-por-internet-desde-colon-panama',
   },
@@ -41,7 +41,12 @@ const articleSchema = {
     'Guía paso a paso para comprar por internet en Panamá: casillero Miami gratis, compras en Amazon, Shein y eBay, tarifas aéreas y marítimas desde Colón.',
   datePublished: '2026-08-20',
   dateModified: '2026-08-20',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/${SLUG}`,
   image: IMG,
@@ -156,7 +161,7 @@ export default function HubPost() {
           </h1>
 
           <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-            Por <strong className="text-mbe-dark">MBE Colón</strong> · Actualizado agosto 2026
+            Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Actualizado agosto 2026
           </p>
 
           <div className="space-y-6 text-mbe-gray leading-relaxed">
@@ -246,6 +251,13 @@ export default function HubPost() {
               <li><strong>Aprovecha fechas clave:</strong> Black Friday, Cyber Monday y Prime Day suelen tener mejores precios; planifica tus envíos.</li>
               <li><strong>Verifica el peso estimado</strong> del producto antes de comprar para calcular el flete.</li>
               <li><strong>Elige marítimo</strong> para muebles y cargas grandes; aéreo para lo urgente.</li>
+            </ul>
+
+            <h2 className="text-mbe-dark text-xl font-black mt-8">Sigue leyendo</h2>
+            <ul className="list-disc list-inside space-y-2 pl-2">
+              <li><Link href="/blog/casillero-miami-shein-ebay-colon" className="text-mbe-red font-semibold hover:underline">Cómo comprar en Shein y eBay desde Colón</Link> — paso a paso para las tiendas más usadas.</li>
+              <li><Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">Tu casillero Miami gratis en MBE Colón</Link> — dirección en USA, notificación por WhatsApp y retiro en Colón.</li>
+              <li><Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">Tarifas de casillero y envíos desde Colón</Link> — precios de referencia aéreo y marítimo.</li>
             </ul>
 
             <div className="bg-mbe-dark rounded-2xl p-8 text-center mt-8">

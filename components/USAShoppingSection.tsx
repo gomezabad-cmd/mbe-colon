@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { CONTACT } from '@/lib/constants'
 
 const STORES = [
@@ -60,14 +61,22 @@ export default function USAShoppingSection() {
               <li className="flex items-center gap-2">✅ Entregas rápidas y seguras</li>
               <li className="flex items-center gap-2">✅ Notificación por WhatsApp cuando llega</li>
             </ul>
-            <a
-              href={CONTACT.whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-mbe-red text-white font-bold px-6 py-3 rounded hover:opacity-90 transition-opacity"
-            >
-              Abre tu casillero GRATIS →
-            </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href={CONTACT.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-mbe-red text-white font-bold px-6 py-3 rounded hover:opacity-90 transition-opacity"
+              >
+                Abre tu casillero GRATIS →
+              </a>
+              <Link
+                href="/tarifas"
+                className="inline-block border-2 border-mbe-red text-mbe-red font-bold px-6 py-3 rounded hover:bg-mbe-red hover:text-white transition-colors"
+              >
+                Ver tarifas de envíos →
+              </Link>
+            </div>
           </div>
 
           {/* Store grid */}

@@ -26,12 +26,13 @@ interface ServicePageProps {
   serviceType?: string
   faqs?: FAQ[]
   fullDescription?: string
+  relatedLinks?: { label: string; href: string }[]
   children?: React.ReactNode
 }
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription, children }: ServicePageProps) {
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription, relatedLinks, children }: ServicePageProps) {
   useEffect(() => {
     trackViewContent(title, serviceType || 'Servicio')
   }, [title, serviceType])
@@ -174,6 +175,26 @@ export default function ServicePageTemplate({ icon, title, description, benefits
 
       {/* Slot adicional (cotizador, banner, etc.) */}
       {children}
+
+      {/* Related links (tarifas + posts de blog) */}
+      {relatedLinks && relatedLinks.length > 0 && (
+        <section className="bg-mbe-light py-16 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-mbe-dark text-2xl font-black mb-8">Sigue aprendiendo</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {relatedLinks.map(link => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="bg-white rounded-full px-5 py-2.5 text-sm font-semibold text-mbe-red border border-gray-200 shadow-sm hover:bg-mbe-red hover:text-white transition-colors"
+                >
+                  {link.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQs */}
       {faqs && faqs.length > 0 && (

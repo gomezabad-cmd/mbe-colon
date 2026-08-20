@@ -23,7 +23,12 @@ const articleSchema = {
   description: 'Guía paso a paso para comprar piezas de carro en USA y recibirlas rápido y seguro en Colón, Panamá.',
   datePublished: '2026-06-30',
   dateModified: '2026-06-30',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Equipo de Logística de MBE Colón',
+    jobTitle: 'Servicio de logística y envíos',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/traer-repuestos-auto-usa-panama`,
   image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=630&fit=crop',

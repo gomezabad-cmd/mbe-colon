@@ -2,7 +2,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Sellos Automáticos Personalizados para Empresas y Profesionales | MBE Colón, Panamá',
+  title: 'Sellos para Empresas y Profesionales en Colón | MBE Colón',
   description: 'Sellos automáticos personalizados para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48 horas. Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/sellos',
@@ -36,7 +36,7 @@ export default function SelloPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <ServicePageTemplate
       icon="🔖"
-      title="Sellos Automáticos Personalizados"
+      title="Sellos Automáticos Personalizados en Colón"
       description="Fabricamos sellos automáticos de alta calidad en Colón, Panamá con tu nombre, empresa, dirección, logo o cualquier diseño personalizado. Ideales para abogados, médicos, contadores, empresas e instituciones en la provincia de Colón. Modelos Trodat y Colop con entrega en 24 a 48 horas hábiles."
       benefits={[
         'Sellos automáticos de bolsillo y de mesa',
@@ -95,6 +95,11 @@ export default function SelloPage() {
         },
       ]}
       href="/servicios/sellos"
+      relatedLinks={[
+        { label: 'Ver tarifas de sellos', href: '/tarifas' },
+        { label: 'Sellos para notarías y bufetes', href: '/blog/sellos-notarias-bufetes-abogados-colon' },
+        { label: 'Kit de identidad corporativa', href: '/blog/kit-identidad-corporativa-empresas-colon' },
+      ]}
       serviceType="Rubber Stamp Manufacturing"
     >
       <QuoteCalculator
