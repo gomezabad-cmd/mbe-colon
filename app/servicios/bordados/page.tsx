@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Bordados Personalizados en Uniformes y Hoodies para Empresas | MBE Colón, Panamá',
@@ -8,9 +9,32 @@ export const metadata = {
   },
 }
 
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Bordados Personalizados en Colón, Panamá',
+  description:
+    'Bordados personalizados con logo en uniformes, hoodies, gorras y polos para empresas y equipos en Colón. Digitalización de logotipo incluida, pedidos desde 1 unidad.',
+  image: 'https://mbecolon.com/og-image.png',
+  brand: { '@type': 'Brand', name: 'Mail Boxes Etc. Colón' },
+  category: 'Textiles personalizados',
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: '3.75',
+    highPrice: '30.00',
+    offerCount: '3',
+    availability: 'https://schema.org/InStock',
+    areaServed: { '@type': 'AdministrativeArea', name: 'Colón, Panamá' },
+    url: 'https://mbecolon.com/servicios/bordados',
+  },
+}
+
 export default function BordadosPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <ServicePageTemplate
       icon="🧵"
       title="Bordados Personalizados"
       description="Servicio de bordados personalizados en Colón, Panamá para uniformes empresariales, hoodies, gorras, polos y cualquier prenda textil. Ideal para empresas, equipos deportivos y eventos corporativos en la provincia de Colón. Digitalización de logotipo incluida y alta durabilidad garantizada."
@@ -72,6 +96,13 @@ export default function BordadosPage() {
       ]}
       href="/servicios/bordados"
       serviceType="Embroidery Service"
-    />
+    >
+      <QuoteCalculator
+        variant="general"
+        title="Cotiza tu bordado"
+        subtitle="Uniformes, hoodies, gorras y polos con tu logo. Cuéntanos qué necesitas y te cotizamos en menos de 24 h hábiles."
+      />
+    </ServicePageTemplate>
+    </>
   )
 }

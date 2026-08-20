@@ -103,7 +103,7 @@ export default function BlogRepuestosPage() {
               <strong className="text-mbe-dark">1. RockAuto:</strong> Es el paraíso de los mecánicos. Su interfaz parece de los años 90, pero tienen el catálogo más completo y preciso del mundo, con precios imbatibles.
             </li>
             <li>
-              <strong className="text-mbe-dark">2. Amazon (Automotive):</strong> La option más fácil. Si usas la función "Amazon Garage", solo tienes que ingresar el año, marca y modelo de tu auto y Amazon filtrará automáticamente las piezas compatibles.
+              <strong className="text-mbe-dark">2. Amazon (Automotive):</strong> La option más fácil. Si usas la función “Amazon Garage”, solo tienes que ingresar el año, marca y modelo de tu auto y Amazon filtrará automáticamente las piezas compatibles.
             </li>
             <li>
               <strong className="text-mbe-dark">3. eBay Motors:</strong> Excelente para encontrar piezas usadas, descontinuadas o repuestos raros. Asegúrate siempre de comprar a vendedores con buena reputación.

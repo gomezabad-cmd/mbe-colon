@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Envíos Internacionales con DHL, FedEx y UPS | MBE Colón, Panamá',
@@ -54,6 +55,12 @@ export default function EnviosPage() {
         },
       ]}
       href="/servicios/envios-internacionales"
-    />
+    >
+      <QuoteCalculator
+        variant="general"
+        title="Cotiza tu envío internacional"
+        subtitle="Dinos qué necesitas enviar y con qué destino. Te respondemos en menos de 24 h hábiles."
+      />
+    </ServicePageTemplate>
   )
 }

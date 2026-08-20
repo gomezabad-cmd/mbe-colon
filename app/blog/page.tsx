@@ -17,6 +17,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-red',
+    titulo: 'Cómo comprar por internet desde Colón, Panamá en 2026: guía completa',
+    desc: 'Guía paso a paso para comprar en Amazon, Shein y eBay y recibir tus paquetes en Colón con tu casillero Miami. Tarifas, tiempos y tips.',
+    href: '/blog/como-comprar-por-internet-desde-colon-panama',
+    img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Cómo comprar por internet desde Colón, Panamá con casillero Miami MBE',
+  },
+  {
     categoria: 'Sellos',
     badge: 'bg-mbe-red',
     titulo: 'Sellos para notarías y bufetes de abogados en Colón, Panamá',

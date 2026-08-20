@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Casillero Miami Gratis para Recibir Paquetes de USA | MBE Colón, Panamá',
@@ -58,6 +59,12 @@ export default function CasilleroPage() {
         },
       ]}
       href="/servicios/casillero"
-    />
+    >
+      <QuoteCalculator
+        variant="casillero"
+        title="Calcula tu envío de Miami a Colón"
+        subtitle="Elige aéreo o marítimo, indica el peso o volumen y obtén una estimación inmediata para tu casillero."
+      />
+    </ServicePageTemplate>
   )
 }

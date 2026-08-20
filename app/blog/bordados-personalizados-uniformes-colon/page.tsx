@@ -103,7 +103,7 @@ export default function BlogBordados() {
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Palabras clave que buscan tus clientes</h2>
           <p>
-            Si alguien en <strong>Panamá</strong> busca <em>"dónde bordar uniformes con logo en Colón"</em>, <em>"gorras bordadas para empresas en Panamá"</em> o <em>"uniformes bordados Colón Panamá"</em>, en MBE Colón tenemos la solución. Somos el centro de <strong>bordados personalizados</strong> más completo de la provincia.
+            Si alguien en <strong>Panamá</strong> busca <em>“dónde bordar uniformes con logo en Colón”</em>, <em>“gorras bordadas para empresas en Panamá”</em> o <em>“uniformes bordados Colón Panamá”</em>, en MBE Colón tenemos la solución. Somos el centro de <strong>bordados personalizados</strong> más completo de la provincia.
           </p>
 
         </div>

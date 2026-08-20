@@ -69,7 +69,7 @@ export default function BlogPost() {
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Sello de idóneo</strong> — nombre completo, número de idoneidad y firma del abogado</li>
             <li><strong>Sello notarial</strong> — con el número de notaría y circuito correspondiente</li>
-            <li><strong>Sello de "copia fiel" o "es fiel copia de su original"</strong> — para certificación de documentos</li>
+            <li><strong>Sello de “copia fiel” o “es fiel copia de su original”</strong> — para certificación de documentos</li>
             <li><strong>Sello de recibido con fecha</strong> — para control de expedientes y correspondencia</li>
           </ul>
 

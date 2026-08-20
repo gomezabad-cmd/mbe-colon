@@ -92,12 +92,12 @@ export default function BlogPost1() {
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">3. Sella correctamente</h2>
         <p>
-          Usa cinta de embalaje resistente (mínimo 5 cm de ancho) y aplica la técnica en "H": sella las juntas del centro y los bordes en ambos extremos de la caja. Nunca uses cinta de oficina normal — se desprende fácilmente.
+          Usa cinta de embalaje resistente (mínimo 5 cm de ancho) y aplica la técnica en “H”: sella las juntas del centro y los bordes en ambos extremos de la caja. Nunca uses cinta de oficina normal — se desprende fácilmente.
         </p>
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">4. Etiqueta bien el paquete</h2>
         <p>
-          Coloca la dirección del destinatario claramente visible en la parte superior de la caja. Incluye también tu dirección de remitente. Si el artículo es frágil, coloca etiquetas de "FRÁGIL" y "ESTE LADO ARRIBA" en al menos dos caras de la caja.
+          Coloca la dirección del destinatario claramente visible en la parte superior de la caja. Incluye también tu dirección de remitente. Si el artículo es frágil, coloca etiquetas de “FRÁGIL” y “ESTE LADO ARRIBA” en al menos dos caras de la caja.
         </p>
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">5. Documentación para envíos internacionales</h2>

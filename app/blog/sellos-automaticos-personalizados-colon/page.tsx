@@ -90,7 +90,7 @@ export default function BlogSellos() {
           </p>
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Firmas y rúbricas</strong> — para abogados, notarios y profesionales liberales en Colón</li>
-            <li><strong>Sellos de "Recibido", "Pagado" o "Confidencial"</strong> — en empresas de la Zona Libre de Colón</li>
+            <li><strong>Sellos de “Recibido”, “Pagado” o “Confidencial”</strong> — en empresas de la Zona Libre de Colón</li>
             <li><strong>Membrete de empresa</strong> — con razón social, RUC y datos fiscales</li>
             <li><strong>Carnets PVC y credenciales</strong> — con sello de validación institucional</li>
             <li><strong>Documentos médicos y recetas</strong> — para médicos y clínicas en la provincia de Colón</li>

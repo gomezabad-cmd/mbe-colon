@@ -65,9 +65,37 @@ const schemaGraph = {
         addressCountry: 'PA',
       },
       hasMap: 'https://maps.google.com/?q=Plaza+Millenium+Colon+Panama',
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 9.3450748,
+        longitude: -79.8928769,
+      },
       openingHours: ['Mo-Fr 08:00-17:00', 'Sa 09:00-13:00'],
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '17:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: 'Saturday',
+          opens: '09:00',
+          closes: '13:00',
+        },
+      ],
+      areaServed: [
+        { '@type': 'City', name: 'Colón' },
+        { '@type': 'AdministrativeArea', name: 'Provincia de Colón' },
+        { '@type': 'Country', name: 'Panamá' },
+      ],
       priceRange: '$$',
-      sameAs: ['https://www.mbe-ca.com'],
+      sameAs: [
+        'https://www.mbe-ca.com',
+        'https://www.instagram.com/mbecolon',
+        'https://www.tiktok.com/@mbecolon',
+      ],
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.9',
@@ -75,6 +103,15 @@ const schemaGraph = {
         bestRating: '5',
         worstRating: '1',
       },
+      makesOffer: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Envíos Internacionales', url: 'https://mbecolon.com/servicios/envios-internacionales' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Compras por Internet', url: 'https://mbecolon.com/servicios/compras-internet' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Carga Marítima', url: 'https://mbecolon.com/servicios/carga-maritima' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Impresión Profesional', url: 'https://mbecolon.com/servicios/impresion' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Casillero Miami', url: 'https://mbecolon.com/servicios/casillero' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bordados Personalizados', url: 'https://mbecolon.com/servicios/bordados' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sellos Automáticos', url: 'https://mbecolon.com/servicios/sellos' } },
+      ],
     },
     {
       '@type': 'Organization',

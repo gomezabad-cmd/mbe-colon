@@ -26,11 +26,12 @@ interface ServicePageProps {
   serviceType?: string
   faqs?: FAQ[]
   fullDescription?: string
+  children?: React.ReactNode
 }
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription }: ServicePageProps) {
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription, children }: ServicePageProps) {
   useEffect(() => {
     trackViewContent(title, serviceType || 'Servicio')
   }, [title, serviceType])
@@ -170,6 +171,9 @@ export default function ServicePageTemplate({ icon, title, description, benefits
           </div>
         </section>
       )}
+
+      {/* Slot adicional (cotizador, banner, etc.) */}
+      {children}
 
       {/* FAQs */}
       {faqs && faqs.length > 0 && (

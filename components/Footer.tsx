@@ -38,6 +38,11 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-sm mb-4 text-mbe-red uppercase tracking-wider">Servicios</h3>
           <ul className="space-y-2">
+            <li>
+              <Link href="/tarifas" className="text-white text-sm font-semibold hover:text-mbe-red transition-colors flex items-center gap-2">
+                💲 Tarifas y precios
+              </Link>
+            </li>
             {SERVICES.map(s => (
               <li key={s.id}>
                 <Link href={s.href} className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2">

@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Compras por Internet desde USA | Casillero Miami — MBE Colón, Panamá',
@@ -54,6 +55,12 @@ export default function ComprasPage() {
         },
       ]}
       href="/servicios/compras-internet"
-    />
+    >
+      <QuoteCalculator
+        variant="casillero"
+        title="Calcula el costo de traer tus compras de USA"
+        subtitle="Tu casillero Miami te da una dirección en USA. Estima aquí el flete de tus compras por internet a Colón."
+      />
+    </ServicePageTemplate>
   )
 }

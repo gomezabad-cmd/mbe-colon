@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Impresión Profesional de Tarjetas, Brochures y Banners | MBE Colón, Panamá',
@@ -58,6 +59,12 @@ export default function ImpresionPage() {
         },
       ]}
       href="/servicios/impresion"
-    />
+    >
+      <QuoteCalculator
+        variant="general"
+        title="Cotiza tu impresión"
+        subtitle="Tarjetas, brochures, banners y más. Describe tu proyecto y recibe tu cotización en menos de 24 h hábiles."
+      />
+    </ServicePageTemplate>
   )
 }

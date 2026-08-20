@@ -1,4 +1,5 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
+import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Sellos Automáticos Personalizados para Empresas y Profesionales | MBE Colón, Panamá',
@@ -8,9 +9,32 @@ export const metadata = {
   },
 }
 
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Sellos Automáticos Personalizados en Colón, Panamá',
+  description:
+    'Sellos automáticos Trodat y Colop personalizados para abogados, médicos, contadores y empresas en Colón. Entrega en 24-48 horas hábiles.',
+  image: 'https://mbecolon.com/og-image.png',
+  brand: { '@type': 'Brand', name: 'Mail Boxes Etc. Colón' },
+  category: 'Papelería y sellos personalizados',
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: '8.00',
+    highPrice: '60.00',
+    offerCount: '3',
+    availability: 'https://schema.org/InStock',
+    areaServed: { '@type': 'AdministrativeArea', name: 'Colón, Panamá' },
+    url: 'https://mbecolon.com/servicios/sellos',
+  },
+}
+
 export default function SelloPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <ServicePageTemplate
       icon="🔖"
       title="Sellos Automáticos Personalizados"
       description="Fabricamos sellos automáticos de alta calidad en Colón, Panamá con tu nombre, empresa, dirección, logo o cualquier diseño personalizado. Ideales para abogados, médicos, contadores, empresas e instituciones en la provincia de Colón. Modelos Trodat y Colop con entrega en 24 a 48 horas hábiles."
@@ -72,6 +96,13 @@ export default function SelloPage() {
       ]}
       href="/servicios/sellos"
       serviceType="Rubber Stamp Manufacturing"
-    />
+    >
+      <QuoteCalculator
+        variant="general"
+        title="Cotiza tu sello automático"
+        subtitle="Cuéntanos qué diseño necesitas y recibe tu cotización exacta en menos de 24 h hábiles."
+      />
+    </ServicePageTemplate>
+    </>
   )
 }
