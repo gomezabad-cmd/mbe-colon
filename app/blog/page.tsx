@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Blog | MBE Colón — Consejos de Envíos, Casillero y Logística',
@@ -267,6 +268,10 @@ export default function BlogPage() {
 
       {/* Hero */}
       <section className="bg-mbe-dark py-16 px-4 text-center">
+        <Breadcrumbs items={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Blog' },
+        ]} />
         <p className="text-mbe-red font-bold text-sm uppercase tracking-widest mb-3">📰 Noticias y Consejos</p>
         <h1 className="text-white text-4xl md:text-5xl font-black mb-4">
           MBE <span className="text-mbe-red">Informa</span>

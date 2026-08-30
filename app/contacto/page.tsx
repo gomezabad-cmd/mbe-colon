@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { CONTACT } from '@/lib/constants'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Contacto | MBE Colón — Plaza Millenium F007, Colón, Panamá',
@@ -20,6 +21,10 @@ export default function ContactoPage() {
 
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4 text-center">
+          <Breadcrumbs items={[
+            { label: 'Inicio', href: '/' },
+            { label: 'Contacto' },
+          ]} />
           <p className="text-mbe-red font-bold text-sm uppercase tracking-widest mb-3">
             📍 Estamos aquí para ayudarte
           </p>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Servicios de Envíos y Logística en Colón | MBE Colón',
@@ -71,6 +72,10 @@ export default function ServiciosPage() {
 
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4 text-center">
+          <Breadcrumbs items={[
+            { label: 'Inicio', href: '/' },
+            { label: 'Servicios' },
+          ]} />
           <p className="text-mbe-red font-bold text-sm uppercase tracking-widest mb-3">
             🗂️ Lo que ofrecemos
           </p>
