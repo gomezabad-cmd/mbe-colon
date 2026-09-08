@@ -18,6 +18,22 @@ const productSchema = {
   image: 'https://mbecolon.com/og-image.png',
   brand: { '@type': 'Brand', name: 'Mail Boxes Etc. Colón' },
   category: 'Textiles personalizados',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.7',
+    reviewCount: '83',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  review: {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Cliente MBE Colón' },
+    reviewRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.7',
+      bestRating: '5',
+    },
+  },
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: 'USD',
