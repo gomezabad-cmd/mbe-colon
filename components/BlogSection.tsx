@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    titulo: 'Cómo enviar documentos urgentes desde Colón, Panamá al mundo',
+    desc: 'Envíos internacionales Colón para documentos urgentes: cómo elegir entre DHL, FedEx y UPS y evitar retrasos en aduana.',
+    badge: 'bg-mbe-red',
+    href: '/blog/envio-documentos-urgentes-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Envío de documentos urgentes internacionales desde Colón, Panamá',
+  },
+  {
     categoria: 'Impresión',
     titulo: 'Impresión de etiquetas y stickers personalizados para tu negocio en Colón, Panamá',
     desc: 'Impresión Colón de etiquetas y stickers personalizados para productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/sellos-notarias-bufetes-abogados-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Sello automático para notaría y bufete de abogados en Colón, Panamá',
-  },
-  {
-    categoria: 'Bordados',
-    titulo: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá',
-    desc: 'Bordamos delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. Entrega rápida en Plaza Millenium F007.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/bordados-delantales-restaurantes-hoteles-colon',
-    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Delantal bordado con logo para restaurante en Colón, Panamá',
   },
 ]
 

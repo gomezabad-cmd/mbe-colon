@@ -27,6 +27,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-red',
+    titulo: 'Cómo enviar documentos urgentes desde Colón, Panamá al mundo',
+    desc: 'Envíos internacionales Colón para documentos urgentes: cómo elegir entre DHL, FedEx y UPS y evitar retrasos en aduana.',
+    href: '/blog/envio-documentos-urgentes-colon',
+    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Envío de documentos urgentes internacionales desde Colón, Panamá',
+  },
+  {
     categoria: 'Impresión',
     badge: 'bg-mbe-blue',
     titulo: 'Impresión de etiquetas y stickers personalizados para tu negocio en Colón, Panamá',
