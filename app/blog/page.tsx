@@ -27,6 +27,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    badge: 'bg-mbe-blue',
+    titulo: 'Impresión de etiquetas y stickers personalizados para tu negocio en Colón, Panamá',
+    desc: 'Impresión Colón de etiquetas y stickers personalizados para productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
+    href: '/blog/etiquetas-stickers-personalizados-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de etiquetas y stickers personalizados para negocios en Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     badge: 'bg-mbe-red',
     titulo: '¿Cuánto cuesta el casillero Miami y traer un paquete a Colón en 2026?',

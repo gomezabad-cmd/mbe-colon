@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Impresión',
+    titulo: 'Impresión de etiquetas y stickers personalizados para tu negocio en Colón, Panamá',
+    desc: 'Impresión Colón de etiquetas y stickers personalizados para productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/etiquetas-stickers-personalizados-colon',
+    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Impresión de etiquetas y stickers personalizados para negocios en Colón, Panamá',
+  },
+  {
     categoria: 'Sellos',
     titulo: 'Sellos para notarías y bufetes de abogados en Colón, Panamá',
     desc: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/bordados-delantales-restaurantes-hoteles-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Delantal bordado con logo para restaurante en Colón, Panamá',
-  },
-  {
-    categoria: 'Envíos',
-    titulo: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',
-    desc: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/seguro-envios-internacionales-colon',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
-    imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
   },
 ]
 
