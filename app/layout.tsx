@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { headers } from 'next/headers'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import PushNotificationOptIn from '@/components/PushNotificationOptIn'
 import './globals.css'
@@ -52,22 +53,108 @@ const schemaGraph = {
       '@type': 'LocalBusiness',
       '@id': 'https://mbecolon.com/#localbusiness',
       name: 'Mail Boxes Etc. Colón',
-      description: 'Centro de envíos internacionales, casillero Miami, carga marítima, impresión profesional, bordados personalizados y sellos automáticos en Colón, Panamá.',
+      alternateName: 'MBE Colón',
+      description: 'Centro de envíos y logística en Colón, Panamá con más de 13 años de experiencia. Agentes autorizados de DHL, FedEx y UPS. Casillero Miami gratis, carga marítima desde Miami y China, bordados personalizados, impresión profesional y sellos automáticos.',
       image: 'https://mbecolon.com/og-image.png',
       url: 'https://mbecolon.com',
       telephone: '+507-474-5548',
       email: 'mbecolon@gmail.com',
+      foundingDate: '2012',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Plaza Millenium Local F007',
         addressLocality: 'Colón',
         addressRegion: 'Colón',
+        postalCode: '0401',
         addressCountry: 'PA',
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '9.3547',
+        longitude: '-79.9003',
+      },
       hasMap: 'https://maps.google.com/?q=Plaza+Millenium+Colon+Panama',
-      openingHours: ['Mo-Fr 08:00-17:00', 'Sa 09:00-13:00'],
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '17:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: 'Saturday',
+          opens: '09:00',
+          closes: '13:00',
+        },
+      ],
       priceRange: '$$',
-      sameAs: ['https://www.mbe-ca.com'],
+      currenciesAccepted: 'USD',
+      paymentAccepted: 'Cash, Credit Card, Debit Card',
+      sameAs: [
+        'https://www.mbe-ca.com',
+        'https://www.facebook.com/mbecolon',
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Servicios MBE Colón',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Casillero Miami Gratis',
+              description: 'Dirección personal en Miami, Florida para recibir compras de Amazon, eBay y Shein. Activación gratis, sin cuota mensual.',
+              url: 'https://mbecolon.com/servicios/casillero',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Envíos Internacionales DHL FedEx UPS',
+              description: 'Envíos internacionales a cualquier país con cotización inmediata, rastreo en tiempo real y seguro incluido.',
+              url: 'https://mbecolon.com/servicios/envios-internacionales',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Carga Marítima Miami–Colón',
+              description: 'Contenedores completos y carga consolidada desde Miami y China hacia la Zona Libre de Colón.',
+              url: 'https://mbecolon.com/servicios/carga-maritima',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Bordados Personalizados',
+              description: 'Bordados en uniformes, hoodies, gorras y prendas corporativas con logo empresarial. Desde 1 pieza.',
+              url: 'https://mbecolon.com/servicios/bordados',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Impresión Profesional',
+              description: 'Tarjetas de presentación, brochures, banners en gran formato y planos arquitectónicos.',
+              url: 'https://mbecolon.com/servicios/impresion',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Sellos Automáticos Personalizados',
+              description: 'Sellos Trodat y Colop para empresas y profesionales. Entrega en 24-48 horas.',
+              url: 'https://mbecolon.com/servicios/sellos',
+            },
+          },
+        ],
+      },
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.9',
@@ -176,20 +263,26 @@ const breadcrumbSchema = {
   ]
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers()
+  const nonce = headersList.get('x-nonce') ?? undefined
+
   return (
     <html lang="es">
       <head>
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
         />
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
@@ -198,7 +291,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {META_PIXEL_ID && (
           <>
-            <Script id="meta-pixel" strategy="afterInteractive">
+            <Script id="meta-pixel" strategy="afterInteractive" nonce={nonce}>
               {`
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -230,6 +323,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script
           src="https://forja-starter-261c87.carlosgomezabadpty.workers.dev/widget.js"
           strategy="afterInteractive"
+          nonce={nonce}
           data-color="#be1e2d"
           data-saludo="¡Hola! ¿En qué te puedo ayudar? Cotiza envíos, casillero Miami y más."
         />
