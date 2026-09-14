@@ -1,5 +1,36 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/compras-internet#service',
+      name: 'Compras por Internet desde USA',
+      description: 'Servicio de compras online desde USA con casillero Miami. Consolida paquetes de Amazon, eBay, Shein y más. Ahorra 30-40% en flete al consolidar.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón' },
+      url: 'https://mbecolon.com/servicios/compras-internet',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Compras por Internet', item: 'https://mbecolon.com/servicios/compras-internet' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Puedo comprar en tiendas que no conozco?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, puedes usar tu dirección Miami en cualquier tienda online que envíe a Estados Unidos: Amazon, eBay, Shein, Nike, Target, Walmart y cientos más.' } },
+        { '@type': 'Question', name: '¿Cuánto se ahorra consolidando?', acceptedAnswer: { '@type': 'Answer', text: 'En promedio ahorras 30-40% en flete al consolidar 3-5 paquetes pequeños en uno solo.' } },
+        { '@type': 'Question', name: '¿Hay artículos prohibidos?', acceptedAnswer: { '@type': 'Answer', text: 'Algunos artículos tienen restricción: armas, explosivos, líquidos peligrosos, medicinas restringidas. Para casi todo lo demás no hay problema.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Compras por Internet desde USA | Casillero Miami — MBE Colón, Panamá',
   description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
@@ -10,7 +41,9 @@ export const metadata = {
 
 export default function ComprasPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="🛒"
       title="Compras por Internet"
       description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con entrega garantizada y segura."
@@ -55,5 +88,6 @@ export default function ComprasPage() {
       ]}
       href="/servicios/compras-internet"
     />
+    </>
   )
 }

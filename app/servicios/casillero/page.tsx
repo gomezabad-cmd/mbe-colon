@@ -8,9 +8,46 @@ export const metadata = {
   },
 }
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/casillero#service',
+      name: 'Casillero Miami',
+      description: 'Dirección personal en Miami, Florida para recibir paquetes de tiendas de USA. Sin cuota mensual. Envío a Colón, Panamá en 3-7 días hábiles.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón', '@id': 'https://www.wikidata.org/wiki/Q162034' },
+      url: 'https://mbecolon.com/servicios/casillero',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: 'Activación gratuita' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Casillero Miami', item: 'https://mbecolon.com/servicios/casillero' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Cuál es la dirección de mi casillero Miami?', acceptedAnswer: { '@type': 'Answer', text: 'Recibirás una dirección única en Miami, Florida con tu nombre y número de cliente. Esta dirección es 100% funcional y puedes usarla en cualquier tienda online de USA.' } },
+        { '@type': 'Question', name: '¿Cuánto cuesta activar el casillero?', acceptedAnswer: { '@type': 'Answer', text: 'La activación es completamente GRATIS. No hay cuota mensual, ni comisión por activación, ni costo oculto. Solo pagas por el flete cuando enviamos tu paquete a Colón.' } },
+        { '@type': 'Question', name: '¿Cuánto tiempo tarda en llegar mi paquete a Colón?', acceptedAnswer: { '@type': 'Answer', text: 'Para paquetes estándar hasta 30 libras, el tiempo promedio es de 3-7 días hábiles desde que llega a nuestro almacén en Miami.' } },
+        { '@type': 'Question', name: '¿Puedo consolidar varios paquetes en un envío?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, podemos consolidar varios paquetes pequeños en un solo envío para ahorrar en costos de flete.' } },
+        { '@type': 'Question', name: '¿Qué tiendas de USA puedo usar?', acceptedAnswer: { '@type': 'Answer', text: 'Puedes comprar en cualquier tienda que envíe a Miami: Amazon, eBay, Shein, AliExpress, Nike, Sephora y cientos más.' } },
+        { '@type': 'Question', name: '¿Hay límite de paquetes al mes?', acceptedAnswer: { '@type': 'Answer', text: 'No hay límite. Puedes recibir uno o cien paquetes. Simplemente usa tu dirección Miami cada vez que compres online en USA.' } },
+      ],
+    },
+  ],
+}
+
 export default function CasilleroPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="📬"
       title="Casillero Miami"
       description="Activa gratis tu casillero Miami MBE Colón y obtén tu dirección personal en Estados Unidos. Recibe paquetes de Amazon, eBay, Shein y cualquier tienda de USA directamente en Colón, Panamá. Sin cuota mensual, con soporte logístico y notificación por WhatsApp incluidos."
@@ -59,5 +96,6 @@ export default function CasilleroPage() {
       ]}
       href="/servicios/casillero"
     />
+    </>
   )
 }

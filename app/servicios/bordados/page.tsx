@@ -1,5 +1,37 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/bordados#service',
+      name: 'Bordados Personalizados',
+      description: 'Bordados personalizados en uniformes, hoodies, gorras y prendas textiles. Desde 1 pieza. Digitalización de logo incluida. Entrega 5-7 días hábiles.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón' },
+      url: 'https://mbecolon.com/servicios/bordados',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Bordados Personalizados', item: 'https://mbecolon.com/servicios/bordados' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Aceptan pedidos de 1 pieza?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, aceptamos pedidos desde 1 pieza. Sin embargo, para cantidades pequeñas hay un costo mínimo de producción.' } },
+        { '@type': 'Question', name: '¿Cuánto tiempo tarda un bordado?', acceptedAnswer: { '@type': 'Answer', text: 'Para un bordado simple (1-3 colores): 5-7 días. Para bordados complejos (4+ colores): 7-10 días.' } },
+        { '@type': 'Question', name: '¿La digitalización de logo está incluida?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, la digitalización del logo está completamente incluida en el precio del bordado sin costo adicional.' } },
+        { '@type': 'Question', name: '¿El bordado se desvanece o se despega?', acceptedAnswer: { '@type': 'Answer', text: 'No, nuestros bordados tienen alta durabilidad. Usamos hilos de calidad premium. El bordado mantiene su calidad incluso después de decenas de lavadas.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Bordados Personalizados en Uniformes y Hoodies para Empresas | MBE Colón, Panamá',
   description: 'Bordados personalizados para uniformes, hoodies, gorras y más. Bordamos desde 1 unidad con alta durabilidad. Empresas y equipos en Colón, Panamá. MBE.',
@@ -10,7 +42,9 @@ export const metadata = {
 
 export default function BordadosPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="🧵"
       title="Bordados Personalizados"
       description="Servicio de bordados personalizados en Colón, Panamá para uniformes empresariales, hoodies, gorras, polos y cualquier prenda textil. Ideal para empresas, equipos deportivos y eventos corporativos en la provincia de Colón. Digitalización de logotipo incluida y alta durabilidad garantizada."
@@ -73,5 +107,6 @@ export default function BordadosPage() {
       href="/servicios/bordados"
       serviceType="Embroidery Service"
     />
+    </>
   )
 }

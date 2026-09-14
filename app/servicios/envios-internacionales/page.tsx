@@ -1,5 +1,37 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/envios-internacionales#service',
+      name: 'Envíos Internacionales',
+      description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá. Cobertura mundial, rastreo en tiempo real y seguro incluido.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'Country', name: 'Panama' },
+      url: 'https://mbecolon.com/servicios/envios-internacionales',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Envíos Internacionales', item: 'https://mbecolon.com/servicios/envios-internacionales' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Cuáles son los tiempos de entrega con DHL, FedEx y UPS?', acceptedAnswer: { '@type': 'Answer', text: 'USA: 2-5 días. Centroamérica: 3-7 días. Sudamérica: 5-10 días. Europa: 7-15 días.' } },
+        { '@type': 'Question', name: '¿El seguro está incluido?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, todos nuestros envíos incluyen seguro básico. Para artículos de alto valor, puedes contratar seguro adicional con cobertura completa.' } },
+        { '@type': 'Question', name: '¿Cuál es el peso y tamaño máximo permitido?', acceptedAnswer: { '@type': 'Answer', text: 'DHL y FedEx permiten hasta 70 kg por paquete. UPS hasta 68 kg.' } },
+        { '@type': 'Question', name: '¿Puedo hacer seguimiento de mi envío?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, te damos un número de rastreo único que puedes usar en la web del carrier para ver dónde está tu paquete en tiempo real.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Envíos Internacionales con DHL, FedEx y UPS | MBE Colón, Panamá',
   description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá. Rastreo en tiempo real, cotizaciones al instante y entrega en 24-48 horas. Plaza Millenium.',
@@ -10,7 +42,9 @@ export const metadata = {
 
 export default function EnviosPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="✈️"
       title="Envíos Internacionales"
       description="Enviamos tus paquetes a cualquier parte del mundo desde Colón, Panamá con DHL, FedEx y UPS. Cotización inmediata, embalaje profesional y seguimiento en tiempo real para empresas y personas en la provincia de Colón."
@@ -55,5 +89,6 @@ export default function EnviosPage() {
       ]}
       href="/servicios/envios-internacionales"
     />
+    </>
   )
 }

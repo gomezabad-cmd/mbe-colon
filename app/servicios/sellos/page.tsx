@@ -1,5 +1,37 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/sellos#service',
+      name: 'Sellos Automáticos Personalizados',
+      description: 'Fabricación de sellos automáticos personalizados en Colón, Panamá. Modelos Trodat y Colop. Entrega en 24-48 horas. Garantía 6 meses.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón' },
+      url: 'https://mbecolon.com/servicios/sellos',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Sellos Automáticos', item: 'https://mbecolon.com/servicios/sellos' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Cuántas impresiones puedo hacer con un sello?', acceptedAnswer: { '@type': 'Answer', text: 'Cada sello puede hacer entre 5,000 a 10,000 impresiones claras dependiendo de la intensidad de tinta.' } },
+        { '@type': 'Question', name: '¿Puedo poner un logo en el sello?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, puedes incluir tu logo, iniciales, firma digitalizada o cualquier diseño personalizado.' } },
+        { '@type': 'Question', name: '¿Cuánto tiempo tarda la fabricación?', acceptedAnswer: { '@type': 'Answer', text: 'Entrega estándar: 24-48 horas. Para pedidos urgentes, contacta antes de las 11 AM.' } },
+        { '@type': 'Question', name: '¿El sello tiene garantía?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, todos nuestros sellos tienen garantía de 6 meses contra defectos de fabricación.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Sellos Automáticos Personalizados para Empresas y Profesionales | MBE Colón, Panamá',
   description: 'Sellos automáticos personalizados para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48 horas. Plaza Millenium F007.',
@@ -10,7 +42,9 @@ export const metadata = {
 
 export default function SelloPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="🔖"
       title="Sellos Automáticos Personalizados"
       description="Fabricamos sellos automáticos de alta calidad en Colón, Panamá con tu nombre, empresa, dirección, logo o cualquier diseño personalizado. Ideales para abogados, médicos, contadores, empresas e instituciones en la provincia de Colón. Modelos Trodat y Colop con entrega en 24 a 48 horas hábiles."
@@ -73,5 +107,6 @@ export default function SelloPage() {
       href="/servicios/sellos"
       serviceType="Rubber Stamp Manufacturing"
     />
+    </>
   )
 }

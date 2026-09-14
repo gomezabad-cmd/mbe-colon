@@ -1,5 +1,37 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/impresion#service',
+      name: 'Impresión Profesional',
+      description: 'Impresión profesional de tarjetas de presentación, brochures, banners y gran formato en Colón, Panamá. Entrega mismo día para trabajos simples antes de las 11 AM.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón' },
+      url: 'https://mbecolon.com/servicios/impresion',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Impresión Profesional', item: 'https://mbecolon.com/servicios/impresion' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Qué formatos de archivo aceptan?', acceptedAnswer: { '@type': 'Answer', text: 'Aceptamos PDF (recomendado), JPG, PNG, PSD (Photoshop), AI (Illustrator) y CorelDRAW.' } },
+        { '@type': 'Question', name: '¿Cuál es el tiempo de entrega?', acceptedAnswer: { '@type': 'Answer', text: 'Para trabajos simples la entrega es mismo día si nos dejas el archivo antes de las 11 AM. Para proyectos más complejos es de 24-48 horas.' } },
+        { '@type': 'Question', name: '¿Cuál es la cantidad mínima para imprimir?', acceptedAnswer: { '@type': 'Answer', text: 'Para tarjetas: 100 unidades. Para brochures: 50 unidades. Para banners: 1 unidad.' } },
+        { '@type': 'Question', name: '¿Entregan a domicilio?', acceptedAnswer: { '@type': 'Answer', text: 'Sí, entrega a domicilio en Colón sin costo para pedidos mayores a $50.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Impresión Profesional de Tarjetas, Brochures y Banners | MBE Colón, Panamá',
   description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners en gran formato. Calidad garantizada y entrega rápida. MBE Colón.',
@@ -10,7 +42,9 @@ export const metadata = {
 
 export default function ImpresionPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="🖨️"
       title="Impresión Profesional"
       description="Impresión de alta calidad para tu negocio: tarjetas, brochures, banners, folletos y todo tipo de material gráfico."
@@ -59,5 +93,6 @@ export default function ImpresionPage() {
       ]}
       href="/servicios/impresion"
     />
+    </>
   )
 }
