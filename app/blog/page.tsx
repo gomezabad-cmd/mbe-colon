@@ -27,6 +27,15 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    categoria: 'Bordados',
+    badge: 'bg-mbe-blue',
+    titulo: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá',
+    desc: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad y entrega rápida en Plaza Millenium F007.',
+    href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
+    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    imgAlt: 'Chaqueta bordada con logo para empresa de seguridad en Colón, Panamá',
+  },
+  {
     categoria: 'Envíos',
     badge: 'bg-mbe-red',
     titulo: 'Cómo enviar documentos urgentes desde Colón, Panamá al mundo',
