@@ -13,31 +13,84 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://mbecolon.com'),
   manifest: '/manifest.json',
-  title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
-  description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
+  title: 'MBE Colón | Casillero Miami, Envíos Internacionales y Impresión — Panamá',
+  description: 'Mail Boxes Etc. en Colón, Panamá: Casillero Miami GRATIS, envíos con DHL/FedEx/UPS, carga marítima, impresión, bordados y sellos. 18+ años de experiencia. Plaza Millenium F007.',
+  keywords: ['casillero Miami Colón Panamá', 'envíos internacionales Colón', 'courier Colón', 'MBE Colón', 'casillero Miami gratis', 'envíos DHL Colón', 'envíos FedEx Panamá', 'compras Amazon Panamá'],
   openGraph: {
-    description: 'Envíos internacionales con DHL, FedEx y UPS. Casillero Miami, carga marítima, impresión, bordados y sellos en Colón, Panamá. Plaza Millenium F007.',
-    type: 'website',
+    title: 'MBE Colón | Casillero Miami, Envíos Internacionales y Impresión — Panamá',
+    description: 'Casillero Miami GRATIS, envíos con DHL/FedEx/UPS, carga marítima, impresión, bordados y sellos en Colón, Panamá. 18+ años de experiencia.',
+    url: 'https://mbecolon.com',
+    siteName: 'MBE Colón',
     locale: 'es_PA',
-    siteName: 'Mail Boxes Etc. Colón',
+    type: 'website',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Mail Boxes Etc. Colón — Envíos, Casillero Miami e Impresión en Colón, Panamá',
+        alt: 'MBE Colón — Casillero Miami, Envíos Internacionales e Impresión en Colón, Panamá',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MBE Colón | Envíos, Casillero Miami e Impresión — Panamá',
-    description: 'Envíos con DHL, FedEx y UPS. Casillero Miami, impresión, bordados y sellos en Colón, Panamá.',
+    title: 'MBE Colón | Casillero Miami y Envíos — Panamá',
+    description: 'Casillero Miami GRATIS, envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá.',
     site: '@mbecolon',
     creator: '@mbecolon',
     images: ['https://mbecolon.com/og-image.png'],
   },
+  alternates: {
+    canonical: 'https://mbecolon.com',
+  },
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta el casillero Miami en Panamá?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El casillero Miami en MBE Colón es GRATIS. No pagas por la dirección en Miami. Solo pagas cuando envías tus compras a Panamá. Paquetes pequeños desde $15.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tarda un paquete de Miami a Colón?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'DHL Express: 3-5 días hábiles. FedEx International: 4-7 días hábiles. UPS Standard: 5-10 días hábiles. Todos incluyen tracking en tiempo real.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo funciona el casillero Miami de MBE?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '1. Registra tu casillero gratis. 2. Recibes una dirección en Miami. 3. Compras en Amazon, eBay, Shein o cualquier tienda de USA. 4. Nosotros enviamos tu paquete a Colón.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo comprar en Amazon usando el casillero MBE?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, puedes comprar en Amazon, eBay, Shein, Walmart, Target, Nike y cualquier tienda online de USA. Solo usa tu dirección MBE Miami como dirección de envío.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuáles son las tarifas de envío internacional?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'DHL Express desde $35. FedEx International desde $30. UPS Standard desde $25. Carga marítima desde $5 por libra. Solicita cotización personalizada.',
+      },
+    },
+  ],
 }
 
 const schemaGraph = {
@@ -159,6 +212,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body>

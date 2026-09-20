@@ -1,13 +1,13 @@
 export const CONTACT = {
   name: 'Mail Boxes Etc. Colón',
   shortName: 'MBE Colón',
-  address: 'Plaza Millenium Local F007, Colón, Panamá',
-  phone: '474-5548',
+  address: 'Plaza Millenium, Local F007, Colón, Provincia de Colón, Panamá',
+  phone: '(507) 474-5548',
   phoneHref: 'tel:+5074745548',
-  whatsapp: '6949-5100',
+  whatsapp: '(507) 6949-5100',
   whatsappHref: 'https://wa.me/50769495100',
-  email: 'mbecolon@gmail.com',
-  emailHref: 'mailto:mbecolon@gmail.com',
+  email: 'colon@mbe-ca.com',
+  emailHref: 'mailto:colon@mbe-ca.com',
   hours: {
     weekdays: 'Lunes a Viernes: 8:00 AM – 5:00 PM',
     saturday: 'Sábado: 9:00 AM – 1:00 PM',
@@ -66,6 +66,20 @@ export const SERVICES = [
     title: 'Sellos Automáticos',
     description: 'Sellos automáticos personalizados para empresas y profesionales en Colón, Panamá.',
     href: '/servicios/sellos',
+  },
+  {
+    id: 'encomiendas',
+    icon: '🚚',
+    title: 'Encomiendas Nacionales',
+    description: 'Envío de encomiendas a cualquier provincia de Panamá de forma rápida y segura.',
+    href: '/servicios',
+  },
+  {
+    id: 'utiles-oficina',
+    icon: '🖊️',
+    title: 'Útiles de Oficina',
+    description: 'Venta de suministros y útiles de oficina en nuestro local de Plaza Millenium.',
+    href: '/servicios',
   },
 ]
 

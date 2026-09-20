@@ -51,6 +51,15 @@ export default function ContactSection() {
               </div>
             </div>
 
+            {/* Email */}
+            <div className="bg-white rounded-xl p-5 flex items-start gap-4">
+              <Image src="/images/icons/phone.png" alt="Email" width={40} height={40} className="shrink-0" />
+              <div>
+                <div className="font-bold text-mbe-dark text-sm">Email</div>
+                <a href={CONTACT.emailHref} className="text-mbe-blue text-sm font-semibold hover:underline mt-0.5 block">{CONTACT.email}</a>
+              </div>
+            </div>
+
             {/* Horario */}
             <div className="bg-white rounded-xl p-5 flex items-start gap-4">
               <Image src="/images/icons/clock.png" alt="Horario" width={40} height={40} className="shrink-0" />
@@ -59,6 +68,7 @@ export default function ContactSection() {
                 <div className="text-mbe-gray text-sm mt-0.5">
                   <div>{CONTACT.hours.weekdays}</div>
                   <div>{CONTACT.hours.saturday}</div>
+                  <div>{CONTACT.hours.sunday}</div>
                 </div>
               </div>
             </div>

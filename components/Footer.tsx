@@ -124,6 +124,7 @@ export default function Footer() {
               <div className="text-xs leading-relaxed">
                 <div>{CONTACT.hours.weekdays}</div>
                 <div>{CONTACT.hours.saturday}</div>
+                <div>{CONTACT.hours.sunday}</div>
               </div>
             </li>
           </ul>

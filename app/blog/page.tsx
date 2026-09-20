@@ -34,6 +34,8 @@ const POSTS = [
     href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Chaqueta bordada con logo para empresa de seguridad en Colón, Panamá',
+    datePublished: '2026-09-18',
+    dateModified: '2026-09-18',
   },
   {
     categoria: 'Envíos',
@@ -43,6 +45,8 @@ const POSTS = [
     href: '/blog/envio-documentos-urgentes-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Envío de documentos urgentes internacionales desde Colón, Panamá',
+    datePublished: '2026-09-11',
+    dateModified: '2026-09-11',
   },
   {
     categoria: 'Impresión',
@@ -52,6 +56,8 @@ const POSTS = [
     href: '/blog/etiquetas-stickers-personalizados-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de etiquetas y stickers personalizados para negocios en Colón, Panamá',
+    datePublished: '2026-09-11',
+    dateModified: '2026-09-11',
   },
   {
     categoria: 'Casillero',
@@ -61,6 +67,8 @@ const POSTS = [
     href: '/blog/cuanto-cuesta-casillero-miami-envio-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: '¿Cuánto cuesta el casillero Miami y el envío a Colón, Panamá? — MBE Colón',
+    datePublished: '2026-08-20',
+    dateModified: '2026-08-20',
   },
   {
     categoria: 'Casillero',
@@ -70,6 +78,8 @@ const POSTS = [
     href: '/blog/cuanto-tarda-envio-miami-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Tiempo de entrega de un envío de Miami a Colón, Panamá — MBE Colón',
+    datePublished: '2026-08-20',
+    dateModified: '2026-08-20',
   },
   {
     categoria: 'Logística',
@@ -79,6 +89,8 @@ const POSTS = [
     href: '/blog/cuanto-se-paga-impuesto-comprar-internet-panama',
     img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impuestos aduanales al comprar por internet en Panamá — MBE Colón',
+    datePublished: '2026-08-20',
+    dateModified: '2026-08-20',
   },
   {
     categoria: 'Casillero',
@@ -88,6 +100,8 @@ const POSTS = [
     href: '/blog/como-comprar-por-internet-desde-colon-panama',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cómo comprar por internet desde Colón, Panamá con casillero Miami MBE',
+    datePublished: '2026-08-20',
+    dateModified: '2026-08-20',
   },
   {
     categoria: 'Sellos',
@@ -97,6 +111,8 @@ const POSTS = [
     href: '/blog/sellos-notarias-bufetes-abogados-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Sello automático para notaría y bufete de abogados en Colón, Panamá',
+    datePublished: '2026-08-14',
+    dateModified: '2026-08-14',
   },
   {
     categoria: 'Bordados',
@@ -106,6 +122,8 @@ const POSTS = [
     href: '/blog/bordados-delantales-restaurantes-hoteles-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Delantal bordado con logo para restaurante en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Envíos',
@@ -115,6 +133,8 @@ const POSTS = [
     href: '/blog/seguro-envios-internacionales-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Casillero',
@@ -124,6 +144,8 @@ const POSTS = [
     href: '/blog/casillero-miami-electronicos-gadgets-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compra de laptops y gadgets electrónicos con casillero Miami MBE Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Impresión',
@@ -133,6 +155,8 @@ const POSTS = [
     href: '/blog/impresion-banners-afiches-publicitarios-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Logística',
@@ -142,6 +166,8 @@ const POSTS = [
     href: '/blog/consolidacion-carga-pymes-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Consolidación de carga marítima para PYMEs en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Sellos',
@@ -151,6 +177,8 @@ const POSTS = [
     href: '/blog/kit-identidad-corporativa-empresas-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Sello automático y carnet corporativo para nueva empresa en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Bordados',
@@ -160,6 +188,8 @@ const POSTS = [
     href: '/blog/hoodies-bordados-empresas-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Hoodie bordado con logo de empresa en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Envíos',
@@ -169,6 +199,8 @@ const POSTS = [
     href: '/blog/costo-envios-internacionales-desde-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes listas para envío internacional desde Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Casillero',
@@ -178,6 +210,8 @@ const POSTS = [
     href: '/blog/casillero-miami-shein-ebay-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online de Shein y eBay con casillero Miami MBE Colón',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Impresión',
@@ -187,6 +221,8 @@ const POSTS = [
     href: '/blog/impresion-tarjetas-embalaje-profesional-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Logística',
@@ -196,6 +232,8 @@ const POSTS = [
     href: '/blog/carga-maritima-miami-panama-empresas-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Almacén de carga marítima Miami-Panamá para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Sellos',
@@ -205,6 +243,8 @@ const POSTS = [
     href: '/blog/carnets-pvc-personalizados-empresas-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Carnets PVC personalizados para identificación de empleados en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Bordados',
@@ -214,6 +254,8 @@ const POSTS = [
     href: '/blog/bordados-gorras-polos-empresas-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Gorras y polos bordados con logo para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Envíos',
@@ -223,6 +265,8 @@ const POSTS = [
     href: '/blog/envios-internacionales-dhl-fedex-ups-colon',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes para envíos internacionales desde Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Logística',
@@ -232,6 +276,8 @@ const POSTS = [
     href: '/blog/logistica-pymes-zona-libre-colon',
     img: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Almacén logístico para empresas y PYMEs en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Impresión',
@@ -241,6 +287,8 @@ const POSTS = [
     href: '/blog/impresion-planos-brochures-colon',
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión profesional de planos y brochures para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Sellos',
@@ -250,6 +298,8 @@ const POSTS = [
     href: '/blog/sellos-automaticos-personalizados-colon',
     img: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Sello automático personalizado con tinta para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Bordados',
@@ -259,6 +309,8 @@ const POSTS = [
     href: '/blog/bordados-personalizados-uniformes-colon',
     img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Bordados personalizados en uniformes y gorras para empresas en Colón, Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Envíos',
@@ -268,6 +320,8 @@ const POSTS = [
     href: '/blog/como-empacar-paquetes',
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Cajas de paquetes listos para envío internacional',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Casillero',
@@ -277,6 +331,8 @@ const POSTS = [
     href: '/blog/guia-compras-amazon-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Compras online en Amazon con casillero Miami MBE Colón',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
   {
     categoria: 'Casillero',
@@ -286,6 +342,8 @@ const POSTS = [
     href: '/blog/traer-repuestos-auto-usa-panama',
     img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Mecánico instalando repuestos de auto importados desde USA a Panamá',
+    datePublished: '2026-08-13',
+    dateModified: '2026-08-13',
   },
 ]
 
@@ -339,9 +397,26 @@ export default function BlogPage() {
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">
                     {post.desc}
                   </p>
-                  <span className="text-mbe-red text-sm font-bold">
-                    Leer más →
-                  </span>
+                  <div className="flex items-center justify-between mt-auto">
+                    <span className="text-mbe-red text-sm font-bold">
+                      Leer más →
+                    </span>
+                    {post.datePublished && (
+                      <time 
+                        dateTime={post.dateModified || post.datePublished}
+                        className="text-gray-400 text-xs"
+                      >
+                        {new Date(post.dateModified || post.datePublished).toLocaleDateString('es-PA', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                        {post.dateModified && post.dateModified !== post.datePublished && (
+                          <span className="italic"> (actualizado)</span>
+                        )}
+                      </time>
+                    )}
+                  </div>
                 </div>
               </Link>
             ))}

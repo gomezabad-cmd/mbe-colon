@@ -49,8 +49,8 @@ export async function getGoogleReviews(): Promise<PlaceReviews | null> {
 
 // Reseñas estáticas mientras se configura la API (o como fallback)
 export const STATIC_REVIEWS: PlaceReviews = {
-  rating: 4.9,
-  userRatingCount: 87,
+  rating: 4.7,
+  userRatingCount: 85,
   reviews: [
     {
       relativePublishTimeDescription: 'hace 1 semana',

@@ -62,7 +62,7 @@ export default function Navbar() {
           <Link href="/blog" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Blog</Link>
           <Link href="/tarifas" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Tarifas</Link>
           <Link href="/#nosotros" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Nosotros</Link>
-          <Link href="/#contacto" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Contacto</Link>
+          <Link href="/contacto" className="text-sm text-mbe-dark hover:text-mbe-red transition-colors font-medium">Contacto</Link>
           <a
             href={CONTACT.whatsappHref}
             target="_blank"
@@ -100,7 +100,7 @@ export default function Navbar() {
           <Link href="/blog" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Blog</Link>
           <Link href="/tarifas" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Tarifas</Link>
           <Link href="/#nosotros" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Nosotros</Link>
-          <Link href="/#contacto" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Contacto</Link>
+          <Link href="/contacto" className="block text-sm font-medium text-mbe-dark py-2" onClick={() => setIsOpen(false)}>Contacto</Link>
           <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackLead('whatsapp_navbar_mobile')} className="block bg-mbe-red text-white text-sm font-bold px-4 py-3 rounded text-center">
             💬 Cotizar por WhatsApp
           </a>
