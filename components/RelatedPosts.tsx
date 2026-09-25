@@ -41,6 +41,12 @@ function categoryHint(pathname: string): string | null {
   return 'Casillero'
 }
 
+function rotate<T>(items: T[], offset: number): T[] {
+  if (items.length === 0) return items
+  const start = ((offset % items.length) + items.length) % items.length
+  return [...items.slice(start), ...items.slice(0, start)]
+}
+
 export default function RelatedPosts() {
   const pathname = usePathname()
 
@@ -49,9 +55,22 @@ export default function RelatedPosts() {
   const current = pathname.replace(/\/$/, '')
   const hint = categoryHint(current)
 
-  const sameCategory = POSTS.filter((p) => p.href !== current && p.categoria === hint)
-  const rest = POSTS.filter((p) => p.href !== current && p.categoria !== hint)
-  const picks = [...sameCategory, ...rest].slice(0, 3)
+  const position = POSTS.findIndex((post) => post.href === current)
+  const index = position < 0 ? 0 : position
+
+  const peers = POSTS.filter((post) => post.categoria === hint && post.href !== current)
+  const peerPosition = Math.max(
+    0,
+    POSTS.filter((post) => post.categoria === hint).findIndex((post) => post.href === current),
+  )
+
+  const sameCategory = rotate(peers, peerPosition).slice(0, 2)
+  const crossCategory = rotate(
+    POSTS.filter((post) => post.categoria !== hint && post.href !== current),
+    index,
+  )
+
+  const picks = [...sameCategory, ...crossCategory].slice(0, 3)
 
   if (picks.length === 0) return null
 
