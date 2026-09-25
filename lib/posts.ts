@@ -119,7 +119,7 @@ export const POSTS: Post[] = [
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Paquete asegurado listo para envío internacional desde Colón, Panamá',
     datePublished: '2026-08-13',
-    dateModified: '2026-08-13',
+    dateModified: '2026-09-24',
   },
   {
     categoria: 'Casillero',
@@ -141,7 +141,7 @@ export const POSTS: Post[] = [
     img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
     imgAlt: 'Impresión de banner publicitario en vinil para negocio en Colón, Panamá',
     datePublished: '2026-08-13',
-    dateModified: '2026-08-13',
+    dateModified: '2026-09-24',
   },
   {
     categoria: 'Logística',
