@@ -63,6 +63,8 @@ export default function CargaPage() {
       relatedLinks={[
         { label: 'Ver tarifas de carga y envíos', href: '/tarifas' },
         { label: 'Consolidar carga para tu pyme', href: '/blog/consolidacion-carga-pymes-colon' },
+        { label: 'Carga marítima Miami–Panamá para empresas', href: '/blog/carga-maritima-miami-panama-empresas-colon' },
+        { label: 'Envíos internacionales aéreos', href: '/servicios/envios-internacionales' },
       ]}
     />
   )

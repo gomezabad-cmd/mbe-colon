@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -92,7 +89,6 @@ export default function TarifasPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
       <main className="pt-[88px]">
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4">
@@ -288,8 +284,6 @@ export default function TarifasPage() {
           </div>
         </section>
       </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   )
 }

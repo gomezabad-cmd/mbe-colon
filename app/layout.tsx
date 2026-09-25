@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import PushNotificationOptIn from '@/components/PushNotificationOptIn'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import { getReviewSummary, buildAggregateRating } from '@/lib/reviews'
 import './globals.css'
 
@@ -203,7 +206,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </>
         )}
 
+        <Navbar />
         {children}
+        <Footer />
+        <WhatsAppButton />
         <PushNotificationOptIn />
         <Script
           src="https://forja-starter-261c87.carlosgomezabadpty.workers.dev/widget.js"

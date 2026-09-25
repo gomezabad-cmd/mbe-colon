@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -67,8 +65,7 @@ const SERVICES = [
 export default function ServiciosPage() {
   return (
     <>
-      <Navbar />
-      <main className="pt-[88px]">
+      <div>
 
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4 text-center">
@@ -153,8 +150,7 @@ export default function ServiciosPage() {
           </a>
         </section>
 
-      </main>
-      <Footer />
+      </div>
     </>
   )
 }

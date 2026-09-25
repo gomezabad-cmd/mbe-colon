@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import { CONTACT } from '@/lib/constants'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
@@ -13,10 +11,49 @@ export const metadata: Metadata = {
   },
 }
 
+const contactFaqs = [
+  {
+    q: '¿Dónde está MBE Colón?',
+    a: 'Estamos en Plaza Millenium Local F007, Colón, Panamá, a pocos minutos de la Zona Libre de Colón. Es la franquicia autorizada de Mail Boxes Etc. en la provincia, con más de 18 años de operación.',
+  },
+  {
+    q: '¿Cuál es el horario de atención?',
+    a: 'Lunes a viernes de 8:00 AM a 5:00 PM y sábado de 9:00 AM a 1:00 PM. Los domingos cerrado. En horario de atención respondemos por WhatsApp en minutos.',
+  },
+  {
+    q: '¿Puedo cotizar sin ir a la tienda?',
+    a: 'Sí. Escríbenos por WhatsApp al 6949-5100 con el destino, el peso aproximado y el tipo de servicio (aéreo, marítimo, bordado, impresión o sello) y te enviamos la cotización sin compromiso.',
+  },
+  {
+    q: '¿Qué necesito para recoger un paquete?',
+    a: 'Tu cédula o pasaporte y el número de tracking o la notificación que te enviamos por WhatsApp. Si recoges en nombre de otra persona, lleva una autorización firmada y una copia del documento de identidad de quien autoriza.',
+  },
+  {
+    q: '¿Cómo llego en bus o taxi a Plaza Millenium?',
+    a: 'La entrada principal de Plaza Millenium queda frente a la avenida principal de Colón. Tanto buses como taxis conocen la plaza; si vienes en carro hay estacionamiento y acceso para personas con movilidad reducida.',
+  },
+]
+
+const contactFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: contactFaqs.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  })),
+}
+
 export default function ContactoPage() {
   return (
     <>
-      <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqSchema) }}
+      />
       <main className="pt-[88px]">
 
         {/* Hero */}
@@ -156,8 +193,49 @@ export default function ContactoPage() {
           </div>
         </section>
 
+        {/* Preguntas frecuentes */}
+        <section className="bg-mbe-light py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-mbe-dark text-2xl md:text-3xl font-black mb-2">
+              Preguntas sobre tu visita y tu envío
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Resolvemos las dudas más comunes antes de que vengas a Plaza Millenium o nos
+              escribas por WhatsApp.
+            </p>
+
+            <div className="space-y-4">
+              {contactFaqs.map((item) => (
+                <div key={item.q} className="bg-white rounded-2xl p-6 shadow-md">
+                  <h3 className="text-mbe-dark font-bold mb-2">{item.q}</h3>
+                  <p className="text-mbe-gray text-sm leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-gray-600 text-sm mt-8">
+              ¿No encontraste tu pregunta? Consulta el listado completo de{' '}
+              <Link
+                href="/preguntas-frecuentes"
+                className="text-mbe-red font-semibold hover:underline"
+              >
+                preguntas frecuentes
+              </Link>{' '}
+              o escríbenos directo por{' '}
+              <a
+                href={CONTACT.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-mbe-red font-semibold hover:underline"
+              >
+                WhatsApp
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+
       </main>
-      <Footer />
     </>
   )
 }

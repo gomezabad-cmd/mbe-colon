@@ -59,6 +59,8 @@ export default function EnviosPage() {
         { label: 'Ver tarifas de envíos', href: '/tarifas' },
         { label: 'Seguro para envíos internacionales', href: '/blog/seguro-envios-internacionales-colon' },
         { label: 'Consolidar carga para tu pyme', href: '/blog/consolidacion-carga-pymes-colon' },
+        { label: 'Carga marítima Miami–Panamá', href: '/servicios/carga-maritima' },
+        { label: 'Casillero Miami para tus compras', href: '/servicios/casillero' },
       ]}
     >
       <QuoteCalculator

@@ -59,6 +59,8 @@ export default function ComprasPage() {
         { label: 'Ver tarifas de casillero', href: '/tarifas' },
         { label: 'Guía para comprar por internet', href: '/blog/como-comprar-por-internet-desde-colon-panama' },
         { label: 'Comprar en Shein y eBay', href: '/blog/casillero-miami-shein-ebay-colon' },
+        { label: 'Casillero Miami gratis en Colón', href: '/servicios/casillero' },
+        { label: 'Envíos internacionales DHL, FedEx y UPS', href: '/servicios/envios-internacionales' },
       ]}
     >
       <QuoteCalculator

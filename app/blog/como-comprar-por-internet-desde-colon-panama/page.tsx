@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -143,8 +140,7 @@ export default function HubPost() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Navbar />
-      <main className="pt-[88px]">
+      <div>
         <article className="max-w-3xl mx-auto px-4 py-14">
           <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
             <Link href="/" className="hover:text-mbe-red transition-colors">Inicio</Link>
@@ -278,9 +274,7 @@ export default function HubPost() {
             <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
           </div>
         </article>
-      </main>
-      <Footer />
-      <WhatsAppButton />
+      </div>
     </>
   )
 }

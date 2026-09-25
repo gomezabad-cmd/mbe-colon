@@ -16,7 +16,7 @@ const articleSchema = {
   headline: 'Seguro para tus Envíos Internacionales: Protege tus Paquetes desde Colón, Panamá',
   description: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
   datePublished: '2026-08-05',
-  dateModified: '2026-08-05',
+  dateModified: '2026-09-24',
   author: {
     '@type': 'Person',
     name: 'Equipo de Logística de MBE Colón',
@@ -98,6 +98,44 @@ export default function BlogPost() {
               más rápida es la resolución y el reembolso.
             </p>
           </div>
+
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Cuánto cuesta asegurar un envío internacional</h2>
+          <p>
+            El valor asegurado se declara sobre el <strong>costo real</strong> de la mercancía, no sobre el
+            precio que pensaste pagar. Si declara menos de lo que vale tu paquete, la compensación en caso
+            de siniestro se reduce en la misma proporción: un envío declarado en la mitad de su valor real
+            solo se reembolsa hasta la mitad.
+          </p>
+          <p>
+            Antes de enviar, revisa el <Link href="/blog/costo-envios-internacionales-desde-colon" className="text-mbe-red font-semibold hover:underline">costo
+            de envío internacional desde Colón</Link> y suma el seguro a tu presupuesto. En MBE Colón te
+            cotizamos la cobertura junto con el flete para que sepas el total antes de despachar.
+          </p>
+
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Qué NO cubre el seguro de envío</h2>
+          <p>
+            Conviene saber los límites antes de reclamar. La cobertura estándar de los couriers suele
+            excluir una lista corta de casos:
+          </p>
+
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li><strong>Documentos y valores</strong> — efectivo, cheques, tarjetas y joyas van por otra vía</li>
+            <li><strong>Bienes perecederos</strong> — alimentos sin conservación, plantas y flores</li>
+            <li><strong>Embalaje inadecuado</strong> — si la caja no protege el contenido, el reclamo se rechaza</li>
+            <li><strong>Daño por contenido mal declarado</strong> — líquidos o frágiles que no se identificaron al despachar</li>
+          </ul>
+
+          <p>
+            Por eso el empaque es parte del seguro: un artículo bien embalado reduce el riesgo de daño y
+            respalda tu reclamo si ocurre. Consulta <Link href="/blog/como-empacar-paquetes" className="text-mbe-red font-semibold hover:underline">cómo
+            empacar paquetes</Link> antes de enviar.
+          </p>
+
+          <p>
+            Si tu envío es por barco, revisa también la <Link href="/servicios/envios-internacionales" className="text-mbe-red font-semibold hover:underline">cobertura
+            de nuestros envíos internacionales</Link> y las opciones de <Link href="/servicios/carga-maritima" className="text-mbe-red font-semibold hover:underline">carga
+            marítima</Link> para mercancía de mayor volumen.
+          </p>
 
         </div>
 

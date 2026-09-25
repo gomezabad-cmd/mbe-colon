@@ -63,6 +63,7 @@ export default function ImpresionPage() {
         { label: 'Ver tarifas de impresión', href: '/tarifas' },
         { label: 'Banners y afiches publicitarios', href: '/blog/impresion-banners-afiches-publicitarios-colon' },
         { label: 'Kit de identidad corporativa', href: '/blog/kit-identidad-corporativa-empresas-colon' },
+        { label: 'Sellos automáticos para tu empresa', href: '/servicios/sellos' },
       ]}
     >
       <QuoteCalculator

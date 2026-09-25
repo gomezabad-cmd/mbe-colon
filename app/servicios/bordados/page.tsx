@@ -107,6 +107,7 @@ export default async function BordadosPage() {
         { label: 'Ver tarifas de bordados', href: '/tarifas' },
         { label: 'Hoodies bordados para empresas', href: '/blog/hoodies-bordados-empresas-colon' },
         { label: 'Bordados para restaurantes y hoteles', href: '/blog/bordados-delantales-restaurantes-hoteles-colon' },
+        { label: 'Impresión de etiquetas y branding', href: '/servicios/impresion' },
       ]}
       serviceType="Embroidery Service"
     >

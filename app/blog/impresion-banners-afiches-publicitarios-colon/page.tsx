@@ -16,7 +16,7 @@ const articleSchema = {
   headline: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá',
   description: 'Impresión de banners publicitarios en Colón Panamá para tu negocio. Afiches, pendones y vinil de alta calidad, entrega en 24-48h en Plaza Millenium F007.',
   datePublished: '2026-07-31',
-  dateModified: '2026-07-31',
+  dateModified: '2026-09-24',
   author: {
     '@type': 'Person',
     name: 'Equipo de Logística de MBE Colón',
@@ -98,6 +98,47 @@ export default function BlogPost() {
               Visítanos en Plaza Millenium F007, Colón, Panamá.
             </p>
           </div>
+
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Tamaños de banner y afiche: cómo elegir el correcto</h2>
+          <p>
+            El tamaño se define por dónde se va a colocar y a qué distancia se lee, no por el gusto
+            personal. Antes de mandar a imprimir, mide el espacio real y comprueba desde dónde verá
+            el mensaje tu cliente.
+          </p>
+
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li><strong>Vinil de 1 × 2 m o 2 × 3 m</strong> — fachadas, bardas y cercas en Colón; se ve desde la acera opuesta</li>
+            <li><strong>Roll-up de 0,85 × 2 m</strong> — ferias, congresos y punto de venta; va en su estuche y se arma en segundos</li>
+            <li><strong>Afiche de 50 × 70 cm</strong> — interiores, vitrinas y avisos de promoción en el local</li>
+            <li><strong>Tablero de 60 × 90 cm</strong> — señalización interna, horarios y directorio de oficina</li>
+          </ul>
+
+          <p>
+            Para exteriores añade ojales y refuerzo en los bordes: en Colón la humedad y el viento
+            caribbeanos desgastan rápido cualquier material sin reforzar.
+          </p>
+
+          <h2 className="text-mbe-dark text-xl font-black mt-8">Qué necesitas para imprimir en MBE Colón</h2>
+          <p>
+            Solo necesitas tu archivo en PDF, AI, PSD o PNG con buena resolución y las medidas del
+            soporte. Si el archivo está en baja resolución, nuestro equipo de diseño lo rehace por ti
+            sin costo adicional para que el banner salga nítido y no pixelado.
+          </p>
+
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li><strong>Formato</strong> — PDF o AI preferible, con tipografías convertidas a curvas</li>
+            <li><strong>Resolución</strong> — 150 dpi al tamaño final para piezas de gran formato</li>
+            <li><strong>Margen</strong> — 3 cm de sangrado para no cortar texto ni logos</li>
+            <li><strong>Color</strong> — si necesitas el color exacto de tu marca, envíanos el código Pantone</li>
+          </ul>
+
+          <p>
+            Además de banners, en <Link href="/servicios/impresion" className="text-mbe-red font-semibold hover:underline">nuestro
+            servicio de impresión</Link> producimos <Link href="/blog/etiquetas-stickers-personalizados-colon" className="text-mbe-red font-semibold hover:underline">etiquetas
+            y stickers</Link>, <Link href="/blog/impresion-tarjetas-embalaje-profesional-colon" className="text-mbe-red font-semibold hover:underline">tarjetas
+            de negocio</Link> y <Link href="/blog/impresion-planos-brochures-colon" className="text-mbe-red font-semibold hover:underline">planos
+            y brochures</Link>, así puedes surtir toda tu papelería en un solo lugar.
+          </p>
 
         </div>
 

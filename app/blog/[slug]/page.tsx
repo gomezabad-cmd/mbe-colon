@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 import { getPostBySlug, getPosts, formatDate, featuredImage } from '@/lib/wordpress'
 import { sanitizeHtml } from '@/lib/sanitize'
 import type { Metadata } from 'next'
@@ -39,7 +36,6 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <Navbar />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -62,7 +58,7 @@ export default async function BlogPostPage({ params }: Props) {
           }),
         }}
       />
-      <main className="pt-[88px]">
+      <div>
         {/* Hero */}
         <section className="bg-mbe-dark py-14 px-4">
           <div className="max-w-3xl mx-auto">
@@ -119,9 +115,7 @@ export default async function BlogPostPage({ params }: Props) {
             </Link>
           </div>
         </article>
-      </main>
-      <Footer />
-      <WhatsAppButton />
+      </div>
     </>
   )
 }

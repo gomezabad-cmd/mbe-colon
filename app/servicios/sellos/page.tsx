@@ -107,6 +107,7 @@ export default async function SelloPage() {
         { label: 'Ver tarifas de sellos', href: '/tarifas' },
         { label: 'Sellos para notarías y bufetes', href: '/blog/sellos-notarias-bufetes-abogados-colon' },
         { label: 'Kit de identidad corporativa', href: '/blog/kit-identidad-corporativa-empresas-colon' },
+        { label: 'Impresión profesional en Colón', href: '/servicios/impresion' },
       ]}
       serviceType="Rubber Stamp Manufacturing"
     >

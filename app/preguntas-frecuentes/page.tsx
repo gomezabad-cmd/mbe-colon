@@ -106,7 +106,7 @@ const faqSchema = {
 
 export default function PreguntasFrecuentesPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-[88px]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

@@ -1,11 +1,8 @@
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
 import ServicesBar from '@/components/ServicesBar'
 import WhyUsSection from '@/components/WhyUsSection'
 import ReviewsSection from '@/components/ReviewsSection'
 import ContactSection from '@/components/ContactSection'
-import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
@@ -183,7 +180,6 @@ export default function CasilleroMiamiColonPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
 
-      <Navbar />
       <main className="pt-[88px]">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20 md:py-32">
@@ -622,8 +618,6 @@ export default function CasilleroMiamiColonPage() {
         <ReviewsSection />
         <ContactSection />
       </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   )
 }

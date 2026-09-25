@@ -43,6 +43,16 @@ export default function Footer() {
                 💲 Tarifas y precios
               </Link>
             </li>
+            <li>
+              <Link href="/casillero-miami-colon" className="text-white text-sm font-semibold hover:text-mbe-red transition-colors flex items-center gap-2">
+                📦 Casillero Miami en Colón
+              </Link>
+            </li>
+            <li>
+              <Link href="/preguntas-frecuentes" className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2">
+                <span>❓</span> Preguntas frecuentes
+              </Link>
+            </li>
             {SERVICES.map(s => (
               <li key={s.id}>
                 <Link href={s.href} className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2">
