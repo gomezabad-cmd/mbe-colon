@@ -29,9 +29,10 @@ const productSchema = {
     '@type': 'Review',
     author: { '@type': 'Person', name: 'Cliente MBE Colón' },
     reviewRating: {
-      '@type': 'AggregateRating',
+      '@type': 'Rating',
       ratingValue: '4.7',
       bestRating: '5',
+      worstRating: '1',
     },
   },
   offers: {
