@@ -53,24 +53,20 @@ export default function RelatedPosts() {
   if (!pathname || !pathname.startsWith('/blog/')) return null
 
   const current = pathname.replace(/\/$/, '')
-  const hint = categoryHint(current)
+  const entry = POSTS.find((post) => post.href === current)
+  const hint = entry ? entry.categoria : categoryHint(current)
 
-  const position = POSTS.findIndex((post) => post.href === current)
-  const index = position < 0 ? 0 : position
+  const categoryPosts = POSTS.filter((post) => post.categoria === hint)
+  const peerPosition = entry ? categoryPosts.indexOf(entry) : 0
+  const peers = categoryPosts.filter((post) => post.href !== current)
 
-  const peers = POSTS.filter((post) => post.categoria === hint && post.href !== current)
-  const peerPosition = Math.max(
+  const globalPosition = entry ? POSTS.indexOf(entry) : 0
+  const others = POSTS.filter((post) => post.categoria !== hint && post.href !== current)
+
+  const picks = [...rotate(peers, peerPosition).slice(0, 2), ...rotate(others, globalPosition)].slice(
     0,
-    POSTS.filter((post) => post.categoria === hint).findIndex((post) => post.href === current),
+    3,
   )
-
-  const sameCategory = rotate(peers, peerPosition).slice(0, 2)
-  const crossCategory = rotate(
-    POSTS.filter((post) => post.categoria !== hint && post.href !== current),
-    index,
-  )
-
-  const picks = [...sameCategory, ...crossCategory].slice(0, 3)
 
   if (picks.length === 0) return null
 
