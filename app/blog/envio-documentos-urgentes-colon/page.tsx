@@ -3,9 +3,12 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá | MBE Colón',
   description: 'Envía documentos urgentes desde Colón, Panamá con DHL, FedEx y UPS. Guía de envíos internacionales Colón: tiempos, precios y el mejor courier.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/envio-documentos-urgentes-colon',
+  },
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

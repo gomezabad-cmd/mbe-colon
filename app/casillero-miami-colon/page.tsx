@@ -599,7 +599,7 @@ export default function CasilleroMiamiColonPage() {
                 </div>
               </Link>
 
-              <Link href="/blog/casillero-miami-amazon-ebay-shein" className="block">
+              <Link href="/blog/casillero-miami-shein-ebay-colon" className="block">
                 <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
                     <span className="text-6xl">📦</span>

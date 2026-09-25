@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import PushNotificationOptIn from '@/components/PushNotificationOptIn'
+import { getReviewSummary, buildAggregateRating } from '@/lib/reviews'
 import './globals.css'
 
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
@@ -46,54 +47,7 @@ export const metadata: Metadata = {
   },
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Cuánto cuesta el casillero Miami en Panamá?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El casillero Miami en MBE Colón es GRATIS. No pagas por la dirección en Miami. Solo pagas cuando envías tus compras a Panamá. Paquetes pequeños desde $15.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tarda un paquete de Miami a Colón?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'DHL Express: 3-5 días hábiles. FedEx International: 4-7 días hábiles. UPS Standard: 5-10 días hábiles. Todos incluyen tracking en tiempo real.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cómo funciona el casillero Miami de MBE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '1. Registra tu casillero gratis. 2. Recibes una dirección en Miami. 3. Compras en Amazon, eBay, Shein o cualquier tienda de USA. 4. Nosotros enviamos tu paquete a Colón.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Puedo comprar en Amazon usando el casillero MBE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sí, puedes comprar en Amazon, eBay, Shein, Walmart, Target, Nike y cualquier tienda online de USA. Solo usa tu dirección MBE Miami como dirección de envío.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuáles son las tarifas de envío internacional?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'DHL Express desde $35. FedEx International desde $30. UPS Standard desde $25. Carga marítima desde $5 por libra. Solicita cotización personalizada.',
-      },
-    },
-  ],
-}
-
-const schemaGraph = {
+const baseSchemaGraph = {
   '@context': 'https://schema.org',
   '@graph': [
     {
@@ -149,13 +103,6 @@ const schemaGraph = {
         'https://www.instagram.com/mbecolon',
         'https://www.tiktok.com/@mbecolon',
       ],
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.7',
-        reviewCount: '83',
-        bestRating: '5',
-        worstRating: '1',
-      },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Servicios MBE Colón',
@@ -205,17 +152,23 @@ const schemaGraph = {
   ],
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const reviews = await getReviewSummary()
+  const schemaGraph = {
+    ...baseSchemaGraph,
+    '@graph': baseSchemaGraph['@graph'].map((node) =>
+      node['@type'] === 'LocalBusiness'
+        ? { ...node, aggregateRating: buildAggregateRating(reviews) }
+        : node,
+    ),
+  }
+
   return (
     <html lang="es">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body>

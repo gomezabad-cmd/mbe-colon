@@ -1,5 +1,6 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 import QuoteCalculator from '@/components/QuoteCalculator'
+import { getReviewSummary, buildAggregateRating, buildReview } from '@/lib/reviews'
 
 export const metadata = {
   title: 'Sellos para Empresas y Profesionales en Colón | MBE Colón',
@@ -9,7 +10,7 @@ export const metadata = {
   },
 }
 
-const productSchema = {
+const baseProductSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'Sellos Automáticos Personalizados en Colón, Panamá',
@@ -18,23 +19,6 @@ const productSchema = {
   image: 'https://mbecolon.com/og-image.png',
   brand: { '@type': 'Brand', name: 'Mail Boxes Etc. Colón' },
   category: 'Papelería y sellos personalizados',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.7',
-    reviewCount: '83',
-    bestRating: '5',
-    worstRating: '1',
-  },
-  review: {
-    '@type': 'Review',
-    author: { '@type': 'Person', name: 'Cliente MBE Colón' },
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: '4.7',
-      bestRating: '5',
-      worstRating: '1',
-    },
-  },
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: 'USD',
@@ -47,7 +31,14 @@ const productSchema = {
   },
 }
 
-export default function SelloPage() {
+export default async function SelloPage() {
+  const reviews = await getReviewSummary()
+  const productSchema = {
+    ...baseProductSchema,
+    aggregateRating: buildAggregateRating(reviews),
+    review: buildReview(reviews),
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />

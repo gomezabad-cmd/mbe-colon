@@ -3,9 +3,12 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá | MBE Colón',
   description: 'Impresión Colón de etiquetas y stickers personalizados para tu negocio en Panamá: productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
+  alternates: {
+    canonical: 'https://mbecolon.com/blog/etiquetas-stickers-personalizados-colon',
+  },
 }
 
-const BASE_URL = 'https://mbe-colon.vercel.app'
+const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',

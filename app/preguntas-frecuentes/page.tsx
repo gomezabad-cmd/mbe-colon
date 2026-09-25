@@ -89,9 +89,28 @@ const faqData = [
   },
 ]
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqData.flatMap((section) =>
+    section.questions.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  ),
+}
+
 export default function PreguntasFrecuentesPage() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="py-16 px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-4">Preguntas Frecuentes</h1>
         <p className="text-center text-gray-600 mb-12 text-lg">
