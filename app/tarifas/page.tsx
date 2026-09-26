@@ -178,7 +178,7 @@ export default function TarifasPage() {
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Carga marítima (volumen alto)</td>
                     <td className="px-4 py-4 text-mbe-gray">Consolidación / contenedor</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">hasta $10.00/ft³</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $6.00 – hasta $10.00/ft³</td>
                     <td className="px-4 py-4 text-mbe-gray">Según ruta y volumen</td>
                   </tr>
                   <tr>
