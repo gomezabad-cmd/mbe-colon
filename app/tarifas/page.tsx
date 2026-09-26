@@ -122,6 +122,9 @@ export default function TarifasPage() {
             <h1 className="text-white text-4xl md:text-5xl font-black mb-4">
               Tarifas de envíos y casillero <span className="text-mbe-red">desde Colón</span>
             </h1>
+            <p className="text-white text-xl font-medium max-w-2xl mx-auto mb-3">
+              Las tarifas de MBE Colón son precios de referencia en dólares con los que calculamos tu envío desde Miami hasta Colón, Panamá: el casillero Miami es gratis y solo pagas el flete, desde $3.00 por libra por vía aérea y desde $3.00 por pie cúbico por vía marítima, con los trámites aduaneros incluidos.
+            </p>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Precios de referencia de casillero Miami, envíos aéreos y marítimos, sellos, bordados e impresión. La cotización exacta la confirmas por WhatsApp en minutos.
             </p>
@@ -214,6 +217,16 @@ export default function TarifasPage() {
 
             <p className="text-xs text-gray-400 mt-4 text-center max-w-2xl mx-auto">
               * Precios de referencia de mercado. La cotización exacta depende del peso, volumen, destino y especificaciones de cada pedido. Los trámites aduanales están incluidos en el flete de casillero. Confirma tu tarifa final por WhatsApp.
+            </p>
+            <p className="text-xs text-gray-400 mt-3 text-center max-w-2xl mx-auto">
+              Fuentes de referencia: servicios y tarifas de{' '}
+              <a href="https://www.dhl.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">DHL</a>,{' '}
+              <a href="https://www.fedex.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">FedEx</a> y{' '}
+              <a href="https://www.ups.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">UPS</a>, y
+              normativa aduanera de la{' '}
+              <a href="https://www.ana.gob.pa/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+                Autoridad Nacional de Aduanas de Panamá
+              </a>.
             </p>
           </div>
         </section>

@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Cómo elegir el mejor courier para tus envíos internacionales
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          Para elegir entre DHL, FedEx y UPS: DHL es el más rápido, 3 a 5 días, e ideal para documentos urgentes; FedEx ofrece el mejor balance entre velocidad y costo, 4 a 7 días; UPS es la opción más económica para paquetes grandes, 5 a 10 días. Los tres operan desde MBE Colón con tracking en tiempo real.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 
@@ -110,6 +113,17 @@ export default function BlogPost() {
             <p className="text-gray-600 text-sm">
               Trae tu paquete ya pesado y con la dirección de destino lista. En Plaza Millenium F007, Colón, cotizamos
               DHL, FedEx y UPS en el momento y te decimos cuál conviene según tu presupuesto.
+            </p>
+          </div>
+
+          <div className="bg-mbe-light rounded-2xl p-6 mt-8 border-l-4 border-mbe-blue">
+            <p className="font-bold text-mbe-dark mb-2">Fuentes consultadas</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Tiempos y servicios contrastados con las páginas oficiales de{' '}
+              <a href="https://www.dhl.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">DHL</a>,{' '}
+              <a href="https://www.fedex.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">FedEx</a> y{' '}
+              <a href="https://www.ups.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">UPS</a>.{' '}
+              Los plazos reales dependen del destino, del peso y del tipo de servicio contratado.
             </p>
           </div>
 

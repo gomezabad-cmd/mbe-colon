@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Centro de impresión en Plaza Millenium F007, Colón, Panamá
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          La impresión profesional de MBE Colón en Colón cubre planos arquitectónicos, brochures corporativos y banners para empresas: planos en blanco y negro o color a escala, brochures plegados en varias gramaturas y banners en vinil. Se entrega el mismo día en formatos estándar y en 24 a 48 horas en trabajos mayores.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

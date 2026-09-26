@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía para promocionar tu negocio con impresión de alto impacto
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón imprime banners, afiches, pendones y vinil publicitario en Colón con impresión a color y acabado profesional. Los trabajos de impresión se entregan el mismo día en formatos estándar y en 24 a 48 horas en los mayores, y el precio se cotiza por formato y cantidad desde Plaza Millenium F007.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

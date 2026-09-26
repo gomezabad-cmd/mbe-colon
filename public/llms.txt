@@ -5,6 +5,8 @@
 - [Documento completo en Markdown (llms-full.txt)](https://mbecolon.com/llms-full.txt) - servicios, tarifas, tiempos, FAQ y todas las páginas del sitio en un solo archivo
 - [Políticas para agentes de IA (ai.txt)](https://mbecolon.com/ai.txt) - permisos de citación y contacto
 
+**Última actualización:** 24 de septiembre de 2026
+
 ## Información del negocio
 
 - **Nombre:** Mail Boxes Etc. Colón (MBE Colón)
@@ -72,6 +74,20 @@
 - [Kit de identidad corporativa para nuevas empresas](https://mbecolon.com/blog/kit-identidad-corporativa-empresas-colon) — sellos, carnets y papelería en un solo lugar
 - [Qué son los Incoterms y para qué sirven](https://mbecolon.com/blog/que-son-los-incoterms-y-para-que-sirven) — términos de comercio internacional
 - [Las fechas más importantes para comprar por internet](https://mbecolon.com/blog/las-fechas-mas-importantes-para-comprar-por-internet) — calendario de ofertas para comprar en USA
+
+## Preguntas frecuentes
+
+- **¿Cuánto cuesta el casillero Miami?** Es gratis: sin cuota de activación ni mensualidad. Solo pagas el flete.
+- **¿Cuánto cuesta traer un paquete de USA a Colón?** Aéreo desde $3.00 por libra y marítimo desde $3.00 por pie cúbico, con trámite aduanal incluido.
+- **¿Cuánto tarda un envío de Miami a Colón?** Aéreo express 24-72 horas, aéreo estándar 3-7 días hábiles y marítimo 7-15 días hábiles.
+- **¿Qué impuestos se pagan al comprar por internet en Panamá?** Arancel según la categoría del producto más ITBMS del 7% sobre valor + flete.
+- **¿Puedo comprar en Amazon, Shein o eBay?** Sí; usa tu dirección MBE Miami como dirección de envío.
+- **¿Cuánto cuesta un sello automático?** Desde $8.00 en goma y desde $15.00 en automático, entrega en 24-48 horas.
+- **¿Cuánto cuesta bordar un logo?** Desde $3.75 por pieza, con digitalización del logotipo incluida.
+- **¿Cuál es la diferencia entre DHL, FedEx y UPS?** DHL 3-5 días (más rápido), FedEx 4-7 días (mejor balance), UPS 5-10 días (más económico para paquetes grandes).
+- **¿Qué es la consolidación de paquetes?** Unir varios envíos pequeños en uno solo para ahorrar entre 30% y 40% del flete.
+- **¿Aceptan tarjeta de crédito?** Sí: efectivo, Visa, Mastercard, Amex, débito, transferencia y facturación mensual para empresas.
+- **¿Hacen envíos a toda Panamá?** Envíos internacionales desde Colón a todo el mundo y encomiendas nacionales con courier local.
 
 ## Datos y hechos
 

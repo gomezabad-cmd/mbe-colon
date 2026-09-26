@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Bordados personalizados para el sector gastronómico y hotelero
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón borda delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. El bordado arranca desde $3.75 por pieza con la digitalización del logotipo incluida, se entrega en 5 a 10 días hábiles desde Plaza Millenium F007 y hay servicio urgente con recargo del 30%.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

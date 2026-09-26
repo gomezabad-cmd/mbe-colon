@@ -77,6 +77,9 @@ export default function BlogPost1() {
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
         Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Consejos de embalaje profesional
       </p>
+      <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+        Para empacar correctamente un paquete para enviar al exterior envuelve cada objeto por separado, rellena los espacios vacíos para que nada se mueva, refuerza esquinas y bordes, usa cinta de embalaje y no de oficina, e identifica destinatario y remitiente en el exterior. MBE Colón hace el embalaje profesional de tus envíos internacionales.
+      </p>
 
       {/* Contenido */}
       <div className="prose prose-gray max-w-none space-y-6 text-mbe-gray leading-relaxed">

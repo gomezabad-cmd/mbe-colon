@@ -142,7 +142,15 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-700 py-4 px-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} Mail Boxes Etc. Colón — Todos los derechos reservados. Franquicia autorizada MBE Panamá.
+        <div>
+          © {new Date().getFullYear()} Mail Boxes Etc. Colón — Todos los derechos reservados. Franquicia autorizada MBE Panamá.
+        </div>
+        <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <a href="/sitemap.xml" className="hover:text-white transition-colors">Mapa del sitio</a>
+          <a href="/llms.txt" className="hover:text-white transition-colors">llms.txt</a>
+          <a href="/llms-full.txt" className="hover:text-white transition-colors">llms-full.txt</a>
+          <a href="/ai.txt" className="hover:text-white transition-colors">ai.txt</a>
+        </div>
       </div>
     </footer>
   )

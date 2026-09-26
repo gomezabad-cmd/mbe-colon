@@ -73,6 +73,12 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Logística de volumen para PYMEs y la Zona Libre de Colón
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón mueve carga marítima Miami–Panamá y China–Panamá para empresas y PYMEs de Colón y la Zona Libre, con contenedores completos y carga consolidada. El casillero marítimo cuesta desde $3.00 por pie cúbico y la carga de volumen alto hasta 
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Logística de volumen para PYMEs y la Zona Libre de Colón
+        </p>0.00 por pie cúbico, con entrega hasta tu bodega en Colón.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

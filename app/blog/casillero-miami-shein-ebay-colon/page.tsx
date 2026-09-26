@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Compras USA Panamá sin complicaciones
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          Para comprar en Shein o eBay desde Colón solo necesitas el casillero Miami gratis de MBE Colón: usas la dirección de Miami que te damos como dirección de envío y nosotros traemos el paquete a Colón en 24 a 72 horas por avión o en 7 a 15 días hábiles por barco, con tracking por WhatsApp.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

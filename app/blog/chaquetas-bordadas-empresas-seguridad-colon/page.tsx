@@ -68,6 +68,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">MBE Colón</strong> · Uniformes bordados de alta durabilidad para empresas de vigilancia
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón borda chaquetas y camisas con el logo de tu empresa de seguridad en Colón, Panamá. El trabajo arranca desde $3.75 por prenda con digitalización incluida, se entrega en 5 a 10 días hábiles en Plaza Millenium F007 y hay servicio urgente con recargo del 30% si las necesitas antes.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía de precios para tus envíos internacionales
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          El costo de un envío internacional desde Colón depende del peso, las dimensiones y el destino. Como referencia, DHL Express arranca en $35 por documentos y $45 por paquetes, FedEx International en $30 y $40, y UPS Standard en $25 y $35; el casillero Miami aéreo cuesta desde $3.00 por libra.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

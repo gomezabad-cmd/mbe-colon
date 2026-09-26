@@ -68,6 +68,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">MBE Colón</strong> · Guía de envíos internacionales Colón para contratos, títulos y trámites legales
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          Para enviar documentos urgentes desde Colón la opción más rápida es DHL Express: llega en 3 a 5 días hábiles y arranca en $35 por documento. FedEx llega en 4 a 7 días desde $30 y UPS en 5 a 10 días desde $25. En MBE Colón te damos la cotización en minutos por WhatsApp.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

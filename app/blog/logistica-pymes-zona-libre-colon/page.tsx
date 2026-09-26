@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Soluciones de logística Colón para importar desde Miami con DHL, FedEx y UPS
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón concentra la logística de PYMEs y operadores de la Zona Libre de Colón en un solo lugar: carga marítima Miami–Panamá y China–Panamá, envíos con DHL, FedEx y UPS, consolidación de carga y trámites aduaneros incluidos, con tarifas preferenciales por volumen y entrega coordinada hasta tu bodega.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

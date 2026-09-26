@@ -73,6 +73,12 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Sellos automáticos, carnets PVC y papelería para empresas que recién abren en Colón
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          El kit de identidad corporativa de MBE Colón reúne en un solo pedido lo que necesita una empresa nueva en Colón: sellos automáticos Trodat o Colop desde 
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Sellos automáticos, carnets PVC y papelería para empresas que recién abren en Colón
+        </p>5.00, listos en 24 a 48 horas, carnets PVC personalizados y papelería membretada, todo retirable en Plaza Millenium F007.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

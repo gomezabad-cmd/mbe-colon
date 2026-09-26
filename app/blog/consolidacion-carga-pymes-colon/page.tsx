@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Logística inteligente para empresas de la Zona Libre de Colón
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          La consolidación de carga para PYMEs en Colón consiste en juntar varios envíos pequeños en uno solo para pagar una sola tarifa. En promedio, consolidar de 3 a 5 paquetes pequeños ahorra entre 30% y 40% del flete frente a enviarlos por separado, y MBE Colón gestiona el proceso desde Plaza Millenium F007.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

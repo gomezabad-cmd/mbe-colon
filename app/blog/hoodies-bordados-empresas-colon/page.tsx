@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía de bordados corporativos para uniformar tu equipo con estilo
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          En MBE Colón puedes encargar hoodies bordados con el logo de tu empresa desde 1 unidad. El bordado arranca en $3.75 por prenda con digitalización del logotipo incluida, y la entrega estándar es de 5 a 10 días hábiles en Plaza Millenium F007, con opción urgente por recargo del 30%.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

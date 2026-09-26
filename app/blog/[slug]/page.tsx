@@ -119,6 +119,11 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Content */}
         <article className="max-w-3xl mx-auto px-4 py-12">
+          {plainText(post.excerpt.rendered, 400) && (
+            <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+              {plainText(post.excerpt.rendered, 400)}
+            </p>
+          )}
           <div
             className="prose prose-lg max-w-none
               prose-headings:text-mbe-dark prose-headings:font-black
@@ -132,7 +137,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* CTA inline */}
           <div className="mt-12 bg-mbe-light rounded-xl p-6 text-center border-t-4 border-mbe-red">
             <p className="font-black text-mbe-dark text-lg mb-2">¿Listo para usar este servicio?</p>
-            <p className="text-mbe-gray text-sm mb-4">Visítanos en Los Cuatro Altos, Colón, o escríbenos ahora.</p>
+            <p className="text-mbe-gray text-sm mb-4">Visítanos en Plaza Millenium F007, Colón, o escríbenos ahora.</p>
             <a
               href="https://wa.me/50769495100"
               target="_blank"

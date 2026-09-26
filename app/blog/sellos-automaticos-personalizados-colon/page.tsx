@@ -73,6 +73,12 @@ export default function BlogSellos() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía completa para empresas, abogados y profesionales en la provincia de Colón
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          En MBE Colón puedes hacer sellos automáticos personalizados en Colón para abogados, médicos y empresas: modelos Trodat y Colop de bolsillo y mesa, desde 
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía completa para empresas, abogados y profesionales en la provincia de Colón
+        </p>5.00, y sellos de goma desde $8.00. La entrega es de 24 a 48 horas hábiles e incluye la tinta inicial.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

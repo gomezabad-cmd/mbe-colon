@@ -49,7 +49,7 @@ export default function ComprasPage() {
           answer: 'No hay límite. Puedes hacer una compra a la semana o cien compras al mes. Cada paquete se consolida automáticamente y lo enviamos cuando tengas todos tus pedidos listos.',
         },
         {
-          question: '¿Cómo consolidación de paquetes?',
+          question: '¿Cómo hago la consolidación de paquetes?',
           answer: 'Si tienes 3-4 paquetes pequeños, los consolidamos en un solo envío para ahorrar flete. Juntamos los paquetes, re-embalamos profesionalmente y enviamos todo junto a Colón.',
         },
         {

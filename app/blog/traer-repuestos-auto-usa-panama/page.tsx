@@ -77,6 +77,9 @@ export default function BlogRepuestosPage() {
       <p className="text-gray-500 mb-8">
         Actualizado: 30 de Junio, 2026 | Tiempo de lectura: 4 min
       </p>
+      <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+        Para traer repuestos de auto desde USA a Panamá compra la pieza en una tienda que entregue en Estados Unidos, usa tu casillero Miami gratis de MBE Colón como dirección de envío y elige el flete: aéreo desde $3.00 por libra para piezas urgentes o marítimo desde $3.00 por pie cúbico para piezas voluminosas, con trámite aduanal incluido.
+      </p>
 
       {/* Hero Image */}
       <div className="rounded-2xl overflow-hidden mb-10 shadow-lg">

@@ -68,6 +68,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">MBE Colón</strong> · Guía de impresión de etiquetas para productos y packaging
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón imprime etiquetas y stickers personalizados en Colón para productos, envíos y packaging, en vinil, papel adhesivo y cartulina con corte a medida. La impresión se cotiza por formato y cantidad y se entrega desde Plaza Millenium F007 en el mismo día para trabajos estándar y en 24 a 48 horas para los mayores.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

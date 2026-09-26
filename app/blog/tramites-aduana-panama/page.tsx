@@ -77,6 +77,9 @@ export default function BlogPost() {
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
         Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía para clientes de casillero y courier
       </p>
+      <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+        Los trámites de aduana para compras online en Panamá consisten en declarar la mercancía ante la ANA, aplicar el arancel según la categoría del producto y sumar el ITBMS del 7% sobre la base imponible. En el casillero de MBE Colón el trámite aduanal está incluido en el flete, así que solo pagas el envío.
+      </p>
 
       <div className="space-y-6 text-mbe-gray leading-relaxed">
 
@@ -176,6 +179,21 @@ export default function BlogPost() {
           <p className="font-bold text-mbe-dark mb-2">🛡️ MBE Colón gestiona tu aduana por ti</p>
           <p className="text-gray-600 text-sm">
             Con más de 18 años de experiencia en logística y trámites aduaneros en Panamá, nos encargamos de la documentación y la coordinación con la ANA para que tu compra llegue sin sorpresas a Colón.
+          </p>
+        </div>
+
+        <div className="bg-mbe-light rounded-2xl p-6 mt-8 border-l-4 border-mbe-blue">
+          <p className="font-bold text-mbe-dark mb-2">Fuentes consultadas</p>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Información contrastada con la{' '}
+            <a href="https://www.ana.gob.pa/" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">
+              Autoridad Nacional de Aduanas de Panamá (ANA)
+            </a>{' '}
+            y con los lineamientos de{' '}
+            <a href="https://www.dhl.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">DHL</a>,{' '}
+            <a href="https://www.fedex.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">FedEx</a> y{' '}
+            <a href="https://www.ups.com" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">UPS</a>{' '}
+            para envíos internacionales. La normativa aduanera cambia con frecuencia: confirma los valores vigentes antes de importar.
           </p>
         </div>
       </div>

@@ -132,6 +132,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Actualizado agosto 2026
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          Al comprar por internet en Panamá pagas dos cosas: el arancel, que va según la categoría del producto, con rangos de 0% a 15% y de 15% a 20% citados en nuestra guía, y el ITBMS del 7%. Ambos se calculan sobre el valor de la mercancía más los gastos de transporte, y MBE Colón gestiona el trámite aduanal.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 
@@ -216,6 +219,18 @@ export default function BlogPost() {
             <li><Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">Activa tu casillero Miami gratis</Link></li>
             <li><Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">Ver tarifas de casillero y envíos</Link></li>
           </ul>
+
+          <div className="bg-mbe-light rounded-2xl p-6 mt-8 border-l-4 border-mbe-blue">
+            <p className="font-bold text-mbe-dark mb-2">Fuentes consultadas</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Información contrastada con la{' '}
+              <a href="https://www.ana.gob.pa/" target="_blank" rel="noopener noreferrer" className="text-mbe-red font-semibold hover:underline">
+                Autoridad Nacional de Aduanas de Panamá (ANA)
+              </a>
+              , que administra el arancel y el control aduanero de las importaciones por courier. Los porcentajes de arancel
+              varían según la categoría del producto y la normativa cambia: verifica la tarifa vigente antes de comprar.
+            </p>
+          </div>
 
           <div className="bg-mbe-dark rounded-2xl p-8 text-center mt-8">
             <h3 className="text-white font-black text-xl mb-2">¿Quieres saber cuánto pagarías?</h3>

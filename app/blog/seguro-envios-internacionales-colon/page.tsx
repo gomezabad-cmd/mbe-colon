@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Cómo asegurar tu paquete internacional y evitar pérdidas en tu courier
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          Todo envío con DHL, FedEx o UPS permite declarar un valor asegurado, y en MBE Colón te ayudamos a calcular la cobertura según el valor real de tu mercancía. Subestimar el paquete reduce la compensación en caso de pérdida: declara el valor real, guarda fotos del contenido y conserva el comprobante de compra.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 

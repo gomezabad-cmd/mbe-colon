@@ -50,10 +50,47 @@ const breadcrumbSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo comprar en Amazon y recibir en Colón con casillero Miami',
+  description:
+    'Pasos para activar tu casillero Miami gratis, comprar en Amazon y recibir tu paquete en Colón, Panamá.',
+  totalTime: 'P7D',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Activa tu casillero gratis',
+      text: 'Visítanos en Plaza Millenium F007 o escríbenos por WhatsApp. El registro es gratuito y te damos una dirección personal en Miami.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Compra en tus tiendas favoritas',
+      text: 'Usa tu dirección Miami en la sección de envío de Amazon, eBay, Shein, Best Buy, Walmart o cualquier tienda de USA.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Te notificamos cuando llega',
+      text: 'Cuando el paquete llega al almacén de Miami te avisamos por WhatsApp con el detalle, el peso y la tarifa de flete.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Paga el flete y recibe en Colón',
+      text: 'Aprobado el flete, coordinamos el transporte hasta Plaza Millenium F007 en Colón, en 24 a 48 horas desde la llegada a Miami.',
+    },
+  ],
+}
+
 export default function BlogPost2() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <article className="max-w-3xl mx-auto px-4 py-14">
 
@@ -76,6 +113,9 @@ export default function BlogPost2() {
 
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
         Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía de casillero Miami
+      </p>
+      <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+        Comprar en Amazon y recibir en Colón consiste en abrir tu casillero Miami gratis en MBE Colón, usar esa dirección como dirección de envío en Amazon y recibir el paquete en Colón en 24 a 72 horas por avión o en 7 a 15 días hábiles por barco, con el trámite aduanal incluido en el flete.
       </p>
 
       <div className="space-y-6 text-mbe-gray leading-relaxed">

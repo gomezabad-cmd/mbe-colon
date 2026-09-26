@@ -73,6 +73,9 @@ export default function BlogPost() {
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
           Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Dónde imprimir tarjetas de presentación en Colón, Panamá y embalar tus envíos como un profesional
         </p>
+        <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
+          MBE Colón imprime tarjetas de presentación y produce embalaje profesional para empresas en Colón: tarjetas en cartulina couché con laminado o canto dorado, y cajas, etiquetas y stickers con tu marca. Los pedidos salen el mismo día en formatos estándar y en 24 a 48 horas en los mayores.
+        </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 
