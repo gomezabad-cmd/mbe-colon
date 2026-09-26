@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function NosotrosSection() {
   return (
     <section id="nosotros" className="bg-white py-20 px-4">
@@ -15,6 +17,14 @@ export default function NosotrosSection() {
             Somos la franquicia oficial de <strong>Mail Boxes Etc.</strong> en la provincia de Colón, Panamá.
             Con más de <strong>18 años de experiencia</strong>, somos el aliado logístico de cientos de familias,
             emprendedores y empresas que necesitan enviar, recibir e imprimir con confianza.
+          </p>
+          <p className="text-center mt-6">
+            <Link
+              href="/nosotros"
+              className="inline-block bg-mbe-dark text-white text-sm font-bold px-6 py-3 rounded-lg hover:bg-mbe-red transition-colors"
+            >
+              Conoce nuestra historia →
+            </Link>
           </p>
         </div>
 

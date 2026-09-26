@@ -17,10 +17,11 @@ se confirma por WhatsApp.
 
 - **Nombre comercial:** MBE Colón — Mail Boxes Etc. Colón
 - **Franquicia:** red internacional Mail Boxes Etc.; más de 18 años de operación y 34 centros MBE en Panamá
+- **Responsable y autor del contenido:** Carlos Gómez, Franquiciado de MBE Colón — https://mbecolon.com/nosotros
 - **Dirección:** Plaza Millenium, Local F007, Colón, Provincia de Colón, Panamá
 - **Teléfono:** (507) 474-5548 — tel:+5074745548
 - **WhatsApp:** (507) 6949-5100 — https://wa.me/50769495100
-- **Correo:** colon@mbe-ca.com (contacto visible en el sitio) / mbecolon@gmail.com (declarado en los datos estructurados)
+- **Correo:** colon@mbe-ca.com (correo principal, contacto visible en el sitio) / mbecolon@gmail.com (correo alternativo en uso)
 - **Horario:**
   - Lunes a viernes: 8:00 AM – 5:00 PM
   - Sábado: 9:00 AM – 1:00 PM

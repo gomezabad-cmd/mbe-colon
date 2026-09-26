@@ -32,6 +32,7 @@
 ## Páginas del sitio
 
 - [Inicio](https://mbecolon.com)
+- [Nosotros](https://mbecolon.com/nosotros) — franquicia oficial MBE Colón, responsable Carlos Gómez y red internacional
 - [Servicios](https://mbecolon.com/servicios)
 - [Tarifas](https://mbecolon.com/tarifas) — precios de referencia de casillero, envíos, sellos, bordados e impresión
 - [Contacto](https://mbecolon.com/contacto)

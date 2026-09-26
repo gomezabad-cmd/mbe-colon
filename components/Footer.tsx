@@ -50,7 +50,12 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/preguntas-frecuentes" className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2">
-                <span>❓</span> Preguntas frecuentes
+                <span>?</span> Preguntas frecuentes
+              </Link>
+            </li>
+            <li>
+              <Link href="/nosotros" className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2">
+                <span>+</span> Nosotros
               </Link>
             </li>
             {SERVICES.map(s => (
