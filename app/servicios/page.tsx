@@ -159,6 +159,40 @@ export default function ServiciosPage() {
           </div>
         </section>
 
+        {/* Cómo trabajamos */}
+        <section className="bg-mbe-light py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-mbe-dark text-2xl md:text-3xl font-black mb-3">Cómo trabajamos</h2>
+            <p className="text-gray-600 mb-8 max-w-3xl">
+              El mismo proceso sirve para un paquete de Amazon, para un contenedor completo y para
+              doscientos uniformes bordados. Sin cotizaciones escondidas y sin letra pequeña:
+              te decimos el precio final antes de que apruebes.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { n: '1', t: 'Nos cuentas qué necesitas', d: 'Por WhatsApp o en el local: destino, peso, cantidad y fecha. Si no sabes el peso, describe el producto y lo estimamos nosotros.' },
+                { n: '2', t: 'Cotizamos sin compromiso', d: 'Comparamos DHL, FedEx y UPS, o calculamos el flete aéreo o marítimo, y te enviamos el precio final con aduana incluida.' },
+                { n: '3', t: 'Preparamos y despachamos', d: 'Empacamos profesionalmente si hace falta, preparamos la documentación aduanera y dejamos el envío listo con su número de rastreo.' },
+                { n: '4', t: 'Te avisamos en cada paso', d: 'Notificación por WhatsApp cuando el paquete sale, cuando llega a Panamá y cuando está listo para recoger en Plaza Millenium F007.' },
+              ].map((p) => (
+                <div key={p.n} className="bg-white rounded-2xl p-6 shadow-md">
+                  <div className="w-9 h-9 rounded-full bg-mbe-red text-white font-black flex items-center justify-center mb-3">
+                    {p.n}
+                  </div>
+                  <h3 className="text-mbe-dark font-bold mb-2">{p.t}</h3>
+                  <p className="text-mbe-gray text-sm leading-relaxed">{p.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-mbe-gray text-sm leading-relaxed mt-8 max-w-3xl">
+              Todos los servicios comparten tres cosas: atención en el local de Plaza Millenium de
+              lunes a viernes de 8:00 AM a 5:00 PM y sábado de 9:00 AM a 1:00 PM, pago en efectivo,
+              tarjeta o transferencia, y facturación mensual para empresas. Si un servicio no es lo
+              que buscas, te lo decimos y te indicamos a dónde acudir.
+            </p>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-mbe-red py-14 px-4 text-center">
           <h2 className="text-white text-2xl font-black mb-3">¿No encuentras lo que buscas?</h2>

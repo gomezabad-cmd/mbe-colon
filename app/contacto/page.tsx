@@ -43,6 +43,14 @@ const contactFaqs = [
     q: '¿Cómo llego en bus o taxi a Plaza Millenium?',
     a: 'La entrada principal de Plaza Millenium queda frente a la avenida principal de Colón. Tanto buses como taxis conocen la plaza; si vienes en carro hay estacionamiento y acceso para personas con movilidad reducida.',
   },
+  {
+    q: '¿Atienden a empresas con pedidos recurrentes?',
+    a: 'Sí. Facturamos mensualmente, guardamos tus archivos de impresión y bordado para reponer sin volver a diseñar, y coordinamos entregas programadas de uniformes, sellos o papelería a tu oficina o bodega en Colón.',
+  },
+  {
+    q: '¿Puedo pagar con tarjeta o transferencia?',
+    a: 'Sí. Aceptamos efectivo, Visa, Mastercard, American Express, tarjeta de débito, transferencia bancaria y facturación mensual para empresas. El precio que te cotizamos por WhatsApp es el precio final que pagas en caja.',
+  },
 ]
 
 const contactFaqSchema = {

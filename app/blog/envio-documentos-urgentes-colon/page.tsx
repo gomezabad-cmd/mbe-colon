@@ -138,8 +138,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Qué documentos se envían con más frecuencia</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">La mayoría de los envíos urgentes que despachamos desde Colón son documentos legales y corporativos: poderes, contratos, títulos universitarios, actas, certificaciones de origen y documentación de importación. Para ese tipo de envío conviene un sobre acolchado o una caja pequeña con rigidez, nunca un plástico sin estructura, porque las esquinas dobladas son la causa más común de rechazo al escáner. Incluimos copia del contenido en formato digital por si el destinatario necesita revisarlo antes de recoger, y te avisamos por WhatsApp en cada cambio de estado.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

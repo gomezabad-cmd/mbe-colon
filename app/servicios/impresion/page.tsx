@@ -68,6 +68,14 @@ export default function ImpresionPage() {
           question: '¿Entregan a domicilio?',
           answer: 'Sí, coordinamos entrega a domicilio en Colón sin costo adicional para pedidos mayores a $50. Para pedidos menores, puedes recoger en Plaza Millenium F007.',
         },
+        {
+          question: '¿Puedo imprimir en papel o material que yo lleve?',
+          answer: 'Sí. Traes tu material y lo imprimimos, siempre que el gramaje y el formato sean compatibles con nuestra maquinaria. Te avisamos antes si hay riesgo de que la tinta no adhiera o de que el material se dañe en el rodillo.',
+        },
+        {
+          question: '¿Trabajan con empresas y dan factura?',
+          answer: 'Sí. Facturamos a nombre de tu empresa, manejamos pedidos recurrentes y puedes dejar un archivo maestro para reponer tarjetas o afiches sin volver a diseñar. Muchos negocios de Colón repiten mensualmente con nosotros.',
+        },
       ]}
       href="/servicios/impresion"
       relatedLinks={[

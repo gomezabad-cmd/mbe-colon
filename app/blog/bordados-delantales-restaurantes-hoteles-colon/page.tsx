@@ -130,8 +130,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Cuidado del delantal bordado</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">Un delantal de cocina se lava con mucha frecuencia, así que el hilo debe resistir. Bordamos con poliéster de alta tenacidad y rematamos los bordes del diseño para que el logo no se deshilache en la lavadora industrial. Para alargar su vida, lava el delantal del revés y en agua fría, evita lejía directa sobre el bordado y no planches sobre el hilo: coloca un paño fino encima. Con ese cuidado, el logo se mantiene nítido durante toda la vida útil de la prenda.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

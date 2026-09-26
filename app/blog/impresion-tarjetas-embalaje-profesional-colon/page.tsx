@@ -134,8 +134,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Cómo preparar tu archivo antes de imprimir</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">Antes de enviar tu diseño, revisa tres detalles que causan la mayoría de los problemas en imprenta: que el texto pequeño no baje de 6 puntos, que el archivo tenga sangrado de 3 milímetros si el color llega hasta el borde y que los colores estén en CMYK en lugar de RGB. Si tu logo es una imagen, manda el vector en AI, EPS o PDF; si solo tienes el JPG, lo reconstruimos. Con el archivo listo, imprimimos una prueba, tú apruebas y recién ahí lanzamos el tiraje completo.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

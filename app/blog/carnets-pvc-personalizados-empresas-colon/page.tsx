@@ -136,8 +136,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Qué lleva un carnet PVC bien diseñado</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">Un carnet profesional necesita tres cosas bien resueltas: jerarquía visual, datos legibles y un acabado duradero. Diseñamos la tarjeta con el logo y el nombre del área en primer plano, el nombre del colaborador en tamaño cómodo de lectura y un código de barras o QR funcional si tu empresa controla accesos. Imprimimos en PVC de 760 micras con impresión a todo color por ambas caras y opcionalmente laminado mate o brillante. El agujero para el portacarnets se hace con troquel redondo o rectangular, según el tipo de cordón que uses.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

@@ -64,6 +64,14 @@ export default function EnviosPage() {
           question: '¿Aceptan embalaje de ustedes?',
           answer: 'Sí, ofrecemos servicio de re-embalaje profesional para proteger tu paquete durante el transporte. Incluye cajas de cartón reforzado, espuma, cinta industrial y documentación.',
         },
+        {
+          question: '¿Cuánto cuesta enviar un paquete de Colón al exterior?',
+          answer: 'Depende del destino, el peso y el volumen. Como referencia, el flete internacional se cotiza por kilogramo y siempre incluye la recolección en Plaza Millenium F007. Te damos el precio final por WhatsApp antes de que apruebes el envío.',
+        },
+        {
+          question: '¿Qué pasa si mi paquete se pierde o llega dañado?',
+          answer: 'Todos los envíos viajan con seguro básico y número de rastreo. Si algo ocurre, abrimos el reclamo con la aerolínea o el courier, gestionamos la documentación y te mantenemos informado en cada paso hasta la resolución.',
+        },
       ]}
       href="/servicios/envios-internacionales"
       relatedLinks={[

@@ -134,8 +134,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Qué incluye y qué no incluye la cotización</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">Cuando te cotizamos un envío internacional, el precio que ves por WhatsApp ya incluye la recolección en Plaza Millenium F007, el flete hasta el destino acordado y los trámites aduanerales del ingreso a Panamá. No incluye, porque no dependen de nosotros, las tarifas de entrega a domicilio en el interior del país, el seguro ampliado de artículos de alto valor ni los aranceles de mercancía sujeta a permisos especiales. Si tu envío entra en alguna de esas categorías te lo decimos antes de que apruebes, con el monto desglosado.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>

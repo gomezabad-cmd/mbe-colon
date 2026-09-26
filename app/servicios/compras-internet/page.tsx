@@ -64,6 +64,14 @@ export default function ComprasPage() {
           question: '¿Cómo evito pagar impuestos adicionales?',
           answer: 'Todos los artículos pagan aranceles aduanales según su valor. Esto es normal y obligatorio. Nuestro equipo se encarga de toda la documentación aduanera para que no tengas complicaciones.',
         },
+        {
+          question: '¿Cuánto tarda en llegar mi compra a Colón?',
+          answer: 'Por vía aérea, entre 24 y 72 horas desde que el paquete llega a nuestra bodega de Miami; por vía marítima, de 7 a 15 días hábiles. Si consolidamos varias compras, el tiempo se cuenta a partir de que llega a Miami el último paquete.',
+        },
+        {
+          question: '¿Puedo revisar o devolver un producto antes de enviarlo?',
+          answer: 'Si el producto llegó mal o no era lo que esperabas, gestionamos la devolución con la tienda desde Miami antes de hacer el envío a Panamá. Así evitas pagar flete y aduana por algo que no vas a usar.',
+        },
       ]}
       href="/servicios/compras-internet"
       relatedLinks={[

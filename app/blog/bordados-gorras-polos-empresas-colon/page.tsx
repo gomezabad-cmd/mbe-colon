@@ -133,8 +133,11 @@ export default function BlogPost() {
           </a>
         </div>
 
+        <h2 className="text-mbe-dark text-xl font-black mt-8">Cuánto dura el bordado y qué garantiza</h2>
+        <p className="text-mbe-gray leading-relaxed mt-3">Un bordado bien hecho dura tanto como la prenda. Usamos hilo de poliéster de marca sobre gorras de algodón, polos piqué y hoodies de franelilla, con una densidad de puntada ajustada al tipo de tela: demasiadas puntadas en tela fina la arrugan, demasiado pocas en tela gruesa dejan el logo suelto. Antes de bordar la serie completa hacemos una muestra física para que apruebes tamaño, colores y posición. Si la muestra no te convence, se corrige sin costo y recién ahí producimos el resto.</p>
+
         <div className="mt-8 text-center">
-          <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
+        <Link href="/blog" className="text-mbe-red text-sm font-bold hover:underline">← Volver al blog</Link>
         </div>
 
       </article>
