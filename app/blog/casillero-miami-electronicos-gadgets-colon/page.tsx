@@ -30,8 +30,10 @@ const articleSchema = {
   dateModified: '2026-08-03',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -71,7 +73,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Laptops, celulares y tecnología a precio de USA, sin salir de Panamá
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Laptops, celulares y tecnología a precio de USA, sin salir de Panamá
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           Puedes comprar laptops, celulares y gadgets en Amazon, Best Buy o B&H con tu casillero Miami gratis de MBE Colón y recibirlos en Colón en 24 a 72 horas por vía aérea, desde $3.00 por libra, o en 7 a 15 días hábiles por vía marítima, desde $3.00 por pie cúbico, con trámite aduanal incluido.

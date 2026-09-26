@@ -40,8 +40,10 @@ const articleSchema = {
   dateModified: '2026-08-20',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -130,7 +132,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Actualizado agosto 2026
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Actualizado agosto 2026
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

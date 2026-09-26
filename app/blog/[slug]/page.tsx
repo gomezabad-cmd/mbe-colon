@@ -67,8 +67,10 @@ export default async function BlogPostPage({ params }: Props) {
             dateModified: post.date,
             author: {
               '@type': 'Person',
-              name: 'Equipo de Logística de MBE Colón',
-              jobTitle: 'Servicio de logística y envíos',
+              name: 'Carlos Gómez',
+              jobTitle: 'Franquiciado de MBE Colón',
+              url: 'https://mbecolon.com/nosotros',
+              sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
               worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
             },
             publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: 'https://mbecolon.com' },
@@ -101,7 +103,7 @@ export default async function BlogPostPage({ params }: Props) {
             </Link>
             <p className="text-mbe-red text-sm font-bold mb-3">{formatDate(post.date)}</p>
             <p className="text-gray-400 text-sm mb-3">
-              Por <strong className="text-white">Equipo de Logística de MBE Colón</strong>
+              Por <strong className="text-white">Carlos Gómez</strong> · Franquiciado de MBE Colón
             </p>
             <h1
               className="text-white text-3xl md:text-4xl font-black leading-tight"

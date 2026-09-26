@@ -30,8 +30,10 @@ const articleSchema = {
   dateModified: '2026-08-14',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -71,12 +73,12 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           MBE Colón fabrica sellos para notarías y bufetes de abogados en Colón: sello de idóneo, sello notarial, sello de constancia y sello de empresa, en modelos Trodat y Colop. Desde $8.00 en goma y 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
         </p>5.00 en automático, con entrega en 24 a 48 horas hábiles en Plaza Millenium F007.
         </p>
 

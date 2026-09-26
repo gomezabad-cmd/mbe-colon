@@ -30,8 +30,10 @@ const articleSchema = {
   dateModified: '2026-08-10',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -71,7 +73,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Bordados personalizados para el sector gastronómico y hotelero
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Bordados personalizados para el sector gastronómico y hotelero
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           MBE Colón borda delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. El bordado arranca desde $3.75 por pieza con la digitalización del logotipo incluida, se entrega en 5 a 10 días hábiles desde Plaza Millenium F007 y hay servicio urgente con recargo del 30%.

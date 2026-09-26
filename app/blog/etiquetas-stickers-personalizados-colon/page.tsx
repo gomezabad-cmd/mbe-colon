@@ -28,7 +28,14 @@ const articleSchema = {
   description: 'Impresión Colón de etiquetas y stickers personalizados para tu negocio en Panamá: productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
   datePublished: '2026-09-11',
   dateModified: '2026-09-11',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/etiquetas-stickers-personalizados-colon`,
   image: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80',
@@ -66,7 +73,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Guía de impresión de etiquetas para productos y packaging
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Guía de impresión de etiquetas para productos y packaging
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           MBE Colón imprime etiquetas y stickers personalizados en Colón para productos, envíos y packaging, en vinil, papel adhesivo y cartulina con corte a medida. La impresión se cotiza por formato y cantidad y se entrega desde Plaza Millenium F007 en el mismo día para trabajos estándar y en 24 a 48 horas para los mayores.

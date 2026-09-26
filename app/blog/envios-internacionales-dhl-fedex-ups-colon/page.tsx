@@ -30,8 +30,10 @@ const articleSchema = {
   dateModified: '2026-07-03',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -71,7 +73,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Cómo elegir el mejor courier para tus envíos internacionales
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Cómo elegir el mejor courier para tus envíos internacionales
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           Para elegir entre DHL, FedEx y UPS: DHL es el más rápido, 3 a 5 días, e ideal para documentos urgentes; FedEx ofrece el mejor balance entre velocidad y costo, 4 a 7 días; UPS es la opción más económica para paquetes grandes, 5 a 10 días. Los tres operan desde MBE Colón con tracking en tiempo real.

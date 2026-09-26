@@ -28,7 +28,14 @@ const articleSchema = {
   description: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad. Entrega rápida en Plaza Millenium F007, Panamá.',
   datePublished: '2026-09-18',
   dateModified: '2026-09-18',
-  author: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+  author: {
+    '@type': 'Person',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
+  },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/chaquetas-bordadas-empresas-seguridad-colon`,
   image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80',
@@ -66,7 +73,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">MBE Colón</strong> · Uniformes bordados de alta durabilidad para empresas de vigilancia
+          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Uniformes bordados de alta durabilidad para empresas de vigilancia
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
           MBE Colón borda chaquetas y camisas con el logo de tu empresa de seguridad en Colón, Panamá. El trabajo arranca desde $3.75 por prenda con digitalización incluida, se entrega en 5 a 10 días hábiles en Plaza Millenium F007 y hay servicio urgente con recargo del 30% si las necesitas antes.

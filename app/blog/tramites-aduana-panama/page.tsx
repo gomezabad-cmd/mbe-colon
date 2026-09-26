@@ -31,8 +31,10 @@ const articleSchema = {
   dateModified: '2026-08-19',
   author: {
     '@type': 'Person',
-    name: 'Equipo de Logística de MBE Colón',
-    jobTitle: 'Servicio de logística y envíos',
+    name: 'Carlos Gómez',
+    jobTitle: 'Franquiciado de MBE Colón',
+    url: 'https://mbecolon.com/nosotros',
+    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
@@ -75,7 +77,7 @@ export default function BlogPost() {
       </h1>
 
       <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-        Por <strong className="text-mbe-dark">Equipo de Logística de MBE Colón</strong> · Guía para clientes de casillero y courier
+        Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Guía para clientes de casillero y courier
       </p>
       <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
         Los trámites de aduana para compras online en Panamá consisten en declarar la mercancía ante la ANA, aplicar el arancel según la categoría del producto y sumar el ITBMS del 7% sobre la base imponible. En el casillero de MBE Colón el trámite aduanal está incluido en el flete, así que solo pagas el envío.

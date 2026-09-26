@@ -63,7 +63,7 @@ const baseSchemaGraph = {
       logo: 'https://mbecolon.com/og-image.png',
       url: 'https://mbecolon.com',
       telephone: '+5074745548',
-      email: 'mbecolon@gmail.com',
+      email: 'colon@mbe-ca.com',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Plaza Millenium Local F007',
@@ -136,8 +136,32 @@ const baseSchemaGraph = {
         contactType: 'customer service',
         availableLanguage: 'Spanish',
       },
+      founder: { '@id': 'https://mbecolon.com/#carlos-gomez' },
       sameAs: [
         'https://www.mbe-ca.com',
+        'https://www.instagram.com/mbecolon',
+        'https://www.tiktok.com/@mbecolon',
+      ],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://mbecolon.com/#carlos-gomez',
+      name: 'Carlos Gómez',
+      alternateName: 'Carlos Gomez',
+      jobTitle: 'Franquiciado de MBE Colón',
+      url: 'https://mbecolon.com/nosotros',
+      description:
+        'Franquiciado de Mail Boxes Etc. Colón. Más de 18 años trabajando logística, casilleros Miami, trámites aduaneros e impresión para familias y empresas de Colón, Panamá.',
+      worksFor: { '@id': 'https://mbecolon.com/#organization' },
+      memberOf: { '@id': 'https://mbecolon.com/#organization' },
+      knowsAbout: [
+        'Envíos internacionales con DHL, FedEx y UPS',
+        'Casillero Miami y compras en tiendas de Estados Unidos',
+        'Trámites aduaneros en Panamá',
+        'Carga marítima Miami y China a Panamá',
+        'Impresión, bordados y sellos personalizados',
+      ],
+      sameAs: [
         'https://www.instagram.com/mbecolon',
         'https://www.tiktok.com/@mbecolon',
       ],
