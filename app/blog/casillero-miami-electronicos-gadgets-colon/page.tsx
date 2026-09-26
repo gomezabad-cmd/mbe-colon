@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/casillero-miami-electronicos-gadgets-colon',
   },
-}
+  openGraph: {
+    title: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón, Panamá | MBE Colón',
+    description: 'Compra laptops, celulares y gadgets en Amazon, Best Buy y B&H con tu casillero Miami. Recíbelos en Colón, Panamá en 24-48h. Ahorra en tecnología.',
+    url: 'https://mbecolon.com/blog/casillero-miami-electronicos-gadgets-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón, Panamá' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

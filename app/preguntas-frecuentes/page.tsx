@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     description: 'Resolvemos tus dudas sobre casillero Miami, envíos internacionales, tarifas y servicios en Colón, Panamá.',
     url: 'https://mbecolon.com/preguntas-frecuentes',
     type: 'website',
+
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Preguntas Frecuentes — Casillero Miami, Envíos y Servicios' },
+    ],
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
   },
 }
 

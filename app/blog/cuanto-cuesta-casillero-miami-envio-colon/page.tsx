@@ -12,6 +12,7 @@ export const metadata = {
     description:
       'Precios del casillero Miami en MBE Colón: aéreo desde $3.00/lb y marítimo desde $3.00/ft³, con ejemplos de costos e impuestos.',
     url: 'https://mbecolon.com/blog/cuanto-cuesta-casillero-miami-envio-colon',
+    type: 'article',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
@@ -21,7 +22,9 @@ export const metadata = {
         type: 'image/png',
       },
     ],
-  },
+
+    siteName: 'MBE Colón',
+    locale: 'es_PA',},
 }
 
 const BASE_URL = 'https://mbecolon.com'

@@ -8,7 +8,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/sellos',
   },
-}
+  openGraph: {
+    title: 'Sellos para Empresas y Profesionales en Colón | MBE Colón',
+    description: 'Sellos automáticos personalizados para abogados, médicos y empresas en Colón. Modelos Trodat y Colop, entrega en 24-48 horas. Plaza Millenium F007.',
+    url: 'https://mbecolon.com/servicios/sellos',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Sellos para Empresas y Profesionales en Colón' },
+    ],
+  },}
 
 const baseProductSchema = {
   '@context': 'https://schema.org',

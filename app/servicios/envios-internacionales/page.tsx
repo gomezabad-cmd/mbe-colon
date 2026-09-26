@@ -7,7 +7,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/envios-internacionales',
   },
-}
+  openGraph: {
+    title: 'Envíos Internacionales DHL, FedEx y UPS | MBE Colón',
+    description: 'Envíos internacionales con DHL, FedEx y UPS desde Colón, Panamá. Rastreo en tiempo real, cotizaciones al instante y entrega en 24-48 horas. Plaza Millenium.',
+    url: 'https://mbecolon.com/servicios/envios-internacionales',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Envíos Internacionales DHL, FedEx y UPS' },
+    ],
+  },}
 
 export default function EnviosPage() {
   return (

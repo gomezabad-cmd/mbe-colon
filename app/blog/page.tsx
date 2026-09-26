@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: 'Blog MBE Colón — Consejos de Envíos y Logística en Colón, Panamá',
     description: 'Artículos sobre envíos, casillero Miami y logística para empresas en Colón.',
     url: 'https://mbecolon.com/blog',
+    type: 'website',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
@@ -23,7 +24,9 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-  },
+
+    siteName: 'MBE Colón',
+    locale: 'es_PA',},
 }
 
 export default function BlogPage() {

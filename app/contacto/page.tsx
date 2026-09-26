@@ -9,7 +9,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/contacto',
   },
-}
+  openGraph: {
+    title: 'Contacto | MBE Colón — Plaza Millenium F007, Colón, Panamá',
+    description: 'Contacto MBE Colón: Plaza Millenium Local F007, Colón, Panamá. Tel: 474-5548. WhatsApp: 6949-5100. Atención: lunes–viernes 8am–5pm, sábado 9am–1pm.',
+    url: 'https://mbecolon.com/contacto',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Contacto' },
+    ],
+  },}
 
 const contactFaqs = [
   {

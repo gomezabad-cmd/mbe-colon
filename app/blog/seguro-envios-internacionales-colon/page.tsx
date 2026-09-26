@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/seguro-envios-internacionales-colon',
   },
-}
+  openGraph: {
+    title: 'Seguro para Envíos Internacionales desde Colón, Panamá | MBE Colón',
+    description: 'Cómo asegurar tu paquete internacional desde Colón, Panamá. Protege tus envíos con DHL, FedEx y UPS y evita pérdidas en tu courier.',
+    url: 'https://mbecolon.com/blog/seguro-envios-internacionales-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Seguro para Envíos Internacionales desde Colón, Panamá' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

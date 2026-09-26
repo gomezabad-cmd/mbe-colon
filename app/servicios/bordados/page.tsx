@@ -8,7 +8,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/bordados',
   },
-}
+  openGraph: {
+    title: 'Bordados Personalizados para Empresas en Colón | MBE Colón',
+    description: 'Bordados personalizados para uniformes, hoodies, gorras y más. Bordamos desde 1 unidad con alta durabilidad. Empresas y equipos en Colón, Panamá. MBE.',
+    url: 'https://mbecolon.com/servicios/bordados',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Bordados Personalizados para Empresas en Colón' },
+    ],
+  },}
 
 const baseProductSchema = {
   '@context': 'https://schema.org',

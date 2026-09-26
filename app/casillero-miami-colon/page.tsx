@@ -29,6 +29,11 @@ export const metadata = {
     url: 'https://mbecolon.com/casillero-miami-colon',
     siteName: 'MBE Colón',
     locale: 'es_PA',
+
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Casillero Miami Colón Panamá | Envío Gratis Casillero' },
+    ],
   },
 }
 

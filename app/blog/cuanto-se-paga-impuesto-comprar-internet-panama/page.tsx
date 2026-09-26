@@ -12,6 +12,7 @@ export const metadata = {
     description:
       'Arancel por categoría + ITBMS del 7% sobre el valor de tu compra. Cómo se calcula y cómo MBE Colón gestiona tu trámite aduanal.',
     url: 'https://mbecolon.com/blog/cuanto-se-paga-impuesto-comprar-internet-panama',
+    type: 'article',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
@@ -21,7 +22,9 @@ export const metadata = {
         type: 'image/png',
       },
     ],
-  },
+
+    siteName: 'MBE Colón',
+    locale: 'es_PA',},
 }
 
 const BASE_URL = 'https://mbecolon.com'

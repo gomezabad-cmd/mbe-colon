@@ -7,7 +7,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/impresion',
   },
-}
+  openGraph: {
+    title: 'Impresión Profesional de Tarjetas y Banners | MBE Colón',
+    description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners en gran formato. Calidad garantizada y entrega rápida. MBE Colón.',
+    url: 'https://mbecolon.com/servicios/impresion',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Impresión Profesional de Tarjetas y Banners' },
+    ],
+  },}
 
 export default function ImpresionPage() {
   return (

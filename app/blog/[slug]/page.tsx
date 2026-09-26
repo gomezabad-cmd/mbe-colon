@@ -21,8 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `https://mbecolon.com/blog/${slug}` },
     openGraph: {
       title: post.title.rendered,
+      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').slice(0, 160).trim(),
       url: `https://mbecolon.com/blog/${slug}`,
-      images: ['https://mbecolon.com/og-image.png'],
+      siteName: 'MBE Colón',
+      locale: 'es_PA',
+      type: 'article',
+      images: [featuredImage(post) || 'https://mbecolon.com/og-image.png'],
     },
   }
 }

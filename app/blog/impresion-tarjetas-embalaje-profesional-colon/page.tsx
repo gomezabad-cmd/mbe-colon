@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/impresion-tarjetas-embalaje-profesional-colon',
   },
-}
+  openGraph: {
+    title: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón | MBE Colón',
+    description: 'Impresión de tarjetas de presentación y embalaje profesional para empresas en Colón, Panamá. Calidad, rapidez y entrega en 24-48h en Plaza Millenium F007.',
+    url: 'https://mbecolon.com/blog/impresion-tarjetas-embalaje-profesional-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

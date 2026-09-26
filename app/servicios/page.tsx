@@ -8,7 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios',
   },
-}
+  openGraph: {
+    title: 'Servicios de Envíos y Logística en Colón | MBE Colón',
+    description: 'Servicios de logística en Colón: envíos internacionales DHL FedEx UPS, casillero Miami, carga marítima, impresión y bordados personalizados. Plaza Millenium.',
+    url: 'https://mbecolon.com/servicios',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Servicios de Envíos y Logística en Colón' },
+    ],
+  },}
 
 const SERVICES = [
   {

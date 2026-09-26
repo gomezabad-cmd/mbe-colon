@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/logistica-pymes-zona-libre-colon',
   },
-}
+  openGraph: {
+    title: 'Logística para PYMEs y empresas de la Zona Libre de Colón | MBE Colón',
+    description: 'Logística en Colón para PYMEs: carga marítima Miami-Panamá, DHL, FedEx y UPS con entrega en 24-48h a la Zona Libre. Servicios completos. MBE Colón.',
+    url: 'https://mbecolon.com/blog/logistica-pymes-zona-libre-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Logística para PYMEs y empresas de la Zona Libre de Colón' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

@@ -7,7 +7,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/tramites-aduana-panama',
   },
-}
+  openGraph: {
+    title: 'Trámites de aduana en Panamá para compras online y casillero | MBE Colón',
+    description: 'Guía de trámites de aduana en Panamá para clientes de casillero y courier: documentos, proceso ante la ANA, aranceles e ITBMS y errores comunes. MBE Colón te lo gestiona.',
+    url: 'https://mbecolon.com/blog/tramites-aduana-panama',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Trámites de aduana en Panamá para compras online y casillero' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

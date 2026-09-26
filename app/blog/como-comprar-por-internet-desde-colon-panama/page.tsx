@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description:
       'Aprende a comprar en Amazon, Shein y eBay y recibir tus paquetes en Colón con tu casillero Miami gratis. Tarifas, tiempos y tips de ahorro.',
     url: 'https://mbecolon.com/blog/como-comprar-por-internet-desde-colon-panama',
+    type: 'article',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
@@ -23,7 +24,9 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-  },
+
+    siteName: 'MBE Colón',
+    locale: 'es_PA',},
 }
 
 const BASE_URL = 'https://mbecolon.com'

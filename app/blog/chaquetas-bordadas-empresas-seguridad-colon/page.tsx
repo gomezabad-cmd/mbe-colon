@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/chaquetas-bordadas-empresas-seguridad-colon',
   },
-}
+  openGraph: {
+    title: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá | MBE Colón',
+    description: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad. Entrega rápida en Plaza Millenium F007, Panamá.',
+    url: 'https://mbecolon.com/blog/chaquetas-bordadas-empresas-seguridad-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/costo-envios-internacionales-desde-colon',
   },
-}
+  openGraph: {
+    title: 'Cuánto Cuesta Enviar un Paquete Internacional desde Colón, Panamá | MBE Colón',
+    description: 'Descubre cuánto cuesta un envío internacional desde Colón con DHL, FedEx y UPS. Cotiza tu courier Panamá en Plaza Millenium F007 y ahorra en tu próximo envío.',
+    url: 'https://mbecolon.com/blog/costo-envios-internacionales-desde-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cuánto Cuesta Enviar un Paquete Internacional desde Colón, Panamá' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

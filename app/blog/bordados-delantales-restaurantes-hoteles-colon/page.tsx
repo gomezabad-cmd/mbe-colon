@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/blog/bordados-delantales-restaurantes-hoteles-colon',
   },
-}
+  openGraph: {
+    title: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá | MBE Colón',
+    description: 'Bordamos delantales, chaquetas y uniformes para restaurantes y hoteles en Colón, Panamá. Calidad profesional y entrega rápida en Plaza Millenium F007.',
+    url: 'https://mbecolon.com/blog/bordados-delantales-restaurantes-hoteles-colon',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'article',
+    images: [
+      { url: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Delantales y Chaquetas Bordadas para Restaurantes y Hoteles en Colón, Panamá' },
+    ],
+  },}
 
 const BASE_URL = 'https://mbecolon.com'
 

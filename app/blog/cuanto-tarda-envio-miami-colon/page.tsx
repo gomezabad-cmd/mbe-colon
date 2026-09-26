@@ -12,6 +12,7 @@ export const metadata = {
     description:
       'Aéreo express 24-72 horas, aéreo estándar 3-7 días y marítimo 7-15 días hábiles. Tiempos reales de tu casillero en MBE Colón.',
     url: 'https://mbecolon.com/blog/cuanto-tarda-envio-miami-colon',
+    type: 'article',
     images: [
       {
         url: 'https://mbecolon.com/og-image.png',
@@ -21,7 +22,9 @@ export const metadata = {
         type: 'image/png',
       },
     ],
-  },
+
+    siteName: 'MBE Colón',
+    locale: 'es_PA',},
 }
 
 const BASE_URL = 'https://mbecolon.com'

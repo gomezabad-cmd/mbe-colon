@@ -7,7 +7,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/compras-internet',
   },
-}
+  openGraph: {
+    title: 'Compras por Internet desde USA | Casillero Miami MBE Colón',
+    description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
+    url: 'https://mbecolon.com/servicios/compras-internet',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Compras por Internet desde USA | Casillero Miami MBE Colón' },
+    ],
+  },}
 
 export default function ComprasPage() {
   return (

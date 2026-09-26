@@ -6,7 +6,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/carga-maritima',
   },
-}
+  openGraph: {
+    title: 'Carga Marítima Miami–Panamá y China–Panamá | MBE Colón',
+    description: 'Carga marítima Miami-Colón. Envío de contenedores y consolidados desde Miami a la Zona Libre de Colón. Servicios logísticos completos para empresas. MBE.',
+    url: 'https://mbecolon.com/servicios/carga-maritima',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Carga Marítima Miami–Panamá y China–Panamá' },
+    ],
+  },}
 
 export default function CargaPage() {
   return (

@@ -7,7 +7,17 @@ export const metadata = {
   alternates: {
     canonical: 'https://mbecolon.com/servicios/casillero',
   },
-}
+  openGraph: {
+    title: 'Casillero Miami Gratis en Colón, Panamá | MBE Colón',
+    description: 'Activa tu casillero Miami gratis. Recibe paquetes de Amazon, eBay y Shein directamente en Colón, Panamá. Sin cuota mensual ni comisión. MBE Colón.',
+    url: 'https://mbecolon.com/servicios/casillero',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Casillero Miami Gratis en Colón, Panamá' },
+    ],
+  },}
 
 export default function CasilleroPage() {
   return (
