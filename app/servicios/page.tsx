@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Servicios de Envíos y Logística en Colón' },
     ],
-  },}
+  },
+}
 
 const SERVICES = [
   {

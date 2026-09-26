@@ -2,13 +2,13 @@ import Link from 'next/link'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata = {
-  title: 'Guía completa para comprar en Amazon y recibir en Colón | MBE Colón',
+  title: 'Guía para comprar en Amazon y recibir en Colón | MBE Colón',
   description: 'Guía completa para comprar en Amazon y recibir en Colón con casillero Miami. Paso a paso, sin complicaciones. Todo lo que necesitas saber. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/guia-compras-amazon-colon',
   },
   openGraph: {
-    title: 'Guía completa para comprar en Amazon y recibir en Colón | MBE Colón',
+    title: 'Guía para comprar en Amazon y recibir en Colón | MBE Colón',
     description: 'Guía completa para comprar en Amazon y recibir en Colón con casillero Miami. Paso a paso, sin complicaciones. Todo lo que necesitas saber. MBE Colón.',
     url: 'https://mbecolon.com/blog/guia-compras-amazon-colon',
     siteName: 'MBE Colón',
@@ -17,7 +17,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Guía completa para comprar en Amazon y recibir en Colón' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación | MBE Colón',
+  title: 'Consolidación de carga para PYMEs en Colón | MBE Colón',
   description: 'Descubre cómo la consolidación de carga reduce costos de importación para PYMEs en Colón, Panamá. Logística confiable para la Zona Libre de Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/consolidacion-carga-pymes-colon',
   },
   openGraph: {
-    title: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación | MBE Colón',
+    title: 'Consolidación de carga para PYMEs en Colón | MBE Colón',
     description: 'Descubre cómo la consolidación de carga reduce costos de importación para PYMEs en Colón, Panamá. Logística confiable para la Zona Libre de Colón.',
     url: 'https://mbecolon.com/blog/consolidacion-carga-pymes-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

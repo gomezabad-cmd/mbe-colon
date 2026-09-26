@@ -11,7 +11,6 @@ export const metadata = {
     title: 'Cómo traer repuestos de auto desde USA a Panamá | MBE Colón',
     description: 'Guía paso a paso para comprar piezas de carro en USA y recibirlas rápido y seguro en Colón, Panamá.',
     url: 'https://mbecolon.com/blog/traer-repuestos-auto-usa-panama',
-
     type: 'article',
     images: [
       { url: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Cómo traer repuestos de auto desde USA a Panamá' },

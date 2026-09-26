@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Envíos Internacionales desde Colón: ¿DHL, FedEx o UPS? | MBE Colón',
+  title: 'Envíos internacionales: ¿DHL, FedEx o UPS? | MBE Colón',
   description: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá. Descubre cuál courier conviene según tu paquete, destino y presupuesto.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/envios-internacionales-dhl-fedex-ups-colon',
   },
   openGraph: {
-    title: 'Envíos Internacionales desde Colón: ¿DHL, FedEx o UPS? | MBE Colón',
+    title: 'Envíos internacionales: ¿DHL, FedEx o UPS? | MBE Colón',
     description: 'Compara DHL, FedEx y UPS para tus envíos internacionales desde Colón, Panamá. Descubre cuál courier conviene según tu paquete, destino y presupuesto.',
     url: 'https://mbecolon.com/blog/envios-internacionales-dhl-fedex-ups-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Envíos Internacionales desde Colón: ¿DHL, FedEx o UPS?' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

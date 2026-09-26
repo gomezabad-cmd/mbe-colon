@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Carga Marítima Miami-Panamá para Empresas en Colón | MBE Colón',
+  title: 'Carga Marítima Miami-Panamá para Empresas | MBE Colón',
   description: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística confiable para PYMEs y la Zona Libre de Colón. Cotiza en Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/carga-maritima-miami-panama-empresas-colon',
   },
   openGraph: {
-    title: 'Carga Marítima Miami-Panamá para Empresas en Colón | MBE Colón',
+    title: 'Carga Marítima Miami-Panamá para Empresas | MBE Colón',
     description: 'Servicio de carga marítima Miami-Panamá para empresas en Colón, Panamá. Logística confiable para PYMEs y la Zona Libre de Colón. Cotiza en Plaza Millenium F007.',
     url: 'https://mbecolon.com/blog/carga-maritima-miami-panama-empresas-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Carga Marítima Miami-Panamá para Empresas en Colón' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

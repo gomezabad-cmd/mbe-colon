@@ -18,7 +18,8 @@ export const metadata = {
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Bordados Personalizados para Empresas en Colón' },
     ],
-  },}
+  },
+}
 
 const baseProductSchema = {
   '@context': 'https://schema.org',

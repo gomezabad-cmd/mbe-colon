@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami | MBE Colón',
+  title: 'Comprar en Shein y eBay con Casillero Miami | MBE Colón',
   description: 'Guía para comprar en Shein y eBay y recibir tus paquetes en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin complicaciones.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/casillero-miami-shein-ebay-colon',
   },
   openGraph: {
-    title: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami | MBE Colón',
+    title: 'Comprar en Shein y eBay con Casillero Miami | MBE Colón',
     description: 'Guía para comprar en Shein y eBay y recibir tus paquetes en Colón, Panamá con el casillero Miami de MBE. Rápido, seguro y sin complicaciones.',
     url: 'https://mbecolon.com/blog/casillero-miami-shein-ebay-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

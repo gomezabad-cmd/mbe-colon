@@ -24,7 +24,6 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-
     siteName: 'MBE Colón',
     locale: 'es_PA',},
 }

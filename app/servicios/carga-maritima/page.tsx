@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Carga Marítima Miami–Panamá y China–Panamá' },
     ],
-  },}
+  },
+}
 
 export default function CargaPage() {
   return (

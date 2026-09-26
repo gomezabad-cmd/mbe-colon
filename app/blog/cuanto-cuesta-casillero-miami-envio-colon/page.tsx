@@ -22,7 +22,6 @@ export const metadata = {
         type: 'image/png',
       },
     ],
-
     siteName: 'MBE Colón',
     locale: 'es_PA',},
 }

@@ -17,7 +17,8 @@ export const metadata = {
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Envíos Internacionales DHL, FedEx y UPS' },
     ],
-  },}
+  },
+}
 
 export default function EnviosPage() {
   return (

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Impresión de planos, brochures y banners en Colón, Panamá | MBE Colón',
+  title: 'Planos, brochures y banners impresos en Colón | MBE Colón',
   description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners para empresas. Calidad garantizada y entrega rápida. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/impresion-planos-brochures-colon',
   },
   openGraph: {
-    title: 'Impresión de planos, brochures y banners en Colón, Panamá | MBE Colón',
+    title: 'Planos, brochures y banners impresos en Colón | MBE Colón',
     description: 'Impresión profesional en Colón: planos arquitectónicos, brochures corporativos y banners para empresas. Calidad garantizada y entrega rápida. MBE Colón.',
     url: 'https://mbecolon.com/blog/impresion-planos-brochures-colon',
     siteName: 'MBE Colón',
@@ -16,14 +16,15 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Impresión de planos, brochures y banners en Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Impresión de planos, brochures y banners en Colón, Panamá | MBE Colón',
+  headline: 'Planos, brochures y banners impresos en Colón | MBE Colón',
   description: '¿Buscas impresión de planos arquitectónicos, brochures o banners en Colón? En MBE Colón, Plaza Millenium F007, imprimimos con calidad profesional y entrega rápida.',
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',

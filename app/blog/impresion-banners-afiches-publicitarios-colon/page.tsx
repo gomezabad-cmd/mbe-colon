@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá | MBE Colón',
+  title: 'Impresión de banners y afiches publicitarios | MBE Colón',
   description: 'Impresión de banners publicitarios en Colón Panamá para tu negocio. Afiches, pendones y vinil de alta calidad, entrega en 24-48h en Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/impresion-banners-afiches-publicitarios-colon',
   },
   openGraph: {
-    title: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá | MBE Colón',
+    title: 'Impresión de banners y afiches publicitarios | MBE Colón',
     description: 'Impresión de banners publicitarios en Colón Panamá para tu negocio. Afiches, pendones y vinil de alta calidad, entrega en 24-48h en Plaza Millenium F007.',
     url: 'https://mbecolon.com/blog/impresion-banners-afiches-publicitarios-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

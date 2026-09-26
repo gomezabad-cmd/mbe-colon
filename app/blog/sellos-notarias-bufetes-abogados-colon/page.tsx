@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Sellos para Notarías y Bufetes de Abogados en Colón, Panamá | MBE Colón',
+  title: 'Sellos para notarías y bufetes de abogados | MBE Colón',
   description: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h. Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/sellos-notarias-bufetes-abogados-colon',
   },
   openGraph: {
-    title: 'Sellos para Notarías y Bufetes de Abogados en Colón, Panamá | MBE Colón',
+    title: 'Sellos para notarías y bufetes de abogados | MBE Colón',
     description: 'Sellos automáticos para notarías y bufetes de abogados en Colón, Panamá: sello de idóneo, notarial y de constancia. Entrega en 24-48h. Plaza Millenium F007.',
     url: 'https://mbecolon.com/blog/sellos-notarias-bufetes-abogados-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Sellos para Notarías y Bufetes de Abogados en Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

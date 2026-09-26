@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import ServicesBar from '@/components/ServicesBar'
 import WhyUsSection from '@/components/WhyUsSection'
 import ReviewsSection from '@/components/ReviewsSection'
 import ContactSection from '@/components/ContactSection'
 import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
-  title: 'Casillero Miami Colón Panamá | Envío Gratis Casillero | MBE Colón',
-  description: 'Casillero Miami gratis en Colón, Panamá. Recibe paquetes de Amazon, eBay y Shein en Colón sin cuota mensual. Domicilio Miami personal, tracking por WhatsApp. MBE Colón.',
+  title: 'Casillero Miami en Colón con Envío Gratis | MBE Colón',
+  description: 'Casillero Miami gratis en Colón, Panamá. Recibe paquetes de Amazon, eBay y Shein sin cuota mensual y con tracking por WhatsApp. MBE Colón.',
   keywords: [
     'casillero Miami Colón',
     'casillero Miami Panamá',
@@ -29,7 +28,6 @@ export const metadata = {
     url: 'https://mbecolon.com/casillero-miami-colon',
     siteName: 'MBE Colón',
     locale: 'es_PA',
-
     type: 'website',
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Casillero Miami Colón Panamá | Envío Gratis Casillero' },

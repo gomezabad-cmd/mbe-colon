@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Hoodies Bordados con Logo para Empresas en Colón, Panamá | MBE Colón',
+  title: 'Hoodies bordados con logo para empresas | MBE Colón',
   description: 'Bordados personalizados para empresas en Colón Panamá: hoodies con logo de alta calidad, entrega rápida en Plaza Millenium F007. Cotiza desde 1 unidad.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/hoodies-bordados-empresas-colon',
   },
   openGraph: {
-    title: 'Hoodies Bordados con Logo para Empresas en Colón, Panamá | MBE Colón',
+    title: 'Hoodies bordados con logo para empresas | MBE Colón',
     description: 'Bordados personalizados para empresas en Colón Panamá: hoodies con logo de alta calidad, entrega rápida en Plaza Millenium F007. Cotiza desde 1 unidad.',
     url: 'https://mbecolon.com/blog/hoodies-bordados-empresas-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Hoodies Bordados con Logo para Empresas en Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

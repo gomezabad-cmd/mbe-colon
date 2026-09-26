@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Preguntas Frecuentes — Casillero Miami, Envíos y Servicios | MBE Colón',
+  title: 'Preguntas Frecuentes de Casillero y Envíos | MBE Colón',
   description: 'Resolvemos tus dudas sobre casillero Miami, envíos internacionales, tarifas, tiempos de entrega y servicios en MBE Colón, Panamá. Respuestas directas de expertos.',
   keywords: ['preguntas frecuentes casillero Miami', 'FAQ envíos internacionales Panamá', 'dudas casillero MBE', 'tarifas envíos Colón'],
   alternates: {
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     description: 'Resolvemos tus dudas sobre casillero Miami, envíos internacionales, tarifas y servicios en Colón, Panamá.',
     url: 'https://mbecolon.com/preguntas-frecuentes',
     type: 'website',
-
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Preguntas Frecuentes — Casillero Miami, Envíos y Servicios' },
     ],

@@ -12,21 +12,37 @@ export async function generateStaticParams() {
   return posts.map(p => ({ slug: p.slug }))
 }
 
+const TITLE_SUFFIX = ' | MBE Colón'
+const FALLBACK_DESCRIPTION =
+  'Artículos del blog de MBE Colón sobre casillero Miami, envíos internacionales, logística y compras por internet en Panamá.'
+
+function plainText(html: string, max: number): string {
+  const text = html.replace(/<[^>]*>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim()
+  if (text.length <= max) return text
+  return text.slice(0, max).replace(/\s+\S*$/, '').trimEnd() + '…'
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = await getPostBySlug(slug)
   if (!post) return {}
+
+  const title = plainText(post.title.rendered, 60 - TITLE_SUFFIX.length) + TITLE_SUFFIX
+  const description = plainText(post.excerpt.rendered, 160) || FALLBACK_DESCRIPTION
+  const image = featuredImage(post) || 'https://mbecolon.com/og-image.png'
+
   return {
-    title: `${post.title.rendered} | Blog MBE Colón`,
+    title,
+    description,
     alternates: { canonical: `https://mbecolon.com/blog/${slug}` },
     openGraph: {
-      title: post.title.rendered,
-      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').slice(0, 160).trim(),
+      title,
+      description,
       url: `https://mbecolon.com/blog/${slug}`,
       siteName: 'MBE Colón',
       locale: 'es_PA',
       type: 'article',
-      images: [featuredImage(post) || 'https://mbecolon.com/og-image.png'],
+      images: [{ url: image, width: 1200, height: 630, alt: plainText(post.title.rendered, 90) }],
     },
   }
 }

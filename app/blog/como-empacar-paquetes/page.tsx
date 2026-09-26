@@ -2,13 +2,13 @@ import Link from 'next/link'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata = {
-  title: '¿Cómo empacar correctamente tu paquete para envíos internacionales? | MBE Colón',
+  title: 'Cómo empacar tu paquete para enviar al exterior | MBE Colón',
   description: 'Cómo empacar correctamente tu paquete para envíos internacionales. Técnicas profesionales para proteger tus envíos con DHL, FedEx y UPS. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/como-empacar-paquetes',
   },
   openGraph: {
-    title: '¿Cómo empacar correctamente tu paquete para envíos internacionales? | MBE Colón',
+    title: 'Cómo empacar tu paquete para enviar al exterior | MBE Colón',
     description: 'Cómo empacar correctamente tu paquete para envíos internacionales. Técnicas profesionales para proteger tus envíos con DHL, FedEx y UPS. MBE Colón.',
     url: 'https://mbecolon.com/blog/como-empacar-paquetes',
     siteName: 'MBE Colón',
@@ -17,7 +17,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: '¿Cómo empacar correctamente tu paquete para envíos internacionales?' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

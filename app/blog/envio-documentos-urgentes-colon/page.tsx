@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá | MBE Colón',
+  title: 'Cómo enviar documentos urgentes desde Colón | MBE Colón',
   description: 'Envía documentos urgentes desde Colón, Panamá con DHL, FedEx y UPS. Guía de envíos internacionales Colón: tiempos, precios y el mejor courier.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/envio-documentos-urgentes-colon',
   },
   openGraph: {
-    title: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá | MBE Colón',
+    title: 'Cómo enviar documentos urgentes desde Colón | MBE Colón',
     description: 'Envía documentos urgentes desde Colón, Panamá con DHL, FedEx y UPS. Guía de envíos internacionales Colón: tiempos, precios y el mejor courier.',
     url: 'https://mbecolon.com/blog/envio-documentos-urgentes-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá | MBE Colón',
+  title: 'Etiquetas y stickers personalizados en Colón | MBE Colón',
   description: 'Impresión Colón de etiquetas y stickers personalizados para tu negocio en Panamá: productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/etiquetas-stickers-personalizados-colon',
   },
   openGraph: {
-    title: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá | MBE Colón',
+    title: 'Etiquetas y stickers personalizados en Colón | MBE Colón',
     description: 'Impresión Colón de etiquetas y stickers personalizados para tu negocio en Panamá: productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
     url: 'https://mbecolon.com/blog/etiquetas-stickers-personalizados-colon',
     siteName: 'MBE Colón',
@@ -16,7 +16,8 @@ export const metadata = {
     images: [
       { url: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá' },
     ],
-  },}
+  },
+}
 
 const BASE_URL = 'https://mbecolon.com'
 

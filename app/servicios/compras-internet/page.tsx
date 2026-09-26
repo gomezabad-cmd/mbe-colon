@@ -17,7 +17,8 @@ export const metadata = {
     images: [
       { url: 'https://mbecolon.com/og-image.png', width: 1200, height: 630, alt: 'Compras por Internet desde USA | Casillero Miami MBE Colón' },
     ],
-  },}
+  },
+}
 
 export default function ComprasPage() {
   return (
