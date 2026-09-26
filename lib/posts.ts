@@ -48,7 +48,7 @@ export const POSTS: Post[] = [
     categoria: 'Casillero',
     badge: 'bg-mbe-red',
     titulo: '¿Cuánto cuesta el casillero Miami y traer un paquete a Colón en 2026?',
-    desc: 'Precios reales del casillero Miami desde $3.00/lb (aéreo) y $3.00/ft³ (marítimo), con ejemplos de costos y qué impuestos pagas al importar a Panamá.',
+    desc: 'Precios reales del casillero Miami desde $3.00/lb (aéreo) y $6.00/ft³ (marítimo), con ejemplos de costos y qué impuestos pagas al importar a Panamá.',
     href: '/blog/cuanto-cuesta-casillero-miami-envio-colon',
     img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=280&fit=crop&q=80',
     imgAlt: '¿Cuánto cuesta el casillero Miami y el envío a Colón, Panamá? — MBE Colón',

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: '¿Cuánto tarda un envío de Miami a Colón? | MBE Colón',
@@ -131,7 +132,8 @@ export default function BlogPost() {
           ¿Cuánto tarda un envío de Miami a Colón, Panamá?
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Actualizado agosto 2026
         </p>
 
@@ -175,7 +177,7 @@ export default function BlogPost() {
                 <tr>
                   <td className="px-4 py-3 font-semibold text-mbe-dark">🚢 Marítimo</td>
                   <td className="px-4 py-3 text-mbe-red font-bold">7–15 días hábiles</td>
-                  <td className="px-4 py-3 text-mbe-gray">desde $3.00/ft³</td>
+                  <td className="px-4 py-3 text-mbe-gray">desde $6.00/ft³</td>
                   <td className="px-4 py-3 text-mbe-gray">Muebles, electrodomésticos, cargas grandes</td>
                 </tr>
               </tbody>

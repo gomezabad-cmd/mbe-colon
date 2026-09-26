@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Sellos automáticos personalizados en Colón | MBE Colón',
@@ -72,14 +73,12 @@ export default function BlogSellos() {
           ¿Dónde hacer sellos automáticos personalizados en Colón, Panamá?
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Guía completa para empresas, abogados y profesionales en la provincia de Colón
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-          En MBE Colón puedes hacer sellos automáticos personalizados en Colón para abogados, médicos y empresas: modelos Trodat y Colop de bolsillo y mesa, desde 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Guía completa para empresas, abogados y profesionales en la provincia de Colón
-        </p>5.00, y sellos de goma desde $8.00. La entrega es de 24 a 48 horas hábiles e incluye la tinta inicial.
+          En MBE Colón puedes hacer sellos automáticos personalizados en Colón para abogados, médicos y empresas: modelos Trodat y Colop de bolsillo y mesa, desde $15.00, y sellos de goma desde $8.00. La entrega es de 24 a 48 horas hábiles e incluye la tinta inicial.
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

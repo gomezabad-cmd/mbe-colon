@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata = {
@@ -76,11 +77,15 @@ export default function BlogRepuestosPage() {
       <h1 className="text-mbe-dark text-4xl md:text-5xl font-black mb-6 leading-tight">
         Cómo traer repuestos de auto desde USA a Panamá
       </h1>
+      <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+        <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
+        Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Repuestos de auto importados desde USA
+      </p>
       <p className="text-gray-500 mb-8">
         Actualizado: 30 de Junio, 2026 | Tiempo de lectura: 4 min
       </p>
       <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-        Para traer repuestos de auto desde USA a Panamá compra la pieza en una tienda que entregue en Estados Unidos, usa tu casillero Miami gratis de MBE Colón como dirección de envío y elige el flete: aéreo desde $3.00 por libra para piezas urgentes o marítimo desde $3.00 por pie cúbico para piezas voluminosas, con trámite aduanal incluido.
+        Para traer repuestos de auto desde USA a Panamá compra la pieza en una tienda que entregue en Estados Unidos, usa tu casillero Miami gratis de MBE Colón como dirección de envío y elige el flete: aéreo desde $3.00 por libra para piezas urgentes o marítimo desde $6.00 por pie cúbico para piezas voluminosas, con trámite aduanal incluido.
       </p>
 
       {/* Hero Image */}

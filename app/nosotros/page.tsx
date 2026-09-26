@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
@@ -65,6 +66,7 @@ const aboutSchema = {
           name: 'Carlos Gómez',
           jobTitle: 'Franquiciado de MBE Colón',
           url: 'https://mbecolon.com/nosotros',
+          image: 'https://mbecolon.com/images/carlos-gomez.jpg',
         },
       },
     },
@@ -168,8 +170,14 @@ export default function NosotrosPage() {
         <section className="bg-mbe-light py-16 px-4">
           <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 items-start">
             <div className="md:col-span-1 bg-white rounded-2xl p-8 shadow-md text-center">
-              <div className="w-24 h-24 mx-auto rounded-full bg-mbe-dark text-white flex items-center justify-center text-3xl font-black mb-4">
-                CG
+              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 bg-mbe-dark">
+                <Image
+                  src="/images/carlos-gomez.jpg"
+                  alt="Carlos Gómez, Franquiciado de MBE Colón"
+                  width={96}
+                  height={96}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h2 className="text-mbe-dark font-black text-xl">Carlos Gómez</h2>
               <p className="text-mbe-red font-bold text-sm mb-3">Franquiciado de MBE Colón</p>

@@ -150,6 +150,7 @@ const baseSchemaGraph = {
       alternateName: 'Carlos Gomez',
       jobTitle: 'Franquiciado de MBE Colón',
       url: 'https://mbecolon.com/nosotros',
+      image: 'https://mbecolon.com/images/carlos-gomez.jpg',
       description:
         'Franquiciado de Mail Boxes Etc. Colón. Más de 18 años trabajando logística, casilleros Miami, trámites aduaneros e impresión para familias y empresas de Colón, Panamá.',
       worksFor: { '@id': 'https://mbecolon.com/#organization' },

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Kit de identidad corporativa para empresas | MBE Colón',
@@ -72,14 +73,12 @@ export default function BlogPost() {
           Kit de identidad corporativa para nuevas empresas en Colón, Panamá
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sellos automáticos, carnets PVC y papelería para empresas que recién abren en Colón
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-          El kit de identidad corporativa de MBE Colón reúne en un solo pedido lo que necesita una empresa nueva en Colón: sellos automáticos Trodat o Colop desde 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sellos automáticos, carnets PVC y papelería para empresas que recién abren en Colón
-        </p>5.00, listos en 24 a 48 horas, carnets PVC personalizados y papelería membretada, todo retirable en Plaza Millenium F007.
+          El kit de identidad corporativa de MBE Colón reúne en un solo pedido lo que necesita una empresa nueva en Colón: sellos automáticos Trodat o Colop desde $15.00, listos en 24 a 48 horas, carnets PVC personalizados y papelería membretada, todo retirable en Plaza Millenium F007.
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

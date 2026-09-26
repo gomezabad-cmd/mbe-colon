@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Sellos para notarías y bufetes de abogados | MBE Colón',
@@ -72,14 +73,12 @@ export default function BlogPost() {
           Sellos para notarías y bufetes de abogados en Colón, Panamá
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-          MBE Colón fabrica sellos para notarías y bufetes de abogados en Colón: sello de idóneo, sello notarial, sello de constancia y sello de empresa, en modelos Trodat y Colop. Desde $8.00 en goma y 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
-          Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Sello de idóneo, sello notarial y sellos de constancia para el sector legal
-        </p>5.00 en automático, con entrega en 24 a 48 horas hábiles en Plaza Millenium F007.
+          MBE Colón fabrica sellos para notarías y bufetes de abogados en Colón: sello de idóneo, sello notarial, sello de constancia y sello de empresa, en modelos Trodat y Colop. Desde $8.00 en goma y $15.00 en automático, con entrega en 24 a 48 horas hábiles en Plaza Millenium F007.
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

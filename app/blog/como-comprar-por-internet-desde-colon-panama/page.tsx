@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { CONTACT } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -65,7 +66,7 @@ const howToSchema = {
     { '@type': 'HowToStep', position: 1, name: 'Abre tu casillero Miami gratis', text: 'Regístrate en MBE Colón para recibir tu dirección personal en Miami, Florida. No tiene costo ni mensualidad.' },
     { '@type': 'HowToStep', position: 2, name: 'Usa tu dirección Miami al comprar', text: 'En Amazon, Shein, eBay o cualquier tienda de USA, usa tu dirección Miami como destino de envío.' },
     { '@type': 'HowToStep', position: 3, name: 'Consolida tus paquetes', text: 'Si compras en varias tiendas, consolidamos tus paquetes en un solo envío para ahorrar flete.' },
-    { '@type': 'HowToStep', position: 4, name: 'Elige aéreo o marítimo', text: 'Aéreo desde $3.00/lb para entrega rápida, o marítimo desde $3.00/ft³ para ahorrar en cargas grandes.' },
+    { '@type': 'HowToStep', position: 4, name: 'Elige aéreo o marítimo', text: 'Aéreo desde $3.00/lb para entrega rápida, o marítimo desde $6.00/ft³ para ahorrar en cargas grandes.' },
     { '@type': 'HowToStep', position: 5, name: 'Recibe en Colón', text: 'Te avisamos por WhatsApp cuando llega y lo retiras en Plaza Millenium F007 o coordinamos entrega.' },
   ],
 }
@@ -87,7 +88,7 @@ const faqSchema = {
       name: '¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'El envío aéreo cuesta desde $3.00 por libra y el marítimo desde $3.00 por pie cúbico. Los trámites aduanales están incluidos y el costo final depende del peso, volumen y destino.',
+        text: 'El envío aéreo cuesta desde $3.00 por libra y el marítimo desde $6.00 por pie cúbico. Los trámites aduanales están incluidos y el costo final depende del peso, volumen y destino.',
       },
     },
     {
@@ -160,11 +161,12 @@ export default function HubPost() {
             Cómo comprar por internet desde Colón, Panamá en 2026: guía completa
           </h1>
 
-          <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+          <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+            <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
             Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Actualizado agosto 2026
           </p>
           <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-            Comprar por internet desde Colón consiste en abrir tu casillero Miami gratis en MBE Colón, usar esa dirección en Amazon, Shein o eBay y elegir el flete: aéreo desde $3.00 por libra con entrega en 24 a 72 horas, o marítimo desde $3.00 por pie cúbico con entrega en 7 a 15 días hábiles. El trámite aduanal va incluido en el flete.
+            Comprar por internet desde Colón consiste en abrir tu casillero Miami gratis en MBE Colón, usar esa dirección en Amazon, Shein o eBay y elegir el flete: aéreo desde $3.00 por libra con entrega en 24 a 72 horas, o marítimo desde $6.00 por pie cúbico con entrega en 7 a 15 días hábiles. El trámite aduanal va incluido en el flete.
           </p>
 
           <div className="space-y-6 text-mbe-gray leading-relaxed">
@@ -225,7 +227,7 @@ export default function HubPost() {
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-mbe-dark">🚢 Marítimo</td>
-                    <td className="px-4 py-3 text-mbe-red font-bold">desde $3.00/ft³</td>
+                    <td className="px-4 py-3 text-mbe-red font-bold">desde $6.00/ft³</td>
                     <td className="px-4 py-3 text-mbe-gray">7–15 días hábiles</td>
                     <td className="px-4 py-3 text-mbe-gray">Muebles, cargas grandes</td>
                   </tr>

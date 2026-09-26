@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Electrónicos y Gadgets con Casillero Miami | MBE Colón',
@@ -72,11 +73,12 @@ export default function BlogPost() {
           Cómo Comprar Electrónicos y Gadgets en USA con tu Casillero Miami desde Colón
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Laptops, celulares y tecnología a precio de USA, sin salir de Panamá
         </p>
         <p className="text-mbe-dark text-lg font-medium leading-relaxed bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red mb-8">
-          Puedes comprar laptops, celulares y gadgets en Amazon, Best Buy o B&H con tu casillero Miami gratis de MBE Colón y recibirlos en Colón en 24 a 72 horas por vía aérea, desde $3.00 por libra, o en 7 a 15 días hábiles por vía marítima, desde $3.00 por pie cúbico, con trámite aduanal incluido.
+          Puedes comprar laptops, celulares y gadgets en Amazon, Best Buy o B&H con tu casillero Miami gratis de MBE Colón y recibirlos en Colón en 24 a 72 horas por vía aérea, desde $3.00 por libra, o en 7 a 15 días hábiles por vía marítima, desde $6.00 por pie cúbico, con trámite aduanal incluido.
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">

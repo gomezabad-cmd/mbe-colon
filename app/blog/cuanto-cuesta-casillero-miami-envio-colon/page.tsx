@@ -1,16 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: '¿Cuánto cuesta el casillero Miami en 2026? | MBE Colón',
   description:
-    'Precios reales del casillero Miami en MBE Colón: aéreo desde $3.00/lb y marítimo desde $3.00/ft³. Ejemplos de costos y qué impuestos pagas al importar a Colón.',
+    'Precios reales del casillero Miami en MBE Colón: aéreo desde $3.00/lb y marítimo desde $6.00/ft³. Ejemplos de costos y qué impuestos pagas al importar a Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/blog/cuanto-cuesta-casillero-miami-envio-colon',
   },
   openGraph: {
     title: '¿Cuánto cuesta el casillero Miami y traer un paquete a Colón en 2026?',
     description:
-      'Precios del casillero Miami en MBE Colón: aéreo desde $3.00/lb y marítimo desde $3.00/ft³, con ejemplos de costos e impuestos.',
+      'Precios del casillero Miami en MBE Colón: aéreo desde $3.00/lb y marítimo desde $6.00/ft³, con ejemplos de costos e impuestos.',
     url: 'https://mbecolon.com/blog/cuanto-cuesta-casillero-miami-envio-colon',
     type: 'article',
     images: [
@@ -35,7 +36,7 @@ const articleSchema = {
   '@type': 'BlogPosting',
   headline: '¿Cuánto cuesta el casillero Miami y traer un paquete a Colón en 2026?',
   description:
-    'Precios reales del casillero Miami en MBE Colón: aéreo desde $3.00 por libra y marítimo desde $3.00 por pie cúbico, con ejemplos de costos e impuestos.',
+    'Precios reales del casillero Miami en MBE Colón: aéreo desde $3.00 por libra y marítimo desde $6.00 por pie cúbico, con ejemplos de costos e impuestos.',
   datePublished: '2026-08-20',
   dateModified: '2026-08-20',
   author: {
@@ -87,7 +88,7 @@ const faqSchema = {
       name: '¿Cuánto cuesta el envío marítimo de Miami a Colón?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'El envío marítimo se cobra desde $3.00 por pie cúbico de volumen. Es ideal para muebles, electrodomésticos grandes o cargas voluminosas, y tarda entre 7 y 15 días hábiles.',
+        text: 'El envío marítimo se cobra desde $6.00 por pie cúbico de volumen. Es ideal para muebles, electrodomésticos grandes o cargas voluminosas, y tarda entre 7 y 15 días hábiles.',
       },
     },
     {
@@ -131,20 +132,21 @@ export default function BlogPost() {
           ¿Cuánto cuesta el casillero Miami y traer un paquete a Colón en 2026?
         </h1>
 
-        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6">
+        <p className="text-gray-500 text-sm mb-8 border-b border-gray-200 pb-6 flex items-center gap-3">
+          <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
           Por <strong className="text-mbe-dark">Carlos Gómez</strong> · Franquiciado de MBE Colón · Actualizado agosto 2026
         </p>
 
         <div className="space-y-6 text-mbe-gray leading-relaxed">
 
           <p>
-            Si buscas <strong>traer compras de USA a Colón, Panamá</strong>, esta es la respuesta corta: el <strong>casillero Miami</strong> de MBE Colón es <strong>gratis de abrir</strong>, el envío <strong>aéreo cuesta desde $3.00 por libra</strong> y el <strong>marítimo desde $3.00 por pie cúbico</strong>. Lo que pagas depende del peso, el volumen y el contenido de tu paquete. A continuación te explicamos con ejemplos reales.
+            Si buscas <strong>traer compras de USA a Colón, Panamá</strong>, esta es la respuesta corta: el <strong>casillero Miami</strong> de MBE Colón es <strong>gratis de abrir</strong>, el envío <strong>aéreo cuesta desde $3.00 por libra</strong> y el <strong>marítimo desde $6.00 por pie cúbico</strong>. Lo que pagas depende del peso, el volumen y el contenido de tu paquete. A continuación te explicamos con ejemplos reales.
           </p>
 
           <div className="bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red">
             <p className="font-bold text-mbe-dark mb-2">💡 En resumen</p>
             <p className="text-gray-600 text-sm">
-              Abrir el casillero: $0. Aéreo: desde $3.00/lb (24-72 h). Marítimo: desde $3.00/ft³ (7-15 días). Trámite aduanal incluido en el flete. Sin mensualidad ni comisión.
+              Abrir el casillero: $0. Aéreo: desde $3.00/lb (24-72 h). Marítimo: desde $6.00/ft³ (7-15 días). Trámite aduanal incluido en el flete. Sin mensualidad ni comisión.
             </p>
           </div>
 
@@ -173,7 +175,7 @@ export default function BlogPost() {
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-mbe-dark">🚢 Marítimo</td>
-                  <td className="px-4 py-3 text-mbe-red font-bold">desde $3.00/ft³</td>
+                  <td className="px-4 py-3 text-mbe-red font-bold">desde $6.00/ft³</td>
                   <td className="px-4 py-3 text-mbe-gray">7–15 días hábiles</td>
                   <td className="px-4 py-3 text-mbe-gray">Muebles, cargas grandes</td>
                 </tr>
@@ -186,7 +188,7 @@ export default function BlogPost() {
             <li><strong>Ropa de Shein (2-3 lb):</strong> flete aéreo de unos <strong>$6.00–$9.00</strong>.</li>
             <li><strong>Laptop o celular (5-7 lb):</strong> flete aéreo de unos <strong>$15.00–$21.00</strong>.</li>
             <li><strong>Electrodoméstico pequeño (15 lb):</strong> flete aéreo de unos <strong>$45.00</strong> o marítimo según volumen.</li>
-            <li><strong>Muebles o carga grande:</strong> marítimo desde <strong>$3.00/ft³</strong> — el costo final depende del volumen ocupado.</li>
+            <li><strong>Muebles o carga grande:</strong> marítimo desde <strong>$6.00/ft³</strong> — el costo final depende del volumen ocupado.</li>
           </ul>
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Qué incluye el flete y qué pagas aparte</h2>
@@ -217,7 +219,7 @@ export default function BlogPost() {
               <summary className="cursor-pointer font-bold text-mbe-dark flex justify-between items-center">
                 ¿Cuánto cuesta el envío marítimo de Miami a Colón?<span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
               </summary>
-              <p className="mt-3 text-sm">Desde $3.00 por pie cúbico. Ideal para muebles o cargas voluminosas; tarda de 7 a 15 días hábiles.</p>
+              <p className="mt-3 text-sm">Desde $6.00 por pie cúbico. Ideal para muebles o cargas voluminosas; tarda de 7 a 15 días hábiles.</p>
             </details>
             <details className="bg-white rounded-lg p-5 shadow-sm group border border-gray-200">
               <summary className="cursor-pointer font-bold text-mbe-dark flex justify-between items-center">

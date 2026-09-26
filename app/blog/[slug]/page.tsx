@@ -102,7 +102,8 @@ export default async function BlogPostPage({ params }: Props) {
               ← Blog
             </Link>
             <p className="text-mbe-red text-sm font-bold mb-3">{formatDate(post.date)}</p>
-            <p className="text-gray-400 text-sm mb-3">
+            <p className="text-gray-400 text-sm mb-3 flex items-center gap-3">
+              <Image src="/images/carlos-gomez.jpg" alt="Carlos Gómez, Franquiciado de MBE Colón" width={44} height={44} className="w-11 h-11 rounded-full object-cover shrink-0" />
               Por <strong className="text-white">Carlos Gómez</strong> · Franquiciado de MBE Colón
             </p>
             <h1
