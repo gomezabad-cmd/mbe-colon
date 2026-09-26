@@ -5,7 +5,7 @@ import { CONTACT } from '@/lib/constants'
 import { trackLead } from '@/lib/pixel'
 
 const RATE_AEREO = 3.0
-const RATE_MARITIMO_MIN = 3.0
+const RATE_MARITIMO_MIN = 6.0
 const RATE_MARITIMO_MAX = 10.0
 
 type Variant = 'casillero' | 'general'

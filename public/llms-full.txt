@@ -78,8 +78,8 @@ registra, te notifica y lo reenvía a su bodega en Colón, Panamá.
 | Servicio | Tipo de cálculo | Precio de referencia | Tiempo |
 |---|---|---|---|
 | Casillero Miami — aéreo | por libra (peso real) | desde $3.00/lb | 24–72 h express – 3–7 días hábiles |
-| Casillero Miami — marítimo | por pie cúbico | desde $3.00/ft³ | 7–15 días hábiles |
-| Carga marítima (volumen alto) | consolidación / contenedor | hasta $10.00/ft³ | según ruta y volumen |
+| Casillero Miami — marítimo | por pie cúbico | desde $6.00/ft³ | 7–15 días hábiles |
+| Carga marítima (volumen alto) | consolidación / contenedor | desde $6.00 hasta $10.00/ft³ | según ruta y volumen |
 | Envíos internacionales (DHL, FedEx, UPS) | cotización por peso y destino | a medida | USA 2–5 días – Europa 7–15 días |
 | Sellos de goma | personalizados | desde $8.00 | 24–48 h hábiles |
 | Sellos automáticos (Trodat, Colop) | bolsillo y mesa | desde $15.00 | 24–48 h hábiles |
@@ -118,7 +118,7 @@ Debe confirmarse por WhatsApp antes de citarse como precio vigente.
 
 - Rutas: Miami–Panamá y China–Panamá.
 - Tipos: contenedores completos y carga consolidada.
-- Precio de referencia: desde $3.00/ft³ en el casillero marítimo; hasta $10.00/ft³ en carga de volumen alto.
+- Precio de referencia: desde $6.00/ft³ en el casillero marítimo; desde $6.00 hasta $10.00/ft³ en carga de volumen alto.
 - Entrega hasta la bodega del cliente en Colón.
 - Pensado para empresas y PYMEs de la Zona Libre de Colón.
 - Tarifas preferenciales por volumen.
@@ -233,7 +233,7 @@ débito, transferencia bancaria y facturación mensual para empresas.
 
 **¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?**
 Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo
-desde $3.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.
+desde $6.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.
 
 **¿El casillero Miami tiene cuota mensual?**
 No. Abrir tu casillero Miami en MBE Colón es completamente gratis, sin cuota mensual ni

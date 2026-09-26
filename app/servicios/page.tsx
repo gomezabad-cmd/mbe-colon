@@ -154,7 +154,7 @@ export default function ServiciosPage() {
               <strong className="text-mbe-dark">¿Necesitas imprimir, bordar o sellos?</strong> Tenemos <Link href="/servicios/impresion" className="text-mbe-red font-semibold hover:underline">impresión profesional</Link> (tarjetas, brochures, banners y planos), <Link href="/servicios/bordados" className="text-mbe-red font-semibold hover:underline">bordados personalizados</Link> para uniformes y equipos, y <Link href="/servicios/sellos" className="text-mbe-red font-semibold hover:underline">sellos automáticos</Link> Trodat y Colop listos en 24-48 horas.
             </p>
             <p>
-              ¿Dudas con los precios? Consulta nuestra página de <Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">tarifas de referencia</Link> — aéreo desde $3.00/lb, marítimo desde $3.00/ft³, sellos desde $8.00 y bordados desde $3.75 — o lee la <Link href="/blog/como-comprar-por-internet-desde-colon-panama" className="text-mbe-red font-semibold hover:underline">guía para comprar por internet desde Colón</Link>.
+              ¿Dudas con los precios? Consulta nuestra página de <Link href="/tarifas" className="text-mbe-red font-semibold hover:underline">tarifas de referencia</Link> — aéreo desde $3.00/lb, marítimo desde $6.00/ft³, sellos desde $8.00 y bordados desde $3.75 — o lee la <Link href="/blog/como-comprar-por-internet-desde-colon-panama" className="text-mbe-red font-semibold hover:underline">guía para comprar por internet desde Colón</Link>.
             </p>
           </div>
         </section>

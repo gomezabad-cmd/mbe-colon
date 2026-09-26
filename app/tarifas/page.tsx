@@ -5,7 +5,7 @@ import { CONTACT } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Tarifas de Casillero Miami y Envíos desde Colón | MBE Colón',
   description:
-    'Tarifas de casillero Miami y envíos desde Colón: aéreo desde $3.00/lb, marítimo desde $3.00/ft³, sellos desde $8.00, bordados desde $3.75. Cotiza por WhatsApp.',
+    'Tarifas de casillero Miami y envíos desde Colón: aéreo desde $3.00/lb, marítimo desde $6.00/ft³, sellos desde $8.00, bordados desde $3.75. Cotiza por WhatsApp.',
   alternates: {
     canonical: 'https://mbecolon.com/tarifas',
   },
@@ -48,7 +48,7 @@ const faqSchema = {
       name: '¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo desde $3.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.',
+        text: 'Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo desde $6.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.',
       },
     },
     {
@@ -123,7 +123,7 @@ export default function TarifasPage() {
               Tarifas de envíos y casillero <span className="text-mbe-red">desde Colón</span>
             </h1>
             <p className="text-white text-xl font-medium max-w-2xl mx-auto mb-3">
-              Las tarifas de MBE Colón son precios de referencia en dólares con los que calculamos tu envío desde Miami hasta Colón, Panamá: el casillero Miami es gratis y solo pagas el flete, desde $3.00 por libra por vía aérea y desde $3.00 por pie cúbico por vía marítima, con los trámites aduaneros incluidos.
+              Las tarifas de MBE Colón son precios de referencia en dólares con los que calculamos tu envío desde Miami hasta Colón, Panamá: el casillero Miami es gratis y solo pagas el flete, desde $3.00 por libra por vía aérea y desde $6.00 por pie cúbico por vía marítima, con los trámites aduaneros incluidos.
             </p>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Precios de referencia de casillero Miami, envíos aéreos y marítimos, sellos, bordados e impresión. La cotización exacta la confirmas por WhatsApp en minutos.
@@ -166,19 +166,19 @@ export default function TarifasPage() {
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Casillero Miami — Aéreo</td>
                     <td className="px-4 py-4 text-mbe-gray">Por libra (peso real)</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.00/lb</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $3.00/lb</td>
                     <td className="px-4 py-4 text-mbe-gray">24–72 h (express) · 3–7 días hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Casillero Miami — Marítimo</td>
                     <td className="px-4 py-4 text-mbe-gray">Por pie cúbico</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.00/ft³</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $6.00/ft³</td>
                     <td className="px-4 py-4 text-mbe-gray">7–15 días hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Carga marítima (volumen alto)</td>
                     <td className="px-4 py-4 text-mbe-gray">Consolidación / contenedor</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $6.00 – hasta $10.00/ft³</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $6.00 – hasta $10.00/ft³</td>
                     <td className="px-4 py-4 text-mbe-gray">Según ruta y volumen</td>
                   </tr>
                   <tr>
@@ -190,19 +190,19 @@ export default function TarifasPage() {
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Sellos de goma</td>
                     <td className="px-4 py-4 text-mbe-gray">Personalizados</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $8.00</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $8.00</td>
                     <td className="px-4 py-4 text-mbe-gray">24–48 h hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Sellos automáticos (Trodat, Colop)</td>
                     <td className="px-4 py-4 text-mbe-gray">Bolsillo y mesa</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $15.00</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $15.00</td>
                     <td className="px-4 py-4 text-mbe-gray">24–48 h hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Bordados personalizados</td>
                     <td className="px-4 py-4 text-mbe-gray">Por prenda y diseño</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.75</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">desde $3.75</td>
                     <td className="px-4 py-4 text-mbe-gray">5–10 días hábiles</td>
                   </tr>
                   <tr>
@@ -262,7 +262,7 @@ export default function TarifasPage() {
                   ¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?
                   <span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <p className="text-mbe-gray mt-4 leading-relaxed">Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo desde $3.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.</p>
+                <p className="text-mbe-gray mt-4 leading-relaxed">Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo desde $6.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.</p>
               </details>
               <details className="bg-white rounded-lg p-6 shadow-sm group">
                 <summary className="cursor-pointer font-bold text-mbe-dark text-lg flex justify-between items-center">
