@@ -86,11 +86,30 @@ const faqSchema = {
   ],
 }
 
+const priceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://mbecolon.com/tarifas#service',
+  name: 'Tarifas de envíos internacionales y casillero Miami',
+  serviceType: 'Courier y logística',
+  provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+  areaServed: { '@type': 'Country', name: 'Panamá' },
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: 3.0,
+    highPrice: 15.0,
+    offerCount: 5,
+    availability: 'https://schema.org/InStock',
+  },
+}
+
 export default function TarifasPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(priceSchema) }} />
       <main className="pt-[88px]">
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4">

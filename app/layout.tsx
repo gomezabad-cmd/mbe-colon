@@ -136,6 +136,11 @@ const baseSchemaGraph = {
         contactType: 'customer service',
         availableLanguage: 'Spanish',
       },
+      sameAs: [
+        'https://www.mbe-ca.com',
+        'https://www.instagram.com/mbecolon',
+        'https://www.tiktok.com/@mbecolon',
+      ],
     },
     {
       '@type': 'WebSite',

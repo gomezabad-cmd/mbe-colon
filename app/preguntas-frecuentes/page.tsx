@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes de Casillero y Envíos | MBE Colón',
@@ -117,6 +118,7 @@ export default function PreguntasFrecuentesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <section className="py-16 px-4 max-w-4xl mx-auto">
+        <Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preguntas Frecuentes' }]} />
         <h1 className="text-4xl font-bold text-center mb-4">Preguntas Frecuentes</h1>
         <p className="text-center text-gray-600 mb-12 text-lg">
           Resolvemos tus dudas sobre casillero Miami, envíos internacionales, tarifas y servicios.

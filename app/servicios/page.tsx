@@ -73,11 +73,25 @@ const SERVICES = [
   },
 ]
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Servicios de MBE Colón',
+  url: 'https://mbecolon.com/servicios',
+  numberOfItems: SERVICES.length,
+  itemListElement: SERVICES.map((service, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: service.title,
+    url: `https://mbecolon.com${service.href}`,
+  })),
+}
+
 export default function ServiciosPage() {
   return (
     <>
       <div>
-
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
         {/* Hero */}
         <section className="bg-mbe-dark py-16 px-4 text-center">
           <Breadcrumbs items={[

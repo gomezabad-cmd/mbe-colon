@@ -28,10 +28,24 @@ export const metadata: Metadata = {
     locale: 'es_PA',},
 }
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Artículos del blog de MBE Colón',
+  url: 'https://mbecolon.com/blog',
+  numberOfItems: POSTS.length,
+  itemListElement: POSTS.map((post, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: post.titulo,
+    url: `https://mbecolon.com${post.href}`,
+  })),
+}
+
 export default function BlogPage() {
   return (
     <div>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       {/* Hero */}
       <section className="bg-mbe-dark py-16 px-4 text-center">
         <Breadcrumbs items={[
