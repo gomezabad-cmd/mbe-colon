@@ -166,13 +166,13 @@ export default function TarifasPage() {
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Casillero Miami — Aéreo</td>
                     <td className="px-4 py-4 text-mbe-gray">Por libra (peso real)</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">desde $3.00/lb</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.00/lb</td>
                     <td className="px-4 py-4 text-mbe-gray">24–72 h (express) · 3–7 días hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Casillero Miami — Marítimo</td>
                     <td className="px-4 py-4 text-mbe-gray">Por pie cúbico</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">desde $3.00/ft³</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.00/ft³</td>
                     <td className="px-4 py-4 text-mbe-gray">7–15 días hábiles</td>
                   </tr>
                   <tr>
@@ -190,19 +190,19 @@ export default function TarifasPage() {
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Sellos de goma</td>
                     <td className="px-4 py-4 text-mbe-gray">Personalizados</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">desde $8.00</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $8.00</td>
                     <td className="px-4 py-4 text-mbe-gray">24–48 h hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Sellos automáticos (Trodat, Colop)</td>
                     <td className="px-4 py-4 text-mbe-gray">Bolsillo y mesa</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">desde $15.00</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $15.00</td>
                     <td className="px-4 py-4 text-mbe-gray">24–48 h hábiles</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-semibold text-mbe-dark">Bordados personalizados</td>
                     <td className="px-4 py-4 text-mbe-gray">Por prenda y diseño</td>
-                    <td className="px-4 py-4 text-mbe-red font-bold">desde $3.75</td>
+                    <td className="px-4 py-4 text-mbe-red font-bold">DESDE $3.75</td>
                     <td className="px-4 py-4 text-mbe-gray">5–10 días hábiles</td>
                   </tr>
                   <tr>

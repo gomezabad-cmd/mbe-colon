@@ -45,8 +45,9 @@ export default function Home() {
                 China–Panamá, impresión profesional, bordados personalizados y sellos automáticos, todo desde el mismo local.
               </p>
               <p>
-                Los precios de referencia son $3.00 por libra en envío aéreo y $3.00 por pie cúbico en marítimo, con los
-                trámites aduaneros incluidos en el flete. MBE Colón forma parte de la red internacional Mail Boxes Etc. con más
+                Los precios de referencia son DESDE $3.00 por libra en envío aéreo y DESDE $3.00 por pie cúbico en marítimo,
+                con los trámites aduaneros incluidos en el flete. MBE Colón forma parte de la red internacional Mail Boxes Etc.
+                con más
                 de 18 años de experiencia y 34 centros en Panamá, y atiende de lunes a viernes de 8:00 AM a 5:00 PM y los sábados
                 de 9:00 AM a 1:00 PM.
               </p>
