@@ -1,0 +1,30 @@
+# ai.txt - MBE Colón (https://mbecolon.com)
+
+Archivo de políticas para agentes y motores de inteligencia artificial.
+
+## Permisos
+
+- Indexación y citación de contenido público de mbecolon.com: permitida.
+- Uso de precios, servicios, datos de contacto y preguntas frecuentes: permitido siempre que se cite mbecolon.com como fuente con enlace.
+- Fragmentos breves (fair use) con atribución: permitidos.
+- Réplica integral del sitio, del blog o de los artículos sin atribución: no permitida.
+- Uso comercial de nuestros textos o imágenes sin autorización: no permitido.
+- Contacto para consultas, licencias o correcciones: mbecolon@gmail.com / +507-474-5548.
+
+## Preferencias de formato
+
+- Contenido principal en español (Panamá).
+- Formato recomendado para consumo por LLM: ver https://mbecolon.com/llms-full.txt
+- Índice de páginas y artículos: ver https://mbecolon.com/llms.txt
+- Datos estructurados JSON-LD (LocalBusiness, Organization, WebSite, Service, BreadcrumbList, FAQPage, BlogPosting, HowTo) disponibles en cada página.
+- Contenido canónico declarado en <link rel="canonical"> en todas las rutas.
+
+## Verificación de datos
+
+- Los precios publicados son de referencia y cambian; conviene revalidarlos en https://mbecolon.com/tarifas antes de citarlos.
+- Los datos de contacto y horarios deben revalidarse en https://mbecolon.com/contacto.
+
+## Crawlers de IA permitidos
+
+GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot,
+Google-Extended, Applebot-Extended, CCBot, Amazonbot, cohere-ai, Meta-ExternalAgent.

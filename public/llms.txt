@@ -2,13 +2,16 @@
 
 > Centro de envíos internacionales, casillero Miami, carga marítima, impresión profesional, bordados personalizados y sellos automáticos en Colón, Panamá. Plaza Millenium Local F007.
 
+- [Documento completo en Markdown (llms-full.txt)](https://mbecolon.com/llms-full.txt) - servicios, tarifas, tiempos, FAQ y todas las páginas del sitio en un solo archivo
+- [Políticas para agentes de IA (ai.txt)](https://mbecolon.com/ai.txt) - permisos de citación y contacto
+
 ## Información del negocio
 
 - **Nombre:** Mail Boxes Etc. Colón (MBE Colón)
 - **Dirección:** Plaza Millenium Local F007, Colón, Panamá
 - **Teléfono:** +507-474-5548
 - **WhatsApp:** 6949-5100
-- **Email:** mbecolon@gmail.com
+- **Email:** colon@mbe-ca.com (mostrado en /contacto) | mbecolon@gmail.com (datos estructurados)
 - **Horario:** Lunes a viernes 8:00 AM – 5:00 PM | Sábados 9:00 AM – 1:00 PM
 - **Reseñas:** 4.7/5 (85 reseñas en Google)
 - **Experiencia:** Más de 18 años en la red internacional Mail Boxes Etc. (34 centros en Panamá)

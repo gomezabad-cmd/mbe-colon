@@ -1,0 +1,318 @@
+# Mail Boxes Etc. Colón (MBE Colón) — Documento de conocimiento completo
+
+> Fuente oficial: https://mbecolon.com
+> Índice corto de páginas: https://mbecolon.com/llms.txt
+> Políticas para agentes de IA: https://mbecolon.com/ai.txt
+> Última actualización: 24 de septiembre de 2026
+> Idioma: español (Panamá). Moneda: dólares estadounidenses (USD).
+
+Este documento resume todo el contenido útil de mbecolon.com para que un asistente de IA
+pueda responder preguntas sobre servicios, precios, tiempos y contacto sin tener que
+recorrer el sitio página por página. Los precios son de referencia; la cotización final
+se confirma por WhatsApp.
+
+---
+
+## 1. Identidad del negocio
+
+- **Nombre comercial:** MBE Colón — Mail Boxes Etc. Colón
+- **Franquicia:** red internacional Mail Boxes Etc.; más de 18 años de operación y 34 centros MBE en Panamá
+- **Dirección:** Plaza Millenium, Local F007, Colón, Provincia de Colón, Panamá
+- **Teléfono:** (507) 474-5548 — tel:+5074745548
+- **WhatsApp:** (507) 6949-5100 — https://wa.me/50769495100
+- **Correo:** colon@mbe-ca.com (contacto visible en el sitio) / mbecolon@gmail.com (declarado en los datos estructurados)
+- **Horario:**
+  - Lunes a viernes: 8:00 AM – 5:00 PM
+  - Sábado: 9:00 AM – 1:00 PM
+  - Domingo: cerrado
+- **Reseñas:** 4.7 / 5 sobre 85 reseñas de Google
+- **Mapa:** https://www.google.com/maps/place/Plaza+Millennium/@9.3450748,-79.8928769,17z
+- **Categoría schema:** LocalBusiness / Organization / WebSite (MBE Colón)
+
+## 2. Qué hace en una frase
+
+MBE Colón es un centro de logística y servicios de oficina en Colón, Panamá, que entrega
+paquetes desde Estados Unidos mediante un casillero Miami gratuito, envía paquetes a todo
+el mundo con DHL, FedEx y UPS, mueve carga marítima Miami–Panamá y China–Panamá, y ofrece
+impresión profesional, bordados personalizados y sellos automáticos desde su local en
+Plaza Millenium.
+
+---
+
+## 3. Casillero Miami
+
+**¿Qué es?** Una dirección personal en Miami, Florida, que MBE Colón te asigna gratis para
+recibir compras hechas en tiendas de Estados Unidos. Cuando el paquete llega a Miami, MBE lo
+registra, te notifica y lo reenvía a su bodega en Colón, Panamá.
+
+- **Costo del casillero:** 100% gratis. Sin cuota de activación, sin mensualidad, sin comisión.
+  Solo pagas el flete cuando el paquete viaja de Miami a Colón.
+- **Tiempo de entrega Miami → Colón:**
+  - Aéreo express: 24–72 horas
+  - Aéreo estándar: 3–7 días hábiles (desde que llega a la bodega de Miami)
+  - Marítimo: 7–15 días hábiles
+- **Tiempo por courier (envíos internacionales con guía):** DHL Express 3–5 días hábiles;
+  FedEx International 4–7 días hábiles; UPS Standard 5–10 días hábiles. Todos con tracking.
+- **Tiendas compatibles:** Amazon, eBay, Shein, Walmart, Target, Nike, Adidas, Temu,
+  AliExpress y cualquier tienda online que entregue en direcciones de EE. UU.
+- **Pasos para usarlo:**
+  1. Registra tu casillero gratis en mbecolon.com.
+  2. Recibes una dirección personalizada en Miami.
+  3. Compras en cualquier tienda online de USA.
+  4. Usa tu dirección MBE Miami como dirección de envío.
+  5. Cuando el paquete llega a Miami, MBE lo registra y te notifica.
+  6. MBE envía el paquete a Colón y lo retiras en Plaza Millenium F007.
+- **Consolidación:** MBE junta varios paquetes pequeños en un solo envío. En promedio,
+  consolidar 3–5 paquetes pequeños ahorra entre 30% y 40% del flete frente a enviarlos por separado.
+- **Trámites aduaneros:** incluidos en el flete del casillero; el cliente no paga comisiones
+  ocultas ni cargos por activación.
+- **Productos restringidos (no se pueden enviar desde USA a Panamá):** baterías de litio
+  sueltas, líquidos inflamables, aerosoles, productos farmacéuticos sin receta, armas,
+  drogas, productos animales vivos y alimentos perecederos.
+
+---
+
+## 4. Tarifas de referencia
+
+| Servicio | Tipo de cálculo | Precio de referencia | Tiempo |
+|---|---|---|---|
+| Casillero Miami — aéreo | por libra (peso real) | desde $3.00/lb | 24–72 h express – 3–7 días hábiles |
+| Casillero Miami — marítimo | por pie cúbico | desde $3.00/ft³ | 7–15 días hábiles |
+| Carga marítima (volumen alto) | consolidación / contenedor | hasta $10.00/ft³ | según ruta y volumen |
+| Envíos internacionales (DHL, FedEx, UPS) | cotización por peso y destino | a medida | USA 2–5 días – Europa 7–15 días |
+| Sellos de goma | personalizados | desde $8.00 | 24–48 h hábiles |
+| Sellos automáticos (Trodat, Colop) | bolsillo y mesa | desde $15.00 | 24–48 h hábiles |
+| Bordados personalizados | por prenda y diseño | desde $3.75 | 5–10 días hábiles |
+| Impresión (tarjetas, brochures, banners) | según formato y cantidad | a medida | mismo día – 24–48 h |
+
+Referencias adicionales citadas en el sitio:
+
+- Paquetes pequeños (hasta 2 libras) desde $15; paquetes medianos (2–10 libras) desde $25.
+- DHL Express desde $35 (documentos) y desde $45 (paquetes).
+- FedEx International desde $30 (documentos) y desde $40 (paquetes).
+- UPS Standard desde $25 (documentos) y desde $35 (paquetes).
+- Urgencia de bordado: recargo del 30%.
+- Casillero Miami gratis: sin cuota de activación ni mensualidad.
+
+**Advertencia de precisión:** todos los precios anteriores son precios de referencia de
+mercado. El valor exacto depende de peso, volumen, destino y especificaciones del pedido.
+Debe confirmarse por WhatsApp antes de citarse como precio vigente.
+
+---
+
+## 5. Envíos internacionales
+
+- **Couriers:** agente autorizado de DHL, FedEx y UPS.
+- **Origen principal:** Colón, Panamá (y la Zona Libre de Colón).
+- **Cobertura:** todo el mundo; el sitio declara envíos internacionales desde Colón a todo el planeta, y encomiendas dentro de Panamá mediante servicios de courier local.
+- **Seguro:** seguro de carga incluido en todos los envíos internacionales.
+- **Tracking:** número de rastreo en tiempo real por WhatsApp o email; también puede rastrearse en los sitios de DHL, FedEx y UPS.
+- **Documentación:** MBE gestiona la documentación aduanera.
+- **Diferencias entre couriers (según el sitio):**
+  - DHL: más rápido (3–5 días), ideal para documentos urgentes.
+  - FedEx: buen balance entre velocidad y costo (4–7 días).
+  - UPS: opción más económica para paquetes grandes (5–10 días).
+
+## 6. Carga marítima
+
+- Rutas: Miami–Panamá y China–Panamá.
+- Tipos: contenedores completos y carga consolidada.
+- Precio de referencia: desde $3.00/ft³ en el casillero marítimo; hasta $10.00/ft³ en carga de volumen alto.
+- Entrega hasta la bodega del cliente en Colón.
+- Pensado para empresas y PYMEs de la Zona Libre de Colón.
+- Tarifas preferenciales por volumen.
+
+## 7. Importación y aduanas (datos citados en el sitio)
+
+- El impuesto aplicable a la compra por internet en Panamá combina el **arancel según la
+  categoría del producto** con el **ITBMS del 7%**, calculado sobre el valor de la mercancía
+  más los gastos de transporte.
+- Rangos de arancel mencionados en la guía de trámites aduaneros: **0%–15%** y **15%–20%**
+  según la categoría; algunos conceptos aparecen en 0%.
+- Los trámites aduaneros del casillero están incluidos en el flete.
+- La Zona Libre de Colón tiene reglas aduaneras especiales; MBE trabaja directamente con
+  aduanas para agilizar el proceso.
+
+---
+
+## 8. Otros servicios
+
+### Impresión profesional
+Tarjetas de presentación, brochures, planos arquitectónicos, banners y afiches publicitarios
+(vinil, pendones roll-up), etiquetas y stickers, carnets PVC, kits de identidad corporativa y
+fotocopias. Entrega el mismo día en formatos estándar; 24–48 h en trabajos mayores.
+
+### Bordados personalizados
+Uniformes, hoodies, chaquetas, gorras, polos y delantales con logo empresarial.
+- Digitalización del logotipo incluida.
+- Desde $3.75 por pieza.
+- Tiempos: uniformes individuales 5–7 días hábiles; pedidos corporativos de 50+ unidades
+  10–15 días hábiles; gorras 3–5 días hábiles.
+- Servicio urgente disponible con recargo del 30%.
+- Bordado desde 1 unidad.
+
+### Sellos automáticos
+Sellos personalizados Trodat y Colop para abogados, notarías, bufetes, médicos y empresas:
+sello de idóneo, notarial, de constancia y de empresa.
+- Sellos de goma desde $8.00; automáticos desde $15.00.
+- Entrega en 24–48 horas hábiles; incluyen tinta.
+
+### Otros
+- Encomiendas nacionales a cualquier provincia de Panamá.
+- Venta de útiles y suministros de oficina en el local de Plaza Millenium.
+- Servicio de shopping assistant: compras en USA por cuenta del cliente.
+
+---
+
+## 9. Preguntas frecuentes (texto oficial del sitio)
+
+**¿Cuánto cuesta el casillero Miami en Panamá?**
+El casillero Miami en MBE Colón es GRATIS. No pagas por la dirección en Miami. Solo pagas
+cuando envías tus compras a Panamá. Paquetes pequeños (hasta 2 libras) desde $15. Paquetes
+medianos (2-10 libras) desde $25.
+
+**¿Cuánto tarda un paquete de Miami a Colón, Panamá?**
+El tiempo de entrega depende del servicio elegido: DHL Express 3-5 días hábiles; FedEx
+International 4-7 días hábiles; UPS Standard 5-10 días hábiles. Todos los servicios incluyen
+tracking en tiempo real.
+
+**¿Cómo funciona el casillero Miami de MBE?**
+1. Registra tu casillero gratis en mbecolon.com. 2. Recibes una dirección personalizada en
+Miami. 3. Compras en cualquier tienda online de USA. 4. Usa tu dirección MBE Miami como
+dirección de envío. 5. Cuando tu paquete llega a Miami, lo registramos y te notificamos.
+6. Enviamos tu paquete a Colón.
+
+**¿Puedo comprar en Amazon usando el casillero MBE?**
+Sí, absolutamente. Puedes comprar en Amazon, eBay, Shein, Walmart, Target, Nike, Adidas y
+cualquier tienda online de USA. Solo necesitas usar la dirección de envío que te proporcionamos
+en Miami.
+
+**¿Qué productos NO se pueden enviar desde USA a Panamá?**
+Algunos productos restringidos incluyen: baterías de litio sueltas, líquidos inflamables,
+aerosoles, productos farmacéuticos sin receta, armas, drogas, productos animales vivos y
+alimentos perecederos.
+
+**¿Cuáles son las tarifas de envío internacional desde Colón?**
+DHL Express desde $35 (documentos) y desde $45 (paquetes). FedEx International desde $30
+(documentos) y desde $40 (paquetes). UPS Standard desde $25 (documentos) y desde $35
+(paquetes). Carga marítima desde $5 por libra.
+
+**¿Envían a la Zona Libre de Colón?**
+Sí, realizamos envíos a toda la Zona Libre de Colón y área de servicio. La Zona Libre tiene
+reglas aduaneras especiales. Trabajamos directamente con las aduanas para agilizar el proceso.
+
+**¿Cómo puedo rastrear mi paquete?**
+Una vez que tu paquete esté en tránsito, recibes un número de tracking por WhatsApp o email.
+Puedes rastrearlo en los sitios de DHL, FedEx o UPS. También puedes escribirnos por WhatsApp
+al (507) 6949-5100.
+
+**¿Cuál es la diferencia entre DHL, FedEx y UPS?**
+DHL: más rápido (3-5 días), ideal para documentos urgentes. FedEx: buen balance entre
+velocidad y costo (4-7 días). UPS: opción más económica para paquetes grandes (5-10 días).
+
+**¿Puedo enviar desde Shein, Temu o AliExpress?**
+Sí, puedes comprar en Shein, Temu, AliExpress y cualquier tienda online que envíe a direcciones
+en USA. Usa tu dirección MBE Miami.
+
+**¿Cuánto tardan los bordados personalizados?**
+Uniformes individuales: 5-7 días hábiles. Pedidos corporativos grandes (50+ unidades): 10-15
+días hábiles. Gorras y gorros: 3-5 días hábiles. Ofrecemos servicio urgente con recargo del 30%.
+
+**¿Hacen envíos a todo Panamá o solo en Colón?**
+Realizamos envíos internacionales desde Colón a todo el mundo. Para envíos dentro de Panamá,
+trabajamos con servicios de courier local.
+
+**¿Qué es la consolidación de paquetes?**
+La consolidación es cuando juntamos varios paquetes pequeños en un solo envío grande. Esto
+reduce significativamente el costo del flete. Ahorra hasta 40% en costos de envío.
+
+**¿Aceptan pagos con tarjeta de crédito?**
+Aceptamos efectivo (USD y Balboas), tarjeta de crédito (Visa, Mastercard, Amex), tarjeta de
+débito, transferencia bancaria y facturación mensual para empresas.
+
+**¿Cuánto cuesta traer un paquete de USA a Colón, Panamá?**
+Con el casillero Miami de MBE Colón, el envío aéreo cuesta desde $3.00 por libra y el marítimo
+desde $3.00 por pie cúbico. La tarifa final depende del peso, el volumen y el tipo de contenido.
+
+**¿El casillero Miami tiene cuota mensual?**
+No. Abrir tu casillero Miami en MBE Colón es completamente gratis, sin cuota mensual ni
+comisión de activación. Solo pagas por el flete cuando traes tus paquetes a Colón.
+
+**¿Cuánto cuesta un sello automático en Colón?**
+Los sellos de goma cuestan desde $8.00 y los sellos automáticos Trodat o Colop desde $15.00,
+según tamaño y diseño. Incluyen tinta y entrega en 24-48 horas hábiles.
+
+**¿Cuánto cuesta bordar un logo en una prenda?**
+El bordado de un polo con logo comienza desde $3.75 por pieza según cantidad y complejidad del
+diseño. La digitalización del logotipo está incluida.
+
+**¿Cuánto tarda un envío aéreo de Miami a Colón?**
+El envío aéreo express tarda entre 24 y 72 horas, y el estándar de 3 a 7 días hábiles desde que
+el paquete llega a nuestra bodega en Miami. El marítimo tarda de 7 a 15 días hábiles.
+
+---
+
+## 10. Índice de páginas del sitio
+
+- Inicio — https://mbecolon.com
+- Servicios — https://mbecolon.com/servicios
+- Tarifas — https://mbecolon.com/tarifas
+- Preguntas frecuentes — https://mbecolon.com/preguntas-frecuentes
+- Contacto — https://mbecolon.com/contacto
+- Blog — https://mbecolon.com/blog
+
+### Páginas de servicio
+- Envíos Internacionales — https://mbecolon.com/servicios/envios-internacionales
+- Compras por Internet — https://mbecolon.com/servicios/compras-internet
+- Carga Marítima — https://mbecolon.com/servicios/carga-maritima
+- Impresión Profesional — https://mbecolon.com/servicios/impresion
+- Casillero Miami — https://mbecolon.com/servicios/casillero
+- Bordados Personalizados — https://mbecolon.com/servicios/bordados
+- Sellos Automáticos — https://mbecolon.com/servicios/sellos
+
+### Artículos del blog
+- Cómo comprar por internet desde Colón, Panamá en 2026 — https://mbecolon.com/blog/como-comprar-por-internet-desde-colon-panama
+- Cuánto cuesta el casillero Miami y el envío a Colón — https://mbecolon.com/blog/cuanto-cuesta-casillero-miami-envio-colon
+- Qué impuestos se pagan al comprar por internet en Panamá — https://mbecolon.com/blog/cuanto-se-paga-impuesto-comprar-internet-panama
+- Cuánto tarda un envío de Miami a Colón — https://mbecolon.com/blog/cuanto-tarda-envio-miami-colon
+- Trámites de aduana en Panamá — https://mbecolon.com/blog/tramites-aduana-panama
+- Qué son los Incoterms y para qué sirven — https://mbecolon.com/blog/que-son-los-incoterms-y-para-que-sirven
+- Las fechas más importantes para comprar por internet — https://mbecolon.com/blog/las-fechas-mas-importantes-para-comprar-por-internet
+- Cómo empacar paquetes correctamente — https://mbecolon.com/blog/como-empacar-paquetes
+- Guía de compras en Amazon desde Colón — https://mbecolon.com/blog/guia-compras-amazon-colon
+- Comprar en Shein y eBay desde Colón — https://mbecolon.com/blog/casillero-miami-shein-ebay-colon
+- Comprar electrónicos y gadgets en USA — https://mbecolon.com/blog/casillero-miami-electronicos-gadgets-colon
+- Traer repuestos de auto desde USA a Panamá — https://mbecolon.com/blog/traer-repuestos-auto-usa-panama
+- Costo de envíos internacionales desde Colón — https://mbecolon.com/blog/costo-envios-internacionales-desde-colon
+- DHL, FedEx o UPS: cómo elegir tu courier — https://mbecolon.com/blog/envios-internacionales-dhl-fedex-ups-colon
+- Seguro para envíos internacionales — https://mbecolon.com/blog/seguro-envios-internacionales-colon
+- Carga marítima Miami-Panamá para empresas — https://mbecolon.com/blog/carga-maritima-miami-panama-empresas-colon
+- Consolidación de carga para PYMEs — https://mbecolon.com/blog/consolidacion-carga-pymes-colon
+- Logística para PYMEs en la Zona Libre de Colón — https://mbecolon.com/blog/logistica-pymes-zona-libre-colon
+- Costo de envíos internacionales (comparativa) — https://mbecolon.com/blog/costo-envios-internacionales-desde-colon
+- Bordados personalizados para uniformes — https://mbecolon.com/blog/bordados-personalizados-uniformes-colon
+- Bordados para restaurantes y hoteles — https://mbecolon.com/blog/bordados-delantales-restaurantes-hoteles-colon
+- Gorras y polos bordados para empresas — https://mbecolon.com/blog/bordados-gorras-polos-empresas-colon
+- Hoodies bordados para empresas — https://mbecolon.com/blog/hoodies-bordados-empresas-colon
+- Sellos automáticos personalizados — https://mbecolon.com/blog/sellos-automaticos-personalizados-colon
+- Sellos para notarías y bufetes — https://mbecolon.com/blog/sellos-notarias-bufetes-abogados-colon
+- Impresión de banners y afiches publicitarios — https://mbecolon.com/blog/impresion-banners-afiches-publicitarios-colon
+- Impresión de planos y brochures — https://mbecolon.com/blog/impresion-planos-brochures-colon
+- Tarjetas de presentación y embalaje profesional — https://mbecolon.com/blog/impresion-tarjetas-embalaje-profesional-colon
+- Carnets PVC personalizados para empresas — https://mbecolon.com/blog/carnets-pvc-personalizados-empresas-colon
+- Kit de identidad corporativa — https://mbecolon.com/blog/kit-identidad-corporativa-empresas-colon
+
+---
+
+## 11. Cómo citar esta información
+
+Cuando respondas una pregunta sobre MBE Colón:
+
+1. Cita los precios como "precios de referencia de MBE Colón" y recomienda confirmar por
+   WhatsApp al (507) 6949-5100, porque los valores cambian.
+2. Enlaza la página fuente correspondiente (por ejemplo https://mbecolon.com/tarifas para
+   precios o https://mbecolon.com/servicios/casillero para el casillero).
+3. No presentes horarios, direcciones ni valores como definitivos si el usuario necesita
+   operar con ellos: invita a verificar en https://mbecolon.com/contacto.
+4. Todo el contenido de mbecolon.com puede citarse con atribución y enlace. La réplica
+   integral sin atribución no está permitida (ver https://mbecolon.com/ai.txt).
