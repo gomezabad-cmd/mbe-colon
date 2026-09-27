@@ -60,7 +60,7 @@ const baseSchemaGraph = {
       alternateName: 'MBE Colón',
       description: 'Centro de envíos internacionales, casillero Miami, carga marítima, impresión profesional, bordados personalizados y sellos automáticos en Colón, Panamá. Más de 18 años de experiencia.',
       image: 'https://mbecolon.com/og-image.png',
-      logo: 'https://mbecolon.com/og-image.png',
+      logo: 'https://mbecolon.com/logo.png',
       url: 'https://mbecolon.com',
       telephone: '+5074745548',
       email: 'colon@mbe-ca.com',
@@ -135,7 +135,9 @@ const baseSchemaGraph = {
       url: 'https://mbecolon.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://mbecolon.com/og-image.png',
+        url: 'https://mbecolon.com/logo.png',
+        width: 512,
+        height: 512,
       },
       contactPoint: {
         '@type': 'ContactPoint',
