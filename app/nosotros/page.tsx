@@ -67,6 +67,7 @@ const aboutSchema = {
           jobTitle: 'Franquiciado de MBE Colón',
           url: 'https://mbecolon.com/nosotros',
           image: 'https://mbecolon.com/images/carlos-gomez.jpg',
+          sameAs: ['https://www.linkedin.com/in/carlos-gomez-ab217930/'],
         },
       },
     },
@@ -193,6 +194,16 @@ export default function NosotrosPage() {
               >
                 Escríbele por WhatsApp
               </a>
+              <div className="mt-3">
+                <a
+                  href="https://www.linkedin.com/in/carlos-gomez-ab217930/"
+                  target="_blank"
+                  rel="noopener noreferrer author"
+                  className="text-sm font-semibold text-mbe-dark hover:text-mbe-red transition-colors"
+                >
+                  Ver perfil de LinkedIn
+                </a>
+              </div>
             </div>
 
             <div className="md:col-span-2 space-y-5 text-mbe-gray leading-relaxed text-lg">

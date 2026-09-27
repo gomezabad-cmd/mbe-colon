@@ -34,7 +34,7 @@ const articleSchema = {
     name: 'Carlos Gómez',
     jobTitle: 'Franquiciado de MBE Colón',
     url: 'https://mbecolon.com/nosotros',
-    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
+    sameAs: ['https://www.linkedin.com/in/carlos-gomez-ab217930/', 'https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },

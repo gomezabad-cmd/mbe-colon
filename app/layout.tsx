@@ -163,6 +163,7 @@ const baseSchemaGraph = {
         'Impresión, bordados y sellos personalizados',
       ],
       sameAs: [
+        'https://www.linkedin.com/in/carlos-gomez-ab217930/',
         'https://www.instagram.com/mbecolon',
         'https://www.tiktok.com/@mbecolon',
       ],

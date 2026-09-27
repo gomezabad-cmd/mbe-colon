@@ -35,7 +35,7 @@ const articleSchema = {
     jobTitle: 'Franquiciado de MBE Colón',
     url: 'https://mbecolon.com/nosotros',
     worksFor: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón' },
-    sameAs: ['https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
+    sameAs: ['https://www.linkedin.com/in/carlos-gomez-ab217930/', 'https://www.instagram.com/mbecolon', 'https://www.tiktok.com/@mbecolon'],
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/chaquetas-bordadas-empresas-seguridad-colon`,
