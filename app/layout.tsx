@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import PushNotificationOptIn from '@/components/PushNotificationOptIn'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -216,7 +215,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body>
-        <GoogleAnalytics gaId="G-6T4HQRJ1J0" />
+        <Script id="ga-init" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-6T4HQRJ1J0');` }} />
+        <Script id="ga" strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-6T4HQRJ1J0" />
 
         {META_PIXEL_ID && (
           <>
