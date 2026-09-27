@@ -13,6 +13,11 @@ const SERVICE_SLUGS = [
   'casillero',
   'bordados',
   'sellos',
+  // landing pages transaccionales
+  'envios-colombia',
+  'casillero-empresas',
+  'carga-consolidada-zona-libre',
+  'cotizar-envio-dhl',
 ]
 
 function getBlogSlugs(): string[] {

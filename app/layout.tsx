@@ -10,7 +10,10 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 export const metadata: Metadata = {
   verification: {
     google: 'U78gqD99Re9-TqbAf378UvKVhPLuGKyIfNvsA9urxgM',
-    other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
+    other: {
+      'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu',
+      'msvalidate.01': process.env.BING_VERIFICATION_TOKEN ?? '',
+    },
   },
   metadataBase: new URL('https://mbecolon.com'),
   alternates: {
@@ -157,8 +160,8 @@ const schemaGraph = {
       },
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '87',
+        ratingValue: rating.ratingValue,
+        reviewCount: rating.reviewCount,
         bestRating: '5',
         worstRating: '1',
       },
@@ -263,9 +266,23 @@ const breadcrumbSchema = {
   ]
 }
 
+async function getAggregateRating() {
+  try {
+    const base = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'https://mbecolon.com'
+    const res = await fetch(`${base}/api/reviews`, { next: { revalidate: 86400 } })
+    if (!res.ok) throw new Error('reviews fetch failed')
+    return await res.json() as { ratingValue: string; reviewCount: string }
+  } catch {
+    return { ratingValue: '4.9', reviewCount: '87' }
+  }
+}
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const headersList = await headers()
   const nonce = headersList.get('x-nonce') ?? undefined
+  const rating = await getAggregateRating()
 
   return (
     <html lang="es">
