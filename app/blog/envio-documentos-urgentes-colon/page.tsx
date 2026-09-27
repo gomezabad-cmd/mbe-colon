@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg', width: 1200, height: 630, alt: 'Cómo Enviar Documentos Urgentes desde Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/envio-documentos-urgentes-colon`,
-  image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80',
+  image: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg',
 }
 
 const breadcrumbSchema = {

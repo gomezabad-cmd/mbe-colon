@@ -29,7 +29,7 @@ export const metadata = {
 
 const BASE_URL = 'https://mbecolon.com'
 const SLUG = 'cuanto-cuesta-casillero-miami-envio-colon'
-const IMG = 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80'
+const IMG = 'https://mbecolon.com/images/blog/photo-1607082348824-0a96f2a4b9da.jpg'
 
 const articleSchema = {
   '@context': 'https://schema.org',

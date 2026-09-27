@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Bordados Personalizados en Uniformes y Gorras para Empresas' },
+      { url: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg', width: 1200, height: 630, alt: 'Bordados Personalizados en Uniformes y Gorras para Empresas' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/bordados-personalizados-uniformes-colon`,
-  image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80',
+  image: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg',
 }
 
 const breadcrumbSchema = {

@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Hoodies Bordados con Logo para Empresas en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg', width: 1200, height: 630, alt: 'Hoodies Bordados con Logo para Empresas en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/hoodies-bordados-empresas-colon`,
-  image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&h=630&fit=crop&q=80',
+  image: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg',
 }
 
 const breadcrumbSchema = {

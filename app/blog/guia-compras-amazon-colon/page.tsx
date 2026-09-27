@@ -16,7 +16,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Guía completa para comprar en Amazon y recibir en Colón' },
+      { url: 'https://mbecolon.com/images/blog/photo-1607082348824-0a96f2a4b9da.jpg', width: 1200, height: 630, alt: 'Guía completa para comprar en Amazon y recibir en Colón' },
     ],
   },
 }
@@ -40,7 +40,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/guia-compras-amazon-colon`,
-  image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop',
+  image: 'https://mbecolon.com/images/blog/photo-1607082348824-0a96f2a4b9da.jpg',
 }
 
 const breadcrumbSchema = {

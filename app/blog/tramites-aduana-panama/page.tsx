@@ -16,7 +16,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Trámites de aduana en Panamá para compras online y casillero' },
+      { url: 'https://mbecolon.com/images/blog/photo-1578575437130-527eed3abbec.jpg', width: 1200, height: 630, alt: 'Trámites de aduana en Panamá para compras online y casillero' },
     ],
   },
 }
@@ -40,7 +40,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/tramites-aduana-panama`,
-  image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop',
+  image: 'https://mbecolon.com/images/blog/photo-1578575437130-527eed3abbec.jpg',
 }
 
 const breadcrumbSchema = {

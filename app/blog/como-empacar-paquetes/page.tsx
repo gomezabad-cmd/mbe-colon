@@ -16,7 +16,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: '¿Cómo empacar correctamente tu paquete para envíos internacionales?' },
+      { url: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg', width: 1200, height: 630, alt: '¿Cómo empacar correctamente tu paquete para envíos internacionales?' },
     ],
   },
 }
@@ -40,7 +40,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/como-empacar-paquetes`,
-  image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop',
+  image: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg',
 }
 
 const breadcrumbSchema = {

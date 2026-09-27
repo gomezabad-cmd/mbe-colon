@@ -8,7 +8,7 @@ const POSTS = [
     desc: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad y entrega rápida en Plaza Millenium F007.',
     badge: 'bg-mbe-blue',
     href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
-    img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&h=280&fit=crop&q=80',
+    img: '/images/blog/photo-1516762689617-e1cffcef479d.jpg',
     imgAlt: 'Chaqueta bordada con logo para empresa de seguridad en Colón, Panamá',
   },
   {
@@ -17,7 +17,7 @@ const POSTS = [
     desc: 'Envíos internacionales Colón para documentos urgentes: cómo elegir entre DHL, FedEx y UPS y evitar retrasos en aduana.',
     badge: 'bg-mbe-red',
     href: '/blog/envio-documentos-urgentes-colon',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=280&fit=crop&q=80',
+    img: '/images/blog/photo-1553413077-190dd305871c.jpg',
     imgAlt: 'Envío de documentos urgentes internacionales desde Colón, Panamá',
   },
   {
@@ -26,7 +26,7 @@ const POSTS = [
     desc: 'Impresión Colón de etiquetas y stickers personalizados para productos, envíos y packaging. Entrega rápida en Plaza Millenium F007.',
     badge: 'bg-mbe-blue',
     href: '/blog/etiquetas-stickers-personalizados-colon',
-    img: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=600&h=280&fit=crop&q=80',
+    img: '/images/blog/photo-1586769852836-bc069f19e1b6.jpg',
     imgAlt: 'Impresión de etiquetas y stickers personalizados para negocios en Colón, Panamá',
   },
 ]

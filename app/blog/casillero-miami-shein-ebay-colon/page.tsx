@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami' },
+      { url: 'https://mbecolon.com/images/blog/photo-1607082348824-0a96f2a4b9da.jpg', width: 1200, height: 630, alt: 'Cómo comprar en Shein y eBay desde Colón con tu casillero Miami' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/casillero-miami-shein-ebay-colon`,
-  image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop&q=80',
+  image: 'https://mbecolon.com/images/blog/photo-1607082348824-0a96f2a4b9da.jpg',
 }
 
 const breadcrumbSchema = {

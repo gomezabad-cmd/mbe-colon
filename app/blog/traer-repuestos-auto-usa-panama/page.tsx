@@ -14,7 +14,7 @@ export const metadata = {
     url: 'https://mbecolon.com/blog/traer-repuestos-auto-usa-panama',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=630&fit=crop', width: 1200, height: 630, alt: 'Cómo traer repuestos de auto desde USA a Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1486262715619-67b85e0b08d3.jpg', width: 1200, height: 630, alt: 'Cómo traer repuestos de auto desde USA a Panamá' },
     ],
     siteName: 'MBE Colón',
     locale: 'es_PA',
@@ -40,7 +40,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/traer-repuestos-auto-usa-panama`,
-  image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=630&fit=crop',
+  image: 'https://mbecolon.com/images/blog/photo-1486262715619-67b85e0b08d3.jpg',
 }
 
 const breadcrumbSchema = {
@@ -90,9 +90,12 @@ export default function BlogRepuestosPage() {
 
       {/* Hero Image */}
       <div className="rounded-2xl overflow-hidden mb-10 shadow-lg">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=630&fit=crop"
+        <Image
+          src="/images/blog/photo-1486262715619-67b85e0b08d3.jpg"
+          width={1200}
+          height={630}
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
           alt="Mecánico instalando repuestos de auto importados desde USA a Panamá"
           className="w-full h-auto object-cover"
         />

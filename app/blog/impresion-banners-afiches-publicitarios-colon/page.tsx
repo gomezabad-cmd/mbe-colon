@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630, alt: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg', width: 1200, height: 630, alt: 'Impresión de Banners y Afiches Publicitarios en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/impresion-banners-afiches-publicitarios-colon`,
-  image: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=1200&h=630&fit=crop&q=80',
+  image: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg',
 }
 
 const breadcrumbSchema = {

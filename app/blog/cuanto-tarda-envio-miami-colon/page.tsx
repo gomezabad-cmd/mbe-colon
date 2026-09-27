@@ -29,7 +29,7 @@ export const metadata = {
 
 const BASE_URL = 'https://mbecolon.com'
 const SLUG = 'cuanto-tarda-envio-miami-colon'
-const IMG = 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=630&fit=crop&q=80'
+const IMG = 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg'
 
 const articleSchema = {
   '@context': 'https://schema.org',

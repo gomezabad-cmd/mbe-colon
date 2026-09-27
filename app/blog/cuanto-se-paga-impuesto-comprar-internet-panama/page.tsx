@@ -29,7 +29,7 @@ export const metadata = {
 
 const BASE_URL = 'https://mbecolon.com'
 const SLUG = 'cuanto-se-paga-impuesto-comprar-internet-panama'
-const IMG = 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop&q=80'
+const IMG = 'https://mbecolon.com/images/blog/photo-1554224155-6726b3ff858f.jpg'
 
 const articleSchema = {
   '@context': 'https://schema.org',
