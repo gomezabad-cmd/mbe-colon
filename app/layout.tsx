@@ -102,10 +102,17 @@ const baseSchemaGraph = {
       currenciesAccepted: 'USD, PAB',
       paymentAccepted: 'Cash, Credit Card, Debit Card, Bank Transfer',
       sameAs: [
+        'https://www.linkedin.com/in/mail-boxes-etc-colon-ba7754411/',
         'https://www.mbe-ca.com',
         'https://www.instagram.com/mbecolon',
         'https://www.tiktok.com/@mbecolon',
       ],
+      parentOrganization: {
+        '@type': 'Organization',
+        name: 'Mail Boxes Etc. Centroamérica',
+        url: 'https://www.mbe-ca.com',
+        sameAs: ['https://www.linkedin.com/company/mail-boxes-etc-centroam%C3%A9rica'],
+      },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Servicios MBE Colón',
@@ -138,6 +145,7 @@ const baseSchemaGraph = {
       },
       founder: { '@id': 'https://mbecolon.com/#carlos-gomez' },
       sameAs: [
+        'https://www.linkedin.com/in/mail-boxes-etc-colon-ba7754411/',
         'https://www.mbe-ca.com',
         'https://www.instagram.com/mbecolon',
         'https://www.tiktok.com/@mbecolon',

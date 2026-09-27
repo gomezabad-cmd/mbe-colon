@@ -119,6 +119,20 @@ export default function Footer() {
                 </svg>
                 <span className="text-gray-400 text-xs hover:text-white transition-colors">@mbecolon</span>
               </a>
+              <a
+                href="https://www.linkedin.com/in/mail-boxes-etc-colon-ba7754411/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn MBE Colón"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                {/* LinkedIn logo oficial */}
+                <svg viewBox="0 0 24 24" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="6" fill="#0A66C2"/>
+                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.02h4.52V24H.24V8.02zm7.98 0h4.33v2.18h.06c.6-1.16 2.08-2.38 4.28-2.38 4.58 0 5.42 3.04 5.42 6.99V24h-4.52v-7.28c0-1.74-.03-3.97-2.4-3.97-2.4 0-2.76 1.89-2.76 3.84V24H8.22V8.02z" fill="#fff"/>
+                </svg>
+                <span className="text-gray-400 text-xs hover:text-white transition-colors">MBE Colón</span>
+              </a>
             </li>
             <li>
               <a href={CONTACT.phoneHref} className="flex items-center gap-2 hover:text-white transition-colors">

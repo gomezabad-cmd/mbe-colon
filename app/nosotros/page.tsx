@@ -42,6 +42,7 @@ const aboutSchema = {
         alternateName: 'MBE Colón',
         url: 'https://mbecolon.com',
         sameAs: [
+          'https://www.linkedin.com/in/mail-boxes-etc-colon-ba7754411/',
           'https://www.mbe-ca.com',
           'https://www.instagram.com/mbecolon',
           'https://www.tiktok.com/@mbecolon',
