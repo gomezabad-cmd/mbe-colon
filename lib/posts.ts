@@ -12,6 +12,17 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
+    categoria: 'Sellos',
+    badge: 'bg-mbe-red',
+    titulo: 'Sellos Fechadores y de Recibido para Empresas en Colón, Panamá',
+    desc: 'Sellos automáticos Colón: fechadores, de recibido y pagado con tu logo para oficinas y Zona Libre. Entrega 24-48h.',
+    href: '/blog/sellos-fechadores-recibido-empresas-colon',
+    img: '/images/blog/photo-1603057190473-f3b6422b6320.jpg',
+    imgAlt: 'Sello de goma de oficina para recibido y control de documentos en Colón, Panamá',
+    datePublished: '2026-09-30',
+    dateModified: '2026-09-30',
+  },
+  {
     categoria: 'Bordados',
     badge: 'bg-mbe-blue',
     titulo: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá',
