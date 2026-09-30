@@ -17,8 +17,8 @@ const POSTS = [
     desc: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad y entrega rápida en Plaza Millenium F007.',
     badge: 'bg-mbe-blue',
     href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
-    img: '/images/blog/photo-1516762689617-e1cffcef479d.jpg',
-    imgAlt: 'Chaqueta bordada con logo para empresa de seguridad en Colón, Panamá',
+    img: '/images/blog/photo-1772351721250-58367a2aecba.jpg',
+    imgAlt: 'Máquina bordando logo en uniforme de seguridad en Colón, Panamá',
   },
   {
     categoria: 'Envíos',

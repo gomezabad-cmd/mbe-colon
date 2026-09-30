@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg', width: 1200, height: 630, alt: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón' },
+      { url: 'https://mbecolon.com/images/blog/photo-1693031630369-bd429a57f115.jpg', width: 1200, height: 630, alt: 'Impresión de Tarjetas de Presentación y Embalaje Profesional en Colón' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/impresion-tarjetas-embalaje-profesional-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1693031630369-bd429a57f115.jpg',
 }
 
 const breadcrumbSchema = {

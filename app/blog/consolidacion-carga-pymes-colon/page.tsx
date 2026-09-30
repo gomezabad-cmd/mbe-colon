@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg', width: 1200, height: 630, alt: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación' },
+      { url: 'https://mbecolon.com/images/blog/photo-1494412574643-ff11b0a5c1c3.jpg', width: 1200, height: 630, alt: 'Consolidación de carga para PYMEs en Colón: reduce tus costos de importación' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/consolidacion-carga-pymes-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1494412574643-ff11b0a5c1c3.jpg',
 }
 
 const breadcrumbSchema = {

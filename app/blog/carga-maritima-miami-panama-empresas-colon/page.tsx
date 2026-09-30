@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg', width: 1200, height: 630, alt: 'Carga Marítima Miami-Panamá para Empresas en Colón' },
+      { url: 'https://mbecolon.com/images/blog/photo-1578575437130-527eed3abbec.jpg', width: 1200, height: 630, alt: 'Carga Marítima Miami-Panamá para Empresas en Colón' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/carga-maritima-miami-panama-empresas-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1578575437130-527eed3abbec.jpg',
 }
 
 const breadcrumbSchema = {

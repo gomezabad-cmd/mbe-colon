@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1612178991541-b48cc8e92a4d.jpg', width: 1200, height: 630, alt: 'Carnets PVC personalizados para empresas en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1769029269011-b32f787c288c.jpg', width: 1200, height: 630, alt: 'Carnets PVC personalizados para empresas en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/carnets-pvc-personalizados-empresas-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1612178991541-b48cc8e92a4d.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1769029269011-b32f787c288c.jpg',
 }
 
 const breadcrumbSchema = {

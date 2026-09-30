@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg', width: 1200, height: 630, alt: 'Logística para PYMEs y empresas de la Zona Libre de Colón' },
+      { url: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg', width: 1200, height: 630, alt: 'Logística para PYMEs y empresas de la Zona Libre de Colón' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/logistica-pymes-zona-libre-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1566492031773-4f4e44671857.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1553413077-190dd305871c.jpg',
 }
 
 const breadcrumbSchema = {

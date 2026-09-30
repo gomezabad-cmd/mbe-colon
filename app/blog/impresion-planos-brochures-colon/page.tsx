@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg', width: 1200, height: 630, alt: 'Impresión de planos, brochures y banners en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1770017863955-56a1501a3c93.jpg', width: 1200, height: 630, alt: 'Impresión de planos, brochures y banners en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/impresion-planos-brochures-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1770017863955-56a1501a3c93.jpg',
 }
 
 const breadcrumbSchema = {

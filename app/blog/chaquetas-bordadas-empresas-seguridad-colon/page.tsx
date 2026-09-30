@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg', width: 1200, height: 630, alt: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1772351721250-58367a2aecba.jpg', width: 1200, height: 630, alt: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/chaquetas-bordadas-empresas-seguridad-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1516762689617-e1cffcef479d.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1772351721250-58367a2aecba.jpg',
 }
 
 const breadcrumbSchema = {

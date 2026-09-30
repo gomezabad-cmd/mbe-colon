@@ -15,7 +15,7 @@ export const metadata = {
     locale: 'es_PA',
     type: 'article',
     images: [
-      { url: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg', width: 1200, height: 630, alt: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá' },
+      { url: 'https://mbecolon.com/images/blog/photo-1773904215704-139e9ff8c894.jpg', width: 1200, height: 630, alt: 'Impresión de Etiquetas y Stickers Personalizados en Colón, Panamá' },
     ],
   },
 }
@@ -39,7 +39,7 @@ const articleSchema = {
   },
   publisher: { '@type': 'Organization', name: 'Mail Boxes Etc. Colón', url: BASE_URL },
   url: `${BASE_URL}/blog/etiquetas-stickers-personalizados-colon`,
-  image: 'https://mbecolon.com/images/blog/photo-1586769852836-bc069f19e1b6.jpg',
+  image: 'https://mbecolon.com/images/blog/photo-1773904215704-139e9ff8c894.jpg',
 }
 
 const breadcrumbSchema = {
