@@ -71,7 +71,7 @@ const baseSchemaGraph = {
         postalCode: '0301',
         addressCountry: 'PA',
       },
-      hasMap: 'https://www.google.com/maps/place/Plaza+Millennium/@9.3450748,-79.8928769,17z',
+      hasMap: 'https://www.google.com/maps?cid=6067478815975652285',
       geo: {
         '@type': 'GeoCoordinates',
         latitude: 9.3450748,
