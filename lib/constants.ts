@@ -14,7 +14,7 @@ export const CONTACT = {
     sunday: 'Domingo: Cerrado',
   },
   mapsEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=-79.9028769%2C9.3350748%2C-79.8828769%2C9.3550748&layer=mapnik&marker=9.3450748%2C-79.8928769',
-  mapsLink: 'https://www.google.com/maps/place/Plaza+Millennium/@9.3450748,-79.8928769,17z/data=!3m1!4b1!4m6!3m5!1s0x8fab6da330fc828b:0x2a0506e0dd55d71a!8m2!3d9.3450748!4d-79.8928769',
+  mapsLink: 'https://www.google.com/maps?cid=6067478815975652285',
 }
 
 export const SERVICES = [
