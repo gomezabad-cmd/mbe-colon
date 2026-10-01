@@ -166,13 +166,18 @@
     return 2 * R * Math.asin(Math.sqrt(s));
   }
 
-  function matchCity(lat, lng) {
+  function matchCity(lat, lng, country) {
     if (!PROMOS) return null;
     var best = null, bestDist = Infinity;
+    var nearest = null, nearestDist = Infinity;
     PROMOS.cities.forEach(function (c) {
       var d = haversineKm(lat, lng, c.lat, c.lng);
       if (d <= c.radius_km && d < bestDist) { best = c; bestDist = d; }
+      if (d < nearestDist) { nearest = c; nearestDist = d; }
     });
+    // Todo el territorio panameño queda cubierto: si no cae en un radio,
+    // usar la provincia más cercana (solo si la IP está en Panamá)
+    if (!best && country === "PA") best = nearest;
     return best;
   }
 
@@ -192,7 +197,7 @@
       if (byId) return { city: byId, source: "selector", detected: detected };
     }
     if (detected && typeof detected.lat === "number") {
-      var m = matchCity(detected.lat, detected.lng);
+      var m = matchCity(detected.lat, detected.lng, detected.country);
       if (m) return { city: m, source: "ip", detected: detected };
       return { city: null, source: "ip", detected: detected };
     }
@@ -211,19 +216,19 @@
   }
 
   function applyResolution(res) {
+    var def = PROMOS.default;
     if (res.city) {
       currentPromo = { city: res.city, promo: res.city.promo, source: res.source };
       fillModal(res.city.name, res.city.promo);
       $("promoPillText").textContent = "🎁 Ver promo " + res.city.name;
     } else {
-      var def = PROMOS.default;
       currentPromo = { city: null, promo: def.promo, source: "default" };
-      fillModal("online", def.promo);
+      fillModal(def.name || "online", def.promo);
       $("promoPillText").textContent = "🎁 Ver mi promo";
     }
     geoTrack("geo_resolved", {
       city_id: currentPromo.city ? currentPromo.city.id : "default",
-      city_name: currentPromo.city ? currentPromo.city.name : "online",
+      city_name: currentPromo.city ? currentPromo.city.name : (def.name || "online"),
       source: currentPromo.source,
       detected_ip_city: res.detected && res.detected.city ? res.detected.city : "n/d"
     });
@@ -359,14 +364,10 @@
     geoTrack("gps_prompt", {});
     navigator.geolocation.getCurrentPosition(function (pos) {
       var lat = pos.coords.latitude, lng = pos.coords.longitude;
-      var match = null, best = Infinity;
-      PROMOS.cities.forEach(function (c) {
-        var d = haversineKm(lat, lng, c.lat, c.lng);
-        if (d <= c.radius_km && d < best) { match = c; best = d; }
-      });
+      var match = matchCity(lat, lng, detected ? detected.country : "");
       geoTrack("gps_granted", {
         city_id: match ? match.id : "no_match",
-        distance_km: match ? Math.round(best) : null
+        distance_km: match ? Math.round(haversineKm(lat, lng, match.lat, match.lng)) : null
       });
       if (match) {
         fillModal(match.name, match.promo);

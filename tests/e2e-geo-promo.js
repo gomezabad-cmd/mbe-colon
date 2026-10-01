@@ -1,6 +1,6 @@
 /* E2E GeoPromo en mbecolon.com (preview)
    Uso (Playwright NO es dependencia del repo; apuntar NODE_PATH a una instalación local):
-     NODE_PATH=<...>\pwtest\node_modules node tests/e2e-geo-promo.js "<url-preview>?city=miami"
+      NODE_PATH=<...>\pwtest\node_modules node tests/e2e-geo-promo.js "<url-preview>?city=colon"
    Verifica: popup automático → correo → éxito + evento promo_email_sent en dataLayer
    (el sitio empuja eventos como Arguments de gtag: ('event', name, params)).
 */
@@ -23,7 +23,7 @@ const path = require('path');
   });
 
   const url = process.argv[2];
-  if (!url) { console.error('Falta la URL: node tests/e2e-geo-promo.js "<url>?city=miami"'); process.exit(2); }
+  if (!url) { console.error('Falta la URL: node tests/e2e-geo-promo.js "<url>?city=colon"'); process.exit(2); }
 
   console.log('1. Abriendo landing (' + url + ')...');
   await page.goto(url, { waitUntil: 'load', timeout: 60000 });

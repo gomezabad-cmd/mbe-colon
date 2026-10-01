@@ -14,7 +14,7 @@
       "country": "PA",
       "lat": 9.3451,
       "lng": -79.8929,
-      "radius_km": 45,
+      "radius_km": 55,
       "promo": {
         "code": "SELLOS2X1",
         "discount": "2x1",
@@ -30,7 +30,7 @@
       "country": "PA",
       "lat": 8.9824,
       "lng": -79.5199,
-      "radius_km": 50,
+      "radius_km": 55,
       "promo": {
         "code": "MEJORAMOS",
         "discount": "GRATIS",
@@ -41,12 +41,76 @@
       }
     },
     {
-      "id": "gta",
-      "name": "La Chorrera / GTA",
+      "id": "panama-oeste",
+      "name": "Panamá Oeste",
       "country": "PA",
       "lat": 8.4731,
       "lng": -79.9608,
-      "radius_km": 45,
+      "radius_km": 55,
+      "promo": {
+        "code": "MEJORAMOS",
+        "discount": "GRATIS",
+        "buttonLabel": "Mejoren mi cotización",
+        "title": "Mejoramos cualquier cotización por escrito",
+        "subtitle": "Bordados y sellos con producción propia en Colón: 48 horas de entrega y digitalización de tu logo sin costo. Mándanos la cotización de la competencia.",
+        "emailSubject": "💰 Mejoramos tu cotización — bordados y sellos en 48h"
+      }
+    },
+    {
+      "id": "chiriqui",
+      "name": "Chiriquí",
+      "country": "PA",
+      "lat": 8.4333,
+      "lng": -82.4333,
+      "radius_km": 75,
+      "promo": {
+        "code": "EQUIPO48",
+        "discount": "48h",
+        "buttonLabel": "Pedir mi presupuesto",
+        "title": "Uniformes con logo bordado en 48h",
+        "subtitle": "Bordado computarizado que no se despelota ni se cuartea. Digitalización GRATIS y envío con seguimiento desde Colón.",
+        "emailSubject": "🧵 Uniformes bordados en 48 horas"
+      }
+    },
+    {
+      "id": "veraguas",
+      "name": "Veraguas",
+      "country": "PA",
+      "lat": 8.0962,
+      "lng": -80.9847,
+      "radius_km": 75,
+      "promo": {
+        "code": "EQUIPO48",
+        "discount": "48h",
+        "buttonLabel": "Pedir mi presupuesto",
+        "title": "Uniformes con logo bordado en 48h",
+        "subtitle": "Bordado computarizado que no se despelota ni se cuartea. Digitalización GRATIS y envío con seguimiento desde Colón.",
+        "emailSubject": "🧵 Uniformes bordados en 48 horas"
+      }
+    },
+    {
+      "id": "bocas",
+      "name": "Bocas del Toro",
+      "country": "PA",
+      "lat": 9.34,
+      "lng": -82.25,
+      "radius_km": 60,
+      "promo": {
+        "code": "EQUIPO48",
+        "discount": "48h",
+        "buttonLabel": "Pedir mi presupuesto",
+        "title": "Uniformes con logo bordado en 48h",
+        "subtitle": "Bordado computarizado que no se despelota ni se cuartea. Digitalización GRATIS y envío con seguimiento desde Colón.",
+        "emailSubject": "🧵 Uniformes bordados en 48 horas"
+      }
+    },
+    {
+      "id": "coclé",
+      "name": "Coclé",
+      "country": "PA",
+      "lat": 8.5184,
+      "lng": -80.3569,
+      "radius_km": 65,
       "promo": {
         "code": "DIGITAL0",
         "discount": "GRATIS",
@@ -57,25 +121,57 @@
       }
     },
     {
-      "id": "miami",
-      "name": "Miami",
-      "country": "US",
-      "lat": 25.7617,
-      "lng": -80.1918,
-      "radius_km": 50,
+      "id": "herrera",
+      "name": "Herrera",
+      "country": "PA",
+      "lat": 7.9667,
+      "lng": -80.45,
+      "radius_km": 55,
       "promo": {
-        "code": "EQUIPO48",
-        "discount": "48h",
-        "buttonLabel": "Pedir mi presupuesto",
-        "title": "Uniformes con logo bordado en 48h",
-        "subtitle": "Bordado computarizado que no se despelota ni se cuartea. Digitalización GRATIS y envío con seguimiento desde Colón.",
-        "emailSubject": "🧵 Uniformes bordados en 48 horas"
+        "code": "DIGITAL0",
+        "discount": "GRATIS",
+        "buttonLabel": "Quiero mi digitalización GRATIS",
+        "title": "Digitalización GRATIS en tu bordado",
+        "subtitle": "Tu logo en foto de WhatsApp → arte vectorial listo, $0. Lo bordamos nosotros y te lo entregamos en 48 horas.",
+        "emailSubject": "✏️ Digitalización gratis en bordados"
+      }
+    },
+    {
+      "id": "los-santos",
+      "name": "Los Santos",
+      "country": "PA",
+      "lat": 7.3708,
+      "lng": -80.4589,
+      "radius_km": 55,
+      "promo": {
+        "code": "DIGITAL0",
+        "discount": "GRATIS",
+        "buttonLabel": "Quiero mi digitalización GRATIS",
+        "title": "Digitalización GRATIS en tu bordado",
+        "subtitle": "Tu logo en foto de WhatsApp → arte vectorial listo, $0. Lo bordamos nosotros y te lo entregamos en 48 horas.",
+        "emailSubject": "✏️ Digitalización gratis en bordados"
+      }
+    },
+    {
+      "id": "darien",
+      "name": "Darién",
+      "country": "PA",
+      "lat": 8.4036,
+      "lng": -78.1661,
+      "radius_km": 90,
+      "promo": {
+        "code": "DIGITAL0",
+        "discount": "GRATIS",
+        "buttonLabel": "Quiero mi digitalización GRATIS",
+        "title": "Digitalización GRATIS en tu bordado",
+        "subtitle": "Tu logo en foto de WhatsApp → arte vectorial listo, $0. Lo bordamos nosotros y te lo entregamos en 48 horas.",
+        "emailSubject": "✏️ Digitalización gratis en bordados"
       }
     }
   ],
   "default": {
     "id": "default",
-    "name": "online",
+    "name": "Internacional",
     "promo": {
       "code": "BIENVENIDO",
       "discount": "GRATIS",
