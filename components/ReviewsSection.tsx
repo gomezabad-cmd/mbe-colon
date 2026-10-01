@@ -1,3 +1,4 @@
+import { CONTACT } from '@/lib/constants'
 import { getGoogleReviews, STATIC_REVIEWS, type PlaceReviews } from '@/lib/google-reviews'
 
 function Stars({ rating }: { rating: number }) {
@@ -63,7 +64,7 @@ function ReviewCard({ review }: { review: PlaceReviews['reviews'][0] }) {
 export default async function ReviewsSection() {
   const live = await getGoogleReviews()
   const data = live ?? STATIC_REVIEWS
-  const mapsUrl = `https://www.google.com/maps/search/Mail+Boxes+Etc+Col%C3%B3n+Panam%C3%A1`
+  const mapsUrl = CONTACT.mapsLink
 
   return (
     <section className="bg-mbe-light py-16 px-4">
