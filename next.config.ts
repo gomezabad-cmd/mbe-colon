@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/promo',
+        destination: '/',
+        permanent: false,
+      },
+      {
         source: '/',
         has: [
           {
