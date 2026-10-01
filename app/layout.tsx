@@ -217,6 +217,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <Script id="ga-init" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-6T4HQRJ1J0');` }} />
         <Script id="ga" strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-6T4HQRJ1J0" />
+        <Script id="geo-promo" src="/geo-promo.js" strategy="afterInteractive" />
 
         {META_PIXEL_ID && (
           <>

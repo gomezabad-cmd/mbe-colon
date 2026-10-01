@@ -1,0 +1,88 @@
+{
+  "brand": {
+    "name": "MBE Colón",
+    "senderEmail": "promos@mbecolon.com",
+    "senderName": "MBE Colón",
+    "logoText": "MBE",
+    "website": "https://mbecolon.com",
+    "whatsapp": "50769495100"
+  },
+  "cities": [
+    {
+      "id": "colon",
+      "name": "Colón",
+      "country": "PA",
+      "lat": 9.3451,
+      "lng": -79.8929,
+      "radius_km": 45,
+      "promo": {
+        "code": "SELLOS2X1",
+        "discount": "2x1",
+        "buttonLabel": "Quiero mi 2x1 en sellos",
+        "title": "2x1 en sellos automáticos",
+        "subtitle": "Fabricados por nosotros en Colón: Trodat/Shiny originales, listos en 48 horas, con digitalización de tu logo GRATIS.",
+        "emailSubject": "🎁 2x1 en sellos automáticos para Colón"
+      }
+    },
+    {
+      "id": "panama",
+      "name": "Ciudad de Panamá",
+      "country": "PA",
+      "lat": 8.9824,
+      "lng": -79.5199,
+      "radius_km": 50,
+      "promo": {
+        "code": "MEJORAMOS",
+        "discount": "GRATIS",
+        "buttonLabel": "Mejoren mi cotización",
+        "title": "Mejoramos cualquier cotización por escrito",
+        "subtitle": "Bordados y sellos con producción propia en Colón: 48 horas de entrega y digitalización de tu logo sin costo. Mándanos la cotización de la competencia.",
+        "emailSubject": "💰 Mejoramos tu cotización — bordados y sellos en 48h"
+      }
+    },
+    {
+      "id": "gta",
+      "name": "La Chorrera / GTA",
+      "country": "PA",
+      "lat": 8.4731,
+      "lng": -79.9608,
+      "radius_km": 45,
+      "promo": {
+        "code": "DIGITAL0",
+        "discount": "GRATIS",
+        "buttonLabel": "Quiero mi digitalización GRATIS",
+        "title": "Digitalización GRATIS en tu bordado",
+        "subtitle": "Tu logo en foto de WhatsApp → arte vectorial listo, $0. Lo bordamos nosotros y te lo entregamos en 48 horas.",
+        "emailSubject": "✏️ Digitalización gratis en bordados"
+      }
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "country": "US",
+      "lat": 25.7617,
+      "lng": -80.1918,
+      "radius_km": 50,
+      "promo": {
+        "code": "EQUIPO48",
+        "discount": "48h",
+        "buttonLabel": "Pedir mi presupuesto",
+        "title": "Uniformes con logo bordado en 48h",
+        "subtitle": "Bordado computarizado que no se despelota ni se cuartea. Digitalización GRATIS y envío con seguimiento desde Colón.",
+        "emailSubject": "🧵 Uniformes bordados en 48 horas"
+      }
+    }
+  ],
+  "default": {
+    "id": "default",
+    "name": "online",
+    "promo": {
+      "code": "BIENVENIDO",
+      "discount": "GRATIS",
+      "buttonLabel": "Quiero mi oferta de bienvenida",
+      "title": "Bienvenida: digitalización GRATIS + 48h",
+      "subtitle": "Bordados y sellos con producción propia en Colón. Mándanos tu logo y la cotización que tengas — te la mejoramos por escrito.",
+      "emailSubject": "🎁 Tu oferta de bienvenida en MBE Colón"
+    }
+  }
+}
