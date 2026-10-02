@@ -12,6 +12,17 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
+    categoria: 'Logística',
+    badge: 'bg-mbe-blue',
+    titulo: 'Carga Marítima Panamá: Contenedor Completo (FCL) o Consolidado (LCL) en Colón, Panamá',
+    desc: 'Carga marítima Panamá: compara contenedor completo (FCL) y carga consolidada (LCL) para tu empresa en Colón. Tránsito de 5 a 10 días, seguro desde 1%.',
+    href: '/blog/lcl-o-fcl-carga-maritima-colon',
+    img: '/images/blog/photo-1590496793907-4d66e2994b4d.jpg',
+    imgAlt: 'Buque portacontenedores siendo cargado en puerto para carga marítima Panamá, Colón',
+    datePublished: '2026-10-02',
+    dateModified: '2026-10-02',
+  },
+  {
     categoria: 'Sellos',
     badge: 'bg-mbe-red',
     titulo: 'Sellos Fechadores y de Recibido para Empresas en Colón, Panamá',

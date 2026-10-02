@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Logística',
+    titulo: 'Carga Marítima Panamá: Contenedor Completo (FCL) o Consolidado (LCL) en Colón, Panamá',
+    desc: 'Carga marítima Panamá: compara contenedor completo (FCL) y carga consolidada (LCL) para tu empresa en Colón. Tránsito de 5 a 10 días, seguro desde 1%.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/lcl-o-fcl-carga-maritima-colon',
+    img: '/images/blog/photo-1590496793907-4d66e2994b4d.jpg',
+    imgAlt: 'Buque portacontenedores siendo cargado en puerto para carga marítima Panamá, Colón',
+  },
+  {
     categoria: 'Sellos',
     titulo: 'Sellos Fechadores y de Recibido para Empresas en Colón, Panamá',
     desc: 'Sellos automáticos Colón: fechadores, de recibido y pagado con tu logo para oficinas y Zona Libre. Entrega 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
     img: '/images/blog/photo-1772351721250-58367a2aecba.jpg',
     imgAlt: 'Máquina bordando logo en uniforme de seguridad en Colón, Panamá',
-  },
-  {
-    categoria: 'Envíos',
-    titulo: 'Cómo enviar documentos urgentes desde Colón, Panamá al mundo',
-    desc: 'Envíos internacionales Colón para documentos urgentes: cómo elegir entre DHL, FedEx y UPS y evitar retrasos en aduana.',
-    badge: 'bg-mbe-red',
-    href: '/blog/envio-documentos-urgentes-colon',
-    img: '/images/blog/photo-1553413077-190dd305871c.jpg',
-    imgAlt: 'Envío de documentos urgentes internacionales desde Colón, Panamá',
   },
 ]
 
