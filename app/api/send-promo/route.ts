@@ -17,6 +17,30 @@ function findPromo(cityId: string): { cityName: string; promo: Promo } {
 function buildHtml(promo: Promo, cityName: string, email: string, channel: string): string {
   const brand = promos.brand
   const year = new Date().getFullYear()
+  // Pack de bienvenida: mismos bonos que el popup (el que repita la promo geo ya está arriba)
+  const pack = promos.welcomePack.filter((w) => w.code !== promo.code)
+  const packRows = pack
+    .map(
+      (w) => `
+              <tr>
+                <td style="padding:10px 0;border-bottom:1px solid #2a3560;font-size:14px;color:#cfe0ff;vertical-align:middle;">
+                  ${w.icon} ${w.title}
+                  <div style="color:#9aa3c7;font-size:12px;margin-top:3px;line-height:1.5;">${w.desc}</div>
+                </td>
+                <td align="right" style="padding:10px 0;border-bottom:1px solid #2a3560;vertical-align:middle;">
+                  <span style="display:inline-block;background:#0e1533;border:1px dashed #4f8cff;border-radius:7px;color:#9fc1ff;font-weight:800;font-size:12px;letter-spacing:1.5px;padding:5px 9px;white-space:nowrap;">${w.code}</span>
+                </td>
+              </tr>`,
+    )
+    .join('')
+  const packHtml = packRows
+    ? `
+            <div style="margin-top:24px;background:#161f3f;border:1px solid #2a3560;border-radius:12px;padding:18px 20px;">
+              <div style="font-size:15px;font-weight:800;color:#ffb3bd;margin-bottom:6px;">🎁 Tus códigos de bienvenida</div>
+              <div style="color:#9aa3c7;font-size:12px;margin-bottom:8px;">Por dejarnos tu correo y visitar el sitio — válidos 30 días.</div>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${packRows}</table>
+            </div>`
+    : ''
   return `<!DOCTYPE html>
 <html lang="es">
 <body style="margin:0;padding:0;background:#f2f4fa;font-family:Segoe UI,Roboto,Arial,sans-serif;">
@@ -43,6 +67,7 @@ function buildHtml(promo: Promo, cityName: string, email: string, channel: strin
               Usar mi descuento ahora
             </a>
             ${brand.whatsapp ? `<p style="text-align:center;margin:14px 0 0;"><a href="https://wa.me/${brand.whatsapp}?text=${encodeURIComponent('Hola! Vengo del correo de la promo ' + promo.code)}" style="color:#8fa3d9;font-size:13px;text-decoration:none;">💬 o escríbenos por WhatsApp</a></p>` : ''}
+            ${packHtml}
             <div style="margin-top:16px;background:#161f3f;border:1px solid #2a3560;border-radius:12px;padding:12px 16px;text-align:center;color:#cfe0ff;font-size:13px;line-height:1.5;">
               🚚 Despachos a todo Panamá (interior incluido)<br>
               <strong style="color:#ff9aa8;">Envío GRATIS</strong> en pedidos que lo incluyan — te lo confirmamos al cotizar.

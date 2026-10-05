@@ -70,6 +70,11 @@ const path = require('path');
     btn: document.getElementById('promoSubmit').textContent.trim(),
     errHidden: document.getElementById('promoError').hidden,
     errText: document.getElementById('promoError').hidden ? '' : document.getElementById('promoError').textContent,
+    // pack de bienvenida: ítems renderizados y códigos revelados tras capturar
+    packCount: document.querySelectorAll('#promoPackList .gp-pack-item').length,
+    packCodes: Array.from(document.querySelectorAll('#promoPackList .gp-pack-code'))
+      .filter(c => !c.hidden)
+      .map(c => c.textContent),
     // dataLayer del sitio: items son Arguments de gtag ('event', name, params) u objetos planos
     dataLayer: window.dataLayer.map(e => {
       if (!e) return null;
@@ -93,7 +98,12 @@ const path = require('path');
 
   const ok = !result.successHidden
     && result.successEmail.includes('geo1@uberip.com')
-    && result.dataLayer.includes('promo_email_sent');
+    && result.dataLayer.includes('promo_email_sent')
+    && result.packCount >= 5
+    && result.packCodes.includes('ENVIOS15')
+    && result.dataLayer.includes('promo_pack_revealed');
+  if (!result.packCount || result.packCount < 5) console.log('   pack:', result.packCount, '(esperado >=5: 6 menos la promo geo)');
+  if (!result.packCodes.includes('ENVIOS15')) console.log('   pack codes visibles:', result.packCodes);
   console.log(ok ? 'E2E: PASS ✓' : 'E2E: FAIL ✗');
   await browser.close();
   process.exit(ok ? 0 : 1);

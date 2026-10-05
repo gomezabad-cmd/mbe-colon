@@ -94,6 +94,15 @@
     ".gp-toast--err{background:#3a1420;border-color:rgba(255,107,107,.55);color:#ffd7d7}",
     ".gp-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}",
     ".gp-linklike{background:none;border:0;color:#ff9aa8;cursor:pointer;font-size:inherit;font-family:inherit;text-decoration:underline;padding:0}",
+    ".gp-pack{margin-top:14px;background:rgba(190,30,45,.10);border:1px solid rgba(190,30,45,.35);border-radius:12px;padding:12px 14px}",
+    ".gp-pack-title{font-size:.88rem;font-weight:800;color:#ffb3bd;display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}",
+    ".gp-pack-title small{font-weight:600;color:#9aa3c7;font-size:.74rem}",
+    ".gp-pack-list{list-style:none;margin:9px 0 0;padding:0;display:grid;gap:6px}",
+    ".gp-pack-item{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:9px;padding:7px 10px;font-size:.86rem;color:#eef1ff}",
+    ".gp-pack-emoji{flex:0 0 auto;font-size:.95rem}",
+    ".gp-pack-name{flex:1 1 auto;min-width:0;line-height:1.3}",
+    ".gp-pack-code{flex:0 0 auto;background:rgba(79,140,255,.16);border:1px dashed rgba(79,140,255,.55);border-radius:7px;color:#9fc1ff;font-weight:800;font-size:.72rem;letter-spacing:.08em;padding:3px 7px;white-space:nowrap}",
+    ".gp-pack-lock{margin-top:9px;font-size:.74rem;color:#9aa3c7;text-align:center}",
     "@media (max-width:640px){.gp-card{padding:26px 20px 22px}}"
   ].join("");
 
@@ -115,6 +124,11 @@
         '<h2 class="gp-title" id="promoTitle">Promo</h2>' +
         '<p class="gp-sub" id="promoSubtitle"></p>' +
         '<div class="gp-code" id="promoCode">Código: <strong></strong></div>' +
+        '<div class="gp-pack" id="promoPack">' +
+          '<div class="gp-pack-title">🎁 Tu pack de bienvenida <small>por dejarnos tu correo</small></div>' +
+          '<ul class="gp-pack-list" id="promoPackList"></ul>' +
+          '<div class="gp-pack-lock" id="promoPackLock">🔒 Los códigos se desbloquean al dejar tu correo</div>' +
+        '</div>' +
         '<form class="gp-form" id="promoForm" novalidate>' +
           '<label class="gp-sr-only" for="promoEmail">Tu correo</label>' +
           '<input class="gp-input" id="promoEmail" name="email" type="email" placeholder="tucorreo@email.com" autocomplete="email" required>' +
@@ -205,6 +219,62 @@
   }
 
   /* ================================================================
+     Pack de bienvenida — bonos estáticos (promos.welcomePack).
+     Se renderiza SIN códigos (pre-capture) y se desbloquea al enviar
+     el correo. El bono que repita la promo geo se omite: esa oferta ya
+     es el héroe del modal.
+     ================================================================ */
+  var packUnlocked = false;
+  var packCount = 0;
+
+  function renderPack(activeCode) {
+    var list = $("promoPackList");
+    var lock = $("promoPackLock");
+    if (!list || !lock) return;
+    list.textContent = "";
+    packCount = 0;
+    var pack = (PROMOS && PROMOS.welcomePack) || [];
+    pack.forEach(function (item) {
+      if (!item || item.code === activeCode) return;
+      var li = document.createElement("li");
+      li.className = "gp-pack-item";
+      var em = document.createElement("span");
+      em.className = "gp-pack-emoji";
+      em.textContent = item.icon || "🎁";
+      var nm = document.createElement("span");
+      nm.className = "gp-pack-name";
+      nm.textContent = item.title;
+      var cd = document.createElement("span");
+      cd.className = "gp-pack-code";
+      cd.textContent = item.code;
+      cd.hidden = !packUnlocked;
+      li.appendChild(em);
+      li.appendChild(nm);
+      li.appendChild(cd);
+      list.appendChild(li);
+      packCount++;
+    });
+    $("promoPack").hidden = packCount === 0;
+    if (packCount === 0) return;
+    if (packUnlocked) {
+      lock.textContent = "✅ Códigos activos — válidos 30 días";
+      lock.hidden = false;
+    } else {
+      lock.textContent = "🔒 Los códigos se desbloquean al dejar tu correo";
+      lock.hidden = false;
+    }
+  }
+
+  function unlockPack() {
+    packUnlocked = true;
+    var codes = document.querySelectorAll("#promoPackList .gp-pack-code");
+    for (var i = 0; i < codes.length; i++) codes[i].hidden = false;
+    var lock = $("promoPackLock");
+    lock.textContent = "✅ Códigos activos — válidos 30 días";
+    lock.hidden = false;
+  }
+
+  /* ================================================================
      Modal
      ================================================================ */
   function fillModal(cityName, promo) {
@@ -212,6 +282,7 @@
     $("promoTitle").textContent = promo.title;
     $("promoSubtitle").textContent = promo.subtitle;
     $("promoCode").innerHTML = "Código: <strong>" + promo.code + "</strong>";
+    renderPack(promo.code);
     $("promoSubmit").textContent = promo.buttonLabel || ("Quiero mi " + promo.discount + " OFF");
   }
 
@@ -252,6 +323,13 @@
       promo_code: currentPromo.promo.code,
       reason: reason || "auto"
     });
+    if (packCount > 0) {
+      geoTrack("promo_pack_shown", {
+        promo_code: currentPromo.promo.code,
+        pack_count: packCount,
+        unlocked: packUnlocked
+      });
+    }
   }
 
   function closeModal() {
@@ -342,6 +420,8 @@
           city_id: currentPromo.city ? currentPromo.city.id : "default",
           mock: !!MOCK
         });
+        unlockPack();
+        geoTrack("promo_pack_revealed", { promo_code: currentPromo.promo.code, pack_count: packCount });
         geoTrack("promo_email_sent", { promo_code: currentPromo.promo.code });
         toast("✅ Promo enviada a " + email);
       })

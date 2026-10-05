@@ -7,6 +7,44 @@
     "website": "https://mbecolon.com",
     "whatsapp": "50769495100"
   },
+  "welcomePack": [
+    {
+      "code": "DIGITAL0",
+      "icon": "✏️",
+      "title": "Digitalización GRATIS de tu logo",
+      "desc": "Tu logo en foto → arte vectorial listo, $0. Aplica a bordados y sellos."
+    },
+    {
+      "code": "SELLOS2X1",
+      "icon": "⚪",
+      "title": "2x1 en sellos automáticos",
+      "desc": "Compra 3 sellos del mismo tamaño y el más barato va por nuestra cuenta."
+    },
+    {
+      "code": "ENVIOS15",
+      "icon": "✈️",
+      "title": "15% dto en envíos internacionales",
+      "desc": "15% menos en tu primer envío con DHL, FedEx o UPS desde Colón."
+    },
+    {
+      "code": "LOGO2X1",
+      "icon": "🧵",
+      "title": "2x1 en bordados de logo",
+      "desc": "Compra 3 artículos con tu logo bordado y el más barato va por nuestra cuenta."
+    },
+    {
+      "code": "TARJETAS30",
+      "icon": "💳",
+      "title": "30% dto en tarjetas de presentación",
+      "desc": "Tus tarjetas de presentación impresas con 30% de descuento. Diseño incluido."
+    },
+    {
+      "code": "CARNET2X1",
+      "icon": "🪪",
+      "title": "2x1 en carnets PVC matte",
+      "desc": "Compra 3 carnets PVC matte y el más barato va por nuestra cuenta."
+    }
+  ],
   "cities": [
     {
       "id": "colon",
