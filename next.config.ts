@@ -25,6 +25,16 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: '/index',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/',
         has: [
           {
