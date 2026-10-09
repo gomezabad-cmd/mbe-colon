@@ -100,9 +100,6 @@ export default function USAShoppingSection() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 bg-white rounded-lg p-4 border-l-4 border-mbe-blue text-sm text-mbe-gray">
-              <strong className="text-mbe-dark">💡 Tip de ahorro:</strong> Consolida tus paquetes con nosotros para ahorrar en el flete internacional.
-            </div>
           </div>
         </div>
       </div>

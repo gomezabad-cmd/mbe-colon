@@ -84,10 +84,6 @@ const faqData = [
         a: 'Realizamos envíos internacionales desde Colón a todo el mundo. Para envíos dentro de Panamá, trabajamos con servicios de courier local.',
       },
       {
-        q: '¿Qué es la consolidación de paquetes?',
-        a: 'La consolidación es cuando juntamos varios paquetes pequeños en un solo envío grande. Esto reduce significativamente el costo del flete. Ahorra hasta 40% en costos de envío.',
-      },
-      {
         q: '¿Aceptan pagos con tarjeta de crédito?',
         a: 'Aceptamos efectivo (USD y Balboas), tarjeta de crédito (Visa, Mastercard, Amex), tarjeta de débito, transferencia bancaria y facturación mensual para empresas.',
       },

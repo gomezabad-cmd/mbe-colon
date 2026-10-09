@@ -226,8 +226,7 @@ export default function NosotrosPage() {
               </p>
               <p>
                 Ese mismo criterio es el que aplicamos en cada cotización: si un envío no conviene
-                por aéreo, te lo decimos. Si el paquete puede consolidarse para bajar el costo
-                entre un 30% y un 40%, también.
+                por aéreo, te lo decimos.
               </p>
             </div>
           </div>

@@ -30,7 +30,6 @@ export default function CasilleroPage() {
         'Dirección en Miami 100% funcional',
         'Sin cuota mensual de activación',
         'Recibe desde cualquier tienda de USA',
-        'Consolidación de paquetes incluida',
         'Notificaciones por WhatsApp',
         'Asesoría logística integral',
       ]}
@@ -51,10 +50,6 @@ export default function CasilleroPage() {
         {
           question: '¿Cuánto tiempo tarda en llegar mi paquete a Colón?',
           answer: 'El tiempo depende del tamaño y peso del paquete. Para paquetes estándar (hasta 30 libras), el tiempo promedio es de 3-7 días hábiles desde que llega a nuestro almacén en Miami. Te notificamos por WhatsApp en cada paso del proceso.',
-        },
-        {
-          question: '¿Puedo consolidar varios paquetes en un envío?',
-          answer: 'Sí, absolutamente. Si tienes varios paquetes pequeños, podemos consolidarlos en un solo envío para ahorrar en costos de flete. Esto es especialmente útil para compras en Amazon, eBay y Shein.',
         },
         {
           question: '¿Qué tiendas de USA puedo usar?',

@@ -124,14 +124,6 @@ export default function CasilleroMiamiColonPage() {
           text: 'Solo necesitas una identificación válida (cédula o pasaporte). La activación es instantánea y recibes tu dirección Miami por WhatsApp al momento.',
         },
       },
-      {
-        '@type': 'Question',
-        name: '¿Puedo consolidar varios paquetes en un solo envío?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Sí, ofrecemos consolidación de paquetes gratis. Si tienes varios paquetes pequeños, los juntamos en un solo envío para ahorrar en costos de flete.',
-        },
-      },
     ],
   }
 
@@ -230,7 +222,7 @@ export default function CasilleroMiamiColonPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center">
                 <div className="text-5xl mb-4">🆓</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">100% Gratis</h3>
@@ -246,15 +238,6 @@ export default function CasilleroMiamiColonPage() {
                 <p className="text-gray-600">
                   Te avisamos en cada paso: cuando llega a Miami, cuando lo despachamos
                   y cuando está listo para recoger en Colón.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 text-center">
-                <div className="text-5xl mb-4">📦</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Consolidación Gratis</h3>
-                <p className="text-gray-600">
-                  ¿Varios paquetes? Los juntamos en un solo envío para que ahorres
-                  en costos de flete. Ideal para compras en Amazon y Shein.
                 </p>
               </div>
             </div>
@@ -380,17 +363,6 @@ export default function CasilleroMiamiColonPage() {
                   La activación es instantánea y recibes tu dirección Miami por WhatsApp al momento.
                 </p>
               </div>
-
-              <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  ¿Puedo consolidar varios paquetes en un solo envío?
-                </h3>
-                <p className="text-gray-600">
-                  Sí, ofrecemos <strong>consolidación de paquetes gratis</strong>. Si tienes
-                  varios paquetes pequeños, los juntamos en un solo envío para ahorrar en
-                  costos de flete. Ideal para compras en Amazon y Shein.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -486,11 +458,6 @@ export default function CasilleroMiamiColonPage() {
                     <td className="py-4 px-6 text-gray-700">Cuota mensual</td>
                     <td className="py-4 px-6 text-center text-green-600 font-bold">$0</td>
                     <td className="py-4 px-6 text-center text-gray-500">$5-15/mes</td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="py-4 px-6 text-gray-700">Consolidación de paquetes</td>
-                    <td className="py-4 px-6 text-center text-green-600 font-bold">Gratis</td>
-                    <td className="py-4 px-6 text-center text-gray-500">$2-5/paquete</td>
                   </tr>
                   <tr className="border-b border-gray-100">
                     <td className="py-4 px-6 text-gray-700">Tracking por WhatsApp</td>

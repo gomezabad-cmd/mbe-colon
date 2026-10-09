@@ -3,13 +3,13 @@ import QuoteCalculator from '@/components/QuoteCalculator'
 
 export const metadata = {
   title: 'Compras por Internet desde USA | Casillero Miami MBE Colón',
-  description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
+  description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa y entrega en Colón. Sin cuota mensual.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/compras-internet',
   },
   openGraph: {
     title: 'Compras por Internet desde USA | Casillero Miami MBE Colón',
-    description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa, consolidación de paquetes y entrega en Colón. Sin cuota mensual.',
+    description: '¿Quieres comprar en Amazon, eBay o Shein? Usa tu casillero Miami MBE. Asesoría completa y entrega en Colón. Sin cuota mensual.',
     url: 'https://mbecolon.com/servicios/compras-internet',
     siteName: 'MBE Colón',
     locale: 'es_PA',
@@ -28,7 +28,6 @@ export default function ComprasPage() {
       description="Con tu casillero Miami MBE, obtienes una dirección de envío en Estados Unidos para comprar en Amazon, eBay, Shein y cualquier tienda online de USA. Recibe tus pedidos directamente en Colón, Panamá con entrega garantizada y segura."
       benefits={[
         'Dirección de envío en Miami incluida',
-        'Consolidación de múltiples paquetes',
         'Entregas rápidas y seguras',
         'Notificación por WhatsApp al llegar',
         'Sin cuota mensual de membresía',
@@ -46,15 +45,7 @@ export default function ComprasPage() {
         },
         {
           question: '¿Hay restricción de cantidad de compras?',
-          answer: 'No hay límite. Puedes hacer una compra a la semana o cien compras al mes. Cada paquete se consolida automáticamente y lo enviamos cuando tengas todos tus pedidos listos.',
-        },
-        {
-          question: '¿Cómo hago la consolidación de paquetes?',
-          answer: 'Si tienes 3-4 paquetes pequeños, los consolidamos en un solo envío para ahorrar flete. Juntamos los paquetes, re-embalamos profesionalmente y enviamos todo junto a Colón.',
-        },
-        {
-          question: '¿Cuánto se ahorra consolidando?',
-          answer: 'Depende del tamaño y peso. En promedio, ahorras 30-40% en flete al consolidar 3-5 paquetes pequeños en uno solo. Te mostramos el ahorro exacto al momento de cotizar.',
+          answer: 'No hay límite. Puedes hacer una compra a la semana o cien compras al mes. Cada paquete lo enviamos a Colón en cuanto llega a nuestra bodega de Miami.',
         },
         {
           question: '¿Hay artículos prohibidos?',
@@ -66,7 +57,7 @@ export default function ComprasPage() {
         },
         {
           question: '¿Cuánto tarda en llegar mi compra a Colón?',
-          answer: 'Por vía aérea, entre 24 y 72 horas desde que el paquete llega a nuestra bodega de Miami; por vía marítima, de 7 a 15 días hábiles. Si consolidamos varias compras, el tiempo se cuenta a partir de que llega a Miami el último paquete.',
+          answer: 'Por vía aérea, entre 24 y 72 horas desde que el paquete llega a nuestra bodega de Miami; por vía marítima, de 7 a 15 días hábiles.',
         },
         {
           question: '¿Puedo revisar o devolver un producto antes de enviarlo?',
