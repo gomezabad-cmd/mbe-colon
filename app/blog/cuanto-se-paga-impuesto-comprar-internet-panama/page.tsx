@@ -172,7 +172,6 @@ export default function BlogPost() {
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Suma valor + flete estimado:</strong> la base imponible incluye ambos, no solo el precio del producto.</li>
             <li><strong>Conoce la categoría:</strong> electrónica, ropa y cosméticos suelen tener aranceles distintos.</li>
-            <li><strong>Consolida tus compras:</strong> juntar varios paquetes en un envío reduce el flete y, con ello, la base sobre la que se calcula el impuesto.</li>
             <li><strong>Pide una estimación:</strong> escríbenos por WhatsApp con el producto y el valor, y te adelantamos el impuesto aproximado.</li>
           </ul>
 

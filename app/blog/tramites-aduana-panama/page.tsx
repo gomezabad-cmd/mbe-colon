@@ -162,7 +162,7 @@ export default function BlogPost() {
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">Con tu casillero Miami, la aduana la gestionamos nosotros</h2>
         <p>
-          Al usar tu <Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">casillero Miami</Link> en MBE Colón, no tienes que ir a ninguna oficina ni llenar formularios. Nosotros consolidamos tus compras, las enviamos a Panamá y tramitamos la declaración ante la ANA. Tú solo pagas el flete y, si aplica, los impuestos que te informamos antes de la entrega.
+          Al usar tu <Link href="/servicios/casillero" className="text-mbe-red font-semibold hover:underline">casillero Miami</Link> en MBE Colón, no tienes que ir a ninguna oficina ni llenar formularios. Nosotros enviamos tus compras a Panamá y tramitamos la declaración ante la ANA. Tú solo pagas el flete y, si aplica, los impuestos que te informamos antes de la entrega.
         </p>
 
         <h2 className="text-mbe-dark text-2xl font-black mt-8 mb-3">¿Y si mi envío es más grande o para mi negocio?</h2>

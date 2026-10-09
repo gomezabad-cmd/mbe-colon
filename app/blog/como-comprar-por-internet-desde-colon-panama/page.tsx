@@ -65,9 +65,8 @@ const howToSchema = {
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Abre tu casillero Miami gratis', text: 'Regístrate en MBE Colón para recibir tu dirección personal en Miami, Florida. No tiene costo ni mensualidad.' },
     { '@type': 'HowToStep', position: 2, name: 'Usa tu dirección Miami al comprar', text: 'En Amazon, Shein, eBay o cualquier tienda de USA, usa tu dirección Miami como destino de envío.' },
-    { '@type': 'HowToStep', position: 3, name: 'Consolida tus paquetes', text: 'Si compras en varias tiendas, consolidamos tus paquetes en un solo envío para ahorrar flete.' },
-    { '@type': 'HowToStep', position: 4, name: 'Elige aéreo o marítimo', text: 'Aéreo desde $3.00/lb para entrega rápida, o marítimo desde $6.00/ft³ para ahorrar en cargas grandes.' },
-    { '@type': 'HowToStep', position: 5, name: 'Recibe en Colón', text: 'Te avisamos por WhatsApp cuando llega y lo retiras en Plaza Millenium F007 o coordinamos entrega.' },
+    { '@type': 'HowToStep', position: 3, name: 'Elige aéreo o marítimo', text: 'Aéreo desde $3.00/lb para entrega rápida, o marítimo desde $6.00/ft³ para ahorrar en cargas grandes.' },
+    { '@type': 'HowToStep', position: 4, name: 'Recibe en Colón', text: 'Te avisamos por WhatsApp cuando llega y lo retiras en Plaza Millenium F007 o coordinamos entrega.' },
   ],
 }
 
@@ -112,7 +111,7 @@ const faqSchema = {
       name: '¿Puedo comprar en Shein y Temu desde Panamá?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sí. Con tu dirección Miami puedes comprar en Shein, Temu, AliExpress, Amazon, eBay y cualquier tienda que envíe a USA. Consolidamos todos tus pedidos en un solo envío a Colón.',
+        text: 'Sí. Con tu dirección Miami puedes comprar en Shein, Temu, AliExpress, Amazon, eBay y cualquier tienda que envíe a USA. Los recibimos en Miami y los enviamos a Colón.',
       },
     },
     {
@@ -177,7 +176,7 @@ export default function HubPost() {
             <div className="bg-mbe-light rounded-2xl p-6 border-l-4 border-mbe-red">
               <p className="font-bold text-mbe-dark mb-2">💡 En resumen</p>
               <p className="text-gray-600 text-sm">
-                Abre tu casillero gratis → compra en cualquier tienda de USA con tu dirección Miami → consolidamos tus paquetes → eliges aéreo o marítimo → recibes en Colón en 24-72 h (aéreo express). Así de simple.
+                Abre tu casillero gratis → compra en cualquier tienda de USA con tu dirección Miami → eliges aéreo o marítimo → recibes en Colón en 24-72 h (aéreo express). Así de simple.
               </p>
             </div>
 
@@ -202,12 +201,7 @@ export default function HubPost() {
               </div>
             </div>
 
-            <h2 className="text-mbe-dark text-xl font-black mt-8">Paso 3: Consolida tus paquetes y ahorra</h2>
-            <p>
-              ¿Compraste 3 paquetes en tiendas distintas? Los <strong>consolidamos en un solo envío</strong>. Re-embalamos profesionalmente y enviamos todo junto a Colón. En promedio, consolidar 3-5 paquetes pequeños ahorra entre 30% y 40% del flete frente a enviarlos por separado.
-            </p>
-
-            <h2 className="text-mbe-dark text-xl font-black mt-8">Paso 4: Elige aéreo o marítimo</h2>
+            <h2 className="text-mbe-dark text-xl font-black mt-8">Paso 3: Elige aéreo o marítimo</h2>
             <div className="overflow-x-auto rounded-xl border border-gray-200">
               <table className="w-full text-left text-sm">
                 <thead>
@@ -238,7 +232,7 @@ export default function HubPost() {
               * Precios de referencia; la cotización exacta depende del peso, volumen y destino. Trámites aduanales incluidos en el flete.
             </p>
 
-            <h2 className="text-mbe-dark text-xl font-black mt-8">Paso 5: Recibe en Colón</h2>
+            <h2 className="text-mbe-dark text-xl font-black mt-8">Paso 4: Recibe en Colón</h2>
             <p>
               Cuando tu envío llega, te avisamos por WhatsApp con el código de rastreo. Retiras en <strong>Plaza Millenium Local F007, Colón</strong> o coordinamos entrega. El personal te asesora en cada paso: somos la franquicia MBE con más de 18 años en la provincia de Colón.
             </p>
@@ -252,7 +246,6 @@ export default function HubPost() {
 
             <h2 className="text-mbe-dark text-xl font-black mt-8">Consejos para ahorrar en tus compras USA–Panamá</h2>
             <ul className="list-disc list-inside space-y-2 pl-2">
-              <li><strong>Consolida:</strong> junta varios pedidos en un solo envío para pagar un solo flete.</li>
               <li><strong>Aprovecha fechas clave:</strong> Black Friday, Cyber Monday y Prime Day suelen tener mejores precios; planifica tus envíos.</li>
               <li><strong>Verifica el peso estimado</strong> del producto antes de comprar para calcular el flete.</li>
               <li><strong>Elige marítimo</strong> para muebles y cargas grandes; aéreo para lo urgente.</li>

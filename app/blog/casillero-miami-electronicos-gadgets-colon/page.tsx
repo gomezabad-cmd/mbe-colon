@@ -103,8 +103,7 @@ export default function BlogPost() {
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Cómo funciona el envío de electrónicos desde Miami a Colón</h2>
           <p>
-            Una vez que tu pedido llega a nuestra bodega en Miami, lo consolidamos con tus otras compras si lo deseas
-            y lo enviamos directo a Colón, Panamá. El tiempo de entrega es de <strong>24 a 48 horas</strong>, y recibes
+            Una vez que tu pedido llega a nuestra bodega en Miami, lo enviamos directo a Colón, Panamá. El tiempo de entrega es de <strong>24 a 48 horas</strong>, y recibes
             tu paquete en nuestra sucursal de Plaza Millenium, local F007, listo para retirar.
           </p>
 

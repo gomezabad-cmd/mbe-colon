@@ -204,7 +204,6 @@ export default function BlogPost() {
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Elige aéreo express</strong> para lo urgente: 24-72 horas desde Miami.</li>
             <li><strong>Verifica el peso estimado</strong> antes de comprar para evitar sorpresas con el flete.</li>
-            <li><strong>Consolida tus paquetes</strong>: reunimos tus compras de varias tiendas y las enviamos juntas para ahorrarte flete.</li>
             <li><strong>Evita feriados</strong>: los envíos en diciembre y antes de Semana Santa suelen tardar más por la demanda.</li>
           </ul>
 

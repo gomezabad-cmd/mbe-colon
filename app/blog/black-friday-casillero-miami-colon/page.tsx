@@ -101,13 +101,12 @@ export default function BlogPost() {
             <li><strong>Dirección en Miami</strong> — 2250 NW 114th Ave Unit 1P, Miami, FL 33172</li>
             <li><strong>Aéreo desde $3.00/lb</strong> — la opción rápida para tecnología y ropa</li>
             <li><strong>Marítimo desde $6.00/ft³</strong> — conveniente para artículos grandes o pesados</li>
-            <li><strong>Consolidación gratis</strong> — juntamos varios paquetes pequeños en un solo envío para ahorrarte flete</li>
           </ul>
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Cómo recibir paquetes de Amazon en Colón Panamá en Black Friday</h2>
           <p>
             Compra en Amazon, eBay o Shein usando tu dirección de Miami como dirección de envío. Cuando el paquete
-            llega a nuestra bodega te avisamos, lo consolidamos si tienes varias compras y lo enviamos a Colón. La
+            llega a nuestra bodega te avisamos y lo enviamos a Colón. La
             entrega desde Miami toma de 24 a 48 horas.
           </p>
           <p>

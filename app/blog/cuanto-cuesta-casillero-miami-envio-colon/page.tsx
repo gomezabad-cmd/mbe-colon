@@ -227,12 +227,6 @@ export default function BlogPost() {
               </summary>
               <p className="mt-3 text-sm">El arancel según la categoría del producto más el ITBMS (7%). MBE Colón gestiona toda la documentación aduanera por ti.</p>
             </details>
-            <details className="bg-white rounded-lg p-5 shadow-sm group border border-gray-200">
-              <summary className="cursor-pointer font-bold text-mbe-dark flex justify-between items-center">
-                ¿Hay descuentos por consolidar varios paquetes?<span className="text-mbe-red group-open:rotate-180 transition-transform">▼</span>
-              </summary>
-              <p className="mt-3 text-sm">Sí. Si compras en varias tiendas, consolidamos tus paquetes en un solo envío. En promedio, consolidar 3-5 paquetes pequeños ahorra entre 30% y 40% del flete.</p>
-            </details>
           </div>
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Sigue leyendo</h2>

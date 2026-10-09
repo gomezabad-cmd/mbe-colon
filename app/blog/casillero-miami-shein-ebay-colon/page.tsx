@@ -89,12 +89,11 @@ export default function BlogPost() {
 
           <h2 className="text-mbe-dark text-xl font-black mt-8">Cómo recibir paquetes de Shein en Colón, Panamá</h2>
           <p>
-            El proceso es simple: te registras, usas tu dirección de casillero en Miami como dirección de envío al comprar en Shein o eBay, y nosotros consolidamos tus pedidos. Cuando el paquete llega a nuestra bodega en Miami, lo enviamos a Colón en 24 a 48 horas.
+            El proceso es simple: te registras, usas tu dirección de casillero en Miami como dirección de envío al comprar en Shein o eBay. Cuando el paquete llega a nuestra bodega en Miami, lo enviamos a Colón en 24 a 48 horas.
           </p>
 
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Una sola dirección para todo</strong> — Amazon, Shein, eBay y más tiendas usan el mismo casillero.</li>
-            <li><strong>Consolidación de paquetes</strong> — varios pedidos se agrupan en un solo envío a Colón.</li>
             <li><strong>Seguimiento en línea</strong> — sabes en qué etapa está tu paquete desde que llega a Miami.</li>
           </ul>
 
