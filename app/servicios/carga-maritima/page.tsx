@@ -1,5 +1,37 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate'
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://mbecolon.com/servicios/carga-maritima#service',
+      name: 'Carga Marítima',
+      description: 'Carga marítima Miami-Colón y China-Colón. Contenedores completos (FCL) y consolidados (LCL). Gestión documental completa para empresas en Panamá.',
+      provider: { '@id': 'https://mbecolon.com/#localbusiness' },
+      areaServed: { '@type': 'City', name: 'Colón' },
+      url: 'https://mbecolon.com/servicios/carga-maritima',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
+        { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://mbecolon.com/#servicios' },
+        { '@type': 'ListItem', position: 3, name: 'Carga Marítima', item: 'https://mbecolon.com/servicios/carga-maritima' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: '¿Cuáles son las rutas principales?', acceptedAnswer: { '@type': 'Answer', text: 'Miami-Colón (más popular), China-Panamá, y Ecuador-Panamá.' } },
+        { '@type': 'Question', name: '¿Qué es un contenedor consolidado?', acceptedAnswer: { '@type': 'Answer', text: 'Es cuando compartimos espacio en un contenedor con otras cargas (LCL). Es más económico que un contenedor completo (FCL) y es ideal para pequeñas y medianas empresas.' } },
+        { '@type': 'Question', name: '¿Cuánto tiempo tarda la carga marítima Miami-Colón?', acceptedAnswer: { '@type': 'Answer', text: 'El tiempo promedio es de 5-10 días hábiles desde que se carga en Miami hasta la entrega en Colón.' } },
+        { '@type': 'Question', name: '¿El seguro de carga está incluido?', acceptedAnswer: { '@type': 'Answer', text: 'El seguro es opcional pero recomendado. El costo es aproximadamente 1-2% del valor de la carga.' } },
+      ],
+    },
+  ],
+}
+
 export const metadata = {
   title: 'Carga Marítima Miami–Panamá y China–Panamá | MBE Colón',
   description: 'Carga marítima Miami-Colón. Envío de contenedores y consolidados desde Miami a la Zona Libre de Colón. Servicios logísticos completos para empresas. MBE.',
@@ -21,7 +53,9 @@ export const metadata = {
 
 export default function CargaPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <ServicePageTemplate
       icon="🚢"
       title="Carga Marítima Miami–Panamá desde Colón"
       description="Servicio especializado de carga marítima para empresas en Colón y Panamá. Rutas principales Miami–Panamá y China–Panamá con contenedores completos y consolidados, gestión documental completa y tarifas preferenciales por volumen."
@@ -78,5 +112,6 @@ export default function CargaPage() {
         { label: 'Envíos internacionales aéreos', href: '/servicios/envios-internacionales' },
       ]}
     />
+    </>
   )
 }

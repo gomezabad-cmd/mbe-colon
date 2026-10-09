@@ -12,7 +12,10 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 export const metadata: Metadata = {
   verification: {
     google: 'U78gqD99Re9-TqbAf378UvKVhPLuGKyIfNvsA9urxgM',
-    other: { 'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu' },
+    other: {
+      'facebook-domain-verification': 'hib6i0wjvflddmfmtlnvgvdaqy3fgu',
+      'msvalidate.01': process.env.BING_VERIFICATION_TOKEN ?? '',
+    },
   },
   metadataBase: new URL('https://mbecolon.com'),
   manifest: '/manifest.json',
@@ -195,6 +198,53 @@ const baseSchemaGraph = {
   ],
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cómo puedo enviar un paquete desde Colón, Panamá?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Visítanos en Plaza Millenium Local F007, Colón. Llevamos tu paquete, cotizamos al instante con DHL, FedEx o UPS, y te damos un número de rastreo para seguirlo en tiempo real.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué es el casillero Miami de MBE Colón?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Es una dirección en Miami, Florida que te asignamos gratis para que puedas comprar en Amazon, eBay, Shein y otras tiendas de USA. Nosotros recibimos tus paquetes y los enviamos a Colón en 24-48 horas.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuál es el horario de atención de MBE Colón?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Atendemos de lunes a viernes de 8:00 AM a 5:00 PM y sábados de 9:00 AM a 1:00 PM. Los domingos estamos cerrados. También puedes contactarnos por WhatsApp al 6949-5100.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde están ubicados en Colón?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Estamos en Plaza Millenium Local F007, Colón, Panamá. Es fácil de encontrar en el centro comercial más importante de la provincia de Colón.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Hacen bordados personalizados en Colón?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. Bordamos uniformes, hoodies, gorras, polos y más con el logo de tu empresa. Trabajamos para PYMEs, equipos y particulares en toda la provincia de Colón y Panamá.',
+      },
+    },
+  ],
+}
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const reviews = await getReviewSummary()
   const schemaGraph = {
@@ -212,6 +262,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body>
@@ -253,12 +307,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Footer />
         <WhatsAppButton />
         <PushNotificationOptIn />
-        <Script
-          src="https://forja-starter-261c87.carlosgomezabadpty.workers.dev/widget.js"
-          strategy="afterInteractive"
-          data-color="#be1e2d"
-          data-saludo="¡Hola! ¿En qué te puedo ayudar? Cotiza envíos, casillero Miami y más."
-        />
       </body>
     </html>
   )
