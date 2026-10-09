@@ -12,6 +12,17 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
+    categoria: 'Casillero',
+    badge: 'bg-mbe-red',
+    titulo: 'Black Friday con Casillero Miami: Cómo Comprar en USA y Recibir en Colón, Panamá',
+    desc: 'Casillero Miami para Black Friday: activación gratis, aéreo desde $3.00/lb y entrega en Colón en 24-48h.',
+    href: '/blog/black-friday-casillero-miami-colon',
+    img: '/images/blog/photo-1607082348824-0a96f2a4b9da.jpg',
+    imgAlt: 'Bolsas de compra rojas y negras de Black Friday con casillero Miami en Colón, Panamá',
+    datePublished: '2026-10-09',
+    dateModified: '2026-10-09',
+  },
+  {
     categoria: 'Logística',
     badge: 'bg-mbe-blue',
     titulo: 'Carga Marítima Panamá: Contenedor Completo (FCL) o Consolidado (LCL) en Colón, Panamá',

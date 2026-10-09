@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Casillero',
+    titulo: 'Black Friday con Casillero Miami: Cómo Comprar en USA y Recibir en Colón, Panamá',
+    desc: 'Casillero Miami para Black Friday: activación gratis, aéreo desde $3.00/lb y entrega en Colón en 24-48h.',
+    badge: 'bg-mbe-red',
+    href: '/blog/black-friday-casillero-miami-colon',
+    img: '/images/blog/photo-1607082348824-0a96f2a4b9da.jpg',
+    imgAlt: 'Bolsas de compra rojas y negras de Black Friday con casillero Miami en Colón, Panamá',
+  },
+  {
     categoria: 'Logística',
     titulo: 'Carga Marítima Panamá: Contenedor Completo (FCL) o Consolidado (LCL) en Colón, Panamá',
     desc: 'Carga marítima Panamá: compara contenedor completo (FCL) y carga consolidada (LCL) para tu empresa en Colón. Tránsito de 5 a 10 días, seguro desde 1%.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/sellos-fechadores-recibido-empresas-colon',
     img: '/images/blog/photo-1603057190473-f3b6422b6320.jpg',
     imgAlt: 'Sello de goma de oficina para recibido y control de documentos en Colón, Panamá',
-  },
-  {
-    categoria: 'Bordados',
-    titulo: 'Chaquetas y Camisas Bordadas para Empresas de Seguridad en Colón, Panamá',
-    desc: 'Bordados Colón para empresas de seguridad: chaquetas y camisas con logo bordado, alta durabilidad y entrega rápida en Plaza Millenium F007.',
-    badge: 'bg-mbe-blue',
-    href: '/blog/chaquetas-bordadas-empresas-seguridad-colon',
-    img: '/images/blog/photo-1772351721250-58367a2aecba.jpg',
-    imgAlt: 'Máquina bordando logo en uniforme de seguridad en Colón, Panamá',
   },
 ]
 
