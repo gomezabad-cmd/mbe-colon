@@ -62,10 +62,28 @@ const schema = {
 }
 
 export const metadata = {
-  title: 'Casillero Miami para Empresas en Colón | Importaciones B2B — MBE Colón',
+  title: 'Casillero Miami para Empresas en Colón | MBE Colón',
   description: 'Casillero Miami corporativo para empresas en la Zona Libre de Colón. Consolida importaciones de USA, gestión aduanera y tarifas de volumen. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/casillero-empresas',
+  },
+  openGraph: {
+    title: 'Casillero Miami para Empresas en Colón | MBE Colón',
+    description:
+      'Casillero Miami corporativo para empresas en la Zona Libre de Colón. Consolida importaciones de USA, gestión aduanera y tarifas de volumen. MBE Colón.',
+    url: 'https://mbecolon.com/servicios/casillero-empresas',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mbecolon.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Casillero Miami para empresas en Colón, Panamá — MBE Colón',
+        type: 'image/png',
+      },
+    ],
   },
 }
 
@@ -73,7 +91,7 @@ export default function CasilleroEmpresasPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <ServicePageTemplate
+      <ServicePageTemplate hideSchema
         icon="🏢"
         title="Casillero Miami para Empresas"
         description="Solución logística completa para empresas en la Zona Libre de Colón que importan de USA. Dirección corporativa en Miami, consolidación de múltiples proveedores, gestión aduanera y tarifas de volumen. Reducimos tus costos de importación hasta un 40%."

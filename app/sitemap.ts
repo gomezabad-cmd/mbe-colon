@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
-import { getPosts } from '@/lib/wordpress'
+import { getPosts, MIRRORED_SLUGS } from '@/lib/wordpress'
 import { POSTS } from '@/lib/posts'
 
 const BASE_URL = 'https://mbecolon.com'
@@ -65,7 +65,7 @@ function getBlogSlugs(): string[] {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: BASE_URL, lastModified: lastModified('/'), changeFrequency: 'weekly', priority: 1 },
+    { url: `${BASE_URL}/`, lastModified: lastModified('/'), changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE_URL}/servicios`, lastModified: lastModified('/servicios'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/tarifas`, lastModified: lastModified('/tarifas'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/preguntas-frecuentes`, lastModified: lastModified('/preguntas-frecuentes'), changeFrequency: 'monthly', priority: 0.8 },
@@ -89,7 +89,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const wpPosts = await getPosts(50)
   const wpBlogRoutes: MetadataRoute.Sitemap = wpPosts
-    .filter((post) => !localBlogSlugs.has(post.slug))
+    .filter((post) => !localBlogSlugs.has(post.slug) && !MIRRORED_SLUGS.has(post.slug))
     .map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
       lastModified: new Date(post.date),

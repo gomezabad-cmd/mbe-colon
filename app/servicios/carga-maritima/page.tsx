@@ -55,7 +55,7 @@ export default function CargaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <ServicePageTemplate
+      <ServicePageTemplate hideSchema
       icon="🚢"
       title="Carga Marítima Miami–Panamá desde Colón"
       description="Servicio especializado de carga marítima para empresas en Colón y Panamá. Rutas principales Miami–Panamá y China–Panamá con contenedores completos y consolidados, gestión documental completa y tarifas preferenciales por volumen."

@@ -70,10 +70,28 @@ const schema = {
 }
 
 export const metadata = {
-  title: 'Cotizar Envío DHL Colón Panamá | Agentes Autorizados — MBE Colón',
+  title: 'Cotizar Envío DHL | Agentes Autorizados — MBE Colón',
   description: 'Cotiza tu envío DHL Express en Colón, Panamá. Agentes autorizados DHL con 13 años de experiencia. Envíos a USA, Colombia, España y 220 países. Plaza Millenium F007.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/cotizar-envio-dhl',
+  },
+  openGraph: {
+    title: 'Cotizar Envío DHL | Agentes Autorizados — MBE Colón',
+    description:
+      'Cotiza tu envío DHL Express en Colón, Panamá. Agentes autorizados DHL con 13 años de experiencia. Envíos a USA, Colombia, España y 220 países. Plaza Millenium F007.',
+    url: 'https://mbecolon.com/servicios/cotizar-envio-dhl',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mbecolon.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Cotización de envíos DHL desde Colón, Panamá — MBE Colón',
+        type: 'image/png',
+      },
+    ],
   },
 }
 
@@ -81,7 +99,7 @@ export default function CotizarEnvioDhlPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <ServicePageTemplate
+      <ServicePageTemplate hideSchema
         icon="📦"
         title="Cotiza tu Envío DHL en Colón"
         description="Somos agentes autorizados DHL Express en Colón, Panamá desde 2012. Cotizamos al instante envíos a USA, Colombia, Venezuela, España y más de 220 países. También comparamos con FedEx y UPS para darte la mejor opción según tu presupuesto y urgencia."

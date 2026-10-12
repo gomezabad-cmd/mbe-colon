@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { getPostBySlug, getPosts, formatDate, featuredImage } from '@/lib/wordpress'
+import { getPostBySlug, getPosts, formatDate, featuredImage, MIRRORED_SLUGS } from '@/lib/wordpress'
 import { sanitizeHtml } from '@/lib/sanitize'
 import type { Metadata } from 'next'
 
@@ -9,7 +9,7 @@ type Props = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   const posts = await getPosts(50)
-  return posts.map(p => ({ slug: p.slug }))
+  return posts.filter((p) => !MIRRORED_SLUGS.has(p.slug)).map((p) => ({ slug: p.slug }))
 }
 
 const TITLE_SUFFIX = ' | MBE Colón'
@@ -24,6 +24,7 @@ function plainText(html: string, max: number): string {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
+  if (MIRRORED_SLUGS.has(slug)) return {}
   const post = await getPostBySlug(slug)
   if (!post) return {}
 
@@ -49,6 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
+  if (MIRRORED_SLUGS.has(slug)) notFound()
   const post = await getPostBySlug(slug)
   if (!post) notFound()
 

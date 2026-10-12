@@ -78,10 +78,28 @@ const schema = {
 }
 
 export const metadata = {
-  title: 'Envíos a Colombia desde Colón, Panamá | DHL FedEx UPS — MBE Colón',
+  title: 'Envíos a Colombia desde Colón, Panamá | MBE Colón',
   description: 'Envía paquetes a Colombia desde Colón, Panamá con DHL, FedEx o UPS. Cotización inmediata, rastreo en tiempo real y entrega en 1-3 días. MBE Colón Plaza Millenium.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/envios-colombia',
+  },
+  openGraph: {
+    title: 'Envíos a Colombia desde Colón, Panamá | MBE Colón',
+    description:
+      'Envía paquetes a Colombia desde Colón, Panamá con DHL, FedEx o UPS. Cotización inmediata, rastreo en tiempo real y entrega en 1-3 días. MBE Colón Plaza Millenium.',
+    url: 'https://mbecolon.com/servicios/envios-colombia',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mbecolon.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Envíos a Colombia desde Colón, Panamá — MBE Colón',
+        type: 'image/png',
+      },
+    ],
   },
 }
 
@@ -89,7 +107,7 @@ export default function EnviosColombiaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <ServicePageTemplate
+      <ServicePageTemplate hideSchema
         icon="🇨🇴"
         title="Envíos a Colombia desde Panamá"
         description="Enviamos paquetes y documentos a cualquier ciudad de Colombia con DHL, FedEx y UPS. Desde Colón, Panamá hacia Bogotá, Medellín, Cali, Barranquilla y toda Colombia. Cotización inmediata, seguro incluido y rastreo en tiempo real."

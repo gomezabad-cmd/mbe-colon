@@ -61,10 +61,28 @@ const schema = {
 }
 
 export const metadata = {
-  title: 'Carga Consolidada Miami a Zona Libre de Colón | LCL — MBE Colón',
+  title: 'Carga Consolidada Miami–Colón | LCL — MBE Colón',
   description: 'Importa carga consolidada LCL de Miami a la Zona Libre de Colón. Sin necesidad de contenedor completo. Tarifas por CBM, gestión aduanera incluida. MBE Colón.',
   alternates: {
     canonical: 'https://mbecolon.com/servicios/carga-consolidada-zona-libre',
+  },
+  openGraph: {
+    title: 'Carga Consolidada Miami–Colón | LCL — MBE Colón',
+    description:
+      'Importa carga consolidada LCL de Miami a la Zona Libre de Colón. Sin necesidad de contenedor completo. Tarifas por CBM, gestión aduanera incluida. MBE Colón.',
+    url: 'https://mbecolon.com/servicios/carga-consolidada-zona-libre',
+    siteName: 'MBE Colón',
+    locale: 'es_PA',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mbecolon.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Carga consolidada LCL de Miami a la Zona Libre de Colón — MBE Colón',
+        type: 'image/png',
+      },
+    ],
   },
 }
 
@@ -72,7 +90,7 @@ export default function CargaConsolidadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <ServicePageTemplate
+      <ServicePageTemplate hideSchema
         icon="🚢"
         title="Carga Consolidada a Zona Libre"
         description="Importa desde Miami a la Zona Libre de Colón sin necesidad de llenar un contenedor completo. Con carga consolidada LCL pagas solo por el espacio que usas. Ideal para importadores medianos y pequeños que quieren costos de marítimo sin el compromiso de un FCL."

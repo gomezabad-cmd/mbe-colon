@@ -1,5 +1,16 @@
 const WP_API = 'https://mbe-ca.com/wp-json/wp/v2'
 
+/**
+ * Artículos que sirve la matriz (mbe-ca.com) y que aquí se renderizaban idénticos.
+ * Google los consolidaba hacia el dominio original y marcaba nuestras URLs como
+ * "Duplicada: eligió una canónica distinta", así que devolvemos 404 y no se
+ * publican en el sitemap. Ver diagnóstico de canónicas 2026-09.
+ */
+export const MIRRORED_SLUGS = new Set([
+  'que-son-los-incoterms-y-para-que-sirven',
+  'las-fechas-mas-importantes-para-comprar-por-internet',
+])
+
 export type WPPost = {
   id: number
   slug: string

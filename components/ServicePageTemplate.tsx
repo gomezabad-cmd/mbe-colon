@@ -27,12 +27,18 @@ interface ServicePageProps {
   faqs?: FAQ[]
   fullDescription?: string
   relatedLinks?: { label: string; href: string }[]
+  /**
+   * La página declara su propio JSON-LD (Service + BreadcrumbList + FAQPage).
+   * Si no lo desactivamos aquí, el template emite una segunda copia de esos
+   * tipos y Google ve entidades duplicadas en la misma ruta.
+   */
+  hideSchema?: boolean
   children?: React.ReactNode
 }
 
 const BASE_URL = 'https://mbecolon.com'
 
-export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription, relatedLinks, children }: ServicePageProps) {
+export default function ServicePageTemplate({ icon, title, description, benefits, steps, href, serviceType, faqs, fullDescription, relatedLinks, hideSchema, children }: ServicePageProps) {
   useEffect(() => {
     trackViewContent(title, serviceType || 'Servicio')
   }, [title, serviceType])
@@ -89,19 +95,23 @@ export default function ServicePageTemplate({ icon, title, description, benefits
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+      {!hideSchema && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          />
+          {faqSchema && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
+          )}
+        </>
       )}
 
       {/* Hero */}
