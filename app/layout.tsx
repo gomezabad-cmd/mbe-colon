@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'MBE Colón | Casillero Miami y Envíos Internacionales',
     description: 'Casillero Miami GRATIS, envíos con DHL/FedEx/UPS, carga marítima, impresión, bordados y sellos en Colón, Panamá. 18+ años de experiencia.',
-    url: 'https://mbecolon.com/',
+    url: 'https://mbecolon.com',
     siteName: 'MBE Colón',
     locale: 'es_PA',
     type: 'website',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     images: ['https://mbecolon.com/og-image.png'],
   },
   alternates: {
-    canonical: 'https://mbecolon.com/',
+    canonical: 'https://mbecolon.com',
   },
 }
 

@@ -13,7 +13,7 @@ import ContactSection from '@/components/ContactSection'
 export const metadata: Metadata = {
   description: 'Mail Boxes Etc. en Colón, Panamá. Envíos con DHL, FedEx y UPS, casillero Miami, carga marítima, impresión, bordados y sellos. Plaza Millenium F007.',
   alternates: {
-    canonical: 'https://mbecolon.com/',
+    canonical: 'https://mbecolon.com',
   },
 }
 
@@ -21,7 +21,7 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com/' },
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://mbecolon.com' },
   ],
 }
 

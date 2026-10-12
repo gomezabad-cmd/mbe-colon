@@ -65,7 +65,7 @@ function getBlogSlugs(): string[] {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/`, lastModified: lastModified('/'), changeFrequency: 'weekly', priority: 1 },
+    { url: BASE_URL, lastModified: lastModified('/'), changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE_URL}/servicios`, lastModified: lastModified('/servicios'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/tarifas`, lastModified: lastModified('/tarifas'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/preguntas-frecuentes`, lastModified: lastModified('/preguntas-frecuentes'), changeFrequency: 'monthly', priority: 0.8 },
