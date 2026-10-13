@@ -34,6 +34,31 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // ---- Mapeo de URLs legacy (WordPress) → rutas nuevas (Next.js) ----
+      // Evita 404 y conserva la autoridad de enlaces/índice de las URLs viejas.
+      // Cada entrada existe en variante con y sin barra final.
+      { source: '/envios-internacionales', destination: '/servicios/envios-internacionales', permanent: true },
+      { source: '/envios-internacionales/', destination: '/servicios/envios-internacionales', permanent: true },
+      { source: '/compras-por-internet', destination: '/servicios/compras-internet', permanent: true },
+      { source: '/compras-por-internet/', destination: '/servicios/compras-internet', permanent: true },
+      { source: '/casillero', destination: '/servicios/casillero', permanent: true },
+      { source: '/casillero/', destination: '/servicios/casillero', permanent: true },
+      { source: '/centro-de-imprenta', destination: '/servicios/impresion', permanent: true },
+      { source: '/centro-de-imprenta/', destination: '/servicios/impresion', permanent: true },
+      { source: '/quienes-somos', destination: '/nosotros', permanent: true },
+      { source: '/quienes-somos/', destination: '/nosotros', permanent: true },
+      { source: '/faq', destination: '/preguntas-frecuentes', permanent: true },
+      { source: '/faq/', destination: '/preguntas-frecuentes', permanent: true },
+      { source: '/solicitud-de-casillero', destination: '/casillero-miami-colon', permanent: true },
+      { source: '/solicitud-de-casillero/', destination: '/casillero-miami-colon', permanent: true },
+      { source: '/politica-de-articulos-prohibidos', destination: '/servicios/envios-internacionales', permanent: true },
+      { source: '/politica-de-articulos-prohibidos/', destination: '/servicios/envios-internacionales', permanent: true },
+      { source: '/localizador-de-centros', destination: '/contacto', permanent: true },
+      { source: '/localizador-de-centros/', destination: '/contacto', permanent: true },
+      { source: '/aviso-de-privacidad', destination: '/', permanent: true },
+      { source: '/aviso-de-privacidad/', destination: '/', permanent: true },
+      { source: '/terminos-y-condiciones', destination: '/', permanent: true },
+      { source: '/terminos-y-condiciones/', destination: '/', permanent: true },
       {
         source: '/',
         has: [
@@ -43,7 +68,7 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: 'https://mbecolon.com',
-        statusCode: 301,
+        permanent: true,
       },
       {
         source: '/:path*',
@@ -54,9 +79,9 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: 'https://mbecolon.com/:path*',
-        statusCode: 301,
+        permanent: true,
       },
-    ]
+    ];
   },
   async headers() {
     return [
