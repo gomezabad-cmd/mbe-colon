@@ -3,6 +3,15 @@ import Image from 'next/image'
 
 const POSTS = [
   {
+    categoria: 'Envíos',
+    titulo: 'Envíos a Colombia desde Colón, Panamá: Cómo Enviar Paquetes con DHL, FedEx o UPS',
+    desc: 'Envíos a Colombia desde Colón con DHL, FedEx o UPS: entrega en 1 a 5 días y paquetes de 1 kg a Bogotá desde $35.',
+    badge: 'bg-mbe-blue',
+    href: '/blog/envios-a-colombia-desde-colon-panama',
+    img: '/images/blog/photo-1758351507026-71ad3645cb43.jpg',
+    imgAlt: 'Caja sellada con cinta frágil lista para envíos a Colombia desde Colón, Panamá',
+  },
+  {
     categoria: 'Casillero',
     titulo: 'Black Friday con Casillero Miami: Cómo Comprar en USA y Recibir en Colón, Panamá',
     desc: 'Casillero Miami para Black Friday: activación gratis, aéreo desde $3.00/lb y entrega en Colón en 24-48h.',
@@ -19,15 +28,6 @@ const POSTS = [
     href: '/blog/lcl-o-fcl-carga-maritima-colon',
     img: '/images/blog/photo-1590496793907-4d66e2994b4d.jpg',
     imgAlt: 'Buque portacontenedores siendo cargado en puerto para carga marítima Panamá, Colón',
-  },
-  {
-    categoria: 'Sellos',
-    titulo: 'Sellos Fechadores y de Recibido para Empresas en Colón, Panamá',
-    desc: 'Sellos automáticos Colón: fechadores, de recibido y pagado con tu logo para oficinas y Zona Libre. Entrega 24-48h.',
-    badge: 'bg-mbe-red',
-    href: '/blog/sellos-fechadores-recibido-empresas-colon',
-    img: '/images/blog/photo-1603057190473-f3b6422b6320.jpg',
-    imgAlt: 'Sello de goma de oficina para recibido y control de documentos en Colón, Panamá',
   },
 ]
 

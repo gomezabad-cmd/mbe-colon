@@ -12,6 +12,17 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
+    categoria: 'Envíos',
+    badge: 'bg-mbe-blue',
+    titulo: 'Envíos a Colombia desde Colón, Panamá: Cómo Enviar Paquetes con DHL, FedEx o UPS',
+    desc: 'Envíos a Colombia desde Colón con DHL, FedEx o UPS: entrega en 1 a 5 días y paquetes de 1 kg a Bogotá desde $35.',
+    href: '/blog/envios-a-colombia-desde-colon-panama',
+    img: '/images/blog/photo-1758351507026-71ad3645cb43.jpg',
+    imgAlt: 'Caja sellada con cinta frágil lista para envíos a Colombia desde Colón, Panamá',
+    datePublished: '2026-10-16',
+    dateModified: '2026-10-16',
+  },
+  {
     categoria: 'Casillero',
     badge: 'bg-mbe-red',
     titulo: 'Black Friday con Casillero Miami: Cómo Comprar en USA y Recibir en Colón, Panamá',
